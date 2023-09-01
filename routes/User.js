@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 const secret = process.env.secretKey;
 const validateRegisterInput = require("../validation/register");
 const validateLoginInput = require("../validation/login");
-
+const verifyToken = require("../middlewares/Token");
 const User = require("../models/User");
 
 router.post("/register",(req,res)=>{
@@ -74,5 +74,14 @@ router.post("/login",(req,res)=>{
         });
     });
 });
+
+// Test route that requires authentication
+router.get("/protected", verifyToken, (req, res) => {
+    // req.user now contains the decoded user information from the token
+    const user = req.user;
+  
+    // You can use `user` to access user properties, such as name or ID, as needed
+    res.json({ message: "Access granted", user });
+  });
 
 module.exports=router;

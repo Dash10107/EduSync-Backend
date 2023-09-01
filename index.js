@@ -14,26 +14,20 @@ app.use(function(req, res, next) {
     next();
   });
 
-  app.use(cors());
+// Middleware setup
+app.use(cors());
 app.use(express.json({ limit: '50mb' }));
-
-// Bodyparser middleware
-app.use(
-  bodyParser.urlencoded({
-    extended: false
-  })
-);
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
-//passport
 app.use(passport.initialize());
-//config
-
-require("./config/passport")(passport);  
+require("./config/passport")(passport); 
 
   //Routes 
   const users = require("./routes/User");
   app.use("/users",users);
+
+  const modules = require("./routes/Module")
+  app.use("/module",modules);
 
 app.get('/', async (req, res) => {
     res.status(200).json({
