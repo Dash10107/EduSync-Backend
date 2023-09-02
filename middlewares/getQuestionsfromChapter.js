@@ -1,12 +1,19 @@
-const questionsByChapter = require("../utils/Questions")
+const questions = require("../utils/Questions")
 
-function getQuestionsForChapter(chapterId) {
-    // Filter questions based on the chapterId
-    if (questionsByChapter.hasOwnProperty(chapterId)) {
-      return questionsByChapter[chapterId];
-    } else {
-      return []; // Return an empty array if the module ID is not found
+
+// Modify the getQuestionsForChapter function
+function getQuestionsForChapter(chapterId, subtopicId) {
+  // Check if the chapterId exists in questions data
+  if (questions.hasOwnProperty(chapterId)) {
+    const chapter = questions[chapterId];
+    
+    // Check if the subtopicId exists in the chapter
+    if (chapter.hasOwnProperty(subtopicId)) {
+      return chapter[subtopicId];
     }
   }
+  
+  return []; // Return an empty array if the chapter or subtopic is not found
+}
 
-  module.exports = getQuestionsForChapter;
+module.exports = getQuestionsForChapter;

@@ -1,38 +1,60 @@
 // questionsData.js
 
 const questions = {
-    1: [
+  1: {
+    // Chapter 1
+    "1.1": [
       {
         id: 1,
-        question: "What is the capital of France?",
-        options: ["Paris", "Berlin", "London", "Madrid"],
-        correctAnswer: "Paris",
+        question: "Question 1 for subtopic 1.1",
+        options: ["Option 1", "Option 2", "Option 3", "Option 4"],
+        correctAnswer: "Option 1",
       },
       {
         id: 2,
-        question: "Which planet is known as the Red Planet?",
-        options: ["Mars", "Jupiter", "Venus", "Saturn"],
-        correctAnswer: "Mars",
+        question: "Question 2 for subtopic 1.1",
+        options: ["Option 1", "Option 2", "Option 3", "Option 4"],
+        correctAnswer: "Option 3",
       },
-      // Add more questions for Chapter 1 as needed
+      // Add more questions for subtopic 1.1 as needed
     ],
-    2: [
+    "1.2": [
       {
         id: 1,
-        question: "What is the largest mammal on Earth?",
-        options: ["Elephant", "Blue Whale", "Giraffe", "Lion"],
-        correctAnswer: "Blue Whale",
+        question: "Question 1 for subtopic 1.2",
+        options: ["Option 1", "Option 2", "Option 3", "Option 4"],
+        correctAnswer: "Option 2",
       },
       {
         id: 2,
-        question: "How many continents are there on Earth?",
-        options: ["5", "6", "7", "8"],
-        correctAnswer: "7",
+        question: "Question 2 for subtopic 1.2",
+        options: ["Option 1", "Option 2", "Option 3", "Option 4"],
+        correctAnswer: "Option 4",
       },
-      // Add more questions for Chapter 2 as needed
+      // Add more questions for subtopic 1.2 as needed
     ],
-    // Add more chapters as needed
-  };
-  
-  module.exports = questions;
-  
+    // Add more subtopics for Chapter 1 as needed
+  },
+  2: {
+    // Chapter 2
+    "2.1": [
+      {
+        id: 1,
+        question: "Question 1 for subtopic 2.1",
+        options: ["Option 1", "Option 2", "Option 3", "Option 4"],
+        correctAnswer: "Option 3",
+      },
+      {
+        id: 2,
+        question: "Question 2 for subtopic 2.1",
+        options: ["Option 1", "Option 2", "Option 3", "Option 4"],
+        correctAnswer: "Option 2",
+      },
+      // Add more questions for subtopic 2.1 as needed
+    ],
+    // Add more subtopics for Chapter 2 as needed
+  },
+  // Add more chapters as needed
+};
+
+module.exports = questions;

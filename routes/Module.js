@@ -41,10 +41,11 @@ router.get("/chapters/:moduleId", verifyToken, (req, res) => {
   });
 });
 
-// Route to get questions for a specific chapter
-router.get("/questions/:chapterId", verifyToken, (req, res) => {
-  // Retrieve the chapterId from the request parameters
+// Route to get questions for a specific chapter and subtopic
+router.get("/questions/:chapterId/:subtopicId", verifyToken, (req, res) => {
+  // Retrieve the chapterId and subtopicId from the request parameters
   const chapterId = parseInt(req.params.chapterId); // Convert to number
+  const subtopicId = req.params.subtopicId;
 
   // Check if the conversion to number was successful
   if (isNaN(chapterId)) {
@@ -60,13 +61,15 @@ router.get("/questions/:chapterId", verifyToken, (req, res) => {
     return res.status(404).json({ error: "Chapter not found" });
   }
 
-  // Fetch questions associated with the chapter using the getQuestionsForChapter function
-  const chapterQuestions = getQuestionsForChapter(chapterId); // Implement this function
+  // Fetch questions associated with the chapter and subtopic using the getQuestionsForChapter function
+  const chapterQuestions = getQuestionsForChapter(chapterId, subtopicId); // Implement this function
 
   res.json({
     chapter,
+    subtopic: subtopicId,
     questions: chapterQuestions,
   });
 });
+
 
 module.exports = router;
