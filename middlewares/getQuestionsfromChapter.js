@@ -1,6 +1,5 @@
 const questions = require("../utils/Questions")
 
-
 // Modify the getQuestionsForChapter function
 function getQuestionsForChapter(chapterId, subtopicId) {
   // Check if the chapterId exists in questions data
@@ -17,3 +16,4 @@ function getQuestionsForChapter(chapterId, subtopicId) {
 }
 
 module.exports = getQuestionsForChapter;
+
