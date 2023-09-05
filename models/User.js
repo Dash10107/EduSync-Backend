@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-
+const ProgressSchema = require("./Progress");
 const UserSchema = new Schema({
     name:{
         type:String,
@@ -17,7 +17,8 @@ const UserSchema = new Schema({
     date:{
         type:Date,
         default:Date.now
-    }
+    },
+    progress: [ProgressSchema], 
 });
 
 const User = mongoose.model("User",UserSchema);

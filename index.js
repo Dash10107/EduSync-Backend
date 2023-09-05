@@ -29,6 +29,9 @@ require("./config/passport")(passport);
   const modules = require("./routes/Module")
   app.use("/module",modules);
 
+  const progress = require("./routes/Prog")
+  app.use("/progress",progress);
+
 app.get('/', async (req, res) => {
     res.status(200).json({
       message: 'Hello from EduSYnC ',
