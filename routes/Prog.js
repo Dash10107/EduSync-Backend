@@ -2,8 +2,10 @@ const express = require("express");
 const router = express.Router();
 const verifyToken = require("../middlewares/Token");
 const User = require("../models/User");
-const validateProgressInput = require("../validation/progress"); // Import the validation function
+const validateProgressInput = require("../validation/progress");
+// Import the validation function
 // Route to fetch progress for a user
+
 router.get("/", verifyToken, async (req, res) => {
   try {
     // Retrieve the user's ID from the token
