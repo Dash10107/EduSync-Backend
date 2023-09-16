@@ -24,7 +24,7 @@ const modules = [
     },
     {
      id: 5,
-      name: "OOP's using c++ programming",
+      name: "OOP's using C++",
       description: "Object-Oriented Programming (OOP) in C++ is a way of writing code that focuses on organizing information into objects that combine both data (attributes) and the functions (methods) that operate on that data. Think of objects as real-world entities; for example, you could have an object called Car with attributes like color and speed, and methods like accelerate and brake. This approach makes it easier to model complex systems, encourages code reusability, and helps in managing large-scale software projects by breaking them into smaller, more manageable pieces, resulting in cleaner, more maintainable code.",
     },
     {
