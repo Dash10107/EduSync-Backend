@@ -78,9 +78,9 @@ router.get("/questions/:moduleId/:chapterId/:subchapterId", verifyToken, (req, r
   const subchapterQuestions = subchapter;
 
   res.json({
-    module,
-    chapter,
-    subchapter,
+    // module,
+    // chapter,
+    // subchapter,
     questions: subchapterQuestions,
   });
 });
