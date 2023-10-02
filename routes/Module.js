@@ -9,6 +9,7 @@ const getChaptersForModule = require("../middlewares/getChaptersForModule");
 const getQuestionsForChapter = require("../middlewares/getQuestionsfromChapter");
 const chapters = require("../utils/Chapters");
 const questions = require("../utils/Questions");
+const questions2 = require("../utils/Questions2")
 const shuffleArray = require("../middlewares/shuffleArray");
 // Route to get a list of modules
 router.get("/", verifyToken, (req, res) => {
@@ -42,7 +43,7 @@ router.get("/chapters/:moduleId", verifyToken, (req, res) => {
   });
 });
 
-/// Route to get questions for a specific module, chapter, and subchapter
+// Route to get questions for a specific module, chapter, and subchapter
 router.get("/questions/:moduleId/:chapterId/:subchapterId", verifyToken, (req, res) => {
   // Retrieve the module, chapter, and subchapter IDs from the request parameters
   const moduleId = parseInt(req.params.moduleId);
@@ -54,8 +55,8 @@ router.get("/questions/:moduleId/:chapterId/:subchapterId", verifyToken, (req, r
     return res.status(400).json({ error: "Invalid moduleId" });
   }
 
-  // Find the module by ID from the questions data
-  const module = questions[moduleId];
+  // Find the module by ID from both question objects
+  const module = questions[moduleId] || questions2[moduleId];
 
   if (!module) {
     return res.status(404).json({ error: "Module not found" });
@@ -68,26 +69,26 @@ router.get("/questions/:moduleId/:chapterId/:subchapterId", verifyToken, (req, r
     return res.status(404).json({ error: "Chapter not found" });
   }
 
-   // Find the subchapter by ID from the chapter
-   const subchapter = chapter[subchapterId];
+  // Find the subchapter by ID from the chapter
+  const subchapter = chapter[subchapterId];
 
-   if (!subchapter) {
-     return res.status(404).json({ error: "Subchapter not found" });
-   }
- 
-   // Fetch all questions associated with the subchapter
-   const subchapterQuestions = subchapter;
- 
-   // Shuffle the questions array to randomize the order
-   shuffleArray(subchapterQuestions);
- 
-   // Send the first 10 questions
-   const randomQuestions = subchapterQuestions.slice(0, 10);
- 
-   res.json({
-     questions: randomQuestions,
-   });
- });
+  if (!subchapter) {
+    return res.status(404).json({ error: "Subchapter not found" });
+  }
+
+  // Fetch all questions associated with the subchapter
+  const subchapterQuestions = subchapter;
+
+  // Shuffle the questions array to randomize the order
+  shuffleArray(subchapterQuestions);
+
+  // Send the first 10 questions
+  const randomQuestions = subchapterQuestions.slice(0, 10);
+
+  res.json({
+    questions: randomQuestions,
+  });
+});
 
 
 
