@@ -13,9 +13,9 @@ const chaptersByModule = {
                 },
                 {
                     id: "1.2",
-                    name: "Algorithm – concept of algorithm, pseudo-code convention like – assignment statements develop algorithm to solve simple problems.Flowchart - concept of flowchart, symbols of flowchart",
+                    name: "Algorithm � concept of algorithm, pseudo-code convention like � assignment statements develop algorithm to solve simple problems.Flowchart - concept of flowchart, symbols of flowchart",
                 },
-                
+
             ],
         },
 
@@ -57,7 +57,7 @@ const chaptersByModule = {
                     id: "3.3",
                     name: "Unary operator:++ and - -.Integer and float conversion, type conversion in expression.Hierarchy of operations",
                 },
-                
+
             ],
         },
 
@@ -78,7 +78,7 @@ const chaptersByModule = {
                     id: "4.2",
                     name: "Looping control structure-for loop,while loop,do-while loop,nesting of loop, break,continue and goto statement.Comparison of while and do-while loop",
                 },
-                
+
             ],
         },
 
@@ -118,9 +118,9 @@ const chaptersByModule = {
                 },
                 {
                     id: "6.2",
-                    name: "Different types of functions:- Function with no argument and no return value, Function with no argument and with return value, Function with argument and0020with return value.Storage classes and scope of variable:- storage classes -auto,static,extern,register scope and visibility of variables –local and global variable.recursion concept with example",
+                    name: "Different types of functions:- Function with no argument and no return value, Function with no argument and with return value, Function with argument and0020with return value.Storage classes and scope of variable:- storage classes -auto,static,extern,register scope and visibility of variables �local and global variable.recursion concept with example",
                 },
-               
+
             ],
         },
         //end of chapter 6
@@ -139,7 +139,7 @@ const chaptersByModule = {
                     id: "7.2",
                     name: "Union-Introduction to union, Syntax with example.recursion concept with example",
                 },
-            
+
             ],
         },
 
@@ -155,7 +155,7 @@ const chaptersByModule = {
                     id: "8.1",
                     name: "Introduction to pointer:-Need of pointer, Definition, Declaration and initialization of pointer.Accessing variables using pointer.Advantages of pointers",
                 },
-                
+
             ],
         },
 
@@ -185,72 +185,273 @@ const chaptersByModule = {
     2: [
         {
             id: 1,
-            title: "Chapter 1 (Module 2)",
-            content: "Content for Chapter 1 (Module 2)",
+            title: "Introduction to JavaScript",
+            content: "JavaScript is a versatile programming language that powers the dynamic behavior of websites. Developed by Netscape in the mid-1990s, it has evolved significantly since its inception. Despite its name, JavaScript bears little resemblance to Java, as it's a distinct language. To start working with JavaScript, you'll need to set up an environment which can be facilitated by Integrated Development Environments (IDEs) or directly through Browser Developer Tools. These tools allow you to write and execute your JavaScript code. Understanding variables and data types is crucial, involving the declaration of variables using 'var', 'let', or 'const', and recognizing data types such as Number, String, Boolean, and Object, among others. Furthermore, JavaScript employs operators for tasks like arithmetic, comparison, and logical operations, with expressions and statements forming the building blocks of code execution. This foundational knowledge is essential for harnessing the full potential of JavaScript in web development.",
             subtopics: [
                 {
                     id: "1.1",
-                    name: "Subtopic 1",
+                    name: "What is JavaScript? History and Evolution of JavaScript JavaScript vs. Java",
                 },
                 {
                     id: "1.2",
-                    name: "Subtopic 2",
+                    name: "Setting Up a JavaScript Environment Integrated Development Environments (IDEs) Browser Developer Tools Writing and Running First JavaScript Code",
+                },
+                {
+                    id: "1.3",
+                    name: "Variables and Data Types Declaring Variables (var, let, const) Data Types (Number, String, Boolean, Object, etc.) Type Conversion and Coercion",
+                },
+                {
+                    id: "1.4",
+                    name: "1.4: Operators and Expressions Arithmetic, Comparison, Logical Operators Expressions and Statements",
                 },
             ],
         },
+        //end of subject 1
         {
             id: 2,
-            title: "Chapter 2 (Module 2)",
-            content: "Content for Chapter 2 (Module 2)",
+            title: "Control Flow and Functions",
+            content: "Control flow and functions are fundamental concepts in JavaScript, a versatile programming language commonly used for web development. In JavaScript, control flow involves the way the program executes instructions, and functions are blocks of reusable code that perform specific tasks. Functions can be defined with parameters (input values) and can return values as output. They also have their own scope, meaning variables declared within a function are local and not accessible outside of it. Additionally, JavaScript supports arrow functions, which provide a more concise syntax compared to traditional function expressions. Arrow functions have some key differences from regular functions, particularly in how they handle the 'this' keyword and lack their own 'arguments' object. Understanding these aspects of control flow and functions is crucial for effective JavaScript programming.",
             subtopics: [
                 {
                     id: "2.1",
-                    name: "Subtopic 1",
+                    name: "Conditional Statements if, else if, else switch case",
                 },
                 {
                     id: "2.2",
-                    name: "Subtopic 2",
+                    name: "Loops for, while, do-while loops Loop Control Statements (break, continue)",
+                },
+                {
+                    id: "2.3",
+                    name: "Functions Defining Functions Parameters and Arguments Return Values Function Scope",
+                },
+                {
+                    id: "2.4",
+                    name: "Arrow Functions and Anonymous Functions Arrow Function Syntax Differences between Arrow Functions and Traditional Functions",
+                },
+
+            ],
+        },
+        //end of subject 2
+
+        {
+            id: 3,
+            title: "Data Structures and Objects",
+            content: "Data Structures and Objects in JavaScript are fundamental components for organizing and managing data within the language. JavaScript, denoted as 1.1, is a versatile programming language commonly used for web development. In terms of data structures, Arrays (3.1) play a pivotal role, allowing the storage and manipulation of collections of values. They offer an array of methods such as push, pop, and slice for adding, removing, and extracting elements efficiently. Additionally, arrays can be traversed using loops or higher-order functions to perform operations on each element. Objects (3.2), on the other hand, are dynamic entities capable of holding key-value pairs, which can represent real-world entities or concepts. They can be created using object literals or through constructors and prototypes for a more structured approach. Objects also possess properties and methods, enabling encapsulation of data and behaviors. Furthermore, JavaScript Object Notation (JSON) (3.3) provides a standardized format for data interchange. It employs a simple syntax and structure, making it easily readable by both humans and machines. JSON facilitates seamless parsing and stringifying operations, enabling the transmission and storage of data in a concise and portable manner.",
+            subtopics: [
+                {
+                    id: "3.1",
+                    name: "3.1: Arrays Creating and Manipulating Arrays Array Methods (push, pop, slice, etc.) Iterating through Arrays",
+                },
+                {
+                    id: "3.2",
+                    name: "Objects Creating Objects Object Properties and Methods Object Constructors and Prototypes",
+                },
+                {
+                    id: "3.3",
+                    name: "JSON (JavaScript Object Notation) Syntax and Structure Parsing and Stringifying JSON",
                 },
             ],
         },
+
+        //end of subject 3
+
+        {
+            id: 4,
+            title: "DOM Manipulation and Events",
+            content: "JavaScript is a versatile programming language commonly used for web development. It operates within a browser environment and enables dynamic interactivity on websites. Central to JavaScript is the Document Object Model (DOM), a hierarchical representation of a web page's structure. Through JavaScript, developers can access and manipulate elements within this structure, allowing for real-time updates and modifications to a webpage's content. This involves techniques like altering text content using properties like innerText and innerHTML, as well as dynamically adding or removing elements. Additionally, JavaScript facilitates event handling, where actions like clicks, submissions, or keystrokes trigger responses in the form of event listeners. Understanding event types and propagation is crucial for creating responsive and interactive web applications. Overall, JavaScript's proficiency in DOM manipulation and event handling is essential for building engaging and user-friendly web experiences.",
+            subtopics: [
+                {
+                    id: "4.1",
+                    name: "Introduction to the DOM (Document Object Model) What is the DOM?Accessing DOM Elements",
+                },
+                {
+                    id: "4.2",
+                    name: "Event Handling Event Listeners Event Types (click, submit, keyup, etc.) Event Propagation",
+                },
+                {
+                    id: "4.3",
+                    name: "Modifying DOM Elements Changing Content (innerText, innerHTML) Adding and Removing Elements",
+                },
+
+            ],
+        },
+        //end of subject 4
+
+        {
+            id: 5,
+            title: "Asynchronous JavaScript",
+            content: "Asynchronous JavaScript refers to the capability of JavaScript to execute tasks concurrently, allowing it to handle multiple operations simultaneously. This is vital for tasks that may take time to complete, such as fetching data from a server or performing complex calculations. To manage asynchronous operations, JavaScript offers several techniques. Firstly, callback functions (5.1) are used to ensure that a specific task is executed once a preceding task is completed. This is a fundamental approach but can lead to callback hell, making the code hard to read and maintain. Promises (5.2) provide a more structured solution. They represent a future value, allowing cleaner handling of asynchronous code. Promises can be chained together for sequential execution. Finally, Async/Await (5.3) is a modern syntax introduced in ECMAScript 2017 that simplifies working with asynchronous code. It allows developers to write code that looks synchronous while actually being asynchronous under the hood. Additionally, Async/Await provides an elegant way to handle errors in asynchronous operations. These techniques collectively empower JavaScript developers to efficiently manage asynchronous tasks in their applications.",
+            subtopics: [
+                {
+                    id: "5.1",
+                    name: "Callback Functions Handling Asynchronous Code with Callbacks",
+                },
+                {
+                    id: "5.2",
+                    name: "Promises Creating and Consuming Promises Chaining Promises",
+                },
+                {
+                    id: "5.3",
+                    name: "Async/Await Working with Async/Await Syntax Error Handling with Async/Await",
+                },
+            ],
+        },
+
+        //end of subject 5
+
+        {
+            id: 6,
+            title: "Advanced JavaScript Concepts",
+            content: "Advanced JavaScript Concepts encompass a range of crucial topics for proficient JavaScript developers. At 1.1, it delves into the fundamentals, elucidating JavaScript as a versatile, high-level programming language commonly used for web development. Moving forward, section 6.1 delves into the critical concepts of Closures and Scope. This involves understanding Lexical Scope, which refers to the scope determined by the placement of variables in the source code, and delves into Closure Use Cases, which enables the creation of private variables and functions, aiding in encapsulation and data privacy. Following this, 6.2 addresses Modules and ES6 Imports/Exports. Here, it covers the significance of organizing code with Modules, which promotes maintainability and scalability, and expounds on Importing and Exporting, which facilitate the seamless integration of code across different files and projects. Lastly, 6.3 delves into Error Handling and Debugging. This section encompasses try-catch Blocks, a pivotal construct for handling exceptions, and delves into Debugging Techniques and Tools, essential for identifying and rectifying errors in complex codebases. These advanced concepts collectively form a robust foundation for proficient JavaScript development, enabling developers to build robust, scalable, and maintainable applications.",
+            subtopics: [
+                {
+                    id: "6.1",
+                    name: "Closures and Scope Understanding Lexical Scope Closure Use Cases",
+                },
+                {
+                    id: "6.2",
+                    name: "Modules and ES6 Imports/Exports Organizing Code with Modules Importing and Exporting",
+                },
+                {
+                    id: "6.3",
+                    name: " Error Handling and Debugging try-catch Blocks Debugging Techniques and Tools",
+                },
+            ],
+        },
+        //end of subject 6
     ],//end of subject 2
 
 
 
 
 
+    //CSS
 
     3: [
         {
             id: 1,
-            title: "Chapter 1 (Module 2)",
-            content: "Content for Chapter 1 (Module 2)",
+            title: "Introduction to CSS",
+            content: "CSS, short for Cascading Style Sheets, plays a pivotal role in web development by serving as the language used to style and format the appearance of web pages. It accomplishes this by allowing developers to define how elements on a webpage should be presented, including aspects like colors, fonts, spacing, and layout. One of its core principles is the separation of content and presentation, ensuring that the structure and content of a webpage remain distinct from its visual design. CSS follows a specific syntax involving selectors, properties, and values, where selectors target HTML elements and apply specific styles using properties and values. The concept of cascading and specificity helps determine which styles take precedence when conflicts arise. Additionally, developers can implement CSS in various ways, such as inline, internal, or external stylesheets, each with its own advantages and drawbacks. Mastering CSS and adhering to best practices for organization are essential skills for creating visually appealing and responsive websites.)",
             subtopics: [
                 {
                     id: "1.1",
-                    name: "Subtopic 1",
+                    name: "What is CSS? Importance of CSS in web development Separation of content and presentation",
                 },
                 {
                     id: "1.2",
-                    name: "Subtopic 2",
+                    name: "CSS Syntax Selectors, properties, and values Cascading and specificity",
+                },
+                {
+                    id: "1.3",
+                    name: " Inline vs. Internal vs. External CSS Pros and cons of each approach Best practices for CSS organization",
                 },
             ],
         },
+        //END OF CHAPTER 1
+
+
         {
             id: 2,
-            title: "Chapter 2 (Module 2)",
-            content: "Content for Chapter 2 (Module 2)",
+            title: "Basic Styling with CSS",
+            content: "Basic styling with CSS involves applying styles to HTML elements to enhance the visual presentation of a webpage. This encompasses a range of aspects including backgrounds and colors, allowing for customization of the visual backdrop of elements. Fonts and text properties enable the modification of text appearance, providing options for size, style, and spacing. Borders and margins give structure and spacing around elements, while the box model, comprising padding, border, and margin, defines the space an element occupies on the page. Understanding box sizing is crucial, as it influences how elements interact within the layout. Display and positioning properties determine how elements are displayed on the page, with distinctions between block and inline elements. Additionally, relative, absolute, fixed, and static positioning options enable precise control over the placement of elements within the webpage's layout. This comprehensive knowledge of CSS basics forms the foundation for creating visually appealing and well-structured web pages.",
             subtopics: [
                 {
                     id: "2.1",
-                    name: "Subtopic 1",
+                    name: " Applying Styles Backgrounds and colors Fonts and text properties Borders and margins",
                 },
                 {
                     id: "2.2",
-                    name: "Subtopic 2",
+                    name: "Box Model Understanding padding, border, margin Box sizing and its impact on layout",
+                },
+                {
+                    id: "2.3",
+                    name: "Display and Positioning Block vs. inline elements Relative, absolute, fixed, and static positioning",
                 },
             ],
         },
+        //END OF CHAPTER 2
+
+        {
+            id: 3,
+            title: "Layout and Responsive Design ",
+            content: "Layout and responsive design are fundamental concepts in web development. In terms of JavaScript (1.1), it's a versatile programming language commonly used for enhancing interactivity on websites. Moving on to creating layouts (3.1), developers have traditionally utilized techniques like floats and clear for positioning elements on a page. However, modern practices increasingly favor Flexbox and Grid layouts, which offer more intuitive and flexible ways to arrange content. When it comes to responsive design principles (3.2), media queries are employed to adjust the layout based on different screen sizes, ensuring a seamless user experience across devices. A mobile-first approach is recommended, emphasizing the importance of designing for mobile devices first and then scaling up for larger screens. Finally, in the context of Flexbox and Grid (3.3), developers can employ advanced techniques and create complex grid systems to achieve intricate and visually appealing layouts on web pages. These techniques collectively empower developers to craft websites that are both visually engaging and user-friendly on a variety of devices.",
+            subtopics: [
+                {
+                    id: "3.1",
+                    name: "Creating Layouts Floats and clear Flexbox and Grid layout",
+                },
+                {
+                    id: "3.2",
+                    name: "Responsive Design Principles Media queries for different screen sizes Mobile-first approach",
+                },
+                {
+                    id: "3.3",
+                    name: "Flexbox and Grid Advanced layout techniques Creating complex grid systems",
+                },
+            ],
+        },
+        //END OF CHAPTER 3
+
+
+        {
+            id: 4,
+            title: "Advanced CSS Techniques",
+            content: "Advanced CSS techniques encompass a range of powerful tools and methods for enhancing the visual and interactive aspects of a website. Pseudo-classes and pseudo-elements, denoted by selectors like :hover or :nth-child, allow for dynamic styling based on user actions or element positions. These can significantly elevate user experience and engagement. Transitions and animations introduce motion to elements, achieved through the use of keyframes and timing functions, enabling smooth and engaging visual effects. Transformations and 3D effects, including rotations, scaling, skewing, and translating, provide the means to manipulate elements in space, creating a sense of depth and dynamism within a webpage. Additionally, CSS allows for the creation of impressive 3D effects, further pushing the boundaries of web design. These advanced techniques collectively offer web developers a rich toolkit to craft highly interactive and visually compelling user interfaces.",
+            subtopics: [
+                {
+                    id: "4.1",
+                    name: "Pseudo-classes and Pseudo-elements  :hover, :active, :nth-child, etc. ::before, ::after, ::first-line, etc.",
+                },
+                {
+                    id: "4.2",
+                    name: "Transitions and Animations Adding motion to elements Keyframes and timing functions",
+                },
+                {
+                    id: "4.3",
+                    name: " Transformations and 3D Effects Rotate, scale, skew, and translate Creating 3D effects with CSS",
+                },
+
+            ],
+        },
+        //END OF CHAPTER 4
+
+
+
+        {
+            id: 5,
+            title: "CSS Preprocessors and Frameworks",
+            content: "CSS preprocessors like Sass and Less are tools that enhance the capabilities of standard CSS by introducing features like variables, nesting, and mixins. This allows for more efficient and maintainable stylesheets. Preprocessors require compilation to generate standard CSS files that browsers can interpret. On the other hand, CSS frameworks like Bootstrap and Foundation offer pre-built styles and components, enabling rapid development of responsive and visually appealing web applications. These frameworks serve as a foundation for building websites, offering a grid system, typography, and various UI components. Moreover, they are highly customizable, allowing developers to tailor the framework to specific project requirements and extend its functionality as needed. This combination of preprocessors and frameworks significantly streamlines the process of designing and styling web applications.",
+            subtopics: [
+                {
+                    id: "5.1",
+                    name: "Introduction to Preprocessors (e.g., Sass, Less) Variables, nesting, and mixins Compiling preprocessors to CSS",
+                },
+                {
+                    id: "5.2",
+                    name: "CSS Frameworks (e.g., Bootstrap, Foundation) Utilizing pre-built styles and components Customizing and extending frameworks",
+                },
+            ],
+        },
+
+        //END OF CHAPTER 5
+
+
+        {
+            id: 6,
+            title: " CSS Best Practices and Optimization",
+            content: "Content for Chapter 1 (Module 2)",
+            subtopics: [
+                {
+                    id: "6.1",
+                    name: "Code Organization and Maintainability CSS methodologies (e.g., BEM, SMACSS) Avoiding CSS anti-patterns",
+                },
+                {
+                    id: "6.2",
+                    name: "Performance Optimization Minification and concatenationReducing HTTP requests",
+                },
+            ],
+        },
+        //END OF CHAPTER 6
     ],//end of subject 3
 
 
@@ -439,18 +640,15 @@ const chaptersByModule = {
                 },
                 {
                     id: "1.3",
-                    name: "Difference between OOP and POP",
+                    name: "Difference between OOP and POP.Introduction to basic Concepts of Object-Oriented Programming-class, object, inheritance, polymorphism, data abstractions and encapsulation,message passing, dynamic binding",
                 },
-                {
-                    id: "1.4",
-                    name: "Introduction to basic Concepts of Object-Oriented Programming-class, object, inheritance, polymorphism, data abstractions and encapsulation,message passing, dynamic binding",
-                },
+
             ],
         },
 
 
         //end of chapter 1 
-      
+
         {
             id: 2,
             title: "Introduction to C++",
@@ -458,40 +656,26 @@ const chaptersByModule = {
             subtopics: [
                 {
                     id: "2.1",
-                    name: "Structure of C++ Program,iostream file, I/O Operators -: cin, cout, Cascading of I/O Operators, Comments in C++",
+                    name: "Structure of C++ Program,iostream file, I/O Operators -: cin, cout, Cascading of I/O Operators, Comments in C++.Tokens ,Keyword, Identifiers & Constants in C++",
                 },
                 {
                     id: "2.2",
-                    name: "Tokens ,Keyword, Identifiers & Constants in C++",
-                },
-                {
-                    id: "2.3",
                     name: "Data types",
                 },
                 {
+                    id: "2.3",
+                    name: "Variable, Declarations Of Variables, symbolic constant.Dynamic Initialization Of variables.Concept of Reference Variables",
+                },
+                {
                     id: "2.4",
-                    name: "Variable, Declarations Of Variables, symbolic constant",
-                },
-                {
-                    id: "2.5",
-                    name: "Dynamic Initialization Of variables",
-                },
-                {
-                    id: "2.6",
-                    name: "Concept of Reference Variables",
-                },
-                {
-                    id: "2.7",
                     name: "Operators in C++ -: Arithmetic ,logical, relational, assignment operators Scope resolution operator Memory management operators -: new and delete",
                 },
                 {
-                    id: "2.8",
-                    name: "Manipulators :- endl, setw, width,left, right, setfill, setprecision,fixed",
+                    id: "2.5",
+                    name: "Manipulators :- endl, setw, width,left, right, setfill, setprecision,fixed.Control Structures -: Branching structure - if, if-else, switch looping structure- for ,while and do-while loop",
                 },
-                {
-                    id: "2.9",
-                    name: "Control Structures -: Branching structure - if, if-else, switch looping structure- for ,while and do-while loop",
-                },
+
+
             ],
         },
 
@@ -505,31 +689,11 @@ const chaptersByModule = {
             subtopics: [
                 {
                     id: "3.1",
-                    name: "The main () function",
+                    name: "The main () function.Function prototyping.Inline Functions",
                 },
                 {
                     id: "3.2",
-                    name: "Function prototyping",
-                },
-                {
-                    id: "3.3",
-                    name: "Call by reference",
-                },
-                {
-                    id: "3.4",
-                    name: "Return by reference",
-                },
-                {
-                    id: "3.5",
-                    name: "Inline Functions",
-                },
-                {
-                    id: "3.6",
-                    name: "Function with Default arguments",
-                },
-                {
-                    id: "3.7",
-                    name: "Function Overloading",
+                    name: "Call by reference.Return by reference.Function with Default arguments.Function Overloading ",
                 },
             ],
         },
@@ -544,43 +708,23 @@ const chaptersByModule = {
             subtopics: [
                 {
                     id: "4.1",
-                    name: "C structures and Classes - Limitation of C structures, Extension to structures",
+                    name: "C structures and Classes - Limitation of C structures, Extension to structures.Specifying a class � creation of class, objects, accessing class members, Visibility modifiers- public, private, protected",
                 },
                 {
                     id: "4.2",
-                    name: "Specifying a class – creation of class, objects, accessing class members, Visibility modifiers- public, private, protected",
+                    name: "Defining member functions - Outside the class definition, Inside the class definition.Making an outside function inline",
                 },
                 {
                     id: "4.3",
-                    name: "Defining member functions - Outside the class definition, Inside the class definition",
+                    name: "Nesting of member function.Private member functions.Static Data Members and Member Functions",
                 },
                 {
                     id: "4.4",
-                    name: "Making an outside function inline",
-                },
-                {
-                    id: "4.5",
-                    name: "Nesting of member function",
-                },
-                {
-                    id: "4.6",
-                    name: "Private member functions",
-                },
-                {
-                    id: "4.7",
-                    name: "Static Data Members and Member Functions",
-                },
-                {
-                    id: "4.8",
                     name: "Arrays of Objects",
                 },
                 {
-                    id: "4.9",
-                    name: "Objects as function arguments",
-                },
-                {
-                    id: "4.10",
-                    name: "Friendly functions-characteristics of friend function and implementation",
+                    id: "4.5",
+                    name: "Objects as function arguments.Friendly functions-characteristics of friend function and implementation",
                 },
             ],
         },
@@ -595,39 +739,19 @@ const chaptersByModule = {
             subtopics: [
                 {
                     id: "5.1",
-                    name: "Constructors-need of constructor, definition, syntax, characteristic of constructor",
+                    name: "Constructors-need of constructor, definition, syntax, characteristic of constructor.Default Constructor.Parameterized constructors",
                 },
                 {
                     id: "5.2",
-                    name: "Default Constructor",
+                    name: "Multiple constructors in a class.Constructors with Default Arguments",
                 },
                 {
                     id: "5.3",
-                    name: "Parameterized constructors",
+                    name: "Dynamic Initialization of Objects.Copy Constructor",
                 },
                 {
                     id: "5.4",
-                    name: "Multiple constructors in a class",
-                },
-                {
-                    id: "5.5",
-                    name: "Constructors with Default Arguments",
-                },
-                {
-                    id: "5.6",
-                    name: "Dynamic Initialization of Objects",
-                },
-                {
-                    id: "5.7",
-                    name: "Copy Constructor",
-                },
-                {
-                    id: "5.8",
-                    name: "Dynamic Constructor",
-                },
-                {
-                    id: "5.9",
-                    name: "Destructors",
+                    name: "Dynamic Constructor.Destructors",
                 },
             ],
         },
@@ -641,19 +765,11 @@ const chaptersByModule = {
             subtopics: [
                 {
                     id: "6.1",
-                    name: "Defining operator overloading",
+                    name: "Defining operator overloading.Rules for operator overloading",
                 },
                 {
                     id: "6.2",
-                    name: "Rules for operator overloading",
-                },
-                {
-                    id: "6.3",
-                    name: "Overloading Unary Operators",
-                },
-                {
-                    id: "6.4",
-                    name: "Overloading Binary Operators",
+                    name: "Overloading Unary Operators.Overloading Binary Operators",
                 },
             ],
         },
@@ -668,43 +784,15 @@ const chaptersByModule = {
             subtopics: [
                 {
                     id: "7.1",
-                    name: "Defining base class, Derived classes",
+                    name: "Defining base class, Derived classes.Derivation Modes- public, private, protected",
                 },
                 {
                     id: "7.2",
-                    name: "Derivation Modes- public, private, protected",
+                    name: "Single Inheritance.Multilevel Inheritance.Multiple Inheritance.Hierarchical Inheritance.Hybrid Inheritance",
                 },
                 {
                     id: "7.3",
-                    name: "Single Inheritance",
-                },
-                {
-                    id: "7.4",
-                    name: "Making a private member inheritable",
-                },
-                {
-                    id: "7.5",
-                    name: "Multilevel Inheritance",
-                },
-                {
-                    id: "7.6",
-                    name: "Multiple Inheritance",
-                },
-                {
-                    id: "7.7",
-                    name: "Virtual Base Class",
-                },
-                {
-                    id: "7.8",
-                    name: "Hierarchical Inheritance",
-                },
-                {
-                    id: "7.9",
-                    name: "Hybrid Inheritance",
-                },
-                {
-                    id: "7.10",
-                    name: "Constructors in Derived Class",
+                    name: "Making a private member inheritable.Virtual Base Class.Constructors in Derived Class",
                 },
             ],
         },
@@ -719,28 +807,17 @@ const chaptersByModule = {
             subtopics: [
                 {
                     id: "8.1",
-                    name: "Introduction to Pointers-declaration and initialization of pointers",
+                    name: "Introduction to Pointers-declaration and initialization of pointers.Pointers to Objects",
                 },
                 {
                     id: "8.2",
-                    name: "Pointers to Objects",
+                    name: "this Pointer.Pointers to Derived classes",
                 },
                 {
                     id: "8.3",
-                    name: "this Pointer",
+                    name: "Virtual Functions, Rules for virtual function.Pure Virtual Function and abstract class",
                 },
-                {
-                    id: "8.4",
-                    name: "Pointers to Derived classes",
-                },
-                {
-                    id: "8.5",
-                    name: "Virtual Functions, Rules for virtual function",
-                },
-                {
-                    id: "8.6",
-                    name: "Pure Virtual Function and abstract class",
-                },
+
             ],
         },
 
@@ -789,7 +866,7 @@ const chaptersByModule = {
                 },
                 {
                     id: "1.4",
-                    name: "Transformation of sentences: Assertive to exclamatory and viceversa 1) Affirmative to negative and vice- versa 2) Remove 'too' 3) Not only…but alsos 4) Question Tag",
+                    name: "Transformation of sentences: Assertive to exclamatory and viceversa 1) Affirmative to negative and vice- versa 2) Remove 'too' 3) Not only�but alsos 4) Question Tag",
                 },
                 {
                     id: "1.5",
@@ -810,7 +887,7 @@ const chaptersByModule = {
                     id: "2.1",
                     name: "Notice Drafting (Notices for meetings, academic notices, to be displayed on notice boards, company notices, housing notices)Agenda Drafting",
                 },
-               
+
             ],
         },
 
@@ -829,8 +906,8 @@ const chaptersByModule = {
                     id: "3.2",
                     name: "Editorial Letters",
                 },
-                
-               
+
+
             ],
         },
 
@@ -850,28 +927,17 @@ const chaptersByModule = {
             subtopics: [
                 {
                     id: "1.1",
-                    name: "Concept of Communication",
+                    name: "Concept of Communication, Meaning and Definitions & Elements of Communication (sender, message, channel, receiver, feedback process ) Importance of feedback",
                 },
                 {
                     id: "1.2",
-                    name: "Meaning and Definitions",
+                    name: "Cycle of communication & Need & Importance in the Business world",
                 },
                 {
                     id: "1.3",
-                    name: "Elements of Communication (sender, message, channel, receiver, feedback process ) Importance of feedback",
-                },
-                {
-                    id: "1.4",
-                    name: "Cycle of communication",
-                },
-                {
-                    id: "1.5",
-                    name: "Need & Importance in the Business world",
-                },
-                {
-                    id: "1.6",
                     name: "Principles of Effective Communication",
                 },
+                
             ],
         },
 
@@ -884,24 +950,13 @@ const chaptersByModule = {
             subtopics: [
                 {
                     id: "2.1",
-                    name: "Information",
+                    name: "Information, Education & Training",
                 },
                 {
                     id: "2.2",
-                    name: "Education & Training",
+                    name: "Motivation & Raising Morale, Orders & Instructions And Persuasion & Suggestion",
                 },
-                {
-                    id: "2.3",
-                    name: "Motivation & Raising Morale",
-                },
-                {
-                    id: "2.4",
-                    name: "Orders & Instructions",
-                },
-                {
-                    id: "2.5",
-                    name: "Persuasion & Suggestion",
-                },
+                
             ],
         },
 
@@ -927,7 +982,270 @@ const chaptersByModule = {
 
         {
             id: 4,
-            title: "",
+            title: "Methods Of Communication",
+            content: "Communication can be broadly categorized into two main types: verbal and non-verbal. Verbal communication involves the use of spoken or written words to convey information, ideas, and emotions. This form of communication is direct and explicit, allowing for precise expression and clarification. Non-verbal communication, on the other hand, encompasses gestures, facial expressions, body language, tone of voice, and other subtle cues that convey meaning without the use of words. It often complements verbal communication and can provide additional context or emotional nuance to a message. Understanding and effectively utilizing both verbal and non-verbal communication is essential for successful interpersonal interactions and effective conveyance of information in various social and professional settings.",
+            subtopics: [
+                {
+                    id: "4.1",
+                    name: "Verbal Communication",
+                },
+                {
+                    id: "4.2",
+                    name: "Non - Verbal Communincation",
+                },
+                
+            ],
+        },
+
+        //end of chapter 4 
+
+        {
+            id: 5,
+            title: "Barriers Of Communication",
+            content: "Communication barriers can be categorized into five main types. First, physical barriers encompass environmental factors that hinder effective communication, such as distance, noise, or poor lighting. Second, language barriers arise when individuals do not share a common linguistic framework, leading to misunderstandings or misinterpretations. Third, socio-psychological barriers stem from personal attributes, attitudes, or emotions that can impede communication, including prejudices, ego, or anxiety. Fourth, semantic barriers involve differences in the meaning of words or phrases, which can lead to confusion or miscommunication. Finally, cross-cultural barriers result from disparities in cultural norms, values, and practices, making it challenging for individuals from different backgrounds to convey messages accurately. Understanding and addressing these various barriers is crucial for fostering effective communication in diverse contexts.",
+            subtopics: [
+                {
+                    id: "5.1",
+                    name: "Physical barrier and Language Barrier",
+                },
+                {
+                    id: "5.2",
+                    name: "Socio-psychological barrier and Semantic barrier",
+                },
+                {
+                    id: "5.3",
+                    name: "Cross Cultural barrier",
+                },
+
+            ],
+        },
+
+
+        //end of chapter 5 
+
+
+        {
+            id: 6,
+            title: "Social Etiquettes",
+            content: "Social Etiquettes encompass a set of culturally defined behaviors that govern interactions in various social settings. Within a business context, adhering to business ethics is crucial, emphasizing integrity, transparency, and fair practices. Proper telephone etiquette ensures clear and effective communication, including courteous greetings and active listening. Table manners play a pivotal role in formal settings, emphasizing proper utensil use, posture, and respectful engagement. Small talk serves as a valuable icebreaker, facilitating initial interactions and establishing rapport. Punctuality, a universal sign of respect for others' time, is a fundamental aspect of social etiquette, demonstrating professionalism and consideration for others' schedules.",
+            subtopics: [
+                {
+                    id: "6.1",
+                    name: "Business Ethics, Telephone Etiquettes & Table manners",
+                },
+                {
+                    id: "6.2",
+                    name: "Small Talk & Punctuality",
+                },
+            ],
+        },
+
+        //end of chapter 6
+
+        {
+            id: 7,
+            title: "Defining and Describing Objects",
+            content: "Defining objects involves outlining their appearance and primary utility. This encompasses physical attributes and practical functions that collectively characterize the entity. Describing objects goes beyond surface-level features, delving into their purpose, constituent components, operational functions, and potential applications. This comprehensive breakdown provides a holistic understanding of an object's role and potential uses. Additionally, giving instructions concerning objects entails providing precise and directive guidance on how to interact with or manipulate them effectively, ensuring optimal functionality and intended outcomes. This process facilitates seamless integration into various contexts and maximizes the object's utility.",
+            subtopics: [
+                {
+                    id: "7.1",
+                    name: "Defining objects- Appearance, its use",
+                },
+                {
+                    id: "7.2",
+                    name: "Describing objects- purpose, components, functions and applications Giving instructions- precise and directive",
+                },
+            ],
+        },
+
+        //end of chapter 7
+
+        
+
+        //end of chapter 10
+    ], //end of subject 7
+
+
+    8: [
+
+        {
+            id: 1,
+            title: "Logarithm and Antilogirthm",
+            content: "Logarithms are mathematical functions that provide a way to solve exponential equations. They serve as the inverse operation to exponentiation, helping to find the exponent in an exponential expression. Two common types are natural logarithms (base e, denoted as ln) and common logarithms (base 10, denoted as log). Logarithms obey specific rules, such as the product rule (log(ab) = log(a) + log(b)) and the quotient rule (log(a/b) = log(a) - log(b)). Moreover, they exhibit a relationship where natural logarithms are equivalent to common logarithms multiplied by a constant (ln(x) = 2.303 * log(x)). Logarithms are particularly useful for solving equations involving exponential functions, allowing one to find the value of x by taking the logarithm of the equation. This topic also ties into the broader understanding of laws of indices, offering valuable tools for manipulating exponential and logarithmic expressions.",
+            subtopics: [
+                {
+                    id: "1.1",
+                    name: "Revision of Laws of indices. Definition of logarithm (Natural and Common logarithm). ? Rules of logarithm (product, quotient, log of power). Relation between natural log and common log.",
+                },
+                {
+                    id: "1.2",
+                    name: " Equations solvable by log (find x by taking log of equation).",
+                },
+            ],
+        },
+        //END OF CHAPTER 1
+
+        {
+            id: 2,
+            title: "Complex Numbers",
+            content: "Complex numbers are mathematical entities that extend the real number system to include a new element, denoted as i, where i is defined as the square root of -1. This imaginative construct resolves the limitation of real numbers in solving equations like x^2 + 1 = 0. The powers of i cycle through four values: 1, i, -1, and -i. The conjugate of a complex number involves changing the sign of the imaginary part. The algebraic operations with complex numbers, such as addition, subtraction, multiplication, and division, follow straightforward rules. Geometrically, complex numbers are represented on the Argand diagram, where the real part is plotted on the x-axis and the imaginary part on the y-axis. The polar form of a complex number expresses it in terms of its magnitude and argument, while the exponential form involves the exponential function raised to the power of the complex argument, combining the concept of real exponentiation with complex numbers. These various representations are indispensable tools in solving diverse mathematical problems and have wide applications in fields like engineering, physics, and signal processing.",
+            subtopics: [
+                {
+                    id: "2.1",
+                    name: "Introduction, Definition of complex numbers. Powers of i, conjugate of a complex number, Algebra of complex numbers Geometrical representation of complex numbers -Argand diagram.",
+                },
+                {
+                    id: "2.2",
+                    name: "Polar form, exponential form of a complex number",
+                },
+            ],
+        },
+        //END OF CHAPTER 2 
+
+        {
+            id: 3,
+            title: "Binomial Theorem",
+            content: "The Binomial Theorem is a fundamental concept in algebra that deals with the expansion of expressions raised to a power. It provides a systematic way to expand expressions of the form (a + b)^n, where 'n' is a positive integer. This theorem encompasses various key components, including basic permutations and combinations, allowing for the determination of the coefficients of specific terms in the expanded form. The theorem also introduces concepts like the general term, which allows us to find the coefficient of any term, and the middle term in cases of even exponents. Additionally, it addresses terms that are independent of the variable 'x' and elucidates their significance. Furthermore, the Binomial Theorem has practical applications, particularly in approximation methods, offering a valuable tool for calculating approximate values of complex expressions.",
+            subtopics: [
+                {
+                    id: "3.1",
+                    name: "Basic Permutations, Combinations and Statement of Binomial theorem for positive integral index, Binomial expansion",
+                },
+                {
+                    id: "3.2",
+                    name: "General term, middle term",
+                },
+                {
+                    id: "3.3",
+                    name: "Coefficient of x^r ,terms independent of x",
+                },
+                {
+                    id: "3.4",
+                    name: "Use of Theorem for approximate values",
+                },
+            ],
+        },
+        //END OF CHAPTER 3
+
+        {
+            id: 4,
+            title: "Partial Fractions",
+            content: "Partial fractions refer to a method used in mathematics to break down a complex rational function into simpler, more manageable components. This process is particularly useful when dealing with integration problems. To resolve a fraction into partial fractions, one first classifies the fraction as either proper or improper. A proper fraction is one where the degree of the numerator is less than the degree of the denominator, whereas an improper fraction has a higher degree in the numerator. The next step involves factoring the denominator into its constituent factors, which can be of different types: linear and non-repeated factors, linear repeated factors, and non-repeated irreducible quadratics. Once the factors are identified, the original fraction is decomposed into a sum of simpler fractions, each having one of these factors in the denominator. This allows for easier manipulation and integration of the original expression.",
+            subtopics: [
+                {
+                    id: "4.1",
+                    name: "Definition of proper, improper fraction and partial fraction. To resolve fraction into partial fractions with denominator containing factors which are Linear and non repeated factors, Lineat repeated Factors",
+                },
+                {
+                    id: "4.2",
+                    name: "Non repeated irreducible , quadratic and mixed type",
+                },
+            ],
+        },
+        //END OF CHAPTER 4
+
+        {
+            id: 5,
+            title: "Basic Trignometry",
+            content: "Basic trigonometry involves understanding the trigonometric ratios of any angle, both from precomputed tables and without reliance on them. This includes comprehending the interplay between degrees and radians, as well as determining the length of an arc. Additionally, it encompasses discerning the relationships between these ratios and applying fundamental identities to solve trigonometric equations. Allied angles, which are angles that share the same trigonometric ratios, play a crucial role in simplifying calculations. Furthermore, mastering the concept of compound angles, where two or more angles are combined in an operation, is essential for more complex trigonometric applications. These elements form the foundational knowledge required for further exploration of trigonometry.",
+            subtopics: [
+                {
+                    id: "5.1",
+                    name: "Trigonometric ratios of any angle (from table and without table). Relation between degree and radian, length of an arc.",
+                },
+                {
+                    id: "5.2",
+                    name: "Radian, length of an arc. ? Relation between ratios, and examples based on fundamental identities.",
+                },
+                {
+                    id: "5.3",
+                    name: "Allied angles and compound angles",
+                },
+            ],
+        },
+        //END OF CHAPTER 5
+
+
+        {
+            id: 6,
+            title: "Vector Algebra",
+            content: "Vector algebra deals with both scalars and vectors, which are quantities with magnitude and direction. It encompasses various fundamental concepts including the geometrical representation of vectors, often expressed as arrows in space, and position vectors that describe the location of a point relative to a chosen origin. The algebraic operations on vectors include addition and subtraction, as well as scalar multiplication, which involves multiplying a vector by a scalar (a real number). Components and the resolution of vectors allow for the decomposition of vectors into their constituent parts along specified axes, while unit vectors are vectors with a magnitude of 1 that indicate direction. Vectors that lie on the same line are collinear, and those within the same plane are coplanar. Scalar products, or dot products, are operations that yield a scalar from two vectors, while vector products, or cross products, result in a vector. The scalar triple product combines three vectors, providing a scalar value. These operations find extensive applications in physics, such as calculating work done, moment of force, and determining volumes of parallelepipeds and tetrahedrons. This foundation in vector algebra forms a crucial underpinning for various fields of mathematics and physics. ",
+            subtopics: [
+                {
+                    id: "6.1",
+                    name: "Scalars and vectors quantities, Geometrical representation, position vectors. Algebra of vectors (addition, subtraction of vectors, scalar multiplication). Components, resolution of vectors, unit vector, collinear and coplanar vectors",
+                },
+                {
+                    id: "6.2",
+                    name: "Coplanar vectors Scalar(dot) and vector(cross) products of two vectors, scalar triple product and their properties",
+                },
+                {
+                    id: "6.3",
+                    name: "Triple product and their properties Application and physical interpretation: work done, moment of force, volume of parallelepiped / tetrahedron.",
+                },
+            ],
+        },
+        //END OF CHAPTER 6
+    ],
+    //END OF SUBJECT 8
+
+
+    9: [
+
+        {
+            id: 1,
+            title: "Chapter 2 (Module 2)",
+            content: "Content for Chapter 2 (Module 2)",
+            subtopics: [
+                {
+                    id: "1.1",
+                    name: "Subtopic 1",
+                },
+                {
+                    id: "1.2",
+                    name: "Subtopic 2",
+                },
+            ],
+        },
+        //END OF CHAPTER 1
+
+        {
+            id: 2,
+            title: "Chapter 2 (Module 2)",
+            content: "Content for Chapter 2 (Module 2)",
+            subtopics: [
+                {
+                    id: "2.1",
+                    name: "Subtopic 1",
+                },
+                {
+                    id: "2.2",
+                    name: "Subtopic 2",
+                },
+            ],
+        },
+        //END OF CHAPTER 2 
+
+        {
+            id: 3,
+            title: "Chapter 2 (Module 2)",
+            content: "Content for Chapter 2 (Module 2)",
+            subtopics: [
+                {
+                    id: "3.1",
+                    name: "Subtopic 1",
+                },
+                {
+                    id: "3.2",
+                    name: "Subtopic 2",
+                },
+            ],
+        },
+        //END OF CHAPTER 3
+
+        {
+            id: 4,
+            title: "Chapter 2 (Module 2)",
             content: "Content for Chapter 2 (Module 2)",
             subtopics: [
                 {
@@ -940,8 +1258,7 @@ const chaptersByModule = {
                 },
             ],
         },
-
-        //end of chapter 4 
+        //END OF CHAPTER 4
 
         {
             id: 5,
@@ -958,9 +1275,7 @@ const chaptersByModule = {
                 },
             ],
         },
-
-
-        //end of chapter 5 
+        //END OF CHAPTER 5
 
 
         {
@@ -978,85 +1293,153 @@ const chaptersByModule = {
                 },
             ],
         },
-
-        //end of chapter 6
-
-        {
-            id: 7,
-            title: "Chapter 2 (Module 2)",
-            content: "Content for Chapter 2 (Module 2)",
-            subtopics: [
-                {
-                    id: "7.1",
-                    name: "Subtopic 1",
-                },
-                {
-                    id: "7.2",
-                    name: "Subtopic 2",
-                },
-            ],
-        },
-
-        //end of chapter 7
-
-        {
-            id: 8,
-            title: "Chapter 2 (Module 2)",
-            content: "Content for Chapter 2 (Module 2)",
-            subtopics: [
-                {
-                    id: "8.1",
-                    name: "Subtopic 1",
-                },
-                {
-                    id: "8.2",
-                    name: "Subtopic 2",
-                },
-            ],
-        },
-
-        //end of chapter 8 
-
-        {
-            id: 9,
-            title: "Chapter 2 (Module 2)",
-            content: "Content for Chapter 2 (Module 2)",
-            subtopics: [
-                {
-                    id: "9.1",
-                    name: "Subtopic 1",
-                },
-                {
-                    id: "9.2",
-                    name: "Subtopic 2",
-                },
-            ],
-        },
-
-
-        //end of chapter 9 
-        {
-            id: 10,
-            title: "Chapter 2 (Module 2)",
-            content: "Content for Chapter 2 (Module 2)",
-            subtopics: [
-                {
-                    id: "10.1",
-                    name: "Subtopic 1",
-                },
-                {
-                    id: "10.2",
-                    name: "Subtopic 2",
-                },
-            ],
-        },
-
-
-        //end of chapter 10
+        //END OF CHAPTER 6
     ],
+    //END OF SUBJECT 9
 
 
-    //end of subject 7
+    10: [
+
+        {
+            id: 1,
+            title: "Introduction to electronic component",
+            content: "Electronic components are fundamental elements in the construction of various electronic devices and circuits. To work effectively with electronic equipment and tools like CROs (Cathode Ray Oscilloscopes), function generators, and power supplies, it is crucial to understand their functions and applications. Components can be broadly categorized into passive and active types. Passive components, such as resistors, capacitors, and inductors, regulate the flow of electric current without amplification. Active components, on the other hand, include diodes, LEDs, seven-segment displays, and bipolar junction transistors (BJTs), which have the ability to amplify or control the flow of current. Additionally, proficiency in using a soldering iron and desoldering techniques is imperative for assembling and repairing electronic circuits. This skill ensures secure and reliable connections between components, which is essential for the proper functioning of electronic systems.",
+            subtopics: [
+                {
+                    id: "1.1",
+                    name: "Use of electronic equipment and electronic tools- CRO, Function generator,Power Supply",
+                },
+                {
+                    id: "1.2",
+                    name: "Identification of different types of components 1) Passive component-resister, capacitor, inductors 2) Active component- Diode, LED, Seven segment display, BJT",
+                },
+                {
+                    id: "1.3",
+                    name: "Use of soldering iron and desoldering technique",
+                },
+            ],
+        },
+        //END OF CHAPTER 1
+
+        {
+            id: 2,
+            title: "Introduction to computer system",
+            content: "A computer system is characterized by its distinct features, including its generation and classification. Generations of computers have evolved from early vacuum tube models to modern integrated circuits, each phase marking significant advancements in technology. Computers are classified into microcomputers, minicomputers, mainframe computers, and supercomputers, each tailored for specific computational needs. The block diagram of a computer system outlines its essential components: the input/output unit, responsible for communication with external devices; the central processing unit (CPU), comprising the arithmetic logic unit (ALU), control unit, and various registers; and the memory unit, which encompasses cache, primary, and secondary memory. Furthermore, computer hardware encompasses components like storage devices, including magnetic and optical options, as well as various input/output devices such as monitors, keyboards, pointing devices, scanners, and printers. Complementing the hardware is the software, divided into system software like operating systems and application software including word processors, spreadsheets, image processors, and accounting programs. Understanding these fundamental aspects provides a comprehensive grasp of computer systems and their integral components.",
+            subtopics: [
+                {
+                    id: "2.1",
+                    name: "Introduction to computer system- Characteristics of computer system, Generation of computers, Classification of computers- Microcomputers, minicomputers, Mainframe computers, Super computers",
+                },
+                {
+                    id: "2.2",
+                    name: "Block diagram of computer system- Input/output unit, CPU, Memory unit",
+                },
+                {
+                    id: "2.3",
+                    name: "Basics of computer hardware and software-1) Memory(cache memory, primary memory, secondary memory) 2) Central processing unit(ALU, control unit, register) 3)I/O devices(monitor, keyboard,pointing devices, light pen, touch screen ,printers, scanner) 4) Storage devices(magnetic and optical storage devices) 5) System software(operating system, device drivers, system utilities, programming languages, linker, loader) 6) Application software(word processing, spread sheet, image processing, accounting software)",
+                },
+            ],
+        },
+        //END OF CHAPTER 2 
+
+        {
+            id: 3,
+            title: "Word Procesing",
+            content: "Word processing involves the creation and manipulation of text documents using specialized software known as a word processor. In this context, a word processor encompasses a range of functions crucial for document creation and formatting. This includes the selection of font types, sizes, effects, and colors, as well as the modification of text case. Additionally, users can perform operations like opening, saving, and closing documents. The editing capabilities are extensive, allowing for tasks such as inserting and deleting text, as well as selecting, undoing, and redoing actions. Functions like cut, copy, and paste are integral for moving text within a document, and drag and drop functionality aids in repositioning. Further options for formatting involve alignment and style adjustments at both the text and paragraph levels. Document layout features encompass settings for page margins, orientation, and headers and footers, while indentation options provide further control over document structure. Moreover, users can incorporate various elements like page numbers, date-time stamps, symbols, images, and page breaks. The word processor also allows for the creation and manipulation of tables, including functions like inserting or deleting rows and columns, applying borders and shading, resizing cells, formatting the table layout, and merging or splitting cells as needed. This comprehensive suite of tools empowers users to effectively and efficiently create, edit, and format text documents.",
+            subtopics: [
+                {
+                    id: "3.1",
+                    name: "Overview of word processor- introduction to word processor, font-types, size, effects, colors, case change, opening, saving and closing word document.",
+                },
+                {
+                    id: "3.2",
+                    name: "Editing text document-insert and delete text, select, undo and redo operation, cut ,copy and paste command, drag and drop to move text, format and align text, formatting paragraph, line and paragraph spacing, find and replace operation, bullets and numbers in list border, shading, page setting, spelling and grammar checking",
+                },
+                {
+                    id: "3.3",
+                    name: "Layout of document- page margin,page orientation, headers and footers, indentations",
+                },
+                {
+                    id: "3.4",
+                    name: "Inserting element and table in word document- insert page numbers, date-time, symbols, picture, page break, insert table, insert row and column, border and shading, resize table cell, format table, align text in   table, merge and split cell",
+                },
+            ],
+        },
+        //END OF CHAPTER 3
+
+        {
+            id: 4,
+            title: "Presentation tool",
+            content: "A presentation tool is a software application that enables users to create visually engaging presentations. It encompasses various functionalities such as 4.1, allowing users to create new slides, change slide layouts, arrange slide sequences, and apply fonts, colors, effects, backgrounds, and themes. Additionally, users can incorporate media elements like images, audio, video, animations, and speaker notes using 4.2, and have the capability to edit and format graphical objects, group them on a slide, and apply animations to enhance visual appeal. The tool also supports the insertion and formatting of tables within slides (4.3) as well as the integration and modification of charts (4.4), providing a comprehensive platform for crafting informative and visually appealing presentations.",
+            subtopics: [
+                {
+                    id: "4.1",
+                    name: "Creating presentation- creating new slide ,changing a slide layout, arranging slide sequence, applying font, colors, effects, background,  theme.",
+                },
+                {
+                    id: "4.2",
+                    name: "Inserting media, image/audio/video/animation/speaker note ,edit and format graphical object, group objects on a slide, applying animation to graphics object, adding styles to text in presentation",
+                },
+                {
+                    id: "4.3",
+                    name: "Insert and format table in slide",
+                },
+                {
+                    id: "4.4",
+                    name: "Insert and modify chart in slide",
+                },
+            ],
+        },
+        //END OF CHAPTER 4
+
+        {
+            id: 5,
+            title: "Spreadsheet",
+            content: "A spreadsheet is a powerful tool for organizing and analyzing data, and it encompasses several key functions. In the realm of creating worksheets, users can effortlessly generate, open, save, and delete worksheets, providing a flexible canvas for data manipulation. Moving on to editing capabilities, one can insert rows and columns, add or remove data, and apply various formatting options to enhance the visual appeal and clarity of the content. This includes copying and pasting commands, as well as employing the find and replace function for efficient data management. Additionally, applying formulas is a critical aspect, allowing users to perform calculations by creating, copying, and utilizing built-in functions. These formulas can incorporate conditions for specific data handling, and further extend to tasks like sorting and filtering. Users can also integrate visual aids by inserting charts, with options to modify and fine-tune their appearance. Beyond this, formatting extends to individual cells and entire worksheets, encompassing features like font selection, color schemes, alignment, borders, shading, and even the inclusion of headers, footers, and page breaks. Finally, the spreadsheet offers a suite of printing options, encompassing print area customization, margins adjustment, header and footer inclusion, and various other page setup preferences for optimal document output.",
+            subtopics: [
+                {
+                    id: "5.1",
+                    name: "Creating worksheet- create, open, save, delete worksheet",
+                },
+                {
+                    id: "5.2",
+                    name: "Editing worksheet- insert row and column, insert/delete data, format row and column, copy and paste command, find and replace operation",
+                },
+                {
+                    id: "5.3",
+                    name: "Applying formula- creating formula, copying formula, use of in-built function, applying condition ,data sorting, data filtering",
+                },
+                {
+                    id: "5.4",
+                    name: "Inserting charts and formatting cell and worksheet- creating and editing charts and applying different chart options, use of different types of charts-bar, pie, line charts, setting cell type, font, color, alignment, borders and shading, formatting sheet using headers and footers,margin, page orientation, background, page break",
+                },
+                {
+                    id: "5.5",
+                    name: "Printing worksheets, print area, margins, header, footer and other page setup options.",
+                },
+            ],
+        },
+        //END OF CHAPTER 5
+
+
+        {
+            id: 6,
+            title: "Internet and ICT tool",
+            content: "The Internet, comprising interconnected global networks, facilitates the exchange of information through various tools and technologies. At its core, it operates on a client-server model, where web servers store and serve web pages, while web clients, typically browsers, access and display these pages. Web browsers are fundamental applications that allow users to navigate the Internet, with configurable settings to enhance user experience. One crucial aspect is search content, enabling users to locate specific information efficiently. Additionally, Internet-based communication tools like email and chat play a pivotal role in enabling real-time conversations and information sharing. Platforms such as Google Forms offer structured data collection, while Google Classroom serves as an educational platform for teachers and students to interact and collaborate. WordPress, on the other hand, is a widely-used content management system, empowering users to create and manage websites with ease. These ICT tools collectively form the backbone of modern digital communication and information dissemination.",
+            subtopics: [
+                {
+                    id: "6.1",
+                    name: "Introduction to Internet ,web server, web client, web browser, basic settings of web browser, search content",
+                },
+                {
+                    id: "6.2",
+                    name: "Email, chat, google form, google classroom, word press",
+                },
+            ],
+        },
+        //END OF CHAPTER 6
+    ],
+    //end of subject 10!
 };
 
 module.exports = chaptersByModule; 
