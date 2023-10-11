@@ -3,9 +3,9 @@ const router = express.Router();
 const verifyToken = require("../middlewares/Token");
 const User = require("../models/User");
 const validateProgressInput = require("../validation/progress");
+const getChaptersForModule = require("../middlewares/getChaptersForModule");
 // Import the validation function
 // Route to fetch progress for a user
-
 router.get("/", verifyToken, async (req, res) => {
   try {
     // Retrieve the user's ID from the token
@@ -63,14 +63,22 @@ router.get("/:moduleId/:chapterId", verifyToken, async (req, res) => {
 
     // Find the user by ID
     const user = await User.findById(userId);
-
+    // Retrieve all chapters in the module (You should fetch chapters based on moduleId)
+    const moduleChapters = await getChaptersForModule(moduleId);
     // Check if there is progress data for the given module and chapter IDs
     const chapterProgress = user.progress.filter(
       (progress) =>
         progress.moduleId === moduleId && progress.chapterId === chapterId
     );
 
-    res.json({ success: true, chapterProgress });
+    // Calculate the number of completed chapters
+    const completedChapters = chapterProgress.length;
+
+    // Calculate the overall progress percentage
+    const overallProgress = (completedChapters / moduleChapters.length) * 100;
+
+
+    res.json({ success: true, chapterProgress, overallProgress });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Failed to fetch progress" });
