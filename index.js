@@ -21,7 +21,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(passport.initialize());
 require("./config/passport")(passport); 
-
   //Routes 
   const users = require("./routes/User");
   app.use("/users",users);
@@ -32,7 +31,11 @@ require("./config/passport")(passport);
   const progress = require("./routes/Prog")
   app.use("/progress",progress);
 
+  const videos = require("./routes/Video")
+  app.use("/videos",videos)
+
 app.get('/', async (req, res) => {
+    
     res.status(200).json({
       message: 'Hello from EduSYnC ',
     });
