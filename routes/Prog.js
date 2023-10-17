@@ -5,6 +5,7 @@ const User = require("../models/User");
 const validateProgressInput = require("../validation/progress");
 const getChaptersForModule = require("../middlewares/getChaptersForModule");
 const { getSubchaptersForChapter, getSubchapterLengthForChapter } = require("../middlewares/getSubChaptersForChapter");
+const modulesArray = require("../utils/Modules")
 // Import the validation function
 // Route to fetch progress for a user
 router.get("/", verifyToken, async (req, res) => {
@@ -20,13 +21,36 @@ router.get("/", verifyToken, async (req, res) => {
       return res.status(404).json({ error: "User not found" });
     }
 
-    // Return the user's progress data
-    res.json({ progress: user.progress });
+    // Fetch all modules (You should fetch modules here)
+    const allModules = modulesArray // Replace with the function to fetch all modules
+
+    // Create an array to store progress percentages for all modules
+    const moduleProgressPercentages = [];
+
+    // Loop through all modules and calculate the progress percentage for each
+    for (const module of allModules) {
+      const moduleId = module.id;
+      const moduleProgress = user.progress.filter(
+        (progress) => progress.moduleId === moduleId
+      );
+
+      const totalChapterCount = module.chapters.length;
+
+      // Calculate the progress percentage for the module
+      const moduleProgressPercentage =
+        (moduleProgress.length / totalChapterCount) * 100;
+
+      // Store the progress percentage in the array
+      moduleProgressPercentages.push({ moduleId, moduleProgressPercentage });
+    }
+
+    res.json({ success: true, moduleProgressPercentages });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Failed to fetch progress" });
   }
 });
+
 
 // Route to get progress based on module ID
 router.get("/:moduleId", verifyToken, async (req, res) => {
