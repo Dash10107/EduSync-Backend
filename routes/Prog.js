@@ -5,6 +5,7 @@ const User = require("../models/User");
 const validateProgressInput = require("../validation/progress");
 const getChaptersForModule = require("../middlewares/getChaptersForModule");
 const { getSubchaptersForChapter, getSubchapterLengthForChapter } = require("../middlewares/getSubChaptersForChapter");
+const chaptersByModule=require("../utils/Chapters")
 // Import the validation function
 // Route to fetch progress for a user
 router.get("/", verifyToken, async (req, res) => {
@@ -12,6 +13,17 @@ router.get("/", verifyToken, async (req, res) => {
     // Retrieve the user's ID from the token
     const userId = req.user.id;
 
+    // Define a variable to store the total subchapter count
+    let totalSubchapters = 0;
+
+    // Loop through all subjects and chapters to count subchapters
+    for (const subjectId in chaptersByModule) {
+      const chapters = chaptersByModule[subjectId];
+      for (const chapter of chapters) {
+        totalSubchapters += chapter.subtopics.length;
+      }
+    }
+    console.log(totalSubchapters);
     // Find the user by ID
     const user = await User.findById(userId);
 
@@ -20,13 +32,17 @@ router.get("/", verifyToken, async (req, res) => {
       return res.status(404).json({ error: "User not found" });
     }
 
-    // Return the user's progress data
-    res.json({ progress: user.progress });
+    // Calculate progress percentage based on user's progress data
+    const progressPercentage = (user.progress.length / totalSubchapters) * 100;
+
+    // Return the progress percentage
+    res.json({ progressPercentage });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Failed to fetch progress" });
   }
 });
+
 
 // Route to get progress based on module ID
 router.get("/:moduleId", verifyToken, async (req, res) => {
@@ -62,7 +78,7 @@ router.get("/:moduleId", verifyToken, async (req, res) => {
         chapterId,
         moduleId
       );
-
+        
       // Calculate the progress percentage
       const progressPercentage =
         (chapterProgress.length / totalSubchapterLength) * 100;
