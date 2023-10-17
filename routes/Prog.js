@@ -5,14 +5,23 @@ const User = require("../models/User");
 const validateProgressInput = require("../validation/progress");
 const getChaptersForModule = require("../middlewares/getChaptersForModule");
 const { getSubchaptersForChapter, getSubchapterLengthForChapter } = require("../middlewares/getSubChaptersForChapter");
+const chaptersByModule = require("../utils/Chapters");
 const modulesArray = require("../utils/Modules")
-// Import the validation function
-// Route to fetch progress for a user
 router.get("/", verifyToken, async (req, res) => {
   try {
     // Retrieve the user's ID from the token
     const userId = req.user.id;
 
+    // Define a variable to store the total subchapter count
+    let totalSubchapters = 0;
+
+    // Loop through all subjects and chapters to count subchapters
+    for (const subjectId in chaptersByModule) {
+      const chapters = chaptersByModule[subjectId];
+      for (const chapter of chapters) {
+        totalSubchapters += chapter.subtopics.length;
+      }
+    }
     // Find the user by ID
     const user = await User.findById(userId);
 
@@ -21,35 +30,89 @@ router.get("/", verifyToken, async (req, res) => {
       return res.status(404).json({ error: "User not found" });
     }
 
-    // Fetch all modules (You should fetch modules here)
-    const allModules = modulesArray // Replace with the function to fetch all modules
-
-    // Create an array to store progress percentages for all modules
-    const moduleProgressPercentages = [];
-
-    // Loop through all modules and calculate the progress percentage for each
-    for (const module of allModules) {
-      const moduleId = module.id;
-      const moduleProgress = user.progress.filter(
-        (progress) => progress.moduleId === moduleId
-      );
-
-      const totalChapterCount = module.chapters.length;
-
-      // Calculate the progress percentage for the module
-      const moduleProgressPercentage =
-        (moduleProgress.length / totalChapterCount) * 100;
-
-      // Store the progress percentage in the array
-      moduleProgressPercentages.push({ moduleId, moduleProgressPercentage });
-    }
-
-    res.json({ success: true, moduleProgressPercentages });
+    // Calculate progress percentage based on user's progress data
+    const progressPercentage = (user.progress.length / totalSubchapters) * 100;
+    // Return the progress percentage
+    res.json({ progressPercentage,progressData:user.progress });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Failed to fetch progress" });
   }
 });
+
+router.get("/modules", verifyToken, async (req, res) => {
+  try {
+    // Retrieve the user's ID from the token
+    const userId = req.user.id;
+
+    // Find the user by ID
+    const user = await User.findById(userId);
+
+    // Calculate progress for all modules
+    const allModulesProgress = [];
+    const allModuleIds = modulesArray.map((module) => module.id);
+
+    // Iterate through all modules
+    for (const module of modulesArray) {
+      const moduleId = module.id;
+      const moduleName = module.name; // Retrieve the module name
+
+      // Find chapters for the current module (You should fetch chapters based on moduleId)
+      const moduleChapters = await getChaptersForModule(moduleId);
+
+      // Filter progress data for the current module
+      const moduleProgress = user.progress.filter(
+        (progress) => progress.moduleId === moduleId
+      );
+
+      // Calculate progress percentage for each chapter within the module
+      const progressPercentages = moduleChapters.map((chapter) => {
+        const chapterId = chapter.id;
+        const chapterProgress = moduleProgress.filter(
+          (progress) => progress.chapterId === chapterId
+        );
+
+        const totalSubchapterLength = getSubchapterLengthForChapter(
+          chapterId,
+          moduleId
+        );
+
+        const progressPercentage =
+          (chapterProgress.length / totalSubchapterLength) * 100;
+
+        return { chapterId, progressPercentage };
+      });
+
+      // Calculate the moduleProgressPercentage
+      const moduleProgressPercentage =
+        progressPercentages.reduce(
+          (sum, chapter) => sum + chapter.progressPercentage,
+          0
+        ) / progressPercentages.length;
+
+      // Add module progress to the result
+      allModulesProgress.push({
+        moduleId,
+        moduleName, // Include the module name
+        progressPercentages,
+        moduleProgressPercentage,
+      });
+    }
+
+    res.json({ success: true, allModulesProgress });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Failed to fetch progress" });
+  }
+});
+
+
+
+
+
+
+
+
 
 
 // Route to get progress based on module ID
