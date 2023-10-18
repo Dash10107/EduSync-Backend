@@ -104,36 +104,44 @@ router.post("/addChapter/:moduleId", verifyToken, adminCheck, async (req, res) =
 
  
   
-
   router.post('/addQuestions/:moduleId/:chapterId/:subChapterId', verifyToken, adminCheck, (req, res) => {
-     // Get the module ID from the route parameters
-     const moduleId = parseInt(req.params.moduleId);
+    // Get the module ID from the route parameters
+    const moduleId = parseInt(req.params.moduleId);
     const { chapterId, subChapterId } = req.params;
     const { questions } = req.body;
-    const questionsData = module <= 5 ? questions : questions2;
-    const filePath = module <= 5 ? "./utils/Questions.js" : "./utils/Questions2.js";
-
+    const questionsData = moduleId <= 5 ? questions : questions2;
+    const filePath = moduleId <= 5 ? "./utils/Questions.js" : "./utils/Questions2.js";
+  
     if (!questions || !Array.isArray(questions)) {
-        return res.status(400).json({ error: 'Invalid questions data' });
+      return res.status(400).json({ error: 'Invalid questions data' });
     }
-
+  
+    // Check if questionsData and its nested objects exist
+    if (!questionsData[moduleId]) {
+      questionsData[moduleId] = {};
+    }
+    if (!questionsData[moduleId][chapterId]) {
+      questionsData[moduleId][chapterId] = {};
+    }
+  
     // Check if questions already exist for the specified combination
-    if (questionsData[moduleId][chapterId][subChapterId].length > 0) {
-        return res.status(400).json({ error: 'Questions already exist for this combination' });
+    if (!questionsData[moduleId][chapterId][subChapterId]) {
+      // If it doesn't exist, you can set it directly to the new questions
+      questionsData[moduleId][chapterId][subChapterId] = questions;
+    } else if (questionsData[moduleId][chapterId][subChapterId].length > 0) {
+      return res.status(400).json({ error: 'Questions already exist for this combination' });
     }
-
-    // Set the new questions for the specified subchapter
-    questionsData[moduleId][chapterId][subChapterId] = questions;
-
+  
     // Save the updated questionsData to a file
     fs.writeFile(filePath, `module.exports = ${JSON.stringify(questionsData, null, 2)}`, (err) => {
-        if (err) {
-            return res.status(500).json({ error: 'Failed to write data to file' });
-        }
-
-        return res.json({ message: 'Questions added successfully' });
+      if (err) {
+        return res.status(500).json({ error: 'Failed to write data to file' });
+      }
+  
+      return res.json({ message: 'Questions added successfully' });
     });
-});
+  });
+  
 
   
 
