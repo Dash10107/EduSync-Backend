@@ -34,6 +34,9 @@ require("./config/passport")(passport);
   const videos = require("./routes/Video")
   app.use("/videos",videos)
 
+  const admin = require("./routes/Admin");
+  app.use("/admin",admin);
+
 app.get('/', async (req, res) => {
     
     res.status(200).json({

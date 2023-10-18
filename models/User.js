@@ -18,6 +18,10 @@ const UserSchema = new Schema({
         type:Date,
         default:Date.now
     },
+    isAdmin: {
+        type: Boolean,
+        default: false, // Default to false for regular users
+      },
     progress: [ProgressSchema], 
 });
 
