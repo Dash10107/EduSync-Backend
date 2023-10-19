@@ -90,6 +90,42 @@ router.get("/questions/:moduleId/:chapterId/:subchapterId", verifyToken, (req, r
   });
 });
 
+// Route to get subchapters for a specific module and chapter
+router.get("/subchapters/:moduleId/:chapterId", verifyToken, (req, res) => {
+// Retrieve the moduleId from the request parameters
+const moduleId = parseInt(req.params.moduleId); // Convert to number
+const chapterId = parseInt(req.params.chapterId);
+// Check if the conversion to number was successful
+if (isNaN(moduleId)) {
+  return res.status(400).json({ error: "Invalid moduleId" });
+}
+if (isNaN(chapterId)) {
+  return res.status(400).json({ error: "Invalid chapterId" });
+}
+// Find the module by ID from the modules data
+const module = modules.find((module) => module.id === moduleId);
+
+if (!module) {
+  return res.status(404).json({ error: "Module not found" });
+}
+
+// Fetch chapters associated with the module using the getChaptersForModule function
+const moduleChapters = getChaptersForModule(moduleId); // Implement this function
+
+  // Find the chapter by ID from the module
+  const chapter = moduleChapters.find((chapter) => chapter.id === chapterId);
+
+  if (!chapter) {
+    return res.status(404).json({ error: "Chapter not found" });
+  }
+
+  // Fetch the subchapters associated with the chapter
+  const subchapters = chapter.subtopics;
+
+  res.json({
+    subchapters,
+  });
+});
 
 
 module.exports = router;

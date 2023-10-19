@@ -149,13 +149,13 @@ router.get("/:moduleId", verifyToken, async (req, res) => {
         chapterId,
         moduleId
       );
-
+      const chapterName = chapter.title; // Assuming chapter title contains the chapter name
       // Calculate the progress percentage
       const progressPercentage =
         (chapterProgress.length / totalSubchapterLength) * 100;
 
       // Store the progress percentage in the array
-      progressPercentages.push({ chapterId, progressPercentage });
+      progressPercentages.push({ chapterId,chapterName, progressPercentage });
     }
 
     res.json({ success: true, progressPercentages });
