@@ -1191,23 +1191,4 @@ module.exports = {
       ]
     }
   ],
-  "11": [
-    {
-      "id": 1,
-      "title": "Introduction to PHP",
-      "content": "PHP is a popular server-side scripting language used for web development. It is known for its simplicity and the ability to embed it within HTML code. PHP is open-source and widely used for building dynamic and interactive web applications.",
-      "subtopics": [
-        {
-          "id": "1.1",
-          "name": "What is PHP?",
-          "description": "An introduction to PHP and its uses in web development."
-        },
-        {
-          "id": "1.2",
-          "name": "Getting Started",
-          "description": "How to set up a PHP development environment and write your first PHP script."
-        }
-      ]
-    }
-  ]
 };

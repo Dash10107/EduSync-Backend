@@ -20238,43 +20238,4 @@ module.exports = {
       ]
     }
   },
-  "11": {
-    "1": {
-      "1.1": [
-        {
-          "id": 1,
-          "question": "What does PHP stand for?",
-          "options": [
-            "a) Personal Home Page",
-            "b) PHP: Hypertext Preprocessor",
-            "c) Private Hyperlink Processor",
-            "d) Public Home Page"
-          ],
-          "correctAnswer": "b) PHP: Hypertext Preprocessor"
-        },
-        {
-          "id": 2,
-          "question": "Which of the following is true about PHP?",
-          "options": [
-            "a) It is a server-side scripting language",
-            "b) It can be embedded into HTML",
-            "c) It's open-source",
-            "d) All of the above"
-          ],
-          "correctAnswer": "d) All of the above"
-        },
-        {
-          "id": 3,
-          "question": "What is the file extension for PHP files?",
-          "options": [
-            "a) .html",
-            "b) .php",
-            "c) .script",
-            "d) .web"
-          ],
-          "correctAnswer": "b) .php"
-        }
-      ]
-    }
-  }
 }

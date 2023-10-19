@@ -48,10 +48,5 @@ module.exports = [
     "id": 10,
     "name": "Computer and Information & Communication Technology",
     "description": "Computer and Information & Communication Technology (ICT) are the backbone of our digital world. Computers are like smart machines that can follow instructions and process information lightning-fast. They help us with tasks ranging from writing documents and playing games to complex calculations and data analysis. ICT, on the other hand, includes all the tools and systems that allow us to communicate and share information, like smartphones, the internet, and social media. Together, computers and ICT have revolutionized how we work, learn, connect, and entertain ourselves in the modern age, making the world a smaller and more interconnected place."
-  },
-  {
-    "id": 11,
-    "name": "PHP",
-    "description": "PHP is a widely-used open-source scripting language used for web development. It allows developers to create dynamic web pages and applications by embedding code within HTML. PHP is known for its ease of use and integration with databases, making it a popular choice for building web applications, content management systems (CMS), and e-commerce platforms."
-  },
+  }
 ];

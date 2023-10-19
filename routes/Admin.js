@@ -142,8 +142,173 @@ router.post("/addChapter/:moduleId", verifyToken, adminCheck, async (req, res) =
     });
   });
   
+//updation
+
+// Example route for updating module details (only accessible by admins)
+router.put("/updateModule/:moduleId", verifyToken, adminCheck, async (req, res) => {
+  try {
+    // Get the module ID from the route parameters
+    const moduleId = parseInt(req.params.moduleId);
+
+    // Find the module with the specified moduleId
+    const moduleToUpdate = modules.find((module) => module.id === moduleId);
+
+    if (!moduleToUpdate) {
+      return res.status(404).json({ error: 'Module not found' });
+    }
+
+    // Get the updated module data from the request body
+    const { name, description } = req.body;
+
+    // Update the module details
+    moduleToUpdate.name = name;
+    moduleToUpdate.description = description;
+
+    // Write the updated modules data back to the file
+    const modulesDataPath = path.resolve(__dirname, '../utils/Modules.js');
+    const modulesDataContent = `module.exports = ${JSON.stringify(modules, null, 2)};\n`;
+    fs.writeFileSync(modulesDataPath, modulesDataContent);
+
+    res.status(200).json({ success: true, message: 'Module details updated successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Failed to update module details' });
+  }
+});
 
   
+// Example route for updating chapters
+router.put("/updateChapter/:moduleId/:chapterId", verifyToken, adminCheck, (req, res) => {
+  const moduleId = parseInt(req.params.moduleId);
+  const chapterId = parseInt(req.params.chapterId) - 1;
+  const updatedChapter = req.body;
+
+  if (!chaptersByModule[moduleId] || !chaptersByModule[moduleId][chapterId]) {
+    // If the module or chapter doesn't exist, return an error.
+    return res.status(404).json({ error: 'Module or chapter not found' });
+  }
+
+  // Update the chapter details
+  chaptersByModule[moduleId][chapterId] = { ...chaptersByModule[moduleId][chapterId], ...updatedChapter };
+
+  // Save the updated chapters data back to the file
+  const chaptersDataPath = path.resolve(__dirname, '../utils/Chapters.js');
+  const chaptersDataContent = `module.exports = ${JSON.stringify(chaptersByModule, null, 2)};\n`;
+  fs.writeFileSync(chaptersDataPath, chaptersDataContent);
+
+  return res.json({ success: true, message: 'Chapter updated successfully' });
+});
+
+
+router.put('/updateQuestions/:moduleId/:chapterId/:subChapterId', verifyToken, adminCheck, (req, res) => {
+  const { moduleId, chapterId, subChapterId } = req.params;
+  const { updatedQuestions } = req.body;
+
+  // Check if the questions array for the specified combination exists
+  const questionsData = moduleId <= 5 ? questions : questions2;
+
+  if (!questionsData[moduleId] || !questionsData[moduleId][chapterId] || !questionsData[moduleId][chapterId][subChapterId]) {
+      return res.status(404).json({ error: 'Module, chapter, or subchapter not found' });
+  }
+
+  // Update the questions for the specified subchapter
+  questionsData[moduleId][chapterId][subChapterId] = updatedQuestions;
+
+  // Save the updated questionsData to the file
+  const filePath = moduleId <= 5 ? "./utils/Questions.js" : "./utils/Questions2.js";
+  fs.writeFile(filePath, `module.exports = ${JSON.stringify(questionsData, null, 2)}`, (err) => {
+      if (err) {
+          return res.status(500).json({ error: 'Failed to write data to file' });
+      }
+      return res.json({ message: 'Questions updated successfully' });
+  });
+});
+
+
+//deletion
+// Route to delete a module by ID (accessible by admins)
+router.delete("/deleteModule/:moduleId", verifyToken, adminCheck, (req, res) => {
+  // Get the module ID from the route parameters
+  const moduleId = parseInt(req.params.moduleId);
+
+  // Find the index of the module with the specified ID
+  const moduleIndex = modules.findIndex((module) => module.id === moduleId);
+
+  // Check if the module exists
+  if (moduleIndex === -1) {
+    return res.status(404).json({ error: 'Module not found' });
+  }
+
+  // Remove the module from the modules array
+  modules.splice(moduleIndex, 1);
+
+  // Write the updated modules data back to the file
+  const modulesDataPath = path.resolve(__dirname, '../utils/Modules.js');
+  const modulesDataContent = `module.exports = ${JSON.stringify(modules, null, 2)};\n`;
+  fs.writeFileSync(modulesDataPath, modulesDataContent);
+
+  return res.json({ message: 'Module deleted successfully' });
+});
+
+
+// Route to delete a chapter by ID (accessible by admins)
+router.delete("/deleteChapter/:moduleId/:chapterId", verifyToken, adminCheck, (req, res) => {
+  // Get the module ID and chapter ID from the route parameters
+  const moduleId = parseInt(req.params.moduleId);
+  const chapterId = parseInt(req.params.chapterId);
+
+  // Check if the module exists
+  if (!chaptersByModule[moduleId]) {
+    return res.status(404).json({ error: 'Module not found' });
+  }
+
+  // Find the index of the chapter with the specified ID
+  const chapterIndex = chaptersByModule[moduleId].findIndex((chapter) => chapter.id === chapterId);
+
+  // Check if the chapter exists
+  if (chapterIndex === -1) {
+    return res.status(404).json({ error: 'Chapter not found' });
+  }
+
+  // Remove the chapter from the chapters array
+  chaptersByModule[moduleId].splice(chapterIndex, 1);
+
+  // Write the updated chapters data back to the file
+  const chaptersDataPath = path.resolve(__dirname, '../utils/Chapters.js');
+  const chaptersDataContent = `module.exports = ${JSON.stringify(chaptersByModule, null, 2)};\n`;
+  fs.writeFileSync(chaptersDataPath, chaptersDataContent);
+
+  return res.json({ message: 'Chapter deleted successfully' });
+});
+
+// Route to delete questions by IDs (accessible by admins)
+router.delete("/deleteQuestions/:moduleId/:chapterId/:subChapterId", verifyToken, adminCheck, (req, res) => {
+  // Get the module ID, chapter ID, and subChapter ID from the route parameters
+  const moduleId = parseInt(req.params.moduleId);
+  const chapterId = parseInt(req.params.chapterId);
+  const subChapterId = req.params.subChapterId;
+
+  // Check if the module exists
+  const questionsData = moduleId <= 5 ? questions : questions2;
+
+  if (!questionsData[moduleId] || !questionsData[moduleId][chapterId] || !questionsData[moduleId][chapterId][subChapterId]) {
+    return res.status(404).json({ error: 'Module, chapter, or subchapter not found' });
+  }
+
+  // Remove the questions from the specified subchapter
+  questionsData[moduleId][chapterId][subChapterId] = [];
+
+  // Write the updated questions data back to the file
+  const filePath = moduleId <= 5 ? './utils/Questions.js' : './utils/Questions2.js';
+  fs.writeFile(filePath, `module.exports = ${JSON.stringify(questionsData, null, 2)}`, (err) => {
+    if (err) {
+      return res.status(500).json({ error: 'Failed to write data to file' });
+    }
+
+    return res.json({ message: 'Questions deleted successfully' });
+  });
+});
+
 
 
 module.exports = router;
