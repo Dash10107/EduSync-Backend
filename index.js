@@ -49,7 +49,7 @@ app.get('/', async (req, res) => {
   }
     const startServer = async () => {
       try {
-        //connection();
+     connection();
         app.listen(port, () => console.log(`Server started on port ${port}`));
       } catch (error) {
         console.log(error);
