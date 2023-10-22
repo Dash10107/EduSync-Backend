@@ -140,21 +140,21 @@ router.post("/:moduleName/:chapterName", async (req, res) => {
 
                     const files = chapterFilesResponse.data.files;
                     console.log(`Files in the ${chapterName} folder:`);
-                    files.forEach((file) => {
-                      console.log(file.name);
-                    });
+                    // files.forEach((file) => {
+                    //   console.log(file.name);
+                    // });
 
                     if (files.length) {
                       // Construct an array of video URLs using the file ids.
                       const videoUrls = files.map((file) => `https://drive.google.com/uc?id=${file.id}`);
 
                       console.log(`Found videos in the ${chapterName} folder:`);
-                      files.forEach((file) => {
-                        console.log(file.name);
-                      });
+                      // files.forEach((file) => {
+                      //   console.log(file.name);
+                      // });
 
                       // Send the array of video URLs in the response.
-                      res.json({ videoUrls });
+                      res.json({files, videoUrls });
                     } else {
                       console.log(`No videos found in the ${chapterName} folder.`);
                       res.status(404).json({ error: `No videos found in the ${chapterName} folder.` });
