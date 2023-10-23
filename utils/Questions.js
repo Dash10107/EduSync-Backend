@@ -727,12 +727,12 @@ const questions = {
           id: 18,
           question: "Which escape sequence is used for a newline character in C?",
           options: [
-            "A) ",
+            "A) \\n",
             "B) \\t",
             "C) \\r",
             "D) \\a"
           ],
-          correctAnswer: "A) "
+          correctAnswer: "A) \\n"
         },
         {
           id: 19,
@@ -1310,7 +1310,7 @@ const questions = {
         },
         {
           id: 18,
-          question: "What is the output of the following code snippet?  char ch = 'A';  putchar(ch);",
+          question: "What is the output of the following code ?  char ch = 'A';  putchar(ch);",
           options: [
             "A) A",
             "B) 65",
@@ -1484,7 +1484,7 @@ const questions = {
         },
         {
           id: 4,
-          question: "What will be the result of the following expression?  int a = 5, b = 7, c = 5; int result = (a == c) && (b > a);",
+          question: "What will be the result of the following expression?  code int a = 5, b = 7, c = 5; int result = (a == c) && (b > a);",
           options: ["a) 0", "b) 1", "c) Compiler Error", "d) Undefined"],
           correctAnswer: "b) 1",
         },
@@ -1496,7 +1496,7 @@ const questions = {
         },
         {
           id: 6,
-          question: "What is the output of the following code snippet?  int x = 5, y = 3, z = 7;  int result = (x > y) || (y < z);",
+          question: "What is the output of the following code ?  int x = 5, y = 3, z = 7;  int result = (x > y) || (y < z);",
           options: ["a) 0", "b) 1", "c) Compiler Error", "d) Undefined"],
           correctAnswer: "b) 1",
         },
@@ -1508,7 +1508,7 @@ const questions = {
         },
         {
           id: 8,
-          question: "What will be the value of result after the following code is executed?  int num = 10, result;  result = num++ + 5;",
+          question: "What will be the value of result after the following code?  int num = 10, result;  result = num++ + 5;",
           options: ["a) 15", "b) 16", "c) 10", "d) 11"],
           correctAnswer: "c) 10",
         },
@@ -1580,7 +1580,7 @@ const questions = {
         },
         {
           id: 20,
-          question: "What will be the result of the following expression?  int a = 5, b = 3, c = 7;  int result = a + b * c - a;",
+          question: "What will be the result of the following code?  int a = 5, b = 3, c = 7;  int result = a + b * c - a;",
           options: ["a) 19", "b) 15", "c) 20", "d) 17"],
           correctAnswer: "a) 19",
         },
@@ -1592,7 +1592,7 @@ const questions = {
         },
         {
           id: 22,
-          question: "What will be the result of the following expression?  int a = 5, b = 3, c = 7;  int result = (a > b) && (b < c);",
+          question: "What will be the result of the following code?  int a = 5, b = 3, c = 7;  int result = (a > b) && (b < c);",
           options: ["a) 0", "b) 1", "c) Compiler Error", "d) Undefined"],
           correctAnswer: "b) 1",
         },
@@ -1610,7 +1610,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What will be the value of result after the following code is executed?  int num = 7, result;  result = --num + 5;",
+          question: "What will be the value of result after the following code ?  int num = 7, result;  result = --num + 5;",
           options: ["a) 11", "b) 12", "c) 10", "d) 9"],
           correctAnswer: "c) 10",
         },
@@ -1640,7 +1640,7 @@ const questions = {
         },
         {
           id: 30,
-          question: "Identify the error in the following code:  int x;  scanf('%d', x);",
+          question: "Identify the error in the following code :  int x;  scanf('%d', x);",
           options: ["a) Missing ampersand (&) before x", "b) Missing format specifier", "c) Uninitialized variable", "d) No error"],
           correctAnswer: "a) Missing ampersand (&) before x",
         },
@@ -1650,7 +1650,7 @@ const questions = {
       "3.2": [
         {
           id: 1,
-          question: "What is the result of the following code?  int x = 5;  x = x + 2;",
+          question: "What is the result of the following code ?  int x = 5;  x = x + 2;",
           options: ["a) x is assigned the value 7", "b) x is assigned the value 5", "c) Compilation Error", "d) Undefined behavior"],
           correctAnswer: "a) x is assigned the value 7",
         },
@@ -1662,7 +1662,7 @@ const questions = {
         },
         {
           id: 3,
-          question: "What is the value of y after the following code is executed?  int x = 10, y = 3;  y += x;",
+          question: "What is the value of y after the following code ?  int x = 10, y = 3;  y += x;",
           options: ["a) 13", "b) 30", "c) 7", "d) 10"],
           correctAnswer: "a) 13",
         },
@@ -1674,7 +1674,7 @@ const questions = {
         },
         {
           id: 5,
-          question: "What will be the value of result after the following code is executed  int a = 5, b = 3, result;  result = (a > b) ? a : b;",
+          question: "What will be the value of result after the following code int a = 5, b = 3, result;  result = (a > b) ? a : b;",
           options: ["a) 5", "b) 3", "c) 8", "d) 0"],
           correctAnswer: "a) 5",
         },
@@ -1692,7 +1692,7 @@ const questions = {
         },
         {
           id: 8,
-          question: "What is the result of the following expression?  int x = 5, y = 3;  int result = x | y;",
+          question: "What is the result of the following code ?  int x = 5, y = 3;  int result = x | y;",
           options: ["a) 7", "b) 6", "c) 1", "d) 8"],
           correctAnswer: "a) 7",
         },
@@ -1728,19 +1728,19 @@ const questions = {
         },
         {
           id: 14,
-          question: "Identify the error in the following code:  int y = x;",
+          question: "Identify the error in the following code :  int y = x;",
           options: ["a) Missing data type", "b) Missing semicolon", "c) Uninitialized variable", "d) No error"],
           correctAnswer: "c) Uninitialized variable",
         },
         {
           id: 15,
-          question: "Identify the error in the following code:  int x, y;  x = y = 5;",
+          question: "Identify the error in the following code :  int x, y;  x = y = 5;",
           options: ["a) Missing data type", "b) Missing semicolon", "c) Missing assignment operator", "d) No error"],
           correctAnswer: "a) Missing data type",
         },
         {
           id: 16,
-          question: "What will be the value of z after the following code is executed?  int x = 7, y = 3, z = 5;  z *= x + y;",
+          question: "What will be the value of z after the following code ?  int x = 7, y = 3, z = 5;  z *= x + y;",
           options: ["a) 35", "b) 50", "c) 56", "d) 25"],
           correctAnswer: "a) 35",
         },
@@ -1752,19 +1752,19 @@ const questions = {
         },
         {
           id: 18,
-          question: "What is the value of num after the following code is executed?  int num = 10;  num -= 3;",
+          question: "What is the value of num after the following code ?  int num = 10;  num -= 3;",
           options: ["a) 10", "b) 7", "c) 3", "d) 13"],
           correctAnswer: "b) 7",
         },
         {
           id: 19,
-          question: "What will be the value of result after the following code is executed?  int a = 8, b = 5, result;  result = (a < b) ? a : b;",
+          question: "What will be the value of result after the following code ?  int a = 8, b = 5, result;  result = (a < b) ? a : b;",
           options: ["a) 8", "b) 5", "c) 0", "d) 13"],
           correctAnswer: "b) 5",
         },
         {
           id: 20,
-          question: "In a conditional expression x ? y : z, what happens if x is non-zero?",
+          question: "In a conditional expression code  x ? y : z, what happens if x is non-zero?",
           options: ["a) y is evaluated", "b) z is evaluated", "c) Both y and z are evaluated", "d) Error occurs"],
           correctAnswer: "a) y is evaluated",
         },
@@ -1776,7 +1776,7 @@ const questions = {
         },
         {
           id: 22,
-          question: "What will be the result of the following expression?  int x = 7, y = 3;  int result = x & y;",
+          question: "What will be the result of the following code ?  int x = 7, y = 3;  int result = x & y;",
           options: ["a) 3", "b) 5", "c) 7", "d) 1"],
           correctAnswer: "a) 3",
         },
@@ -1788,7 +1788,7 @@ const questions = {
         },
         {
           id: 24,
-          question: "What is the result of the following code?  int a = 5, b = 9, c = 12;  c ^= a;  c ^= b;",
+          question: "What is the result of the following code ?  int a = 5, b = 9, c = 12;  c ^= a;  c ^= b;",
           options: ["a) 0", "b) 4", "c) 5", "d) 12"],
           correctAnswer: "a) 0",
         },
@@ -1812,13 +1812,13 @@ const questions = {
         },
         {
           id: 28,
-          question: "Identify the error in the following code:  int x = 10;  x == 5;",
+          question: "Identify the error in the following code :  int x = 10;  x == 5;",
           options: ["a) Missing assignment operator", "b) Missing semicolon", "c) Incorrect comparison operator", "d) No error"],
           correctAnswer: "b) Missing semicolon",
         },
         {
           id: 29,
-          question: "Identify the error in the following code:  int a, b;  a b = 5;",
+          question: "Identify the error in the following code :  int a, b;  a b = 5;",
           options: ["a) Missing data type for b", "b) Missing semicolon after a", "c) Missing comma after a", "d) No error"],
           correctAnswer: "a) Missing data type for b",
         },
@@ -1926,7 +1926,7 @@ const questions = {
         },
         {
           id: 13,
-          question: "Identify the error in the following code:  float result = 5 / 2;",
+          question: "Identify the error in the following code :  float result = 5 / 2;",
           options: [
             "a) Missing semicolon",
             "b) Incorrect data type for result",
@@ -1937,7 +1937,7 @@ const questions = {
         },
         {
           id: 14,
-          question: "Identify the error in the following code:  int x = 5.6;",
+          question: "Identify the error in the following code :  int x = 5.6;",
           options: [
             "a) Missing semicolon",
             "b) Incorrect assignment",
@@ -1948,7 +1948,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "Identify the error in the following code:  float a = 5;",
+          question: "Identify the error in the following code :  float a = 5;",
           options: [
             "a) Missing semicolon",
             "b) Incorrect assignment",
@@ -1965,7 +1965,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "What will be the output of the following code?  int a = 5, b = 3;  printf(\"%d %d\", --a, b++);",
+          question: "What will be the output of the following code ?  int a = 5, b = 3;  printf(\"%d %d\", --a, b++);",
           options: ["a) 4 3", "b) 5 3", "c) 4 4", "d) 5 4"],
           correctAnswer: "a) 4 3",
         },
@@ -1977,7 +1977,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "What is the result of the following expression?  float a = 2.5int b = 3;  int result = a * b;",
+          question: "What is the result of the following code ?  float a = 2.5int b = 3;  int result = a * b;",
           options: ["a) 7.5", "b) 7", "c) 8", "d) 6"],
           correctAnswer: "b) 7",
         },
@@ -2005,7 +2005,7 @@ const questions = {
         },
         {
           id: 22,
-          question: "What is the result of the following expression?  int a = 4, b = 2, c = 3;  int result = (a + b) / c;",
+          question: "What is the result of the following code ?  int a = 4, b = 2, c = 3;  int result = (a + b) / c;",
           options: ["a) 2", "b) 3", "c) 4", "d) 5"],
           correctAnswer: "b) 3",
         },
@@ -2015,9 +2015,9 @@ const questions = {
           options: ["a) +", "b) *", "c) ()", "d) /"],
           correctAnswer: "a) +",
         },
-        {
+        { 
           id: 24,
-          question: "What is the value of result after the following code is executed?  int a = 5, b = 2, c = 3;  int result = a + b * c - b;",
+          question: "What is the value of result after the following code ?  int a = 5, b = 2, c = 3;  int result = a + b * c - b;",
           options: ["a) 7", "b) 10", "c) 11", "d) 13"],
           correctAnswer: "b) 10",
         },
@@ -2046,7 +2046,7 @@ const questions = {
         },
         {
           id: 28,
-          question: "Identify the error in the following code:  int x = 5.6;",
+          question: "Identify the error in the following code :  int x = 5.6;",
           options: [
             "a) Missing semicolon",
             "b) Incorrect assignment",
@@ -2057,7 +2057,7 @@ const questions = {
         },
         {
           id: 29,
-          question: "Identify the error in the following code:  int a = 5;  float b = 3  float result = a + b;",
+          question: "Identify the error in the following code :  int a = 5;  float b = 3  float result = a + b;",
           options: [
             "a) Missing semicolon",
             "b) Incorrect data type for result",
@@ -2068,7 +2068,7 @@ const questions = {
         },
         {
           id: 30,
-          question: "Identify the error in the following code:  float a = 5;  int b = 3;  int result = a * b;",
+          question: "Identify the error in the following code :  float a = 5;  int b = 3;  int result = a * b;",
           options: [
             "a) Missing semicolon",
             "b) Incorrect data type for result",
@@ -2089,327 +2089,328 @@ const questions = {
     4: {
       // Chapter 1
 
-      "4.1": [
+      "4.1":[
+
         {
-          "id": 1,
-          "question": "What is the purpose of the if statement in C?",
-          "options": [
-            "A) To execute a block of code only if a condition is true",
-            "B) To execute a block of code only if a condition is false",
-            "C) To execute a block of code unconditionally",
-            "D) To execute a block of code repeatedly"
+          id: 1,
+          question: "What is the purpose of the if statement in C?",
+          options: [
+          "A) To execute a block of code only if a condition is true",
+          "B) To execute a block of code only if a condition is false",
+          "C) To execute a block of code unconditionally",
+          "D) To execute a block of code repeatedly"
           ],
-          "correctAnswer": "A) To execute a block of code only if a condition is true"
-        },
-        {
-          "id": 2,
-          "question": "In C, which keyword is used to define an alternative condition when the first condition is false?",
-          "options": [
-            "A) else",
-            "B) elseif",
-            "C) switch",
-            "D) unless"
+          correctAnswer: "A) To execute a block of code only if a condition is true",
+          },
+          {
+          id: 2,
+          question: "In C, which keyword is used to define an alternative condition when the first condition is false?",
+          options: [
+          "A) else",
+          "B) elseif",
+          "C) switch",
+          "D) unless"
           ],
-          "correctAnswer": "A) else"
-        },
-        {
-          "id": 3,
-          "question": "Which control structure allows you to choose between multiple conditions, each leading to a different set of statements?",
-          "options": [
-            "A) switch",
-            "B) if else",
-            "C) else if ladder",
-            "D) nested if"
+          correctAnswer: "A) else",
+          },
+          {
+          id: 3,
+          question: "Which control structure allows you to choose between multiple conditions, each leading to a different set of statements?",
+          options: [
+          "A) switch",
+          "B) if else",
+          "C) else if ladder",
+          "D) nested if"
           ],
-          "correctAnswer": "A) switch"
-        },
-        {
-          "id": 4,
-          "question": "What is the syntax for an else if statement in C?",
-          "options": [
-            "A) else if(condition)",
-            "B) else if condition",
-            "C) elseif(condition)",
-            "D) elseif condition"
+          correctAnswer: "A) switch",
+          },
+          {
+          id: 4,
+          question: "What is the syntax for an else if statement in C?",
+          options: [
+          "A) else if(condition)",
+          "B) else if condition",
+          "C) elseif(condition)",
+          "D) elseif condition"
           ],
-          "correctAnswer": "B) else if condition"
-        },
-        {
-          "id": 5,
-          "question": "When should you use a switch statement instead of multiple if else statements?",
-          "options": [
-            "A) When there are multiple conditions to check",
-            "B) When there is only one condition to check",
-            "C) When the conditions involve complex logic",
-            "D) When the conditions involve nested if statements"
+          correctAnswer: "B) else if condition",
+          },
+          {
+          id: 5,
+          question: "When should you use a switch statement instead of multiple if else statements?",
+          options: [
+          "A) When there are multiple conditions to check",
+          "B) When there is only one condition to check",
+          "C) When the conditions involve complex logic",
+          "D) When the conditions involve nested if statements"
           ],
-          "correctAnswer": "A) When there are multiple conditions to check"
-        },
-        {
-          "id": 6,
-          "question": "In a switch statement, what is the purpose of the default case?",
-          "options": [
-            "A) It is executed when none of the other cases match",
-            "B) It is executed first, regardless of other conditions",
-            "C) It is used to define the initial value of the switch variable",
-            "D) It is used to terminate the switch statement"
+          correctAnswer: "A) When there are multiple conditions to check",
+          },
+          {
+          id: 6,
+          question: "In a switch statement, what is the purpose of the default case?",
+          options: [
+          "A) It is executed when none of the other cases match",
+          "B) It is executed first, regardless of other conditions",
+          "C) It is used to define the initial value of the switch variable",
+          "D) It is used to terminate the switch statement"
           ],
-          "correctAnswer": "A) It is executed when none of the other cases match"
-        },
-        {
-          "id": 7,
-          "question": "What is the output of the following codeint x = 5if (x > 3)    printf(\"x is greater than 3\")} else    printf(\"x is not greater than 3\")}",
-          "options": [
-            "A) x is greater than 3",
-            "B) x is not greater than 3",
-            "C) Error: Missing semicolon",
-            "D) Error: Invalid syntax"
+          correctAnswer: "A) It is executed when none of the other cases match",
+          },
+          {
+          id: 7,
+          question: "What is the output of the following code int x = 5if (x > 3) printf(\"x is greater than 3\")} else printf(\"x is not greater than 3\")}",
+          options: [
+          "A) x is greater than 3",
+          "B) x is not greater than 3",
+          "C) Error: Missing semicolon",
+          "D) Error: Invalid syntax"
           ],
-          "correctAnswer": "A) x is greater than 3"
-        },
-        {
-          "id": 8,
-          "question": "In a nested if statement, where is the inner if statement located?",
-          "options": [
-            "A) Inside the condition of the outer if statement",
-            "B) After the else block of the outer if statement",
-            "C) Before the else block of the outer if statement",
-            "D) Outside the outer if statement"
+          correctAnswer: "A) x is greater than 3",
+          },
+          {
+          id: 8,
+          question: "In a nested if statement, where is the inner if statement located?",
+          options: [
+          "A) Inside the condition of the outer if statement",
+          "B) After the else block of the outer if statement",
+          "C) Before the else block of the outer if statement",
+          "D) Outside the outer if statement"
           ],
-          "correctAnswer": "A) Inside the condition of the outer if statement"
-        },
-        {
-          "id": 9,
-          "question": "What happens if none of the conditions in a switch statement match the value of the switch variable?",
-          "options": [
-            "A) The program terminates abruptly",
-            "B) The default case (if present) is executed",
-            "C) The program continues without executing any case",
-            "D) A compilation error occurs"
+          correctAnswer: "A) Inside the condition of the outer if statement",
+          },
+          {
+          id: 9,
+          question: "What happens if none of the conditions in a switch statement match the value of the switch variable?",
+          options: [
+          "A) The program terminates abruptly",
+          "B) The default case (if present) is executed",
+          "C) The program continues without executing any case",
+          "D) A compilation error occurs"
           ],
-          "correctAnswer": "B) The default case (if present) is executed"
-        },
-        {
-          "id": 10,
-          "question": "What is the purpose of the break statement in a switch case?",
-          "options": [
-            "A) It exits the switch statement and continues with the next statement after the switch block",
-            "B) It continues with the next case without executing the remaining code in the current case",
-            "C) It restarts the current case from the beginning",
-            "D) It ends the program abruptly"
+          correctAnswer: "B) The default case (if present) is executed",
+          },
+          {
+          id: 10,
+          question: "What is the purpose of the break statement in a switch case?",
+          options: [
+          "A) It exits the switch statement and continues with the next statement after the switch block",
+          "B) It continues with the next case without executing the remaining code in the current case",
+          "C) It restarts the current case from the beginning",
+          "D) It ends the program abruptly"
           ],
-          "correctAnswer": "A) It exits the switch statement and continues with the next statement after the switch block"
-        },
-        {
-          "id": 11,
-          "question": "What is the output of the following codeint x = 10switch(x)    case 5       printf(\"x is 5\")       break   case 10       printf(\"x is 10\")       break   default       printf(\"x is neither 5 nor 10\")}",
-          "options": [
-            "A) x is 5",
-            "B) x is 10",
-            "C) x is neither 5 nor 10",
-            "D) Error: Missing semicolon"
+          correctAnswer: "A) It exits the switch statement and continues with the next statement after the switch block",
+          },
+          {
+          id: 11,
+          question: "What is the output of the following code int x = 10; switch(x) { case 5: printf(\"x is 5\"); break; case 10: printf(\"x is 10\"); break; default: printf(\"x is neither 5 nor 10\");}",
+          options: [
+          "A) x is 5",
+          "B) x is 10",
+          "C) x is neither 5 nor 10",
+          "D) Error: Missing semicolon"
           ],
-          "correctAnswer": "B) x is 10"
-        },
-        {
-          "id": 12,
-          "question": "In a switch statement, what happens if you forget to include a break statement after a case block?",
-          "options": [
-            "A) It causes a compilation error",
-            "B) It leads to a runtime error",
-            "C) It causes the program to execute the code in the next case block(s) as well",
-            "D) It has no effect on the program's execution"
+          correctAnswer: "B) x is 10",
+          },
+          {
+          id: 12,
+          question: "In a switch statement, what happens if you forget to include a break statement after a case block?",
+          options: [
+          "A) It causes a compilation error",
+          "B) It leads to a runtime error",
+          "C) It causes the program to execute the code in the next case block(s) as well",
+          "D) It has no effect on the program's execution"
           ],
-          "correctAnswer": "C) It causes the program to execute the code in the next case block(s) as well"
-        },
-        {
-          "id": 13,
-          "question": "Which of the following is a valid syntax for an else if ladder in CA) else if (condition1)    // code blocelse if (condition2)    // code blocB) else if (condition1)    // code blocelse    // code blocC) if (condition1)    // code blocif (condition2)    // code blocD) if (condition1)    // code blocelse if (condition2)    // code bloc}",
-          "options": [
-            "A) A) else if (condition1)    // code blocelse if (condition2)    // code bloc}",
-            "B) B) else if (condition1)    // code blocelse    // code bloc}",
-            "C) C) if (condition1)    // code blocif (condition2)    // code bloc}",
-            "D) D) if (condition1)    // code blocelse if (condition2)    // code bloc}"
+          correctAnswer: "C) It causes the program to execute the code in the next case block(s) as well",
+          },
+          {
+          id: 13,
+          question: "Which of the following is a valid syntax for an else if ladder in CA) else if (condition1) // code blocelse if (condition2) // code blocB) else if (condition1) // code blocelse // code blocC) if (condition1) // code blocif (condition2) // code blocD) if (condition1) // code blocelse if (condition2) // code bloc}",
+          options: [
+          "A) A) else if (condition1) // code blocelse if (condition2) // code bloc}",
+          "B) B) else if (condition1) // code blocelse // code bloc}",
+          "C) C) if (condition1) // code blocif (condition2) // code bloc}",
+          "D) D) if (condition1) // code blocelse if (condition2) // code bloc}"
           ],
-          "correctAnswer": "A) A) else if (condition1)    // code blocelse if (condition2)    // code bloc}"
-        },
-        {
-          "id": 14,
-          "question": "What is the output of the following codeint x = 7if (x > 5)    printf(\"x is greater than 5\")} else if (x < 5)    printf(\"x is less than 5\")} else    printf(\"x is equal to 5\")}",
-          "options": [
-            "A) x is greater than 5",
-            "B) x is less than 5",
-            "C) x is equal to 5",
-            "D) Error: Invalid syntax"
+          correctAnswer: "A) A) else if (condition1) // code blocelse if (condition2) // code bloc}",
+          },
+          {
+          id: 14,
+          question: "What is the output of the following code int x = 7; if (x > 5) { printf(\"x is greater than 5\");} else if (x < 5) {printf(\"x is less than 5\");} else printf(\"x is equal to 5\");}",
+          options: [
+          "A) x is greater than 5",
+          "B) x is less than 5",
+          "C) x is equal to 5",
+          "D) Error: Invalid syntax"
           ],
-          "correctAnswer": "A) x is greater than 5"
-        },
-        {
-          "id": 15,
-          "question": "When should you use a nested if statement?",
-          "options": [
-            "A) When you need to check multiple conditions, but only one condition is relevant at a time",
-            "B) When you need to execute a block of code repeatedly",
-            "C) When you want to avoid using else statements",
-            "D) When you want to execute a block of code regardless of any condition"
+          correctAnswer: "A) x is greater than 5",
+          },
+          {
+          id: 15,
+          question: "When should you use a nested if statement?",
+          options: [
+          "A) When you need to check multiple conditions, but only one condition is relevant at a time",
+          "B) When you need to execute a block of code repeatedly",
+          "C) When you want to avoid using else statements",
+          "D) When you want to execute a block of code regardless of any condition"
           ],
-          "correctAnswer": "A) When you need to check multiple conditions, but only one condition is relevant at a time"
-        },
-        {
-          "id": 16,
-          "question": "What is the output of the following codeint x = 4if (x > 3)    if (x < 5)        printf(\"x is between 3 and 5\")   } else    printf(\"x is not greater than 3\")}",
-          "options": [
-            "A) x is between 3 and 5",
-            "B) x is not greater than 3",
-            "C) Error: Missing semicolon",
-            "D) Error: Invalid syntax"
+          correctAnswer: "A) When you need to check multiple conditions, but only one condition is relevant at a time",
+          },
+          {
+          id: 16,
+          question: "What is the output of the following code int x = 4; if (x > 3) { if (x < 5) {printf(\"x is between 3 and 5\"); } else printf(\"x is not greater than 3\");}",
+          options: [
+          "A) x is between 3 and 5",
+          "B) x is not greater than 3",
+          "C) Error: Missing semicolon",
+          "D) Error: Invalid syntax"
           ],
-          "correctAnswer": "A) x is between 3 and 5"
-        },
-        {
-          "id": 17,
-          "question": "In a switch statement, can the cases contain multiple statements?",
-          "options": [
-            "A) Yes",
-            "B) No"
+          correctAnswer: "A) x is between 3 and 5",
+          },
+          {
+          id: 17,
+          question: "In a switch statement, can the cases contain multiple statements?",
+          options: [
+          "A) Yes",
+          "B) No"
           ],
-          "correctAnswer": "A) Yes"
-        },
-        {
-          "id": 18,
-          "question": "What is the output of the following codeint x = 2switch(x)    case 1       printf(\"x is 1\")       break   case 2       printf(\"x is 2\")       break   case 3       printf(\"x is 3\")       break   default       printf(\"x is not 1, 2, or 3\")}",
-          "options": [
-            "A) x is 1",
-            "B) x is 2",
-            "C) x is 3",
-            "D) x is not 1, 2, or 3"
+          correctAnswer: "A) Yes",
+          },
+          {
+          id: 18,
+          question: "What is the output of the following code int x = 2; switch(x) {case 1: printf(\"x is 1\"); break; case 2: printf(\"x is 2\"); break; case 3: printf(\"x is 3\"); break; default: printf(\"x is not 1, 2, or 3\");}",
+          options: [
+          "A) x is 1",
+          "B) x is 2",
+          "C) x is 3",
+          "D) x is not 1, 2, or 3"
           ],
-          "correctAnswer": "B) x is 2"
-        },
-        {
-          "id": 19,
-          "question": "What is the output of the following codeint x = 5switch(x)    case 1       printf(\"x is 1\")       break   case 2       printf(\"x is 2\")       break   default       printf(\"x is neither 1 nor 2\")}",
-          "options": [
-            "A) x is 1",
-            "B) x is 2",
-            "C) x is neither 1 nor 2",
-            "D) Error: Invalid syntax"
+          correctAnswer: "B) x is 2",
+          },
+          {
+          id: 19,
+          question: "What is the output of the following code int x = 5; switch(x) {case 1: printf(\"x is 1\"); break; case 2: printf(\"x is 2\"); break; default: printf(\"x is neither 1 nor 2\");}",
+          options: [
+          "A) x is 1",
+          "B) x is 2",
+          "C) x is neither 1 nor 2",
+          "D) Error: Invalid syntax"
           ],
-          "correctAnswer": "C) x is neither 1 nor 2"
-        },
-        {
-          "id": 20,
-          "question": "In a switch statement, can the switch variable be of type float?",
-          "options": [
-            "A) Yes",
-            "B) No"
+          correctAnswer: "C) x is neither 1 nor 2",
+          },
+          {
+          id: 20,
+          question: "In a switch statement, can the switch variable be of type float?",
+          options: [
+          "A) Yes",
+          "B) No"
           ],
-          "correctAnswer": "B) No"
-        },
-        {
-          "id": 21,
-          "question": "What is the output of the following codeint x = 2if (x < 5)    printf(\"x is less than 5\")} else if (x == 5)    printf(\"x is equal to 5\")} else    printf(\"x is greater than 5\")}",
-          "options": [
-            "A) x is less than 5",
-            "B) x is equal to 5",
-            "C) x is greater than 5",
-            "D) Error: Invalid syntax"
+          correctAnswer: "B) No",
+          },
+          {
+          id: 21,
+          question: "What is the output of the following code int x = 2; if (x < 5) {printf(\"x is less than 5\");} else if (x == 5) {printf(\"x is equal to 5\");} else printf(\"x is greater than 5\")}",
+          options: [
+          "A) x is less than 5",
+          "B) x is equal to 5",
+          "C) x is greater than 5",
+          "D) Error: Invalid syntax"
           ],
-          "correctAnswer": "A) x is less than 5"
-        },
-        {
-          "id": 22,
-          "question": "Which of the following is a valid syntax for an else statement in C?",
-          "options": [
-            "A) else    // code bloc}",
-            "B) if (condition)    // code bloc} else    // code bloc}",
-            "C) if (condition)    // code bloc} else if (condition)    // code bloc}",
-            "D) else if (condition)    // code bloc}"
+          correctAnswer: "A) x is less than 5",
+          },
+          {
+          id: 22,
+          question: "Which of the following is a valid syntax for an else statement in C?",
+          options: [
+          "A) else // code bloc}",
+          "B) if (condition) // code bloc} else // code bloc}",
+          "C) if (condition) // code bloc} else if (condition) // code bloc}",
+          "D) else if (condition) // code bloc}"
           ],
-          "correctAnswer": "A) else    // code bloc}"
-        },
-        {
-          "id": 23,
-          "question": "What is the output of the following codeint x = 6switch(x)    case 1       printf(\"x is 1\")       break   case 2       printf(\"x is 2\")       break   case 3       printf(\"x is 3\")       break   default       printf(\"x is not 1, 2, or 3\")}",
-          "options": [
-            "A) x is 1",
-            "B) x is 2",
-            "C) x is 3",
-            "D) x is not 1, 2, or 3"
+          correctAnswer: "A) else // code bloc}",
+          },
+          {
+          id: 23,
+          question: "What is the output of the following code int x = 6; switch(x) {case 1: printf(\"x is 1\"); break; case 2: printf(\"x is 2\"); break; case 3: printf(\"x is 3\"); break; default: printf(\"x is not 1, 2, or 3\");}",
+          options: [
+          "A) x is 1",
+          "B) x is 2",
+          "C) x is 3",
+          "D) x is not 1, 2, or 3"
           ],
-          "correctAnswer": "D) x is not 1, 2, or 3"
-        },
-        {
-          "id": 24,
-          "question": "In a switch statement, can cases have the same value?",
-          "options": [
-            "A) Yes",
-            "B) No"
+          correctAnswer: "D) x is not 1, 2, or 3",
+          },
+          {
+          id: 24,
+          question: "In a switch statement, can cases have the same value?",
+          options: [
+          "A) Yes",
+          "B) No"
           ],
-          "correctAnswer": "A) Yes"
-        },
-        {
-          "id": 25,
-          "question": "What is the output of the following codeint x = 8switch(x)    case 1       printf(\"x is 1\")       break   case 2       printf(\"x is 2\")       break   default       printf(\"x is not 1 or 2\")       break}",
-          "options": [
-            "A) x is 1",
-            "B) x is 2",
-            "C) x is not 1 or 2",
-            "D) Error: Missing semicolon"
+          correctAnswer: "A) Yes",
+          },
+          {
+          id: 25,
+          question: "What is the output of the following code int x = 8; switch(x)  {case 1: printf(\"x is 1\"); break; case 2: printf(\"x is 2\"); break; default: printf(\"x is not 1 or 2\"); break;}",
+          options: [
+          "A) x is 1",
+          "B) x is 2",
+          "C) x is not 1 or 2",
+          "D) Error: Missing semicolon"
           ],
-          "correctAnswer": "C) x is not 1 or 2"
-        },
-        {
-          "id": 26,
-          "question": "In a switch statement, can the switch variable be of type char?",
-          "options": [
-            "A) Yes",
-            "B) No"
+          correctAnswer: "C) x is not 1 or 2",
+          },
+          {
+          id: 26,
+          question: "In a switch statement, can the switch variable be of type char?",
+          options: [
+          "A) Yes",
+          "B) No"
           ],
-          "correctAnswer": "A) Yes"
-        },
-        {
-          "id": 27,
-          "question": "What is the output of the following codeint x = 2if (x > 5)    printf(\"x is greater than 5\")} else if (x == 5)    printf(\"x is equal to 5\")} else    printf(\"x is not greater than 5\")}",
-          "options": [
-            "A) x is greater than 5",
-            "B) x is equal to 5",
-            "C) x is not greater than 5",
-            "D) Error: Invalid syntax"
+          correctAnswer: "A) Yes",
+          },
+          {
+          id: 27,
+          question: "What is the output of the following code int x = 2; if (x > 5) {printf(\"x is greater than 5\");} else if (x == 5) {printf(\"x is equal to 5\");} else printf(\"x is not greater than 5\");}",
+          options: [
+          "A) x is greater than 5",
+          "B) x is equal to 5",
+          "C) x is not greater than 5",
+          "D) Error: Invalid syntax"
           ],
-          "correctAnswer": "C) x is not greater than 5"
-        },
-        {
-          "id": 28,
-          "question": "In a switch statement, can the cases have expressions instead of constants?",
-          "options": [
-            "A) Yes",
-            "B) No"
+          correctAnswer: "C) x is not greater than 5",
+          },
+          {
+          id: 28,
+          question: "In a switch statement, can the cases have expressions instead of constants?",
+          options: [
+          "A) Yes",
+          "B) No"
           ],
-          "correctAnswer": "A) Yes"
-        },
-        {
-          "id": 29,
-          "question": "What will x print in switch case if x = 7?",
-          "options": [
-            "A) x is 1",
-            "B) x is 2",
-            "C) x is 3",
-            "D) x is not 1, 2, or 3"
+          correctAnswer: "A) Yes",
+          },
+          {
+          id: 29,
+          question: "What will x print in switch case if x = 7?",
+          options: [
+          "A) x is 1",
+          "B) x is 2",
+          "C) x is 3",
+          "D) x is not 1, 2, or 3"
           ],
-          "correctAnswer": "D) x is not 1, 2, or 3"
-        },
-        {
-          "id": 30,
-          "question": "Which of the following is a valid syntax for an else if statement in CA) else if (condition)    // code blocB) else if condition    // code blocC) if else (condition)    // code blocD) if else condition    // code bloc}",
-          "options": [
-            "A) else if (condition)    // code bloc}",
-            "B) else if condition    // code bloc}",
-            "C) if else (condition)    // code bloc}",
-            "D) if else condition    // code bloc}"
+          correctAnswer: "D) x is not 1, 2, or 3",
+          },
+          {
+          id: 30,
+          question: "Which of the following is a valid syntax for an else if statement in CA) else if (condition) // code blocB) else if condition // code blocC) if else (condition) // code blocD) if else condition // code bloc}",
+          options: [
+          "A) else if (condition) // code bloc}",
+          "B) else if condition // code bloc}",
+          "C) if else (condition) // code bloc}",
+          "D) if else condition // code bloc}"
           ],
-          "correctAnswer": "A) else if (condition)    // code bloc}"
-        }
+          correctAnswer: "A) else if (condition) // code bloc}",
+          },
       ],
 
 
@@ -2460,7 +2461,7 @@ const questions = {
         },
         {
           id: 5,
-          question: "What is the output of the following codeint ifor(i=0; i<5; i++)    printf(\"%d \", i)}",
+          question: "What is the output of the following code int i; for(i=0; i<5; i++)    printf(\"%d \", i)}",
           options: [
             "A) 0 1 2 3 4",
             "B) 1 2 3 4 5",
@@ -2504,7 +2505,7 @@ const questions = {
         },
         {
           id: 9,
-          question: "What is the output of the following codeint i = 0while(i < 3)    printf(\"%d \", i)   i++}",
+          question: "What is the output of the following code int i = 0; while(i < 3){}    printf(\"%d \", i)   i++}",
           options: [
             "A) 0 1 2",
             "B) 1 2 3",
@@ -2526,7 +2527,7 @@ const questions = {
         },
         {
           id: 11,
-          question: "What is the output of the following codeint i, jfor(i=1; i<=3; i++)    for(j=1; j<=2; j++)        printf(\"%d%d \", i, j)   }",
+          question: "What is the output of the following code int i, j; for(i=1; i<=3; i++)    {for(j=1; j<=2; j++)   {     printf(\"%d%d \", i, j); }   }",
           options: [
             "A) 112233",
             "B) 121212",
@@ -2548,7 +2549,7 @@ const questions = {
         },
         {
           id: 13,
-          question: "What is the output of the following codeint ifor(i=0; i<5; i++)    if(i == 2       continue   printf(\"%d \", i)}",
+          question: "What is the output of the following code int i; for(i=0; i<5; i++)    {if(i == 2       continue;   printf(\"%d \", i);}",
           options: [
             "A) 0 1 3 4",
             "B) 0 1 2 3 4",
@@ -2559,7 +2560,7 @@ const questions = {
         },
         {
           id: 14,
-          question: "What is the output of the following codeint i = 0while(1)    printf(\"%d \", i)   i++   if(i == 3       break}",
+          question: "What is the output of the following code int i = 0; while(1)    {printf(\"%d \", i);   i++   if(i == 3 )  {    break;}}",
           options: [
             "A) 0 1 2",
             "B) 0 1 2 3",
@@ -2592,7 +2593,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "What is the output of the following codeint i, jfor(i=1; i<=3; i++)    for(j=1; j<=3; j++)        if(j == 2           goto endLoop       printf(\"%d%d \", i, j)   endLoop:",
+          question: "What is the output of the following code int i, j; for(i=1; i<=3; i++)    { for(j=1; j<=3; j++)     {   if(j == 2  )         goto endLoop       printf(\"%d%d \", i, j);   }}",
           options: [
             "A) 11 12 13 21 22 23",
             "B) 11 12 13",
@@ -2621,7 +2622,7 @@ const questions = {
         },
         {
           id: 20,
-          question: "What is the output of the following codeint i = 5while(i < 3)    printf(\"%d \", i)   i++}",
+          question: "What is the output of the following code int i = 5; while(i < 3)    {printf(\"%d \", i);   i++;}",
           options: [
             "A) This code will not produce any output.",
             "B) 5",
@@ -2632,14 +2633,14 @@ const questions = {
         },
         {
           id: 21,
-          question: "What is the output of the following codeint i = 5do    printf(\"%d \", i)   i++} while(i < 3);",
+          question: "What is the output of the following code int i = 5; do   { printf(\"%d \", i);   i++;} while(i < 3);",
           options: [
             "A) 5",
             "B) 5 6",
             "C) 5 6 7",
             "D) This code will not produce any output.",
           ],
-          correctAnswer: "B) 5 6",
+          correctAnswer: "A) 5 ",
         },
         {
           id: 22,
@@ -2654,7 +2655,7 @@ const questions = {
         },
         {
           id: 23,
-          question: "What is the output of the following codeint i = 0do    printf(\"%d \", i)} while(i < 0);",
+          question: "What is the output of the following code int i = 0; do   { printf(\"%d \", i);} while(i < 0);",
           options: [
             "A) 0",
             "B) This code will not produce any output.",
@@ -2674,7 +2675,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What is the output of the following codeint ifor(i=0; i<5; i--)    printf(\"%d \", i)}",
+          question: "What is the output of the following code int i; for(i=0; i<5; i--)    {printf(\"%d \", i);}",
           options: [
             "A) This code will not produce any output.",
             "B) 0 1 2 3 4",
@@ -2694,7 +2695,7 @@ const questions = {
         },
         {
           id: 27,
-          question: "What is the output of the following codeint i = 0for(; i<5; i++)    printf(\"%d \", i)}",
+          question: "What is the output of the following code int i = 0; for(; i<5; i++)    {printf(\"%d \", i);}",
           options: [
             "A) 0 1 2 3 4",
             "B) 1 2 3 4 5",
@@ -2714,7 +2715,7 @@ const questions = {
         },
         {
           id: 29,
-          question: "What is the output of the following codeint i = 5while(i < 3)    printf(\"%d \", i)   i++}",
+          question: "What is the output of the following code int i = 5; while(i < 3)    printf(\"%d \", i);   i++;}",
           options: [
             "A) This code will not produce any output.",
             "B) 5",
@@ -2725,7 +2726,7 @@ const questions = {
         },
         {
           id: 30,
-          question: "What is the output of the following codeint i = 5do    printf(\"%d \", i)   i++} while(i < 3);",
+          question: "What is the output of the following code int i = 5; do  {  printf(\"%d \", i);   i++;} while(i < 3);",
           options: [
             "A) 5",
             "B) 5 6",
@@ -2870,7 +2871,7 @@ const questions = {
         },
         {
           id: 12,
-          question: "What is the output of the following code snippet```int arr[3] = {1, 2, 3}printf(\"%d\", arr[3]);```",
+          question: "What is the output of the following code int arr[3] = {1, 2, 3}; printf(\"%d\", arr[3]);",
           options: [
             "a) 1",
             "b) 2",
@@ -2903,7 +2904,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "What is the output of the following code snippet```int arr[5]printf(\"%d\", arr[0]);```",
+          question: "What is the output of the following code int arr[5]; printf(\"%d\", arr[0]);",
           options: [
             "a) 0",
             "b) Garbage value",
@@ -2925,7 +2926,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "What is the output of the following code snippet```int arr[5] = {1, 2, 3, 4, 5}printf(\"%d\", arr[4]);```",
+          question: "What is the output of the following code int arr[5] = {1, 2, 3, 4, 5};printf(\"%d\", arr[4]);",
           options: [
             "a) 1",
             "b) 2",
@@ -2947,7 +2948,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "What does the following code do```int temp = arr[i]arr[i] = arr[j]arr[j] = temp;```",
+          question: "What does the following code int temp = arr[i]; arr[i] = arr[j]; arr[j] = temp;",
           options: [
             "a) Swaps the values of arr[i] and arr[j]",
             "b) Assigns the value of arr[j] to arr[i]",
@@ -2969,7 +2970,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What is the output of the following code snippet```int arr[3] = {1, 2, 3}printf(\"%d\", *(arr+1));```",
+          question: "What is the output of the following code int arr[3] = {1, 2, 3}; printf(\"%d\", *(arr+1));",
           options: [
             "a) 1",
             "b) 2",
@@ -3002,7 +3003,7 @@ const questions = {
         },
         {
           id: 24,
-          question: "What is the output of the following code snippet```int arr[5] = {5, 4, 3, 2, 1}for(int i=0; i<5; i++)  printf(\"%d \", arr[i])}```",
+          question: "What is the output of the following code int arr[5] = {5, 4, 3, 2, 1};for(int i=0; i<5; i++)  {printf(\"%d \", arr[i]);}",
           options: [
             "a) 5 4 3 2 1",
             "b) 1 2 3 4 5",
@@ -3024,7 +3025,7 @@ const questions = {
         },
         {
           id: 26,
-          question: "What is the output of the following code snippet```int arr[3] = {1, 2, 3}printf(\"%p\", &arr[0]);```",
+          question: "What is the output of the following code int arr[3] = {1, 2, 3}; printf(\"%p\", &arr[0]);",
           options: [
             "a) Address of arr[0]",
             "b) 1",
@@ -3046,7 +3047,7 @@ const questions = {
         },
         {
           id: 28,
-          question: "What is the output of the following code snippet```let arr = [1, 2, 3]console.log(arr.length);```",
+          question: "What is the output of the following code let arr = [1, 2, 3]; printf(\"arr.length\");",
           options: [
             "a) 1",
             "b) 2",
@@ -3057,7 +3058,7 @@ const questions = {
         },
         {
           id: 29,
-          question: "In JavaScript, how do you access the first element of an array 'arr'?",
+          question: "In c , how do you access the first element of an array 'arr'?",
           options: [
             "a) arr[0]",
             "b) arr.first",
@@ -3108,7 +3109,7 @@ const questions = {
         },
         {
           id: 4,
-          question: "What is the output of the following code snippet```int arr[2][2] = {{1, 2}, {3, 4}}printf(\"%d\", arr[1][0]);```",
+          question: "What is the output of the following code int arr[2][2] = {{1, 2}, {3, 4}};printf(\"%d\", arr[1][0]);",
           options: ["a) 1", "b) 2", "c) 3", "d) 4"],
           correctAnswer: "c) 3",
         },
@@ -3120,7 +3121,7 @@ const questions = {
         },
         {
           id: 6,
-          question: "Which of the following code snippets correctly stores and displays elements of a 2D array 'arr' in C```for(int i=0; i<2; i++)    for(int j=0; j<2; j++)        printf(\"%d \", arr[i][j])      printf(\"\")}```",
+          question: "Which of the following code correctly stores and displays elements of a 2D array 'arr' in  for(int i=0; i<2; i++)   { for(int j=0; j<2; j++) {       printf(\"%d \", arr[i][j]); }     printf(\"\");}",
           options: ["a)", "b)", "c)", "d)"],
           correctAnswer: "a)",
         },
@@ -3132,13 +3133,13 @@ const questions = {
         },
         {
           id: 8,
-          question: "What is the output of the following code snippet```int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}printf(\"%d\", arr[2][1]);```",
+          question: "What is the output of the following code int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; printf(\"%d\", arr[2][1]);",
           options: ["a) 2", "b) 5", "c) 8", "d) 7"],
           correctAnswer: "b) 5",
         },
         {
           id: 9,
-          question: "What does the following code snippet do```int arr[2][2] = {{1, 2}, {3, 4}}int temp = arr[0][0]arr[0][0] = arr[1][1]arr[1][1] = temp;```",
+          question: "What does the following code int arr[2][2] = {{1, 2}, {3, 4}}; int temp = arr[0][0]; arr[0][0] = arr[1][1]; arr[1][1] = temp;",
           options: ["a) Swaps the values of arr[0][0] and arr[1][1]", "b) Assigns the value of arr[1][1] to arr[0][0]", "c) Assigns the value of arr[0][0] to arr[1][1]", "d) Sets arr[0][0] to 0"],
           correctAnswer: "a) Swaps the values of arr[0][0] and arr[1][1]",
         },
@@ -3162,7 +3163,7 @@ const questions = {
         },
         {
           id: 13,
-          question: "What is the output of the following code snippet```int arr[2][2] = {{1, 2}, {3, 4}}printf(\"%d\", *(*(arr+1)+1));```",
+          question: "What is the output of the following code int arr[2][2] = {{1, 2}, {3, 4}}; printf(\"%d\", *(*(arr+1)+1));",
           options: ["a) 1", "b) 2", "c) 3", "d) 4"],
           correctAnswer: "d) 4",
         },
@@ -3174,13 +3175,13 @@ const questions = {
         },
         {
           id: 15,
-          question: "Which of the following is true about the following code snippet```int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};```",
+          question: "Which of the following is true about the following code int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};",
           options: ["a) It is a 2x3 matrix", "b) It is a 3x2 matrix", "c) It is a 2x2 matrix", "d) It is a compilation error"],
           correctAnswer: "a) It is a 2x3 matrix",
         },
         {
           id: 16,
-          question: "What is the output of the following code snippet```int arr[2][2] = {{1, 2}, {3, 4}}printf(\"%d\", arr[0][1] - arr[1][0]);```",
+          question: "What is the output of the following code int arr[2][2] = {{1, 2}, {3, 4}}; printf(\"%d\", arr[0][1] - arr[1][0]);",
           options: ["a) 1", "b) -1", "c) 2", "d) -2"],
           correctAnswer: "a) 1",
         },
@@ -3192,13 +3193,13 @@ const questions = {
         },
         {
           id: 18,
-          question: "What is the output of the following code snippet```int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}for(int i=0; i<3; i++)    for(int j=0; j<3; j++)        printf(\"%d \", arr[i][j])      printf(\"\")}```",
+          question: "What is the output of the following code int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}} for(int i=0; i<3; i++)   { for(int j=0; j<3; j++)  {      printf(\"%d \", arr[i][j]); }      printf(\"\");}",
           options: ["a) 1 2 3 4 5 6 7 8 9 (in any order)", "b) 1 4 7 2 5 8 3 6 9 (in any order)", "c) 9 8 7 6 5 4 3 2 1 (in any order)", "d) 1 2 3 4 5 6 7 8 9 (in that order)"],
           correctAnswer: "d) 1 2 3 4 5 6 7 8 9",
         },
         {
           id: 19,
-          question: "What is the output of the following code snippet```int arr[3][2] = {{1, 2}, {3, 4}, {5, 6}}printf(\"%d\", arr[2][1]);```",
+          question: "What is the output of the following code int arr[3][2] = {{1, 2}, {3, 4}, {5, 6}}; printf(\"%d\", arr[2][1]);",
           options: ["a) 2", "b) 3", "c) 5", "d) 6"],
           correctAnswer: "d) 6",
         },
@@ -3210,7 +3211,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What is the output of the following code snippet```int arr[2][2] = {{1, 2}, {3, 4}}printf(\"%d\", arr[1][2] - arr[0][1]);```",
+          question: "What is the output of the following code int arr[2][2] = {{1, 2}, {3, 4}}printf(\"%d\", arr[1][2] - arr[0][1]);```",
           options: ["a) 1", "b) 2", "c) 3", "d) 4"],
           correctAnswer: "b) 2",
         },
@@ -3222,7 +3223,7 @@ const questions = {
         },
         {
           id: 23,
-          question: "What is the output of the following code snippet```int arr[2][2] = {{1, 2}, {3, 4}}printf(\"%d\", *arr[1]);```",
+          question: "What is the output of the following code int arr[2][2] = {{1, 2}, {3, 4}}printf(\"%d\", *arr[1]);",
           options: ["a) 1", "b) 2", "c) 3", "d) 4"],
           correctAnswer: "c) 3",
         },
@@ -3234,7 +3235,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What is the output of the following code snippet```int arr[2][2] = {{1, 2}, {3, 4}}printf(\"%d\", arr[0][0] + arr[1][1]);```",
+          question: "What is the output of the following code int arr[2][2] = {{1, 2}, {3, 4}}printf(\"%d\", arr[0][0] + arr[1][1]);",
           options: ["a) 1", "b) 2", "c) 3", "d) 5"],
           correctAnswer: "d) 5",
         },
@@ -3337,7 +3338,7 @@ const questions = {
         },
         {
           id: 9,
-          question: "What is the output of the following code snippet```char str1[] = 'Hello'char str2[10]strcpy(str2, str1)printf('%s', str2)```",
+          question: "What is the output of the following code char str1[] = 'Hello'char str2[10]strcpy(str2, str1)printf('%s', str2)",
           options: [
             "a) Hello",
             "b) H",
@@ -3359,7 +3360,7 @@ const questions = {
         },
         {
           id: 11,
-          question: "What is the output of the following code snippet```char str1[] = 'Hello, 'char str2[] = 'world!'strcat(str1, str2)printf('%s', str1)```",
+          question: "What is the output of the following code char str1[] = 'Hello, 'char str2[] = 'world!'strcat(str1, str2)printf('%s', str1)",
           options: [
             "a) Hello, world!",
             "b) Hello,",
@@ -3403,7 +3404,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "What is the output of the following code snippet```char str[] = 'racecar'int result = isPalindrome(str)printf('%d', result)```",
+          question: "What is the output of the following code char str[] = 'racecar'int result = isPalindrome(str)printf('%d', result)",
           options: [
             "a) 1",
             "b) 0",
@@ -3447,7 +3448,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "What is the output of the following code snippet```char str[] = 'Hello'int len = strnlen(str, 3)printf('%d', len)```",
+          question: "What is the output of the following code char str[] = 'Hello'int len = strnlen(str, 3)printf('%d', len)",
           options: [
             "a) 3",
             "b) 5",
@@ -3458,7 +3459,7 @@ const questions = {
         },
         {
           id: 20,
-          question: "What is the output of the following code snippet```char str1[] = 'apple'char str2[] = 'banana'int result = strcmp(str1, str2)printf('%d', result)```",
+          question: "What is the output of the following code char str1[] = 'apple'char str2[] = 'banana'int result = strcmp(str1, str2)printf('%d', result)",
           options: [
             "a) -1",
             "b) 0",
@@ -3480,7 +3481,7 @@ const questions = {
         },
         {
           id: 22,
-          question: "What is the output of the following code snippet```char str[] = '12345'int is_digit = isdigit(str[2])printf('%d', is_digit)```",
+          question: "What is the output of the following code char str[] = '12345'int is_digit = isdigit(str[2])printf('%d', is_digit);",
           options: [
             "a) 0",
             "b) 1",
@@ -3502,7 +3503,7 @@ const questions = {
         },
         {
           id: 24,
-          question: "What is the output of the following code snippet```char str[] = 'abcdef'reverseString(str)printf('%s', str)```",
+          question: "What is the output of the following code char str[] = 'abcdef'reverseString(str)printf('%s', str);",
           options: [
             "a) fedcba",
             "b) abcdef",
@@ -3813,7 +3814,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What is the output of the following code#include <stdio.hint add(int a, int b)    return a + bint main()    int result = add(3, 4)   printf(\"%d\", result)   return 0}",
+          question: "What is the output of the following code #include <stdio.h> int add(int a, int b)    {return a + b} int main()    int result = add(3, 4);   printf(\"%d\", result);   return 0;}",
           options: [
             "A) 7",
             "B) 12",
@@ -3824,7 +3825,7 @@ const questions = {
         },
         {
           id: 22,
-          question: "What is the output of the following code#include <stdio.hvoid greet()    printf(\"Hello, World!\")int main()    greet()   return 0}",
+          question: "What is the output of the following code #include <stdio.h> void greet()   { printf(\"Hello, World!\")} int main()    {greet();   return 0;}",
           options: [
             "A) Hello, World!",
             "B) Error",
@@ -3835,7 +3836,7 @@ const questions = {
         },
         {
           id: 23,
-          question: "What is the output of the following code#include <stdio.hvoid printNumbers()    for(int i = 1; i <= 5; i++)        printf(\"%d \", i)   int main()    printNumbers()   return 0}",
+          question: "What is the output of the following code #include <stdio.h> void printNumbers() {   for(int i = 1; i <= 5; i++)        printf(\"%d \", i)  } int main()   { printNumbers();   return 0;}",
           options: [
             "A) 1 2 3 4 5",
             "B) 5 4 3 2 1",
@@ -3846,7 +3847,7 @@ const questions = {
         },
         {
           id: 24,
-          question: "What is the output of the following code#include <stdio.hvoid printMessage(char msg[])    printf(\"%s\", msg)int main()    char message[] = \"Welcome!\"   printMessage(message)   return 0}",
+          question: "What is the output of the following code #include <stdio.h> void printMessage(char msg[]) {   printf(\"%s\", msg)} int main() {   char message[] = \"Welcome!\";   printMessage(message);   return 0;}",
           options: [
             "A) Welcome!",
             "B) Error",
@@ -3857,7 +3858,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What is the output of the following code#include <stdio.hint square(int num)    return num * numint main()    int result = square(5)   printf(\"%d\", result)   return 0}",
+          question: "What is the output of the following code #include <stdio.h> int square(int num)  {  return num * num; }int main() {   int result = square(5);   printf(\"%d\", result);   return 0;}",
           options: [
             "A) 25",
             "B) 10",
@@ -3868,7 +3869,7 @@ const questions = {
         },
         {
           id: 26,
-          question: "What is the output of the following code#include <stdio.hint multiply(int a, int b)    return a * bint main()    int result = multiply(3, 4)   printf(\"%d\", result)   return 0}",
+          question: "What is the output of the following code #include <stdio.h> int multiply(int a, int b)   { return a * b; }  int main() {   int result = multiply(3, 4);   printf(\"%d\", result);   return 0;}",
           options: [
             "A) 7",
             "B) 12",
@@ -3879,7 +3880,7 @@ const questions = {
         },
         {
           id: 27,
-          question: "What is the output of the following code#include <stdio.hint subtract(int a, int b)    return a - bint main()    int result = subtract(7, 4)   printf(\"%d\", result)   return 0}",
+          question: "What is the output of the following code #include <stdio.h> int subtract(int a, int b) {   return a - b} int main()   { int result = subtract(7, 4);   printf(\"%d\", result);   return 0;}",
           options: [
             "A) 3",
             "B) 11",
@@ -3890,7 +3891,7 @@ const questions = {
         },
         {
           id: 28,
-          question: "What is the output of the following code#include <stdio.hint factorial(int n)    if(n == 0 || n == 1       return 1   els       return n * factorial(n - 1)int main()    int result = factorial(5)   printf(\"%d\", result)   return 0}",
+          question: "What is the output of the following code #include <stdio.h> int factorial(int n) {   if(n == 0 || n == 1)       return 1 }  else     {  return n * factorial(n - 1)}} int main()   { int result = factorial(5);   printf(\"%d\", result);   return 0;}",
           options: [
             "A) 5",
             "B) 15",
@@ -3901,7 +3902,7 @@ const questions = {
         },
         {
           id: 29,
-          question: "What is the output of the following code#include <stdio.hint power(int base, int exponent)    if(exponent == 0       return 1   els       return base * power(base, exponent - 1)int main()    int result = power(2, 3)   printf(\"%d\", result)   return 0}",
+          question: "What is the output of the following code #include <stdio.h> int power(int base, int exponent)   { if(exponent == 0       return 1   else       return base * power(base, exponent - 1)} int main()   { int result = power(2, 3);   printf(\"%d\", result);   return 0;}",
           options: [
             "A) 6",
             "B) 8",
@@ -3912,7 +3913,7 @@ const questions = {
         },
         {
           id: 30,
-          question: "What is the output of the following code#include <stdio.hint findMax(int a, int b)    if(a > b       return a   els       return bint main()    int result = findMax(10, 7)   printf(\"%d\", result)   return 0}",
+          question: "What is the output of the following code #include <stdio.h> int findMax(int a, int b)    { if(a > b       return a   else       return b } int main()    int result = findMax(10, 7);   printf(\"%d\", result);   return 0;}",
           options: [
             "A) 7",
             "B) 10",
@@ -4070,7 +4071,7 @@ const questions = {
         },
         {
           id: 14,
-          question: "What is the output of the following recursive functionCopy cod#include <stdio.hint factorial(int n)    if(n == 0 || n == 1       return 1   els       return n * factorial(n - 1)int main()    int result = factorial(5)   printf(\"%d\", result)   return 0A) B) 1C) 12D) 25",
+          question: "What is the output of the following code recursive functionCopy #include <stdio.hint factorial(int n)    if(n == 0 || n == 1       return 1   els       return n * factorial(n - 1)int main()    int result = factorial(5)   printf(\"%d\", result)   return 0A) B) 1C) 12D) 25",
           options: [
             "A) 5",
             "B) 15",
@@ -4081,7 +4082,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "What is the output of the following recursive functionCopy cod#include <stdio.hint power(int base, int exponent)    if(exponent == 0       return 1   els       return base * power(base, exponent - 1)int main()    int result = power(2, 3)   printf(\"%d\", result)   return 0A) B) C) 1D) 16",
+          question: "What is the output of the following recursive functionCopy code #include <stdio.hint power(int base, int exponent)    if(exponent == 0       return 1   els       return base * power(base, exponent - 1)int main()    int result = power(2, 3)   printf(\"%d\", result)   return 0A) B) C) 1D) 16",
           options: [
             "A) 6",
             "B) 8",
@@ -4092,7 +4093,7 @@ const questions = {
         },
         {
           id: 16,
-          question: "What is the output of the following recursive functionCopy cod#include <stdio.hint fibonacci(int n)    if(n <= 1       return n   els       return fibonacci(n-1) + fibonacci(n-2)int main()    int result = fibonacci(6)   printf(\"%d\", result)   return 0A) B) 1C) 2D) 34",
+          question: "What is the output of the following recursive functionCopy code #include <stdio.hint fibonacci(int n)    if(n <= 1       return n   els       return fibonacci(n-1) + fibonacci(n-2)int main()    int result = fibonacci(6)   printf(\"%d\", result)   return 0A) B) 1C) 2D) 34",
           options: [
             "A) 8",
             "B) 13",
@@ -4103,7 +4104,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "What is the output of the following codeCopy cod#include <stdio.hint x = 10void changeX()    x = 20int main()    changeX()   printf(\"%d\", x)   return 0A) 1B) 2C) ErroD) 0",
+          question: "What is the output of the following codeCopy code #include <stdio.hint x = 10void changeX()    x = 20int main()    changeX()   printf(\"%d\", x)   return 0A) 1B) 2C) ErroD) 0",
           options: [
             "A) 10",
             "B) 20",
@@ -4114,7 +4115,7 @@ const questions = {
         },
         {
           id: 18,
-          question: "What is the output of the following codeCopy cod#include <stdio.hvoid increment()    static int count = 0   count++   printf(\"%d \", count)int main()    increment()   increment()   increment()   return 0A) 1 2 B) 3 2 C) 1 1 D) 0",
+          question: "What is the output of the following codeCopy code #include <stdio.hvoid increment()    static int count = 0   count++   printf(\"%d \", count)int main()    increment()   increment()   increment()   return 0A) 1 2 B) 3 2 C) 1 1 D) 0",
           options: [
             "A) 1 2 3",
             "B) 3 2 1",
@@ -4125,7 +4126,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "What is the output of the following codeCopy cod#include <stdio.hvoid printMessage(char msg[])    printf(\"%s\", msg)int main()    char message[] = \"Welcome!\"   printMessage(message)   return 0A) WelcomeB) ErroC) Nothing is printeD) 0",
+          question: "What is the output of the following codeCopy code #include <stdio.hvoid printMessage(char msg[])    printf(\"%s\", msg)int main()    char message[] = \"Welcome!\"   printMessage(message)   return 0A) WelcomeB) ErroC) Nothing is printeD) 0",
           options: [
             "A) Welcome!",
             "B) Error",
@@ -4136,7 +4137,7 @@ const questions = {
         },
         {
           id: 20,
-          question: "What is the output of the following codeCopy cod#include <stdio.hvoid greet()    printf(\"Hello, World!\")int main()    greet()   return 0A) Hello, WorldB) ErroC) Nothing is printeD) 0",
+          question: "What is the output of the following codeCopy code #include <stdio.hvoid greet()    printf(\"Hello, World!\")int main()    greet()   return 0A) Hello, WorldB) ErroC) Nothing is printeD) 0",
           options: [
             "A) Hello, World!",
             "B) Error",
@@ -4147,7 +4148,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What is the output of the following codeCopy cod#include <stdio.hvoid printNumbers()    for(int i = 1; i <= 5; i++)        printf(\"%d \", i)   int main()    printNumbers()   return 0A) 1 2 3 4 B) 5 4 3 2 C) 1 1 1 1 D) 0",
+          question: "What is the output of the following codeCopy code #include <stdio.hvoid printNumbers()    for(int i = 1; i <= 5; i++)        printf(\"%d \", i)   int main()    printNumbers()   return 0A) 1 2 3 4 B) 5 4 3 2 C) 1 1 1 1 D) 0",
           options: [
             "A) 1 2 3 4 5",
             "B) 5 4 3 2 1",
@@ -4158,7 +4159,7 @@ const questions = {
         },
         {
           id: 22,
-          question: "What is the output of the following codeCopy cod#include <stdio.hint add(int a, int b)    return a + bint main()    int result = add(3, 4)   printf(\"%d\", result)   return 0A) B) 1C) 3D) Error",
+          question: "What is the output of the following codeCopy code #include <stdio.hint add(int a, int b)    return a + bint main()    int result = add(3, 4)   printf(\"%d\", result)   return 0A) B) 1C) 3D) Error",
           options: [
             "A) 7",
             "B) 12",
@@ -4169,7 +4170,7 @@ const questions = {
         },
         {
           id: 23,
-          question: "What is the output of the following codeCopy cod#include <stdio.hint multiply(int a, int b)    return a * bint main()    int result = multiply(3, 4)   printf(\"%d\", result)   return 0A) B) 1C) 3D) 10",
+          question: "What is the output of the following codeCopy code #include <stdio.hint multiply(int a, int b)    return a * bint main()    int result = multiply(3, 4)   printf(\"%d\", result)   return 0A) B) 1C) 3D) 10",
           options: [
             "A) 7",
             "B) 12",
@@ -4180,7 +4181,7 @@ const questions = {
         },
         {
           id: 24,
-          question: "What is the output of the following codeCopy cod#include <stdio.hint subtract(int a, int b)    return a - bint main()    int result = subtract(7, 4)   printf(\"%d\", result)   return 0A) B) 1C) D) Error",
+          question: "What is the output of the following codeCopy code #include <stdio.hint subtract(int a, int b)    return a - bint main()    int result = subtract(7, 4)   printf(\"%d\", result)   return 0A) B) 1C) D) Error",
           options: [
             "A) 3",
             "B) 11",
@@ -4191,7 +4192,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What is the output of the following codeCopy cod#include <stdio.hint findMax(int a, int b)    if(a > b       return a   els       return bint main()    int result = findMax(10, 7)   printf(\"%d\", result)   return 0A) B) 1C) 1D) 0",
+          question: "What is the output of the following codeCopy code #include <stdio.hint findMax(int a, int b)    if(a > b       return a   els       return bint main()    int result = findMax(10, 7)   printf(\"%d\", result)   return 0A) B) 1C) 1D) 0",
           options: [
             "A) 7",
             "B) 10",
@@ -4202,7 +4203,7 @@ const questions = {
         },
         {
           id: 26,
-          question: "What is the output of the following codeCopy cod#include <stdio.hint x = 5void changeX()    int x = 10   printf(\"%d \", x)int main()    changeX()   printf(\"%d\", x)   return 0A) 5 1B) 10 C) 5 D) 10 10",
+          question: "What is the output of the following codeCopy code #include <stdio.hint x = 5void changeX()    int x = 10   printf(\"%d \", x)int main()    changeX()   printf(\"%d\", x)   return 0A) 5 1B) 10 C) 5 D) 10 10",
           options: [
             "A) 5 10",
             "B) 10 5",
@@ -4213,7 +4214,7 @@ const questions = {
         },
         {
           id: 27,
-          question: "What is the output of the following codeCopy cod#include <stdio.hint x = 5void changeX()    x = 10   printf(\"%d \", x)int main()    changeX()   printf(\"%d\", x)   return 0A) 10 1B) 5 C) 10 D) 5 10",
+          question: "What is the output of the following codeCopy code #include <stdio.hint x = 5void changeX()    x = 10   printf(\"%d \", x)int main()    changeX()   printf(\"%d\", x)   return 0A) 10 1B) 5 C) 10 D) 5 10",
           options: [
             "A) 10 10",
             "B) 5 5",
@@ -4224,7 +4225,7 @@ const questions = {
         },
         {
           id: 28,
-          question: "What is the output of the following codeCopy cod#include <stdio.hint main()    int i = 5          int i = 10       printf(\"%d \", i)      printf(\"%d\", i)   return 0A) 5 1B) 10 C) 10 1D) 5 5",
+          question: "What is the output of the following codeCopy code #include <stdio.hint main()    int i = 5          int i = 10       printf(\"%d \", i)      printf(\"%d\", i)   return 0A) 5 1B) 10 C) 10 1D) 5 5",
           options: [
             "A) 5 10",
             "B) 10 5",
@@ -4235,7 +4236,7 @@ const questions = {
         },
         {
           id: 29,
-          question: "What is the output of the following codeCopy cod#include <stdio.hint main()    int x = 5   printf(\"%d \", x)          int x = 10       printf(\"%d \", x)      printf(\"%d\", x)   return 0A) 5 10 B) 5 5 C) 5 10 1D) 10 5 10",
+          question: "What is the output of the following codeCopy code #include <stdio.hint main()    int x = 5   printf(\"%d \", x)          int x = 10       printf(\"%d \", x)      printf(\"%d\", x)   return 0A) 5 10 B) 5 5 C) 5 10 1D) 10 5 10",
           options: [
             "A) 5 10 5",
             "B) 5 5 5",
@@ -4246,7 +4247,7 @@ const questions = {
         },
         {
           id: 30,
-          question: "What is the output of the following codeCopy cod#include <stdio.hint main()    int i = 5          int i = 10       printf(\"%d \", i)      printf(\"%d\", i)   return 0A) 10 B) 5 C) 10 1D) 5 10",
+          question: "What is the output of the following codeCopy code #include <stdio.hint main()    int i = 5          int i = 10       printf(\"%d \", i)      printf(\"%d\", i)   return 0A) 10 B) 5 C) 10 1D) 5 10",
           options: [
             "A) 10 5",
             "B) 5 5",
@@ -4394,7 +4395,7 @@ const questions = {
         },
         {
           id: 12,
-          question: "What is the output of the following codestruct Point    int x   int y}struct Point p = {5, 10}printf(\"%d\", p.x);",
+          question: "What is the output of the following code struct Point    int x   int y}struct Point p = {5, 10}printf(\"%d\", p.x);",
           options: [
             "A) 5",
             "B) 10",
@@ -4449,7 +4450,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "What is the output of the following codestruct Date    int day   int month   int year}struct Date d = {10, 9, 2023}printf(\"%d/%d/%d\", d.day, d.month, d.year);",
+          question: "What is the output of the following code struct Date    int day   int month   int year}struct Date d = {10, 9, 2023}printf(\"%d/%d/%d\", d.day, d.month, d.year);",
           options: [
             "A) 10/9/2023",
             "B) 9/10/2023",
@@ -4493,7 +4494,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What is the output of the following codestruct Student    char name[20]   int age}struct Student s = {'John', 21}printf('%s is %d years old.', s.name, s.age);",
+          question: "What is the output of the following code struct Student    char name[20]   int age}struct Student s = {'John', 21}printf('%s is %d years old.', s.name, s.age);",
           options: [
             "A) John is 21 years old.",
             "B) s is 21 years old.",
@@ -4537,7 +4538,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What is the output of the following codestruct Car    char model[20]   int year}struct Car c1 = {'Toyota', 2020}struct Car c2 = c1printf('%s %d', c2.model, c2.year);",
+          question: "What is the output of the following code struct Car    char model[20]   int year}struct Car c1 = {'Toyota', 2020}struct Car c2 = c1printf('%s %d', c2.model, c2.year);",
           options: [
             "A) Toyota 2020",
             "B) Toyota 0",
@@ -4592,7 +4593,7 @@ const questions = {
         },
         {
           id: 30,
-          question: "What is the output of the following codestruct Time    int hours   int minutes}struct Time t1 = {4, 30}struct Time t2 = {2, 45}struct Time t3 = {0}t3 = t1t1 = t2t2 = t3printf('%d:%d %d:%d %d:%d', t1.hours, t1.minutes, t2.hours, t2.minutes, t3.hours, t3.minutes);",
+          question: "What is the output of the following code struct Time    int hours   int minutes}struct Time t1 = {4, 30}struct Time t2 = {2, 45}struct Time t3 = {0}t3 = t1t1 = t2t2 = t3printf('%d:%d %d:%d %d:%d', t1.hours, t1.minutes, t2.hours, t2.minutes, t3.hours, t3.minutes);",
           options: [
             "A) 2:45 0:0 4:30",
             "B) 0:0 4:30 2:45",
@@ -4695,7 +4696,7 @@ const questions = {
         },
         {
           id: 9,
-          question: "What is the output of the following codeunion Details   int id  float salary}union Details d = {.id = 1001}printf(\"%f\", d.salary);",
+          question: "What is the output of the following code union Details   int id  float salary}union Details d = {.id = 1001}printf(\"%f\", d.salary);",
           options: [
             "A) 1001.000000",
             "B) 0.000000",
@@ -4728,7 +4729,7 @@ const questions = {
         },
         {
           id: 12,
-          question: "What is the output of the following codeunion Value   int count  double amount}union Value v = {.count = 10}printf(\"%lf\", v.amount);",
+          question: "What is the output of the following code union Value   int count  double amount}union Value v = {.count = 10}printf(\"%lf\", v.amount);",
           options: [
             "A) 10.000000",
             "B) 0.000000",
@@ -4750,7 +4751,7 @@ const questions = {
         },
         {
           id: 14,
-          question: "What is the output of the following codeunion Number   int x  float y}union Number n = {.x = 5}printf(\"%f\", n.y);",
+          question: "What is the output of the following code union Number   int x  float y}union Number n = {.x = 5}printf(\"%f\", n.y);",
           options: [
             "A) 0.000000",
             "B) 5.000000",
@@ -4761,7 +4762,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "What will be the value of n.y after the following codeunion Number   int x  float y} n = {.y = 2.5};",
+          question: "What will be the value of n.y after the following code union Number   int x  float y} n = {.y = 2.5};",
           options: [
             "A) 2.500000",
             "B) Undefined",
@@ -4794,7 +4795,7 @@ const questions = {
         },
         {
           id: 18,
-          question: "What is the output of the following codeunion Point   int x  int y}union Point p = {5}printf(\"%d\", p.x);",
+          question: "What is the output of the following code union Point   int x  int y}union Point p = {5}printf(\"%d\", p.x);",
           options: [
             "A) 5",
             "B) 0",
@@ -4827,7 +4828,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What is the output of the following codeunion Result   int status  char message[20]}union Result r = {.status = 200}printf(\"%s\", r.message);",
+          question: "What is the output of the following code union Result   int status  char message[20]}union Result r = {.status = 200}printf(\"%s\", r.message);",
           options: [
             "A) 200",
             "B) Error",
@@ -4849,7 +4850,7 @@ const questions = {
         },
         {
           id: 23,
-          question: "What is the output of the following codeunion Choice   int option  char selection}union Choice c = {.option = 3}printf(\"%c\", c.selection);",
+          question: "What is the output of the following code union Choice   int option  char selection}union Choice c = {.option = 3}printf(\"%c\", c.selection);",
           options: [
             "A) 3",
             "B) Error",
@@ -4860,7 +4861,7 @@ const questions = {
         },
         {
           id: 24,
-          question: "What is the correct way to define a union 'BookInfo' with members 'title', 'author', and 'pages'```union BookInfo   char title[50]  char author[50]  int pages};```",
+          question: "What is the correct way to define code a union 'BookInfo' with members 'title', 'author', and 'pages' union BookInfo   char title[50]  char author[50]  int pages}; ",
           options: [
             "A) Correct",
             "B) Incorrect",
@@ -4871,7 +4872,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "How do you access the member 'code' of a union 'Product' inside an array of unions 'inventory' at index 2?",
+          question: "How do you access the member 'Code' of a union 'Product' inside an array of unions 'inventory' at index 2?",
           options: [
             "A) inventory[2].code",
             "B) inventory[2]->code",
@@ -4882,7 +4883,7 @@ const questions = {
         },
         {
           id: 26,
-          question: "What is the output of the following codeunion Shape   int sides  float radius}union Shape s = {.sides = 4}printf(\"%f\", s.radius);",
+          question: "What is the output of the following code union Shape   int sides  float radius}union Shape s = {.sides = 4}printf(\"%f\", s.radius);",
           options: [
             "A) 4.000000",
             "B) 0.000000",
@@ -4904,7 +4905,7 @@ const questions = {
         },
         {
           id: 28,
-          question: "What is the output of the following codeunion Letter   char upper  char lower}union Letter l = {.lower = 'a'}printf(\"%c\", l.upper);",
+          question: "What is the output of the following code union Letter   char upper  char lower}union Letter l = {.lower = 'a'}printf(\"%c\", l.upper);",
           options: [
             "A) a",
             "B) A",
@@ -4926,7 +4927,7 @@ const questions = {
         },
         {
           id: 30,
-          question: "What is the output of the following codeunion Number   int x  float y}union Number n = {.y = 3.14}printf(\"%d\", n.x);",
+          question: "What is the output of the following code union Number   int x  float y}union Number n = {.y = 3.14}printf(\"%d\", n.x);",
           options: [
             "A) 0",
             "B) 3",
@@ -5008,7 +5009,7 @@ const questions = {
         },
         {
           id: 6,
-          question: "Given the following code```int num = 10int *ptr = &num*ptr = 20``After execution, what will be the value of num?",
+          question: "Given the following code int num = 10int *ptr = &num*ptr = 20 After execution, what will be the value of num?",
           options: [
             "A) 10",
             "B) 20",
@@ -5019,7 +5020,7 @@ const questions = {
         },
         {
           id: 7,
-          question: "What is the output of the following code```int num = 5int *ptr = &numprintf(\"%d\", *ptr)```",
+          question: "What is the output of the following code int num = 5int *ptr = &numprintf(\"%d\", *ptr);",
           options: [
             "A) 5",
             "B) Compiler Error",
@@ -5052,7 +5053,7 @@ const questions = {
         },
         {
           id: 10,
-          question: "Consider the following code snippet```int arr[5] = {1, 2, 3, 4, 5}int *ptr = arr + 2printf(\"%d\", *ptr)``What will be the output?",
+          question: "Consider the following code int arr[5] = {1, 2, 3, 4, 5}int *ptr = arr + 2printf(\"%d\", *ptr); What will be the output?",
           options: [
             "A) 2",
             "B) 3",
@@ -5151,7 +5152,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "Consider the code```int x = 10int *p = &xprintf(\"%p\", p)``What will be the output?",
+          question: "Consider the code int x = 10int *p = &xprintf(\"%p\", p); What will be the output?",
           options: [
             "A) Address of x",
             "B) Value of x",
@@ -5173,7 +5174,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What is the output of the following code```int arr[3] = {1, 2, 3}int *ptr = arrprintf(\"%d\", *(ptr + 1))```",
+          question: "What is the output of the following code int arr[3] = {1, 2, 3}int *ptr = arrprintf(\"%d\", *(ptr + 1)); ",
           options: [
             "A) 1",
             "B) 2",
@@ -5195,7 +5196,7 @@ const questions = {
         },
         {
           id: 23,
-          question: "Consider the code```int x = 5int *p = &x*p = 7printf(\"%d\", x)``What will be the output?",
+          question: "Consider the code int x = 5int *p = &x*p = 7printf(\"%d\", x); What will be the output?",
           options: [
             "A) 5",
             "B) 7",
@@ -6520,189 +6521,187 @@ const questions = {
         },
         // Add more questions for subchapter 1.2 as needed
       ],
-
       "1.3": [
         {
           id: 1,
-          question: "What is the keyword used to declare a constant variable in C++?",
-          options: ["A) var", "B) let", "C) const", "D) constant",],
+          question: "What is the keyword used to declare a constant variable in JavaScript?",
+          options: ["A) var", "B) let", "C) const", "D) constant"],
           correctAnswer: "C) const",
         },
         {
           id: 2,
-          question: "Which of the following is a valid data type in C++?",
-          options: ["A) Float", "B) Char", "C) String", "D) Boolean",],
-          correctAnswer: "B) Char",
+          question: "Which of the following is not a valid data type in JavaScript?",
+          options: ["A) Float", "B) Cancel", "C) String", "D) Boolean"],
+          correctAnswer: "B) Cancel",
         },
         {
           id: 3,
-          question: "What is the maximum value that can be stored in an unsigned integer in C++?",
-          options: ["A) 32767", "B) 65535", "C) 2147483647", "D) 4294967295",],
+          question: "What is the maximum value that can be stored in an unsigned integer in JavaScript?",
+          options: ["A) 32767", "B) 65535", "C) 2147483647", "D) 4294967295"],
           correctAnswer: "D) 4294967295",
         },
         {
           id: 4,
-          question: "Which of the following is not a valid variable name in C++?",
-          options: ["A) myVariable", "B) 2ndVariable", "C) _variable", "D) camelCaseVariable",],
+          question: "Which of the following is not a valid variable name in JavaScript?",
+          options: ["A) myVariable", "B) 2ndVariable", "C) _variable", "D) camelCaseVariable"],
           correctAnswer: "B) 2ndVariable",
         },
         {
           id: 5,
-          question: "What will be the output of the following code?\n\nint x = 5;\ncout << x / 2;",
-          options: ["A) 2.5", "B) 2", "C) 2.0", "D) 2.0f",],
+          question: "What will be the output of the following code ?\n\nvar x = 5;\nconsole.log(x / 2);",
+          options: ["A) 2.5", "B) 2", "C) 2.0", "D) 2.0f"],
           correctAnswer: "B) 2",
         },
         {
           id: 6,
-          question: "Which of the following is a valid way to convert a float to an integer in C++?",
-          options: ["A) static_cast<int>(x)", "B) int(x)", "C) (int)x", "D) Both A) and B)",],
-          correctAnswer: "D) Both A) and B)",
+          question: "Which of the following is a valid way to convert a float to an integer in JavaScript?",
+          options: ["A) parseInt(x)", "B) Math.floor(x)", "C) x.toFixed(0)", "D) Both A) and C)"],
+          correctAnswer: "D) Both A) and C)",
         },
         {
           id: 7,
-          question: "What is the result of the expression: 5 + \"3\" in C++?",
-          options: ["A) 8", "B) 53", "C) Compilation Error", "D) Runtime Error",],
+          question: "What is the result of the expression: 5 + '3' in JavaScript?",
+          options: ["A) 8", "B) 53", "C) Concatenation Error", "D) Runtime Error"],
           correctAnswer: "B) 53",
         },
         {
           id: 8,
-          question: "Which of the following is the correct way to declare a string variable in C++?",
-          options: ["A) string myString = \"Hello\";", "B) string myString(\"Hello\");", "C) Both A) and B)", "D) None of the above",],
+          question: "Which of the following is the correct way to declare a string variable in JavaScript?",
+          options: ["A) var myString = 'Hello';", "B) var myString = \"Hello\";", "C) Both A) and B)", "D) None of the above"],
           correctAnswer: "C) Both A) and B)",
         },
         {
           id: 9,
-          question: "What is the output of the following code?\n\nbool isTrue = true;\ncout << std::boolalpha << isTrue;",
-          options: ["A) 1", "B) true", "C) True", "D) Compilation Error",],
+          question: "What is the output of the following code ?\n\nvar isTrue = true;\nconsole.log(isTrue.toString());",
+          options: ["A) 1", "B) true", "C) True", "D) Conversion Error"],
           correctAnswer: "B) true",
         },
         {
           id: 10,
-          question: "Which of the following statements is true about arrays in C++?",
-          options: ["A) Elements of an array must be of the same data type.", "B) Arrays can have a variable number of elements.", "C) Arrays are not supported in C++.", "D) Arrays can only store integers.",],
+          question: "Which of the following statements is true about arrays in JavaScript?",
+          options: ["A) Elements of an array must be of the same data type.", "B) Arrays can have a variable number of elements.", "C) Arrays are not supported in JavaScript.", "D) Arrays can only store integers."],
           correctAnswer: "A) Elements of an array must be of the same data type.",
         },
         {
           id: 11,
-          question: "What is the output of the following code?\n\nint x = 10;\nfloat y = 5.5;\ncout << x / y;",
-          options: ["A) 2.0", "B) 1.81818", "C) 1.82", "D) Compilation Error",],
+          question: "What is the output of the following code ?\n\nvar x = 10;\nvar y = 5.5;\nconsole.log(x / y);",
+          options: ["A) 2.0", "B) 1.81818", "C) 1.82", "D) Division by Zero Error"],
           correctAnswer: "A) 2.0",
         },
         {
           id: 12,
-          question: "Which of the following is a valid way to declare a constant pointer in C++?",
-          options: ["A) int* const ptr = &x;", "B) const int* ptr = &x;", "C) const int* const ptr = &x;", "D) Both A) and C)",],
-          correctAnswer: "D) Both A) and C)",
+          question: "Which of the following is a valid way to declare a constant variable in JavaScript?",
+          options: ["A) const x = 5;", "B) let x = 5; x = 6;", "C) var x = 5;", "D) static const x = 5;"],
+          correctAnswer: "A) const x = 5;",
         },
         {
           id: 13,
-          question: "What is the output of the following code?\n\nint x = 5;\nx = x + 1;\ncout << x;",
-          options: ["A) 5", "B) 6", "C) 7", "D) Compilation Error",],
+          question: "What is the output of the following code ?\n\nvar x = 5;\nx = x + 1;\nconsole.log(x);",
+          options: ["A) 5", "B) 6", "C) 7", "D) Compilation Error"],
           correctAnswer: "B) 6",
         },
         {
           id: 14,
-          question: "Which of the following is true about the 'sizeof' operator in C++?",
-          options: ["A) It returns the size of the variable in bytes.", "B) It returns the size of the variable in bits.", "C) It is used to determine the number of elements in an array.", "D) It is not a valid operator in C++.",],
-          correctAnswer: "A) It returns the size of the variable in bytes.",
+          question: "Which of the following is true about the 'typeof' operator in JavaScript?",
+          options: ["A) It returns the size of the variable in bytes.", "B) It returns the size of the variable in bits.", "C) It is used to determine the number of elements in an array.", "D) It is used to check the data type of a variable."],
+          correctAnswer: "D) It is used to check the data type of a variable.",
         },
         {
           id: 15,
-          question: "What is the output of the following code?\n\nstring greeting = \"Hello\";\ncout << greeting.length();",
-          options: ["A) 5", "B) 6", "C) Compilation Error", "D) Runtime Error",],
+          question: "What is the output of the following code ?\n\nvar greeting = 'Hello';\nconsole.log(greeting.length);",
+          options: ["A) 5", "B) 6", "C) Compilation Error", "D) Runtime Error"],
           correctAnswer: "A) 5",
         },
         {
           id: 16,
-          question: "Which of the following is a valid way to concatenate two strings in C++?",
-          options: ["A) str1 + str2", "B) str1 . str2", "C) str1 + \" \" + str2", "D) Both A) and B)",],
+          question: "Which of the following is a valid way to concatenate two strings in JavaScript?",
+          options: ["A) str1 + str2", "B) str1 . str2", "C) str1 + ' ' + str2", "D) Both A) and C)"],
           correctAnswer: "A) str1 + str2",
         },
         {
           id: 17,
-          question: "What is the output of the following code?\n\nint x = 5;\nx += 3;\ncout << x;",
-          options: ["A) 8", "B) 15", "C) 53", "D) Compilation Error",],
+          question: "What is the output of the following code ?\n\nvar x = 5;\nx += 3;\nconsole.log(x);",
+          options: ["A) 8", "B) 15", "C) 53", "D) Compilation Error"],
           correctAnswer: "A) 8",
         },
         {
           id: 18,
-          question: "Which of the following is the correct syntax for a multi-line comment in C++?",
-          options: ["A) /* This is a comment */", "B) // This is a comment //", "C) / This is a comment /", "D) ** This is a comment **",],
+          question: "Which of the following is the correct syntax for a multi-line comment in JavaScript?",
+          options: ["A) /* This is a comment */", "B) // This is a comment //", "C) / This is a comment /", "D) ** This is a comment **"],
           correctAnswer: "A) /* This is a comment */",
         },
         {
           id: 19,
-          question: "What is the output of the following code?\n\nint x = 5;\nint y = 2;\ncout << x % y;",
-          options: ["A) 2", "B) 1", "C) 0.4", "D) Compilation Error",],
+          question: "What is the output of the following code ?\n\nvar x = 5;\nvar y = 2;\nconsole.log(x % y);",
+          options: ["A) 2", "B) 1", "C) 0.4", "D) Compilation Error"],
           correctAnswer: "B) 1",
         },
         {
           id: 20,
-          question: "Which of the following is a valid way to declare a 2D array in C++?",
-          options: ["A) int arr[2][3];", "B) int arr[2, 3];", "C) int arr[2][3, 4];", "D) int arr[2][3][4];",],
-          correctAnswer: "A) int arr[2][3];",
+          question: "Which of the following is a valid way to declare a 2D array in JavaScript?",
+          options: ["A) var arr = [[1, 2], [3, 4]];", "B) var arr = [1, 2, 3, 4];", "C) var arr = [[1], [2], [3], [4]];", "D) var arr = [[[1], [2]], [[3], [4]]];"],
+          correctAnswer: "A) var arr = [[1, 2], [3, 4]];",
         },
         {
           id: 21,
-          question: "What is the output of the following code?\n\nbool isTrue = false;\ncout << std::boolalpha << isTrue;",
-          options: ["A) 0", "B) false", "C) False", "D) Compilation Error",],
+          question: "What is the output of the following code ?\n\nvar isTrue = false;\nconsole.log(isTrue.toString());",
+          options: ["A) 0", "B) false", "C) False", "D) Conversion Error"],
           correctAnswer: "B) false",
         },
         {
           id: 22,
-          question: "Which of the following is the correct way to declare a constant member variable in a class in C++?",
-          options: ["A) const int myVar;", "B) int const myVar;", "C) static const int myVar;", "D) Both A) and B)",],
-          correctAnswer: "D) Both A) and B)",
+          question: "Which of the following is the correct way to declare a constant member variable in a class in JavaScript?",
+          options: ["A) const myVar;", "B) let myVar;", "C) static const myVar;", "D) static let myVar;"],
+          correctAnswer: "A) const myVar;",
         },
         {
           id: 23,
-          question: "What is the output of the following code?\n\nstring greeting = \"Hello\";\ncout << greeting[1];",
-          options: ["A) H", "B) e", "C) l", "D) o",],
+          question: "What is the output of the following code ?\n\nvar greeting = 'Hello';\nconsole.log(greeting[1]);",
+          options: ["A) H", "B) e", "C) l", "D) o"],
           correctAnswer: "B) e",
         },
         {
           id: 24,
-          question: "What is the output of the following code?\n\nint x = 5;\ncout << \"The value of x is: \" << x;",
-          options: ["A) The value of x is: 5", "B) The value of x is: 10", "C) 5", "D) Compilation Error",],
+          question: "What is the output of the following code ?\n\nvar x = 5;\nconsole.log('The value of x is: ' + x);",
+          options: ["A) The value of x is: 5", "B) The value of x is: 10", "C) 5", "D) Compilation Error"],
           correctAnswer: "A) The value of x is: 5",
         },
         {
           id: 25,
-          question: "Which of the following is the correct way to declare a global variable in C++?",
-          options: ["A) int globalVar;", "B) global int globalVar;", "C) globalVar = int;", "D) Both A) and B)",],
-          correctAnswer: "A) int globalVar;",
+          question: "Which of the following is the correct way to declare a global variable in JavaScript?",
+          options: ["A) var globalVar;", "B) global var globalVar;", "C) globalVar = var;", "D) Both A) and B)"],
+          correctAnswer: "A) var globalVar;",
         },
         {
           id: 26,
-          question: "What is the output of the following code?\n\nint x = 5;\nint y = 2;\ncout << x / y;",
-          options: ["A) 2", "B) 2.5", "C) 2.0", "D) Compilation Error",],
+          question: "What is the output of the following code ?\n\nvar x = 5;\nvar y = 2;\nconsole.log(x / y);",
+          options: ["A) 2", "B) 2.5", "C) 2.0", "D) Compilation Error"],
           correctAnswer: "A) 2",
         },
         {
           id: 27,
-          question: "Which of the following is not a valid way to initialize a variable in C++?",
-          options: ["A) int x = 5;", "B) int y(6);", "C) int z; z = 7;", "D) int w{8};",],
-          correctAnswer: "C) int z; z = 7;",
+          question: "Which of the following is not a valid way to initialize a variable in JavaScript?",
+          options: ["A) var x = 5;", "B) var y = 6;", "C) var z; z = 7;", "D) var w = 8;"],
+          correctAnswer: "C) var z; z = 7;",
         },
         {
           id: 28,
-          question: "What is the output of the following code?\n\nint x = 5;\nx++; cout << x;",
-          options: ["A) 4", "B) 5", "C) 6", "D) Compilation Error",],
+          question: "What is the output of the following code ?\n\nvar x = 5;\nx++; console.log(x);",
+          options: ["A) 4", "B) 5", "C) 6", "D) Compilation Error"],
           correctAnswer: "C) 6",
         },
         {
           id: 29,
-          question: "Which of the following is true about type conversion in C++?",
-          options: ["A) Implicit type conversion is also known as explicit type casting.", "B) Explicit type conversion is also known as implicit type casting.", "C) Implicit type conversion is done automatically by the compiler.", "D) Explicit type conversion is done without the use of casting operators.",],
+          question: "Which of the following is true about type conversion in JavaScript?",
+          options: ["A) Implicit type conversion is also known as explicit type casting.", "B) Explicit type conversion is also known as implicit type casting.", "C) Implicit type conversion is done automatically by the compiler.", "D) Explicit type conversion is done without the use of casting operators."],
           correctAnswer: "C) Implicit type conversion is done automatically by the compiler.",
         },
         {
           id: 30,
-          question: "What is the output of the following code?\n\nint x = 5;\nint y = 2;\ncout << static_cast<float>(x) / y;",
-          options: ["A) 2.5", "B) 2", "C) 2.0", "D) Compilation Error",],
+          question: "What is the output of the following code ?\n\nvar x = 5;\nvar y = 2;\nconsole.log(parseFloat(x) / y);",
+          options: ["A) 2.5", "B) 2", "C) 2.0", "D) Compilation Error"],
           correctAnswer: "A) 2.5",
         },
-        // Add more questions for subchapter 1.1 as needed
       ],
 
       "1.4": [
@@ -6710,332 +6709,324 @@ const questions = {
           id: 1,
           question: "What will be the value of x after the following operation?",
           options: [
-            "A) 5",
-            "B) 8",
-            "C) 3",
-            "D) 15",
+              "A) 5",
+              "B) 8",
+              "C) 3",
+              "D) 15",
           ],
           correctAnswer: "B) 8",
-        },
-        {
+      },
+      {
           id: 2,
-          question: "Which of the following is a comparison operator in C++?",
+          question: "Which of the following is a comparison operator in JavaScript?",
           options: [
-            "A) +",
-            "B) ==",
-            "C) &&",
-            "D) %",
+              "A) +",
+              "B) ==",
+              "C) &&",
+              "D) %",
           ],
           correctAnswer: "B) ==",
-        },
-        {
+      },
+      {
           id: 3,
           question: "What is the result of the following expression?",
           options: [
-            "A) 10",
-            "B) 7",
-            "C) 10.0",
-            "D) 5",
+              "A) 10",
+              "B) 7",
+              "C) 10.0",
+              "D) 5",
           ],
           correctAnswer: "A) 10",
-        },
-        {
+      },
+      {
           id: 4,
-          question: "Which operator is used to find the remainder of a division operation in C++?",
+          question: "Which operator is used to find the remainder of a division operation in JavaScript?",
           options: [
-            "A) %",
-            "B) *",
-            "C) /",
-            "D) //",
+              "A) %",
+              "B) *",
+              "C) /",
+              "D) //",
           ],
           correctAnswer: "A) %",
-        },
-        {
-          id: 5,
-          question: "What is the output of the following code?",
-          options: [
-            "A) True",
-            "B) False",
-            "C) Error",
-            "D) 8",
-          ],
-          correctAnswer: "A) True",
-        },
-        {
-          id: 6,
-          question: "Identify the error in the following code:",
-          options: [
-            "A) No error",
-            "B) Type mismatch",
-            "C) Missing header file",
-            "D) Division by zero",
-          ],
-          correctAnswer: "B) Type mismatch",
-        },
-        {
-          id: 7,
-          question: "Which logical operator is used to perform a logical AND operation in C++?",
-          options: [
-            "A) &&",
-            "B) ||",
-            "C) !",
-            "D) &",
-          ],
-          correctAnswer: "A) &&",
-        },
-        {
-          id: 8,
-          question: "What is the value of z after the following operation?",
-          options: [
-            "A) 1",
-            "B) 2",
-            "C) 3",
-            "D) 4",
-          ],
-          correctAnswer: "A) 1",
-        },
-        {
-          id: 9,
-          question: "Which of the following is a valid C++ expression?",
-          options: [
-            "A) 5 + \"Hello\"",
-            "B) 5 / 0",
-            "C) 3.14 * 'A'",
-            "D) 2 + 2.5",
-          ],
-          correctAnswer: "D) 2 + 2.5",
-        },
-        {
-          id: 10,
-          question: "What will be the output of the following code?",
-          options: [
-            "A) False",
-            "B) True",
-            "C) Error",
-            "D) 8",
-          ],
-          correctAnswer: "B) True",
-        },
-        {
-          id: 11,
-          question: "Identify the error in the following code:",
-          options: [
-            "A) No error",
-            "B) Missing semicolon",
-            "C) Undefined variable",
-            "D) Increment operator cannot be used with variables",
-          ],
-          correctAnswer: "A) No error",
-        },
-        {
-          id: 12,
-          question: "Which operator is used to access the value at a memory address in C++?",
-          options: [
-            "A) *",
-            "B) &",
-            "C) %",
-            "D) !",
-          ],
-          correctAnswer: "A) *",
-        },
-        {
-          id: 13,
-          question: "What is the result of the following expression?",
-          options: [
-            "A) 3",
-            "B) 3.3",
-            "C) 3.0",
-            "D) 2",
-          ],
-          correctAnswer: "C) 3.0",
-        },
-        {
-          id: 14,
-          question: "What will be the output of the following code?",
-          options: [
-            "A) False",
-            "B) True",
-            "C) Error",
-            "D) 8",
-          ],
-          correctAnswer: "B) False",
-        },
-        {
-          id: 15,
-          question: "Identify the error in the following code:",
-          options: [
-            "A) No error",
-            "B) Division by zero",
-            "C) Missing header file",
-            "D) Variable y is not declared",
-          ],
-          correctAnswer: "B) Division by zero",
-        },
-        {
-          id: 16,
-          question: "Which operator is used to perform a logical OR operation in C++?",
-          options: [
+      },
+      {
+        id: 5,
+        question: "Which operator is used to perform a logical OR operation in JavaScript?",
+        options: [
             "A) &&",
             "B) ||",
             "C) !",
             "D) |",
-          ],
-          correctAnswer: "B) ||",
-        },
-        {
-          id: 17,
-          question: "What is the value of z after the following operation?",
-          options: [
-            "A) 2",
-            "B) 3",
-            "C) 4",
-            "D) 5",
-          ],
-          correctAnswer: "A) 2",
-        },
-        {
-          id: 18,
-          question: "Which of the following is a valid C++ expression?",
-          options: [
-            "A) 'A' + 1",
-            "B) true - false",
-            "C) \"Hello\" + \"World\"",
-            "D) 5 % 2.0",
-          ],
-          correctAnswer: "A) 'A' + 1",
-        },
-        {
-          id: 19,
-          question: "What will be the output of the following code?",
-          options: [
-            "A) False",
-            "B) True",
-            "C) Error",
-            "D) 10",
-          ],
-          correctAnswer: "B) False",
-        },
-        {
-          id: 20,
-          question: "Identify the error in the following code:",
-          options: [
-            "A) No error",
-            "B) Missing semicolon",
-            "C) Undefined variable",
-            "D) Decrement operator cannot be used with variables",
-          ],
-          correctAnswer: "A) No error",
-        },
-        {
-          id: 21,
-          question: "Which operator is used to find the memory address of a variable in C++?",
-          options: [
-            "A) *",
-            "B) &",
-            "C) %",
-            "D) !",
-          ],
-          correctAnswer: "B) &",
-        },
-        {
-          id: 22,
-          question: "What is the result of the following expression?",
-          options: [
-            "A) 3",
-            "B) 3.3",
-            "C) 3.0",
-            "D) 2",
-          ],
-          correctAnswer: "C) 3.0",
-        },
-        {
-          id: 23,
-          question: "What will be the output of the following code?",
-          options: [
-            "A) True",
-            "B) False",
-            "C) Error",
-            "D) 8",
-          ],
-          correctAnswer: "A) True",
-        },
-        {
-          id: 24,
-          question: "Identify the error in the following code:",
-          options: [
-            "A) No error",
-            "B) Type mismatch",
-            "C) Missing header file",
-            "D) Division by zero",
-          ],
-          correctAnswer: "A) No error",
-        },
-        {
-          id: 25,
-          question: "Which logical operator is used to perform a logical NOT operation in C++?",
-          options: [
-            "A) &&",
-            "B) ||",
-            "C) !",
-            "D) &",
-          ],
-          correctAnswer: "C) !",
-        },
-        {
-          id: 26,
-          question: "What is the value of z after the following operation?",
-          options: [
+        ],
+        correctAnswer: "B) ||",
+    },
+      {
+        id: 6,
+        question: "What is the value of z after the following operation?",
+        options: [
             "A) 1",
             "B) 2",
             "C) 3",
             "D) 4",
-          ],
-          correctAnswer: "A) 1",
-        },
-        {
-          id: 27,
-          question: "Which of the following is a valid C++ expression?",
+        ],
+        correctAnswer: "A) 1",
+    },
+      {
+          id: 7,
+          question: "Which logical operator is used to perform a logical AND operation in JavaScript?",
           options: [
-            "A) 'A' + 1",
-            "B) true - false",
-            "C) \"Hello\" + \"World\"",
-            "D) 5 % 2.0",
+              "A) &&",
+              "B) ||",
+              "C) !",
+              "D) &",
+          ],
+          correctAnswer: "A) &&",
+      },
+      {
+        id: 8,
+        question: "What is JavaScript primarily used for?",
+        options: [
+            "A. Styling web pages",
+            "B. Structuring web content",
+            "C. Adding interactivity to web pages",
+            "D. Creating web server applications"
+        ],
+        correctAnswer: "C. Adding interactivity to web pages"
+    },
+    {
+        id: 9,
+        question: "Which keyword is used to declare a variable in JavaScript?",
+        options: [
+            "A. var",
+            "B. let",
+            "C. const",
+            "D. def"
+        ],
+        correctAnswer: "A. var"
+    },
+      {
+        id: 10,
+        question: "Which operator is used to access the value at a memory address in JavaScript?",
+        options: [
+            "A) *",
+            "B) &",
+            "C) %",
+            "D) !",
+        ],
+        correctAnswer: "A) *",
+    },
+    {
+      id: 11,
+      question: "What does DOM stand for in the context of web development?",
+      options: [
+          "A. Document Object Model",
+          "B. Data Object Model",
+          "C. Document Order Model",
+          "D. Design Object Model"
+      ],
+      correctAnswer: "A. Document Object Model"
+  },
+      {
+          id: 12,
+          question: "Which operator is used to access the value at a memory address in JavaScript?",
+          options: [
+              "A) *",
+              "B) &",
+              "C) %",
+              "D) !",
+          ],
+          correctAnswer: "A) *",
+      },
+     
+      {
+        id: 14,
+        question: "Which of the following is not a valid way to comment in JavaScript?",
+        options: [
+            "A. // This is a comment",
+            "B. /* This is a comment */",
+            "C. -- This is a comment",
+            "D. # This is a comment"
+        ],
+        correctAnswer: "C. -- This is a comment"
+    },
+    {
+        id: 15,
+        question: "What will the following code output: console.log(typeof NaN);?",
+        options: [
+            "A. 'number'",
+            "B. 'string'",
+            "C. 'undefined'",
+            "D. 'NaN'"
+        ],
+        correctAnswer: "A. 'number'"
+    },
+      {
+          id: 16,
+          question: "Which operator is used to perform a logical OR operation in JavaScript?",
+          options: [
+              "A) &&",
+              "B) ||",
+              "C) !",
+              "D) |",
+          ],
+          correctAnswer: "B) ||",
+      },
+      {
+        id: 17,
+        question: "How do you declare a constant variable in JavaScript?",
+        options: [
+            "A. var",
+            "B. let",
+            "C. const",
+            "D. final"
+        ],
+        correctAnswer: "C. const"
+    },
+      {
+          id: 18,
+          question: "Which of the following is a valid JavaScript expression?",
+          options: [
+              "A) 'A' + 1",
+              "B) true - false",
+              "C) 'Hello' + 'World'",
+              "D) 5 % 2.0",
           ],
           correctAnswer: "A) 'A' + 1",
-        },
-        {
-          id: 28,
-          question: "What will be the output of the following code?",
+      },
+      {
+        id: 19,
+        question: "What is the purpose of the return statement in a JavaScript function?",
+        options: [
+            "A. It defines the function's name",
+            "B. It ends the function's execution and returns a value",
+            "C. It comments out the rest of the function",
+            "D. It specifies the function's parameters"
+        ],
+        correctAnswer: "B. It ends the function's execution and returns a value"
+    },
+    {
+        id: 20,
+        question: "Which operator is used for strict equality comparison in JavaScript?",
+        options: [
+            "A. ==",
+            "B. ===",
+            "C. !=",
+            "D. !=="
+        ],
+        correctAnswer: "B. ==="
+    },
+      {
+          id: 21,
+          question: "Which operator is used to find the memory address of a variable in JavaScript?",
           options: [
-            "A) False",
-            "B) True",
-            "C) Error",
-            "D) 8",
+              "A) *",
+              "B) &",
+              "C) %",
+              "D) !",
           ],
-          correctAnswer: "B) True",
-        },
-        {
-          id: 29,
-          question: "Identify the error in the following code:",
+          correctAnswer: "B) &",
+      },
+
+      {
+        id: 22,
+        question: "What is an example of a JavaScript event?",
+        options: [
+            "A. a variable declaration",
+            "B. a function call",
+            "C. a user clicking a button",
+            "D. a comment in the code"
+        ],
+        correctAnswer: "C. a user clicking a button"
+    },
+
+    {
+      id: 23,
+      question: "Which built-in method can be used to convert a string to uppercase in JavaScript?",
+      options: [
+          "A. toUpperCase()",
+          "B. toUpperCaseCase()",
+          "C. upperCase()",
+          "D. convertToUppercase()"
+      ],
+      correctAnswer: "A. toUpperCase()"
+  },
+  {
+      id: 24,
+      question: "How do you check the length of an array in JavaScript?",
+      options: [
+          "A. array.count",
+          "B. array.length",
+          "C. array.size",
+          "D. array.count()"
+      ],
+      correctAnswer: "B. array.length"
+  },
+      {
+          id: 25,
+          question: "Which logical operator is used to perform a logical NOT operation in JavaScript?",
           options: [
-            "A) No error",
-            "B) Division by zero",
-            "C) Missing header file",
-            "D) Variable y is not declared",
+              "A) &&",
+              "B) ||",
+              "C) !",
+              "D) &",
           ],
-          correctAnswer: "B) Division by zero",
-        },
-        {
+          correctAnswer: "C) !",
+      },
+      {
+        id: 26,
+        question: "What does the typeof operator return when used on a function?",
+        options: [
+            "A. 'function'",
+            "B. 'object'",
+            "C. 'undefined'",
+            "D. 'number'"
+        ],
+        correctAnswer: "A. 'function'"
+    },
+    {
+        id: 27,
+        question: "What does JSON stand for in JavaScript?",
+        options: [
+            "A. JavaScript Object Notation",
+            "B. JavaScript Object Network",
+            "C. JavaScript Onload Notification",
+            "D. JavaScript Operator Navigation"
+        ],
+        correctAnswer: "A. JavaScript Object Notation"
+    },
+    {
+        id: 28,
+        question: "Which method is used to add an element to the end of an array in JavaScript?",
+        options: [
+            "A. push()",
+            "B. pop()",
+            "C. shift()",
+            "D. unshift()"
+        ],
+        correctAnswer: "A. push()"
+    },
+    {
+        id: 29,
+        question: "In JavaScript, what does the setTimeout function do?",
+        options: [
+            "A. It sets the time on the computer's clock",
+            "B. It creates a delayed execution of a function",
+            "C. It sets the interval for a loop",
+            "D. It returns the current date and time"
+        ],
+        correctAnswer: "B. It creates a delayed execution of a function"
+    },
+      {
           id: 30,
-          question: "Which of the following is a valid C++ expression?",
+          question: "Which of the following is a valid JavaScript expression?",
           options: [
-            "A) 5 + \"5\"",
-            "B) 7 / 0",
-            "C) 3.14 * 'A'",
-            "D) 2 - 2.5",
+              "A) 5 + '5'",
+              "B) 7 / 0",
+              "C) 3.14 * 'A'",
+              "D) 2 - 2.5",
           ],
           correctAnswer: "D) 2 - 2.5",
-        },
+      },
         // Add more questions for subchapter 1.1 as needed
       ],
       // Add more subchapters for Chapter 1 as needed
@@ -7049,1076 +7040,989 @@ const questions = {
 
     2: {
       // Chapter 2
+
       "2.1": [
         {
-          id: 1,
-          question: "What is the syntax for an if statement in C++?",
-          options: [
-            "A) if(condition) { statements; }",
-            "B) if(condition) then { statements; }",
-            "C) if(condition) => { statements; }",
-            "D) (condition) if { statements; }",
-          ],
-          correctAnswer: "A) if(condition) { statements; }",
+            id: 1,
+            question: "What is the syntax for an if statement in JavaScript?",
+            options: [
+                "A) if(condition) { statements; }",
+                "B) if(condition) then { statements; }",
+                "C) if(condition) => { statements; }",
+                "D) (condition) if { statements; }",
+            ],
+            correctAnswer: "A) if(condition) { statements; }",
         },
         {
-          id: 2,
-          question: "In C++, can an if statement be followed by an else if statement without an intervening else statement?",
-          options: [
-            "A) Yes",
-            "B) No",
-          ],
-          correctAnswer: "A) Yes",
+            id: 2,
+            question: "In JavaScript, can an if statement be followed by an else if statement without an intervening else statement?",
+            options: [
+                "A) Yes",
+                "B) No",
+            ],
+            correctAnswer: "A) Yes",
         },
         {
-          id: 3,
-          question: "What is the purpose of the else if statement in C++?",
-          options: [
-            "A) It provides an alternative set of statements if the initial if condition is false.",
-            "B) It terminates the program if the initial if condition is false.",
-            "C) It reverses the condition specified in the initial if statement.",
-            "D) It has no specific purpose.",
-          ],
-          correctAnswer: "A) It provides an alternative set of statements if the initial if condition is false.",
+            id: 3,
+            question: "What is the purpose of the else if statement in JavaScript?",
+            options: [
+                "A) It provides an alternative set of statements if the initial if condition is false.",
+                "B) It terminates the program if the initial if condition is false.",
+                "C) It reverses the condition specified in the initial if statement.",
+                "D) It has no specific purpose.",
+            ],
+            correctAnswer: "A) It provides an alternative set of statements if the initial if condition is false.",
         },
         {
-          id: 4,
-          question: "Which keyword is used to define a switch statement in C++?",
-          options: [
-            "A) switch",
-            "B) case",
-            "C) select",
-            "D) choose",
-          ],
-          correctAnswer: "A) switch",
+            id: 4,
+            question: "Which keyword is used to define a switch statement in JavaScript?",
+            options: [
+                "A) switch",
+                "B) case",
+                "C) select",
+                "D) choose",
+            ],
+            correctAnswer: "A) switch",
         },
         {
-          id: 5,
-          question: "In a switch statement, what happens if none of the cases match the switch expression?",
-          options: [
-            "A) The program executes the default case (if provided).",
-            "B) The program terminates abruptly.",
-            "C) An error is thrown.",
-            "D) It goes to the next iteration of the loop.",
-          ],
-          correctAnswer: "A) The program executes the default case (if provided).",
+            id: 5,
+            question: "In a switch statement, what happens if none of the cases match the switch expression in JavaScript?",
+            options: [
+                "A) The program executes the default case (if provided).",
+                "B) The program terminates abruptly.",
+                "C) An error is thrown.",
+                "D) It goes to the next iteration of the loop.",
+            ],
+            correctAnswer: "A) The program executes the default case (if provided).",
         },
         {
-          id: 6,
-          question: "In a switch statement, what is the purpose of the break statement?",
-          options: [
-            "A) It exits the switch statement and continues with the next statement after the switch.",
-            "B) It restarts the switch statement from the beginning.",
-            "C) It skips the current case and moves to the next one.",
-            "D) It terminates the program.",
-          ],
-          correctAnswer: "A) It exits the switch statement and continues with the next statement after the switch.",
+            id: 6,
+            question: "In a switch statement, what is the purpose of the break statement in JavaScript?",
+            options: [
+                "A) It exits the switch statement and continues with the next statement after the switch.",
+                "B) It restarts the switch statement from the beginning.",
+                "C) It skips the current case and moves to the next one.",
+                "D) It terminates the program.",
+            ],
+            correctAnswer: "A) It exits the switch statement and continues with the next statement after the switch.",
         },
         {
-          id: 7,
-          question: "Which of the following is a valid if-else statement in C++?",
-          options: [
-            "A) if(condition) { statements; } else(condition) { statements; }",
-            "B) if(condition) { statements; } else { statements; }",
-            "C) if(condition) { statements; } if { statements; }",
-            "D) if(condition) { statements; } elseif { statements; }",
-          ],
-          correctAnswer: "B) if(condition) { statements; } else { statements; }",
+            id: 7,
+            question: "Which of the following is a valid if-else statement in JavaScript?",
+            options: [
+                "A) if(condition) { statements; } else(condition) { statements; }",
+                "B) if(condition) { statements; } else { statements; }",
+                "C) if(condition) { statements; } if { statements; }",
+                "D) if(condition) { statements; } elseif { statements; }",
+            ],
+            correctAnswer: "B) if(condition) { statements; } else { statements; }",
         },
         {
-          id: 8,
-          question: "What happens if there is no default case in a switch statement?",
-          options: [
-            "A) The program throws an error.",
-            "B) The program continues executing the statements after the switch.",
-            "C) It is mandatory to have a default case.",
-            "D) The program terminates abruptly.",
-          ],
-          correctAnswer: "B) The program continues executing the statements after the switch.",
+            id: 8,
+            question: "What happens if there is no default case in a switch statement in JavaScript?",
+            options: [
+                "A) The program throws an error.",
+                "B) The program continues executing the statements after the switch.",
+                "C) It is mandatory to have a default case.",
+                "D) The program terminates abruptly.",
+            ],
+            correctAnswer: "B) The program continues executing the statements after the switch.",
         },
         {
-          id: 9,
-          question: "In C++, can a switch statement work with characters as cases?",
-          options: [
-            "A) Yes",
-            "B) No",
-          ],
-          correctAnswer: "A) Yes",
+            id: 9,
+            question: "In JavaScript, can a switch statement work with characters as cases?",
+            options: [
+                "A) Yes",
+                "B) No",
+            ],
+            correctAnswer: "A) Yes",
         },
         {
-          id: 10,
-          question: "Which of the following is the correct way to write a nested if-else statement in C++?",
-          options: [
-            "A) if(condition1) { statements; } else if(condition2) { statements; } else { statements; }",
-            "B) if(condition1) { statements; } elseif(condition2) { statements; } else { statements; }",
-            "C) if(condition1) { statements; } if(condition2) { statements; } else { statements; }",
-            "D) if(condition1) { statements; } else(condition2) { statements; } else { statements; }",
-          ],
-          correctAnswer: "A) if(condition1) { statements; } else if(condition2) { statements; } else { statements; }",
+            id: 10,
+            question: "Which of the following is the correct way to write a nested if-else statement in JavaScript?",
+            options: [
+                "A) if(condition1) { statements; } else if(condition2) { statements; } else { statements; }",
+                "B) if(condition1) { statements; } elseif(condition2) { statements; } else { statements; }",
+                "C) if(condition1) { statements; } if(condition2) { statements; } else { statements; }",
+                "D) if(condition1) { statements; } else(condition2) { statements; } else { statements; }",
+            ],
+            correctAnswer: "A) if(condition1) { statements; } else if(condition2) { statements; } else { statements; }",
         },
         {
-          id: 11,
-          question: "What is the output of the following C++ code snippet?\n\n```cpp\nint x = 5;\nswitch(x) {\n    case 1:\n        cout << \"One\";\n    case 5:\n        cout << \"Five\";\n    case 10:\n        cout << \"Ten\";\n}\n```\na) One Five Ten\nb) Five\nc) Five Ten\nd) One",
-          options: [
-            "A) One Five Ten",
-            "B) Five",
-            "C) Five Ten",
-            "D) One",
-          ],
-          correctAnswer: "A) One Five Ten",
+            id: 11,
+            question: "What is the output of the following JavaScript code ?\n\n js\nlet x = 5;\nswitch(x) {\n    case 1:\n        console.log(\"One\");\n    case 5:\n        console.log(\"Five\");\n    case 10:\n        console.log(\"Ten\");\n}",
+            options: [
+                "A) One Five Ten",
+                "B) Five",
+                "C) Five Ten",
+                "D) One",
+            ],
+            correctAnswer: "A) One Five Ten",
         },
         {
-          id: 12,
-          question: "In a switch statement, can two case labels have the same value?",
-          options: [
-            "A) Yes",
-            "B) No",
-          ],
-          correctAnswer: "B) No",
+            id: 12,
+            question: "In a switch statement in JavaScript, can two case labels have the same value?",
+            options: [
+                "A) Yes",
+                "B) No",
+            ],
+            correctAnswer: "B) No",
         },
         {
-          id: 13,
-          question: "What is the purpose of using curly braces ({}) in if-else statements in C++?",
-          options: [
-            "A) They define a block of statements to be executed if the condition is true.",
-            "B) They define the condition to be checked.",
-            "C) They define a loop.",
-            "D) They are optional and can be omitted.",
-          ],
-          correctAnswer: "A) They define a block of statements to be executed if the condition is true.",
+            id: 13,
+            question: "What is the purpose of using curly braces ({}) in if-else statements in JavaScript?",
+            options: [
+                "A) They define a block of statements to be executed if the condition is true.",
+                "B) They define the condition to be checked.",
+                "C) They define a loop.",
+                "D) They are optional and can be omitted.",
+            ],
+            correctAnswer: "A) They define a block of statements to be executed if the condition is true.",
         },
         {
-          id: 14,
-          question: "Which of the following is a valid syntax for a switch statement in C++?",
-          options: [
-            "A) switch(expression) { case 1: statements; }",
-            "B) switch(expression): case 1: statements;",
-            "C) switch(expression) - case 1: statements;",
-            "D) switch(expression): case 1: statements; endswitch;",
-          ],
-          correctAnswer: "A) switch(expression) { case 1: statements; }",
+            id: 14,
+            question: "Which of the following is a valid syntax for a switch statement in JavaScript?",
+            options: [
+                "A) switch(expression) { case 1: statements; }",
+                "B) switch(expression): case 1: statements;",
+                "C) switch(expression) - case 1: statements;",
+                "D) switch(expression): case 1: statements; endswitch;",
+            ],
+            correctAnswer: "A) switch(expression) { case 1: statements; }",
         },
         {
-          id: 15,
-          question: "In a switch statement, can you use a floating-point number as a case label?",
-          options: [
-            "A) Yes",
-            "B) No",
-          ],
-          correctAnswer: "B) No",
+            id: 15,
+            question: "In a switch statement in JavaScript, can you use a floating-point number as a case label?",
+            options: [
+                "A) Yes",
+                "B) No",
+            ],
+            correctAnswer: "B) No",
         },
         {
-          id: 16,
-          question: "What is the output of the following C++ code snippet?\n\n```cpp\nint num = 3;\nswitch(num) {\n    case 1:\n        cout << \"One\";\n        break;\n    case 2:\n        cout << \"Two\";\n        break;\n    default:\n        cout << \"Default\";\n}\n```\na) One\nb) Two\nc) Default\nd) No output",
-          options: [
-            "A) One",
-            "B) Two",
-            "C) Default",
-            "D) No output",
-          ],
-          correctAnswer: "C) Default",
+            id: 16,
+            question: "What is the output of the following JavaScript code ?\n\n js\nlet num = 3;\nswitch(num) {\n    case 1:\n        console.log(\"One\");\n        break;\n    case 2:\n        console.log(\"Two\");\n        break;\n    default:\n        console.log(\"Default\");\n}",
+            options: [
+                "A) One",
+                "B) Two",
+                "C) Default",
+                "D) No output",
+            ],
+            correctAnswer: "C) Default",
         },
         {
-          id: 17,
-          question: "In a switch statement, can you have a case label without any statements following it?",
-          options: [
-            "A) Yes",
-            "B) No",
-          ],
-          correctAnswer: "A) Yes",
+            id: 17,
+            question: "In a switch statement in JavaScript, can you have a case label without any statements following it?",
+            options: [
+                "A) Yes",
+                "B) No",
+            ],
+            correctAnswer: "A) Yes",
         },
         {
-          id: 18,
-          question: "What is the output of the following C++ code snippet?\n\n```cpp\nint x = 5;\nif(x > 10) {\n    cout << \"Greater than 10\";\n}\nelse if(x > 5) {\n    cout << \"Greater than 5\";\n}\nelse {\n    cout << \"Less than or equal to 5\";\n}\n```\na) Greater than 10\nb) Greater than 5\nc) Less than or equal to 5\nd) No output",
-          options: [
-            "A) Greater than 10",
-            "B) Greater than 5",
-            "C) Less than or equal to 5",
-            "D) No output",
-          ],
-          correctAnswer: "C) Less than or equal to 5",
+            id: 18,
+            question: "What is the output of the following JavaScript code ?\n\njs\nlet x = 5;\nif(x > 10) {\n    console.log(\"Greater than 10\");\n}\nelse if(x > 5) {\n    console.log(\"Greater than 5\");\n}\nelse {\n    console.log(\"Less than or equal to 5\");\n}",
+            options: [
+                "A) Greater than 10",
+                "B) Greater than 5",
+                "C) Less than or equal to 5",
+                "D) No output",
+            ],
+            correctAnswer: "C) Less than or equal to 5",
         },
         {
-          id: 19,
-          question: "Which of the following statements is true about the else statement in C++?",
-          options: [
-            "A) It can be used without an if statement.",
-            "B) It is mandatory to have an if statement before an else statement.",
-            "C) It provides an alternative set of statements if the preceding if condition is false.",
-            "D) It is used to terminate the program.",
-          ],
-          correctAnswer: "C) It provides an alternative set of statements if the preceding if condition is false.",
+            id: 19,
+            question: "Which of the following statements is true about the else statement in JavaScript?",
+            options: [
+                "A) It can be used without an if statement.",
+                "B) It is mandatory to have an if statement before an else statement.",
+                "C) It provides an alternative set of statements if the preceding if condition is false.",
+                "D) It is used to terminate the program.",
+            ],
+            correctAnswer: "C) It provides an alternative set of statements if the preceding if condition is false.",
         },
         {
-          id: 20,
-          question: "What is the output of the following C++ code snippet?\n\n```cpp\nint num = 7;\nswitch(num) {\n    case 5:\n        cout << \"Five\";\n        break;\n    case 7:\n        cout << \"Seven\";\n        break;\n    default:\n        cout << \"Default\";\n}\n```\na) Five\nb) Seven\nc) Default\nd) No output",
-          options: [
-            "A) Five",
-            "B) Seven",
-            "C) Default",
-            "D) No output",
-          ],
-          correctAnswer: "B) Seven",
+            id: 20,
+            question: "What is the output of the following JavaScript code ?\n\n js\nlet num = 7;\nswitch(num) {\n    case 5:\n        console.log(\"Five\");\n        break;\n    case 7:\n        console.log(\"Seven\");\n        break;\n    default:\n        console.log(\"Default\");\n}",
+            options: [
+                "A) Five",
+                "B) Seven",
+                "C) Default",
+                "D) No output",
+            ],
+            correctAnswer: "B) Seven",
         },
         {
-          id: 21,
-          question: "Which of the following is a valid way to compare two integers in an if condition?",
-          options: [
-            "A) if(x = y)",
-            "B) if(x == y)",
-            "C) if(x => y)",
-            "D) if(x != y)",
-          ],
-          correctAnswer: "B) if(x == y)",
+            id: 21,
+            question: "Which of the following is a valid way to compare two integers in an if condition in JavaScript?",
+            options: [
+                "A) if(x = y)",
+                "B) if(x == y)",
+                "C) if(x => y)",
+                "D) if(x != y)",
+            ],
+            correctAnswer: "B) if(x == y)",
         },
         {
-          id: 22,
-          question: "In a switch statement, can you have multiple case labels for a single set of statements?",
-          options: [
-            "A) Yes",
-            "B) No",
-          ],
-          correctAnswer: "A) Yes",
+            id: 22,
+            question: "In a switch statement in JavaScript, can you have multiple case labels for a single set of statements?",
+            options: [
+                "A) Yes",
+                "B) No",
+            ],
+            correctAnswer: "A) Yes",
         },
         {
-          id: 23,
-          question: "What is the output of the following C++ code snippet?\n\n```cpp\nint x = 10;\nswitch(x) {\n    case 5:\n        cout << \"Five\";\n        break;\n    case 10:\n        cout << \"Ten\";\n        break;\n    default:\n        cout << \"Default\";\n}\n```\na) Five\nb) Ten\nc) Default\nd) No output",
-          options: [
-            "A) Five",
-            "B) Ten",
-            "C) Default",
-            "D) No output",
-          ],
-          correctAnswer: "B) Ten",
+            id: 23,
+            question: "What is the output of the following JavaScript code ?\n\n js\nlet x = 10;\nswitch(x) {\n    case 5:\n        console.log(\"Five\");\n        break;\n    case 10:\n        console.log(\"Ten\");\n        break;\n    default:\n        console.log(\"Default\");\n}",
+            options: [
+                "A) Five",
+                "B) Ten",
+                "C) Default",
+                "D) No output",
+            ],
+            correctAnswer: "B) Ten",
         },
         {
-          id: 24,
-          question: "Which of the following is a valid use of an if-else statement?",
-          options: [
-            "A) if(5 + 5) { statements; }",
-            "B) if(true) { statements; }",
-            "C) if(x = 10) { statements; }",
-            "D) if(x != y) { statements; }",
-          ],
-          correctAnswer: "D) if(x != y) { statements; }",
+            id: 24,
+            question: "Which of the following is a valid use of an if-else statement in JavaScript?",
+            options: [
+                "A) if(5 + 5) { statements; }",
+                "B) if(true) { statements; }",
+                "C) if(x = 10) { statements; }",
+                "D) if(x != y) { statements; }",
+            ],
+            correctAnswer: "D) if(x != y) { statements; }",
         },
         {
-          id: 25,
-          question: "What is the output of the following C++ code snippet?\n\n```cpp\nint num = 2;\nswitch(num) {\n    case 1:\n        cout << \"One\";\n        break;\n    case 2:\n        cout << \"Two\";\n}\n```\na) One\nb) Two\nc) No output\nd) An error occurs",
-          options: [
-            "A) One",
-            "B) Two",
-            "C) No output",
-            "D) An error occurs",
-          ],
-          correctAnswer: "B) Two",
+            id: 25,
+            question: "What is the output of the following JavaScript code ?\n\njs\nlet num = 2;\nswitch(num) {\n    case 1:\n        console.log(\"One\");\n        break;\n    case 2:\n        console.log(\"Two\");\n}",
+            options: [
+                "A) One",
+                "B) Two",
+                "C) No output",
+                "D) An error occurs",
+            ],
+            correctAnswer: "B) Two",
         },
         {
-          id: 26,
-          question: "In a switch statement, can you use a variable of type char as the switch expression?",
-          options: [
-            "A) Yes",
-            "B) No",
-          ],
-          correctAnswer: "A) Yes",
+            id: 26,
+            question: "In a switch statement in JavaScript, can you use a variable of type char as the switch expression?",
+            options: [
+                "A) Yes",
+                "B) No",
+            ],
+            correctAnswer: "B) No",
         },
         {
-          id: 27,
-          question: "What is the output of the following C++ code snippet?\n\n```cpp\nint x = 3;\nif(x < 5)\n    cout << \"Less than 5\";\nelse if(x < 10)\n    cout << \"Less than 10\";\nelse\n    cout << \"Greater than or equal to 10\";\n```\na) Less than 5\nb) Less than 10\nc) Greater than or equal to 10\nd) No output",
-          options: [
-            "A) Less than 5",
-            "B) Less than 10",
-            "C) Greater than or equal to 10",
-            "D) No output",
-          ],
-          correctAnswer: "A) Less than 5",
+            id: 27,
+            question: "What is the output of the following JavaScript code ?\n\njs\nlet x = 3;\nif(x < 5)\n    console.log(\"Less than 5\");\nelse if(x < 10)\n    console.log(\"Less than 10\");\nelse\n    console.log(\"Greater than or equal to 10\");",
+            options: [
+                "A) Less than 5",
+                "B) Less than 10",
+                "C) Greater than or equal to 10",
+                "D) No output",
+            ],
+            correctAnswer: "A) Less than 5",
         },
         {
-          id: 28,
-          question: "In a switch statement, can the switch expression be of type float?",
-          options: [
-            "A) Yes",
-            "B) No",
-          ],
-          correctAnswer: "B) No",
+            id: 28,
+            question: "In a switch statement in JavaScript, can the switch expression be of type float?",
+            options: [
+                "A) Yes",
+                "B) No",
+            ],
+            correctAnswer: "B) No",
         },
         {
-          id: 29,
-          question: "What is the output of the following C++ code snippet?\n\n```cpp\nint num = 2;\nswitch(num) {\n    case 1:\n        cout << \"One\";\n        break;\n    case 2:\n        cout << \"Two\";\n}\n```\na) One\nb) Two\nc) No output\nd) An error occurs",
-          options: [
-            "A) One",
-            "B) Two",
-            "C) No output",
-            "D) An error occurs",
-          ],
-          correctAnswer: "B) Two",
+            id: 29,
+            question: "What is the output of the following JavaScript code ?\n\njs\nlet num = 2;\nswitch(num) {\n    case 1:\n        console.log(\"One\");\n        break;\n    case 2:\n        console.log(\"Two\");\n}",
+            options: [
+                "A) One",
+                "B) Two",
+                "C) No output",
+                "D) An error occurs",
+            ],
+            correctAnswer: "B) Two",
         },
         {
-          id: 30,
-          question: "Which of the following is a valid syntax for a switch statement in C++?",
-          options: [
-            "A) switch(expression) { case 1: statements; }",
-            "B) switch(expression): case 1: statements;",
-            "C) switch(expression) - case 1: statements;",
-            "D) switch(expression): case 1: statements; endswitch;",
-          ],
-          correctAnswer: "A) switch(expression) { case 1: statements; }",
+            id: 30,
+            question: "Which of the following is a valid syntax for a switch statement in JavaScript?",
+            options: [
+                "A) switch(expression) { case 1: statements; }",
+                "B) switch(expression): case 1: statements;",
+                "C) switch(expression) - case 1: statements;",
+                "D) switch(expression): case 1: statements; endswitch;",
+            ],
+            correctAnswer: "A) switch(expression) { case 1: statements; }",
         },
-        // Add more questions for subchapter 1.1 as needed
       ],
+      
       "2.2": [
         {
-          id: 1,
-          question: "What is the purpose of a loop in programming?",
-          options: [
-            "A) To execute a block of code multiple times",
-            "B) To terminate the program",
-            "C) To declare variables",
-            "D) To print output",
-          ],
-          correctAnswer: "A) To execute a block of code multiple times",
+            id: 1,
+            question: "What is the purpose of a loop in programming?",
+            options: [
+                "A) To execute a block of code multiple times",
+                "B) To terminate the program",
+                "C) To declare variables",
+                "D) To print output",
+            ],
+            correctAnswer: "A) To execute a block of code multiple times",
         },
         {
-          id: 2,
-          question: "Which loop is best suited when you know the exact number of iterations needed?",
-          options: [
-            "A) for loop",
-            "B) while loop",
-            "C) do-while loop",
-            "D) break loop",
-          ],
-          correctAnswer: "A) for loop",
+            id: 2,
+            question: "Which loop is best suited when you know the exact number of iterations needed?",
+            options: [
+                "A) for loop",
+                "B) while loop",
+                "C) do-while loop",
+                "D) break loop",
+            ],
+            correctAnswer: "A) for loop",
         },
         {
-          id: 3,
-          question: "In a for loop, how many expressions are present inside the parentheses?",
-          options: [
-            "A) 1",
-            "B) 2",
-            "C) 3",
-            "D) 4",
-          ],
-          correctAnswer: "C) 3",
+            id: 3,
+            question: "In a for loop, how many expressions are present inside the parentheses?",
+            options: [
+                "A) 1",
+                "B) 2",
+                "C) 3",
+                "D) 4",
+            ],
+            correctAnswer: "C) 3",
         },
         {
-          id: 4,
-          question: "Which loop will always execute the code block at least once?",
-          options: [
-            "A) for loop",
-            "B) while loop",
-            "C) do-while loop",
-            "D) break loop",
-          ],
-          correctAnswer: "C) do-while loop",
+            id: 4,
+            question: "Which loop will always execute the code block at least once?",
+            options: [
+                "A) for loop",
+                "B) while loop",
+                "C) do-while loop",
+                "D) break loop",
+            ],
+            correctAnswer: "C) do-while loop",
         },
         {
-          id: 5,
-          question: "When would you use a do-while loop instead of a while loop?",
-          options: [
-            "A) When you want the loop to run at least once",
-            "B) When you know the exact number of iterations",
-            "C) When you want to skip the loop entirely",
-            "D) When you want to break out of the loop",
-          ],
-          correctAnswer: "A) When you want the loop to run at least once",
+            id: 5,
+            question: "When would you use a do-while loop instead of a while loop?",
+            options: [
+                "A) When you want the loop to run at least once",
+                "B) When you know the exact number of iterations",
+                "C) When you want to skip the loop entirely",
+                "D) When you want to break out of the loop",
+            ],
+            correctAnswer: "A) When you want the loop to run at least once",
         },
         {
-          id: 6,
-          question: "What is the purpose of the break statement in a loop?",
-          options: [
-            "A) To exit the loop prematurely",
-            "B) To skip the current iteration",
-            "C) To continue to the next iteration",
-            "D) To print a message",
-          ],
-          correctAnswer: "A) To exit the loop prematurely",
+            id: 6,
+            question: "What is the purpose of the break statement in a loop?",
+            options: [
+                "A) To exit the loop prematurely",
+                "B) To skip the current iteration",
+                "C) To continue to the next iteration",
+                "D) To print a message",
+            ],
+            correctAnswer: "A) To exit the loop prematurely",
         },
         {
-          id: 7,
-          question: "In a for loop, where is the initialization expression typically placed?",
-          options: [
-            "A) Before the loop starts",
-            "B) In the middle of the loop body",
-            "C) After the loop body",
-            "D) It can be placed anywhere",
-          ],
-          correctAnswer: "A) Before the loop starts",
+            id: 7,
+            question: "In a for loop, where is the initialization expression typically placed?",
+            options: [
+                "A) Before the loop starts",
+                "B) In the middle of the loop body",
+                "C) After the loop body",
+                "D) It can be placed anywhere",
+            ],
+            correctAnswer: "A) Before the loop starts",
         },
         {
-          id: 8,
-          question: "Which loop control statement is used to skip the rest of the current iteration and start the next one?",
-          options: [
-            "A) continue",
-            "B) break",
-            "C) return",
-            "D) skip",
-          ],
-          correctAnswer: "A) continue",
+            id: 8,
+            question: "Which loop control statement is used to skip the rest of the current iteration and start the next one?",
+            options: [
+                "A) continue",
+                "B) break",
+                "C) return",
+                "D) skip",
+            ],
+            correctAnswer: "A) continue",
         },
         {
-          id: 9,
-          question: "What is an infinite loop?",
-          options: [
-            "A) A loop that never terminates",
-            "B) A loop that executes only once",
-            "C) A loop that has a very large number of iterations",
-            "D) A loop that prints infinitely",
-          ],
-          correctAnswer: "A) A loop that never terminates",
+            id: 9,
+            question: "What is an infinite loop?",
+            options: [
+                "A) A loop that never terminates",
+                "B) A loop that executes only once",
+                "C) A loop that has a very large number of iterations",
+                "D) A loop that prints infinitely",
+            ],
+            correctAnswer: "A) A loop that never terminates",
         },
         {
-          id: 10,
-          question: "When would you use a while loop instead of a for loop?",
-          options: [
-            "A) When you know the exact number of iterations",
-            "B) When you want to loop through an array",
-            "C) When you want to execute a block of code multiple times",
-            "D) When you want to print output",
-          ],
-          correctAnswer: "B) When you want to loop through an array",
+            id: 10,
+            question: "When would you use a while loop instead of a for loop?",
+            options: [
+                "A) When you know the exact number of iterations",
+                "B) When you want to loop through an array",
+                "C) When you want to execute a block of code multiple times",
+                "D) When you want to print output",
+            ],
+            correctAnswer: "B) When you want to loop through an array",
         },
         {
-          id: 11,
-          question: "What is the syntax for a do-while loop in C++?",
-          options: [
-            "A) do { /* code */ } while (condition);",
-            "B) while (condition) { /* code */ } do;",
-            "C) for (int i = 0; i < 10; i++) { /* code */ }",
-            "D) do while (condition) { /* code */ };",
-          ],
-          correctAnswer: "A) do { /* code */ } while (condition);",
+            id: 11,
+            question: "What is the syntax for a do-while loop in JavaScript?",
+            options: [
+                "A) do { /* code */ } while (condition);",
+                "B) while (condition) { /* code */ } do;",
+                "C) for (let i = 0; i < 10; i++) { /* code */ }",
+                "D) do while (condition) { /* code */ };",
+            ],
+            correctAnswer: "A) do { /* code */ } while (condition);",
         },
         {
-          id: 12,
-          question: "In a do-while loop, when is the condition checked?",
-          options: [
-            "A) Before executing the code block",
-            "B) After executing the code block",
-            "C) In the middle of the loop body",
-            "D) It is not checked",
-          ],
-          correctAnswer: "B) After executing the code block",
+            id: 12,
+            question: "In a do-while loop, when is the condition checked?",
+            options: [
+                "A) Before executing the code block",
+                "B) After executing the code block",
+                "C) In the middle of the loop body",
+                "D) It is not checked",
+            ],
+            correctAnswer: "B) After executing the code block",
         },
         {
-          id: 13,
-          question: "Which loop is more suitable for situations where you want to iterate through a container like an array or a list?",
-          options: [
-            "A) for loop",
-            "B) while loop",
-            "C) do-while loop",
-            "D) break loop",
-          ],
-          correctAnswer: "A) for loop",
+            id: 13,
+            question: "Which loop is more suitable for situations where you want to iterate through a container like an array or a list?",
+            options: [
+                "A) for loop",
+                "B) while loop",
+                "C) do-while loop",
+                "D) break loop",
+            ],
+            correctAnswer: "A) for loop",
         },
         {
-          id: 14,
-          question: "What is the output of the following code snippet?\n\nint i = 0;\nwhile (i < 5) {\n    cout << i << ' ';\n    i++;\n}",
-          options: [
-            "A) 0 1 2 3 4",
-            "B) 1 2 3 4 5",
-            "C) 0 1 2 3 4 5",
-            "D) Error",
-          ],
-          correctAnswer: "A) 0 1 2 3 4",
+            id: 14,
+            question: "What is the output of the following code ?\n\nlet i = 0;\nwhile (i < 5) {\n    console.log(i + ' ');\n    i++;\n}",
+            options: [
+                "A) 0 1 2 3 4",
+                "B) 1 2 3 4 5",
+                "C) 0 1 2 3 4 5",
+                "D) Error",
+            ],
+            correctAnswer: "A) 0 1 2 3 4",
         },
         {
-          id: 15,
-          question: "Which loop control statement is used to terminate the entire loop prematurely?",
-          options: [
-            "A) break",
-            "B) continue",
-            "C) return",
-            "D) exit",
-          ],
-          correctAnswer: "A) break",
+            id: 15,
+            question: "Which loop control statement is used to terminate the entire loop prematurely?",
+            options: [
+                "A) break",
+                "B) continue",
+                "C) return",
+                "D) exit",
+            ],
+            correctAnswer: "A) break",
         },
         {
-          id: 16,
-          question: "When is the loop control expression in a for loop evaluated?",
-          options: [
-            "A) Before each iteration",
-            "B) After each iteration",
-            "C) In the middle of the loop body",
-            "D) It is not evaluated",
-          ],
-          correctAnswer: "A) Before each iteration",
+            id: 16,
+            question: "When is the loop control expression in a for loop evaluated?",
+            options: [
+                "A) Before each iteration",
+                "B) After each iteration",
+                "C) In the middle of the loop body",
+                "D) It is not evaluated",
+            ],
+            correctAnswer: "A) Before each iteration",
         },
         {
-          id: 17,
-          question: "What is the output of the following code snippet?\n\nfor (int i = 0; i < 5; i++) {\n    if (i == 2)\n        break;\n    cout << i << ' ';\n}",
-          options: [
-            "A) 0 1",
-            "B) 0 1 2",
-            "C) 0 1 3 4",
-            "D) 0 1 3",
-          ],
-          correctAnswer: "A) 0 1",
+            id: 17,
+            question: "What is the output of the following code ?\n\nfor (let i = 0; i < 5; i++) {\n    if (i == 2)\n        break;\n    console.log(i + ' ');\n}",
+            options: [
+                "A) 0 1",
+                "B) 0 1 2",
+                "C) 0 1 3 4",
+                "D) 0 1 3",
+            ],
+            correctAnswer: "A) 0 1",
         },
         {
-          id: 18,
-          question: "Which loop control statement is used to skip the current iteration and continue with the next one?",
-          options: [
-            "A) break",
-            "B) continue",
-            "C) skip",
-            "D) return",
-          ],
-          correctAnswer: "B) continue",
+            id: 18,
+            question: "Which loop control statement is used to skip the current iteration and continue with the next one?",
+            options: [
+                "A) break",
+                "B) continue",
+                "C) skip",
+                "D) return",
+            ],
+            correctAnswer: "B) continue",
         },
         {
-          id: 19,
-          question: "In a do-while loop, the code block is guaranteed to execute at least how many times?",
-          options: [
-            "A) 0",
-            "B) 1",
-            "C) 2",
-            "D) Infinite times",
-          ],
-          correctAnswer: "B) 1",
+            id: 19,
+            question: "In a do-while loop, the code block is guaranteed to execute at least how many times?",
+            options: [
+                "A) 0",
+                "B) 1",
+                "C) 2",
+                "D) Infinite times",
+            ],
+            correctAnswer: "B) 1",
         },
         {
-          id: 20,
-          question: "What is the output of the following code snippet?\n\nint i = 0;\ndo {\n    cout << i << ' ';\n    i++;\n} while (i < 5);",
-          options: [
-            "A) 0 1 2 3 4",
-            "B) 1 2 3 4 5",
-            "C) 0 1 2 3 4 5",
-            "D) Error",
-          ],
-          correctAnswer: "A) 0 1 2 3 4",
+            id: 20,
+            question: "What is the output of the following code ?\n\nlet i = 0;\ndo {\n    console.log(i + ' ');\n    i++;\n} while (i < 5);",
+            options: [
+                "A) 0 1 2 3 4",
+                "B) 1 2 3 4 5",
+                "C) 0 1 2 3 4 5",
+                "D) Error",
+            ],
+            correctAnswer: "A) 0 1 2 3 4",
         },
         {
-          id: 21,
-          question: "Which loop control statement is used to exit multiple nested loops?",
-          options: [
-            "A) break",
-            "B) continue",
-            "C) exit",
-            "D) return",
-          ],
-          correctAnswer: "A) break",
+            id: 21,
+            question: "Which loop control statement is used to exit multiple nested loops?",
+            options: [
+                "A) break",
+                "B) continue",
+                "C) exit",
+                "D) return",
+            ],
+            correctAnswer: "A) break",
         },
         {
-          id: 22,
-          question: "In a while loop, when is the condition checked?",
-          options: [
-            "A) Before executing the code block",
-            "B) After executing the code block",
-            "C) In the middle of the loop body",
-            "D) It is not checked",
-          ],
-          correctAnswer: "A) Before executing the code block",
+            id: 22,
+            question: "In a while loop, when is the condition checked?",
+            options: [
+                "A) Before executing the code block",
+                "B) After executing the code block",
+                "C) In the middle of the loop body",
+                "D) It is not checked",
+            ],
+            correctAnswer: "A) Before executing the code block",
         },
         {
-          id: 23,
-          question: "What is the output of the following code snippet?\n\nfor (int i = 0; i < 5; i++) {\n    if (i % 2 == 0)\n        continue;\n    cout << i << ' ';\n}",
-          options: [
-            "A) 1 3",
-            "B) 0 2 4",
-            "C) 1 3 5",
-            "D) 0 1 2 3 4",
-          ],
-          correctAnswer: "A) 1 3",
+            id: 23,
+            question: "What is the output of the following code ?\n\nlet i = 0;\nwhile (i < 5) {\n    if (i % 2 == 0)\n        continue;\n    console.log(i + ' ');\n    i++;\n}",
+            options: [
+                "A) 1 3",
+                "B) 0 2 4",
+                "C) 1 3 5",
+                "D) 0 1 2 3 4",
+            ],
+            correctAnswer: "A) 1 3",
         },
         {
-          id: 24,
-          question: "Which loop is used when you want to execute a block of code based on a condition and then re-evaluate the condition?",
-          options: [
-            "A) for loop",
-            "B) while loop",
-            "C) do-while loop",
-            "D) break loop",
-          ],
-          correctAnswer: "B) while loop",
+            id: 24,
+            question: "Which loop is used when you want to execute a block of code based on a condition and then re-evaluate the condition?",
+            options: [
+                "A) for loop",
+                "B) while loop",
+                "C) do-while loop",
+                "D) break loop",
+            ],
+            correctAnswer: "B) while loop",
         },
         {
-          id: 25,
-          question: "What is the output of the following code snippet?\n\nint i = 5;\nwhile (i > 0) {\n    cout << i << ' ';\n    i--;\n}",
-          options: [
-            "A) 5 4 3 2 1",
-            "B) 1 2 3 4 5",
-            "C) 0 1 2 3 4",
-            "D) Error",
-          ],
-          correctAnswer: "A) 5 4 3 2 1",
+            id: 25,
+            question: "What is the output of the following code ?\n\nlet i = 5;\nwhile (i > 0) {\n    console.log(i + ' ');\n    i--;\n}",
+            options: [
+                "A) 5 4 3 2 1",
+                "B) 1 2 3 4 5",
+                "C) 0 1 2 3 4",
+                "D) Error",
+            ],
+            correctAnswer: "A) 5 4 3 2 1",
         },
         {
-          id: 26,
-          question: "In a do-while loop, when is the condition checked?",
-          options: [
-            "A) Before executing the code block",
-            "B) After executing the code block",
-            "C) In the middle of the loop body",
-            "D) It is not checked",
-          ],
-          correctAnswer: "B) After executing the code block",
+            id: 26,
+            question: "In a do-while loop, when is the condition checked?",
+            options: [
+                "A) Before executing the code block",
+                "B) After executing the code block",
+                "C) In the middle of the loop body",
+                "D) It is not checked",
+            ],
+            correctAnswer: "B) After executing the code block",
         },
         {
-          id: 27,
-          question: "What is the output of the following code snippet?\n\nint i = 0;\ndo {\n    cout << i << ' ';\n    i++;\n} while (i > 5);",
-          options: [
-            "A) 0",
-            "B) 0 1 2 3 4",
-            "C) 1 2 3 4 5",
-            "D) Error",
-          ],
-          correctAnswer: "A) 0",
+            id: 27,
+            question: "What is the output of the following code ?\n\nlet i = 0;\ndo {\n    console.log(i + ' ');\n    i++;\n} while (i > 5);",
+            options: [
+                "A) 0",
+                "B) 0 1 2 3 4",
+                "C) 1 2 3 4 5",
+                "D) Error",
+            ],
+            correctAnswer: "A) 0",
         },
         {
-          id: 28,
-          question: "Which loop control statement is used to exit the program prematurely?",
-          options: [
-            "A) break",
-            "B) continue",
-            "C) exit",
-            "D) return",
-          ],
-          correctAnswer: "C) exit",
+            id: 28,
+            question: "Which loop control statement is used to exit the program prematurely?",
+            options: [
+                "A) break",
+                "B) continue",
+                "C) exit",
+                "D) return",
+            ],
+            correctAnswer: "C) exit",
         },
         {
-          id: 29,
-          question: "What is the output of the following code snippet?\n\nfor (int i = 0; i < 5; i++) {\n    for (int j = 0; j < 3; j++) {\n        if (j == 1)\n            break;\n        cout << i << ' ' << j << ' ';\n    }\n}",
-          options: [
-            "A) 0 0 1 0 2 0 3 0 4 0",
-            "B) 0 0 1 0 2 0 3 0 4 0 1 0 2 0 3 0 4 0",
-            "C) 0 0 1 0 2 0 3 0 4 0 1 1 2 1 3 1 4 1",
-            "D) 0 0 1 1 2 1 3 1 4 1",
-          ],
-          correctAnswer: "A) 0 0 1 0 2 0 3 0 4 0",
+            id: 29,
+            question: "What is the output of the following code ?\n\nfor (let i = 0; i < 5; i++) {\n    for (let j = 0; j < 3; j++) {\n        if (j == 1)\n            break;\n        console.log(i + ' ' + j + ' ');\n    }\n}",
+            options: [
+                "A) 0 0 1 0 2 0 3 0 4 0",
+                "B) 0 0 1 0 2 0 3 0 4 0 1 0 2 0 3 0 4 0",
+                "C) 0 0 1 0 2 0 3 0 4 0 1 1 2 1 3 1 4 1",
+                "D) 0 0 1 1 2 1 3 1 4 1",
+            ],
+            correctAnswer: "A) 0 0 1 0 2 0 3 0 4 0",
         },
         {
-          id: 30,
-          question: "Which loop is best suited for situations where you want to perform a task until a certain condition is met, but you're not sure how many iterations are needed?",
-          options: [
-            "A) for loop",
-            "B) while loop",
-            "C) do-while loop",
-            "D) break loop",
-          ],
-          correctAnswer: "B) while loop",
+            id: 30,
+            question: "Which loop is best suited for situations where you want to perform a task until a certain condition is met, but you're not sure how many iterations are needed?",
+            options: [
+                "A) for loop",
+                "B) while loop",
+                "C) do-while loop",
+                "D) break loop",
+            ],
+            correctAnswer: "B) while loop",
         },
         // Add more questions for subchapter 1.2 as needed
-      ],
-      "2.3": [
-        {
+    ],
+    "2.3": [
+      {
           id: 1,
-          question: "What is the purpose of defining functions in C++?",
+          question: "What is the purpose of defining functions in JavaScript?",
           options: [
-            "A) To store data",
-            "B) To organize code and perform tasks",
-            "C) To declare variables",
-            "D) To print output",
+              "A) To store data",
+              "B) To organize code and perform tasks",
+              "C) To declare variables",
+              "D) To print output",
           ],
           correctAnswer: "B) To organize code and perform tasks",
-        },
-        {
+      },
+      {
           id: 2,
-          question: "In C++, a function can be defined by specifying its:",
+          question: "In JavaScript, a function can be defined by specifying its:",
           options: [
-            "A) Input type",
-            "B) Output type",
-            "C) Name and Input type",
-            "D) Name and Output type",
+              "A) Input type",
+              "B) Output type",
+              "C) Name and Input type",
+              "D) Name and Output type",
           ],
           correctAnswer: "D) Name and Output type",
-        },
-        {
+      },
+      {
           id: 3,
-          question: "What are the two main components of a function declaration in C++?",
+          question: "What are the two main components of a function declaration in JavaScript?",
           options: [
-            "A) Return type and function name",
-            "B) Parameters and function body",
-            "C) Input type and Output type",
-            "D) Data type and function name",
+              "A) Return type and function name",
+              "B) Parameters and function body",
+              "C) Input type and Output type",
+              "D) Data type and function name",
           ],
           correctAnswer: "A) Return type and function name",
-        },
-        {
+      },
+      {
           id: 4,
           question: "In a function declaration, what does the return type indicate?",
           options: [
-            "A) The type of data the function accepts",
-            "B) The type of data the function returns",
-            "C) The number of parameters the function has",
-            "D) The function's name",
+              "A) The type of data the function accepts",
+              "B) The type of data the function returns",
+              "C) The number of parameters the function has",
+              "D) The function's name",
           ],
           correctAnswer: "B) The type of data the function returns",
-        },
-        {
+      },
+      {
           id: 5,
-          question: "What is a parameter in a function?",
+          question: "What is a parameter in a function in JavaScript?",
           options: [
-            "A) A variable used inside a function",
-            "B) A value passed to a function when it's called",
-            "C) A type of function",
-            "D) A data type in C++",
+              "A) A variable used inside a function",
+              "B) A value passed to a function when it's called",
+              "C) A type of function",
+              "D) A data type in JavaScript",
           ],
           correctAnswer: "B) A value passed to a function when it's called",
-        },
-        {
+      },
+      {
           id: 6,
-          question: "In a function declaration, where are the parameters specified?",
+          question: "In a function declaration, where are the parameters specified in JavaScript?",
           options: [
-            "A) In the function body",
-            "B) In the return statement",
-            "C) In the parentheses following the function name",
-            "D) In the header file",
+              "A) In the function body",
+              "B) In the return statement",
+              "C) In the parentheses following the function name",
+              "D) In the header file",
           ],
           correctAnswer: "C) In the parentheses following the function name",
-        },
-        {
+      },
+      {
           id: 7,
-          question: "What happens if a function is called with fewer arguments than specified in its declaration?",
+          question: "What happens if a function is called with fewer arguments than specified in its declaration in JavaScript?",
           options: [
-            "A) It will cause a compilation error",
-            "B) It will automatically generate default values for missing arguments",
-            "C) It will ignore the missing arguments",
-            "D) It will return an error message",
+              "A) It will cause a compilation error",
+              "B) It will automatically generate default values for missing arguments",
+              "C) It will ignore the missing arguments",
+              "D) It will return an error message",
           ],
-          correctAnswer: "A) It will cause a compilation error",
-        },
-        {
+          correctAnswer: "C) It will ignore the missing arguments",
+      },
+      {
           id: 8,
-          question: "In C++, can a function return more than one value?",
+          question: "In JavaScript, can a function return more than one value?",
           options: [
-            "A) Yes",
-            "B) No",
-            "C) Only if it's a member function",
-            "D) Only if it's a friend function",
+              "A) Yes",
+              "B) No",
+              "C) Only if it's a member function",
+              "D) Only if it's a friend function",
           ],
           correctAnswer: "B) No",
-        },
-        {
+      },
+      {
           id: 9,
-          question: "What is the purpose of a return statement in a function?",
+          question: "What is the purpose of a return statement in a function in JavaScript?",
           options: [
-            "A) It specifies the data type of the function",
-            "B) It ends the function and optionally returns a value",
-            "C) It defines the function's scope",
-            "D) It prints a message to the console",
+              "A) It specifies the data type of the function",
+              "B) It ends the function and optionally returns a value",
+              "C) It defines the function's scope",
+              "D) It prints a message to the console",
           ],
           correctAnswer: "B) It ends the function and optionally returns a value",
-        },
-        {
+      },
+      {
           id: 10,
-          question: "What is function scope in C++?",
+          question: "What is function scope in JavaScript?",
           options: [
-            "A) It refers to the area of code where a function is defined",
-            "B) It refers to the area of code where a variable can be accessed",
-            "C) It refers to the lifetime of a function",
-            "D) It refers to the visibility of a function to other files",
+              "A) It refers to the area of code where a function is defined",
+              "B) It refers to the area of code where a variable can be accessed",
+              "C) It refers to the lifetime of a function",
+              "D) It refers to the visibility of a function to other files",
           ],
           correctAnswer: "A) It refers to the area of code where a function is defined",
-        },
-        {
+      },
+      {
           id: 11,
-          question: "Which of the following is an example of a function prototype?",
+          question: "Which of the following is an example of a function prototype in JavaScript?",
           options: [
-            "A) int add(int a, int b);",
-            "B) int add(int, int);",
-            "C) int add(a, b);",
-            "D) add(int a, int b);",
+              "A) function add(a, b);",
+              "B) function add(a, b) {};",
+              "C) add(a, b);",
+              "D) var add = function(a, b) {};",
           ],
-          correctAnswer: "B) int add(int, int);",
-        },
-        {
+          correctAnswer: "A) function add(a, b);",
+      },
+      {
           id: 12,
-          question: "What is the purpose of a function prototype in C++?",
+          question: "What is the purpose of a function prototype in JavaScript?",
           options: [
-            "A) It defines the function's implementation",
-            "B) It declares the function's existence and specifies its signature",
-            "C) It specifies the return type of the function",
-            "D) It is used for recursion",
+              "A) It defines the function's implementation",
+              "B) It declares the function's existence and specifies its signature",
+              "C) It specifies the return type of the function",
+              "D) It is used for recursion",
           ],
           correctAnswer: "B) It declares the function's existence and specifies its signature",
-        },
-        {
+      },
+      {
           id: 13,
-          question: "Which keyword is used to indicate that a function does not return any value?",
+          question: "Which keyword is used to indicate that a function does not return any value in JavaScript?",
           options: [
-            "A) void",
-            "B) null",
-            "C) none",
-            "D) empty",
+              "A) undefined",
+              "B) null",
+              "C) void",
+              "D) empty",
           ],
-          correctAnswer: "A) void",
-        },
-        {
+          correctAnswer: "C) void",
+      },
+      {
           id: 14,
-          question: "What is the output of the following function?",
-          code: `
-  int multiply(int x, int y) {
-      return x * y;
-  }
-  
-  int main() {
-      int result = multiply(3, 4);
-      cout << result;
-      return 0;
-  }`,
+          question: "What is the output of the following function in JavaScript?function multiply(x, y) { return x * y; } let result = multiply(3, 4) console.log(result)",
           options: [
-            "A) 7",
-            "B) 12",
-            "C) 34",
-            "D) 0",
+              "A) 7",
+              "B) 12",
+              "C) 34",
+              "D) 0",
           ],
           correctAnswer: "B) 12",
-        },
-        {
+      },
+      {
           id: 15,
-          question: "In C++, can a function call itself?",
+          question: "In JavaScript, can a function call itself?",
           options: [
-            "A) Yes",
-            "B) No",
-            "C) Only if it's a member function",
-            "D) Only if it's a friend function",
+              "A) Yes",
+              "B) No",
+              "C) Only if it's a member function",
+              "D) Only if it's a friend function",
           ],
           correctAnswer: "A) Yes",
-        },
-        {
+      },
+      {
           id: 16,
-          question: "What is the output of the following code?",
-          code: `
-  int num = 10;
-  
-  void printNum() {
-      int num = 5;
-      cout << num;
-  }
-  
-  int main() {
-      printNum();
-      return 0;
-  }`,
+          question: "What is the output of the following code in JavaScript? let num = 10;  function printNum() { let num = 5; console.log(num); }  printNum(); ",
           options: [
-            "A) 5",
-            "B) 10",
-            "C) Compilation error",
-            "D) Runtime error",
+              "A) 5",
+              "B) 10",
+              "C) Compilation error",
+              "D) Runtime error",
           ],
           correctAnswer: "A) 5",
-        },
-        {
+      },
+      {
           id: 17,
-          question: "What is the correct way to declare a function that takes no arguments and returns an integer?",
+          question: "What is the correct way to declare a function that takes no arguments and returns an integer in JavaScript?",
           options: [
-            "A) int func();",
-            "B) int func(void);",
-            "C) void func(int);",
-            "D) void func();",
+              "A) function func() {}",
+              "B) function func(void) {}",
+              "C) function func(int) {}",
+              "D) function func() {}",
           ],
-          correctAnswer: "A) int func();",
-        },
-        {
+          correctAnswer: "A) function func() {}",
+      },
+      {
           id: 18,
-          question: "What is the output of the following code?",
-          code: `
-  int square(int x) {
-      return x * x;
-  }
-  
-  int main() {
-      int result = square(2);
-      cout << result;
-      return 0;
-  }`,
+          question: "What is the output of the following code in JavaScript?  function square(x) { return x * x; } let result = square(2); console.log(result);",
           options: [
-            "A) 2",
-            "B) 4",
-            "C) 8",
-            "D) 16",
+              "A) 2",
+              "B) 4",
+              "C) 8",
+              "D) 16",
           ],
           correctAnswer: "B) 4",
-        },
-        {
+      },
+      {
           id: 19,
-          question: "What does the following code demonstrate?",
-          code: `
-  int globalVar = 10;
-  
-  void myFunction() {
-      int localVar = 5;
-      cout << globalVar << " " << localVar;
-  }
-  
-  int main() {
-      myFunction();
-      return 0;
-  }`,
+          question: "What does the following code demonstrate in JavaScript?  let globalVar = 10; function myFunction() { let localVar = 5; console.log(globalVar + \" \" + localVar);    myFunction();",
           options: [
-            "A) An error will occur due to conflicting variable names",
-            "B) It will print '10 5'",
-            "C) It will print '5 10'",
-            "D) It will print '0 0'",
+              "A) An error will occur due to conflicting variable names",
+              "B) It will print '10 5'",
+              "C) It will print '5 10'",
+              "D) It will print '0 0'",
           ],
           correctAnswer: "B) It will print '10 5'",
-        },
-        {
+      },
+      {
           id: 20,
-          question: "What is the purpose of the static keyword in a function declaration?",
+          question: "What is the purpose of the static keyword in a function declaration in JavaScript?",
           options: [
-            "A) It indicates that the function is a member of a class",
-            "B) It restricts the function's access to the current file",
-            "C) It specifies that the function cannot be called by other functions",
-            "D) It allows the function to retain its value between calls",
+              "A) It indicates that the function is a member of a class",
+              "B) It restricts the function's access to the current file",
+              "C) It specifies that the function cannot be called by other functions",
+              "D) It allows the function to retain its value between calls",
           ],
           correctAnswer: "D) It allows the function to retain its value between calls",
-        },
-        {
+      },
+      {
           id: 21,
-          question: "What is the output of the following code?",
-          code: `
-  int add(int a, int b) {
-      return a + b;
-  }
-  
-  int main() {
-      int result = add(3, 4);
-      cout << result;
-      return 0;
-  }`,
+          question: "What is the output of the following code in JavaScript?  function add(a, b) { return a + b; } let result = add(3, 4); console.log(result); ",
           options: [
-            "A) 7",
-            "B) 12",
-            "C) 34",
-            "D) 0",
+              "A) 7",
+              "B) 12",
+              "C) 34",
+              "D) 0",
           ],
           correctAnswer: "A) 7",
-        },
-        {
+      },
+      {
           id: 22,
-          question: "In C++, can two functions have the same name if they have different parameter lists?",
+          question: "In JavaScript, can two functions have the same name if they have different parameter lists?",
           options: [
-            "A) Yes",
-            "B) No",
-            "C) Only if they are in different files",
-            "D) Only if they have different return types",
+              "A) Yes",
+              "B) No",
+              "C) Only if they are in different files",
+              "D) Only if they have different return types",
           ],
           correctAnswer: "A) Yes",
-        },
-        {
+      },
+      {
           id: 23,
-          question: "What is the purpose of the inline keyword in a function declaration?",
+          question: "What is the purpose of the inline keyword in a function declaration in JavaScript?",
           options: [
-            "A) It indicates that the function should be executed only once",
-            "B) It suggests the compiler to replace the function call with the function's code",
-            "C) It specifies that the function cannot be called recursively",
-            "D) It restricts the function's access to the current file",
+              "A) It indicates that the function should be executed only once",
+              "B) It suggests the compiler to replace the function call with the function's code",
+              "C) It specifies that the function cannot be called recursively",
+              "D) It restricts the function's access to the current file",
           ],
           correctAnswer: "B) It suggests the compiler to replace the function call with the function's code",
-        },
-        {
+      },
+      {
           id: 24,
-          question: "What is the output of the following code?",
-          code: `
-  int x = 5;
-  
-  void myFunction(int x) {
-      cout << x;
-  }
-  
-  int main() {
-      myFunction(10);
-      return 0;
-  }`,
+          question: "What is the output of the following code in JavaScript?  let x = 5;  function myFunction(x) { console.log(x); }  myFunction(10);",
           options: [
-            "A) 5",
-            "B) 10",
-            "C) Compilation error",
-            "D) Runtime error",
+              "A) 5",
+              "B) 10",
+              "C) Compilation error",
+              "D) Runtime error",
           ],
           correctAnswer: "B) 10",
-        },
-        {
+      },
+      {
           id: 25,
-          question: "What does the const keyword indicate in a function declaration?",
+          question: "What does the const keyword indicate in a function declaration in JavaScript?",
           options: [
-            "A) It specifies that the function cannot be modified",
-            "B) It indicates that the function is a constant",
-            "C) It specifies that the function has a constant return value",
-            "D) It prevents the function from having parameters",
+              "A) It specifies that the function cannot be modified",
+              "B) It indicates that the function is a constant",
+              "C) It specifies that the function has a constant return value",
+              "D) It prevents the function from having parameters",
           ],
           correctAnswer: "A) It specifies that the function cannot be modified",
-        },
-        {
+      },
+      {
           id: 26,
-          question: "What is the purpose of a default argument in a function?",
+          question: "What is the purpose of a default argument in a function in JavaScript?",
           options: [
-            "A) It is a value that is used when no argument is provided",
-            "B) It is an argument that has a default value of 0",
-            "C) It is a value that is assigned to the return statement",
-            "D) It is a value that is used to define the function's scope",
+              "A) It is a value that is used when no argument is provided",
+              "B) It is an argument that has a default value of 0",
+              "C) It is a value that is assigned to the return statement",
+              "D) It is a value that is used to define the function's scope",
           ],
           correctAnswer: "A) It is a value that is used when no argument is provided",
-        },
-        {
+      },
+      {
           id: 27,
-          question: "What is the output of the following code?",
-          code: `
-  int divide(int a, int b = 2) {
-      return a / b;
-  }
-  
-  int main() {
-      int result = divide(10);
-      cout << result;
-      return 0;
-  }`,
+          question: "What is the output of the following code in JavaScript? function divide(a, b = 2) {  return a / b; } let result = divide(10); console.log(result); ",
           options: [
-            "A) 2",
-            "B) 5",
-            "C) 10",
-            "D) Compilation error",
+              "A) 2",
+              "B) 5",
+              "C) 10",
+              "D) Compilation error",
           ],
           correctAnswer: "B) 5",
-        },
-        {
+      },
+      {
           id: 28,
-          question: "Which of the following is an example of a recursive function?",
+          question: "Which of the following is an example of a recursive function in JavaScript?",
           options: [
-            "A) void print(int n)",
-            "B) int factorial(int n)",
-            "C) float multiply(float a, float b)",
-            "D) string reverse(string s)",
+              "A) function print(n) {}",
+              "B) function factorial(n) {}",
+              "C) function multiply(a, b) {}",
+              "D) function reverse(s) {}",
           ],
-          correctAnswer: "B) int factorial(int n)",
-        },
-        {
+          correctAnswer: "B) function factorial(n) {}",
+      },
+      {
           id: 29,
-          question: "What is the purpose of a forward declaration in C++?",
+          question: "What is the purpose of a forward declaration in JavaScript?",
           options: [
-            "A) It specifies the return type of a function",
-            "B) It declares the existence of a function before it is defined",
-            "C) It indicates that a function can call other functions",
-            "D) It is used to declare member functions in a class",
+              "A) It specifies the return type of a function",
+              "B) It declares the existence of a function before it is defined",
+              "C) It indicates that a function can call other functions",
+              "D) It is used to declare member functions in a class",
           ],
           correctAnswer: "B) It declares the existence of a function before it is defined",
-        },
-        {
+      },
+      {
           id: 30,
-          question: "What is the output of the following code?",
-          code: `
-  int num = 10;
-  
-  void changeNum(int &x) {
-      x = 20;
-  }
-  
-  int main() {
-      changeNum(num);
-      cout << num;
-      return 0;
-  }`,
+          question: "What is the output of the following code in JavaScript? let num = 10;  function changeNum(x) { x = 20; }  changeNum(num); console.log(num);",
           options: [
-            "A) 10",
-            "B) 20",
-            "C) Compilation error",
-            "D) Runtime error",
+              "A) 10",
+              "B) 20",
+              "C) Compilation error",
+              "D) Runtime error",
           ],
-          correctAnswer: "B) 20",
-        },
-        // Add more questions for subchapter 1.1 as needed
-      ],
+          correctAnswer: "A) 10",
+      },
+  ],
       "2.4": [
         {
           id: 1,
@@ -8177,7 +8081,7 @@ const questions = {
         },
         {
           id: 6,
-          question: "What will be the output of the following code?\n\n```javascript\nconst double = x => x * 2;\nconsole.log(double(5));",
+          question: "What will be the output of the following code ?\n\n javascript\nconst double = x => x * 2;\nconsole.log(double(5));",
           options: [
             "A) 10",
             "B) 5",
@@ -8210,7 +8114,7 @@ const questions = {
         },
         {
           id: 9,
-          question: "What will be the output of the following code?\n\n```javascript\nconst obj = {\n  value: 42,\n  getValue: () => this.value\n};\nconsole.log(obj.getValue());",
+          question: "What will be the output of the following code ?\n\njavascript\nconst obj = {\n  value: 42,\n  getValue: () => this.value\n};\nconsole.log(obj.getValue());",
           options: [
             "A) 42",
             "B) undefined",
@@ -8254,7 +8158,7 @@ const questions = {
         },
         {
           id: 13,
-          question: "What will be the output of the following code?\n\n```javascript\nconst add = function(x, y) {\n  return x + y;\n};\nconsole.log(add(3, 4));",
+          question: "What will be the output of the following code ?\n\njavascript\nconst add = function(x, y) {\n  return x + y;\n};\nconsole.log(add(3, 4));",
           options: [
             "A) 7",
             "B) 12",
@@ -8309,7 +8213,7 @@ const questions = {
         },
         {
           id: 18,
-          question: "What will be the output of the following code?\n\n```javascript\nconst numbers = [1, 2, 3];\nconst doubled = numbers.map(num => num * 2);\nconsole.log(doubled);",
+          question: "What will be the output of the following code ?\n\n javascript\nconst numbers = [1, 2, 3];\nconst doubled = numbers.map(num => num * 2);\nconsole.log(doubled);",
           options: [
             "A) [1, 2, 3]",
             "B) [2, 4, 6]",
@@ -8342,7 +8246,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What will be the output of the following code?\n\n```javascript\nconst greet = () => {\n  console.log('Hello!');\n};\ngreet();",
+          question: "What will be the output of the following code ?\n\njavascript\nconst greet = () => {\n  console.log('Hello!');\n};\ngreet();",
           options: [
             "A) 'Hello!'",
             "B) undefined",
@@ -8364,7 +8268,7 @@ const questions = {
         },
         {
           id: 23,
-          question: "What will be the output of the following code?\n\n```javascript\nconst square = (x) => x * x;\nconsole.log(square(3));",
+          question: "What will be the output of the following code ?\n\n javascript\nconst square = (x) => x * x;\nconsole.log(square(3));",
           options: [
             "A) 6",
             "B) 9",
@@ -8397,7 +8301,7 @@ const questions = {
         },
         {
           id: 26,
-          question: "What will be the output of the following code?\n\n```javascript\nconst numbers = [1, 2, 3];\nconst sum = numbers.reduce((acc, num) => acc + num, 0);\nconsole.log(sum);",
+          question: "What will be the output of the following code ?\n\n javascript\nconst numbers = [1, 2, 3];\nconst sum = numbers.reduce((acc, num) => acc + num, 0);\nconsole.log(sum);",
           options: [
             "A) 6",
             "B) 9",
@@ -8419,7 +8323,7 @@ const questions = {
         },
         {
           id: 28,
-          question: "What will be the output of the following code?\n\n```javascript\nconst obj = {\n  value: 42,\n  getValue: function() {\n    return this.value;\n  }\n};\nconsole.log(obj.getValue());",
+          question: "What will be the output of the following code ?\n\n javascript\nconst obj = {\n  value: 42,\n  getValue: function() {\n    return this.value;\n  }\n};\nconsole.log(obj.getValue());",
           options: [
             "A) 42",
             "B) undefined",
@@ -8441,7 +8345,7 @@ const questions = {
         },
         {
           id: 30,
-          question: "What will be the output of the following code?\n\n```javascript\nconst greet = (name) => `Hello, ${name}!`;\nconsole.log(greet('John'));",
+          question: "What will be the output of the following code ?\n\njavascript\nconst greet = (name) => `Hello, ${name}!`;\nconsole.log(greet('John'));",
           options: [
             "A) 'Hello, John!'",
             "B) 'Hello, undefined!'",
@@ -8464,7 +8368,7 @@ const questions = {
       "3.1": [
         {
           id: 1,
-          question: "What is the result of the following code?\n\nlet arr = [1, 2, 3];\narr.push(4);\nconsole.log(arr);",
+          question: "What is the result of the following code ?\n\nlet arsr = [1, 2, 3];\narr.push(4);\nconsole.log(arr);",
           options: [
             "A) [1, 2, 3, 4]",
             "B) [1, 2, 3]",
@@ -8497,7 +8401,7 @@ const questions = {
         },
         {
           id: 4,
-          question: "What is the result of the following code?\n\nlet arr = [1, 2, 3];\nlet newArr = arr.slice(1);\nconsole.log(newArr);",
+          question: "What is the result of the following code ?\n\nlet arr = [1, 2, 3];\nlet newArr = arr.slice(1);\nconsole.log(newArr);",
           options: [
             "A) [2, 3]",
             "B) [1, 2]",
@@ -8530,7 +8434,7 @@ const questions = {
         },
         {
           id: 7,
-          question: "What is the result of the following code?\n\nlet arr = [1, 2, 3, 4, 5];\narr.splice(2, 2);\nconsole.log(arr);",
+          question: "What is the result of the following code ?\n\nlet arr = [1, 2, 3, 4, 5];\narr.splice(2, 2);\nconsole.log(arr);",
           options: [
             "A) [1, 2]",
             "B) [1, 2, 5]",
@@ -8574,7 +8478,7 @@ const questions = {
         },
         {
           id: 11,
-          question: "What is the result of the following code?\n\nlet arr = [1, 2, 3];\narr.forEach((element) => console.log(element * 2));",
+          question: "What is the result of the following code ?\n\nlet arr = [1, 2, 3];\narr.forEach((element) => console.log(element * 2));",
           options: [
             "A) 2, 4, 6",
             "B) 1, 2, 3",
@@ -8596,7 +8500,7 @@ const questions = {
         },
         {
           id: 13,
-          question: "What is the output of the following code?\n\nlet arr1 = [1, 2, 3];\nlet arr2 = arr1;\narr2.push(4);\nconsole.log(arr1);",
+          question: "What is the output of the following code ?\n\nlet arr1 = [1, 2, 3];\nlet arr2 = arr1;\narr2.push(4);\nconsole.log(arr1);",
           options: [
             "A) [1, 2, 3]",
             "B) [1, 2, 3, 4]",
@@ -8618,7 +8522,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "What is the result of the following code?\n\nlet arr = [1, 2, 3, 4, 5];\nlet newArr = arr.slice(-3);\nconsole.log(newArr);",
+          question: "What is the result of the following code ?\n\nlet arr = [1, 2, 3, 4, 5];\nlet newArr = arr.slice(-3);\nconsole.log(newArr);",
           options: [
             "A) [1, 2, 3]",
             "B) [3, 4, 5]",
@@ -8640,7 +8544,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "What is the result of the following code?\n\nlet arr = [1, 2, 3, 4];\narr.reverse();\nconsole.log(arr);",
+          question: "What is the result of the following code ?\n\nlet arr = [1, 2, 3, 4];\narr.reverse();\nconsole.log(arr);",
           options: [
             "A) [1, 2, 3, 4]",
             "B) [4, 3, 2, 1]",
@@ -8662,7 +8566,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "What is the result of the following code?\n\nlet arr = [1, 2, 3, 4, 5];\nlet newArr = arr.filter(num => num % 2 === 0);\nconsole.log(newArr);",
+          question: "What is the result of the following code ?\n\nlet arr = [1, 2, 3, 4, 5];\nlet newArr = arr.filter(num => num % 2 === 0);\nconsole.log(newArr);",
           options: [
             "A) [1, 3, 5]",
             "B) [2, 4]",
@@ -8684,7 +8588,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What is the output of the following code?\n\nlet arr = [1, 2, 3];\nlet newArr = arr.map(num => num * 2);\nconsole.log(newArr);",
+          question: "What is the output of the following code ?\n\nlet arr = [1, 2, 3];\nlet newArr = arr.map(num => num * 2);\nconsole.log(newArr);",
           options: [
             "A) [1, 2, 3]",
             "B) [2, 4, 6]",
@@ -8706,7 +8610,7 @@ const questions = {
         },
         {
           id: 23,
-          question: "What is the result of the following code?\n\nlet arr = [1, 2, 3, 4];\narr.splice(1, 0, 5);\nconsole.log(arr);",
+          question: "What is the result of the following code ?\n\nlet arr = [1, 2, 3, 4];\narr.splice(1, 0, 5);\nconsole.log(arr);",
           options: [
             "A) [1, 2, 3, 4]",
             "B) [1, 5, 2, 3, 4]",
@@ -8728,7 +8632,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What is the output of the following code?\n\nlet arr = [1, 2, 3, 4, 5];\nlet sum = arr.reduce((total, num) => total + num, 0);\nconsole.log(sum);",
+          question: "What is the output of the following code ?\n\nlet arr = [1, 2, 3, 4, 5];\nlet sum = arr.reduce((total, num) => total + num, 0);\nconsole.log(sum);",
           options: [
             "A) 15",
             "B) 14",
@@ -8750,7 +8654,7 @@ const questions = {
         },
         {
           id: 27,
-          question: "What is the result of the following code?\n\nlet arr = [1, 2, 3];\narr.push([4, 5]);\nconsole.log(arr);",
+          question: "What is the result of the following code ?\n\nlet arr = [1, 2, 3];\narr.push([4, 5]);\nconsole.log(arr);",
           options: [
             "A) [1, 2, 3, [4, 5]]",
             "B) [1, 2, 3, 4, 5]",
@@ -8772,7 +8676,7 @@ const questions = {
         },
         {
           id: 29,
-          question: "What is the result of the following code?\n\nlet arr = [3, 1, 2, 4, 5];\narr.sort();\nconsole.log(arr);",
+          question: "What is the result of the following code ?\n\nlet arr = [3, 1, 2, 4, 5];\narr.sort();\nconsole.log(arr);",
           options: [
             "A) [1, 2, 3, 4, 5]",
             "B) [3, 1, 2, 4, 5]",
@@ -8884,7 +8788,7 @@ const questions = {
         },
         {
           id: 9,
-          question: "What is the output of the following code?\n\n```javascript\nfunction Person(name) {\n    this.name = name;\n}\n\nlet john = new Person('John');\nconsole.log(john.hasOwnProperty('name'));\n```",
+          question: "What is the output of the following code ?\n\n```javascript\nfunction Person(name) {\n    this.name = name;\n}\n\nlet john = new Person('John');\nconsole.log(john.hasOwnProperty('name'));\n```",
           options: [
             "A) true",
             "B) false",
@@ -8917,7 +8821,7 @@ const questions = {
         },
         {
           id: 12,
-          question: "Consider the following code:\n```javascript\nfunction Car(make, model) {\n    this.make = make;\n    this.model = model;\n}\n\nCar.prototype.startEngine = function() {\n    return `Starting the ${this.make} ${this.model} engine...`;\n};\n\nlet myCar = new Car('Toyota', 'Camry');\nconsole.log(myCar.startEngine());\n```\nWhat will be printed to the console?",
+          question: "Consider the following code? \n```javascript\nfunction Car(make, model) {\n    this.make = make;\n    this.model = model;\n}\n\nCar.prototype.startEngine = function() {\n    return `Starting the ${this.make} ${this.model} engine...`;\n};\n\nlet myCar = new Car('Toyota', 'Camry');\nconsole.log(myCar.startEngine());\n```\nWhat will be printed to the console?",
           options: [
             "A) Starting the Toyota Camry engine...",
             "B) ReferenceError",
@@ -8961,7 +8865,7 @@ const questions = {
         },
         {
           id: 16,
-          question: "Consider the following code:\n```javascript\nfunction Rectangle(width, height) {\n    this.width = width;\n    this.height = height;\n}\n\nRectangle.prototype.getArea = function() {\n    return this.width * this.height;\n};\n\nlet myRect = new Rectangle(5, 7);\nconsole.log(myRect.getArea());\n```\nWhat will be printed to the console?",
+          question: "Consider the following code :\n```javascript\nfunction Rectangle(width, height) {\n    this.width = width;\n    this.height = height;\n}\n\nRectangle.prototype.getArea = function() {\n    return this.width * this.height;\n};\n\nlet myRect = new Rectangle(5, 7);\nconsole.log(myRect.getArea());\n```\nWhat will be printed to the console?",
           options: [
             "A) 35",
             "B) ReferenceError",
@@ -8994,7 +8898,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "What is the result of the following code?\n\n```javascript\nlet person = {\n    name: 'John',\n    age: 30\n};\n\nlet copy = Object.assign({}, person);\ncopy.name = 'Jane';\n\nconsole.log(person.name);\n```",
+          question: "What is the result of the following code ?\n\n```javascript\nlet person = {\n    name: 'John',\n    age: 30\n};\n\nlet copy = Object.assign({}, person);\ncopy.name = 'Jane';\n\nconsole.log(person.name);\n```",
           options: [
             "A) John",
             "B) Jane",
@@ -9016,7 +8920,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What is the output of the following code?\n\n```javascript\nlet myObject = {\n    x: 10,\n    y: 20\n};\n\nconsole.log(myObject.hasOwnProperty('toString'));\n```",
+          question: "What is the output of the following code ?\n\n```javascript\nlet myObject = {\n    x: 10,\n    y: 20\n};\n\nconsole.log(myObject.hasOwnProperty('toString'));\n```",
           options: [
             "A) true",
             "B) false",
@@ -9027,7 +8931,7 @@ const questions = {
         },
         {
           id: 22,
-          question: "Consider the following code:\n```javascript\nfunction Person(name) {\n    this.name = name;\n}\n\nPerson.prototype.sayHello = function() {\n    return `Hello, my name is ${this.name}.`;\n};\n\nlet john = new Person('John');\nlet jane = new Person('Jane');\n\nconsole.log(john.sayHello());\nconsole.log(jane.sayHello());\n```\nWhat will be printed to the console?",
+          question: "Consider the following code \n```javascript\nfunction Person(name) {\n    this.name = name;\n}\n\nPerson.prototype.sayHello = function() {\n    return `Hello, my name is ${this.name}.`;\n};\n\nlet john = new Person('John');\nlet jane = new Person('Jane');\n\nconsole.log(john.sayHello());\nconsole.log(jane.sayHello());\n```\nWhat will be printed to the console?",
           options: [
             "A) Hello, my name is John. Hello, my name is Jane.",
             "B) ReferenceError",
@@ -9049,7 +8953,7 @@ const questions = {
         },
         {
           id: 24,
-          question: "Consider the following code:\n```javascript\nfunction Shape() {\n    this.color = 'red';\n}\n\nShape.prototype.getColor = function() {\n    return this.color;\n};\n\nfunction Circle(radius) {\n    this.radius = radius;\n}\n\nCircle.prototype = Object.create(Shape.prototype);\n\nlet myCircle = new Circle(5);\nconsole.log(myCircle.getColor());\n```\nWhat will be printed to the console?",
+          question: "Consider the following code \n```javascript\nfunction Shape() {\n    this.color = 'red';\n}\n\nShape.prototype.getColor = function() {\n    return this.color;\n};\n\nfunction Circle(radius) {\n    this.radius = radius;\n}\n\nCircle.prototype = Object.create(Shape.prototype);\n\nlet myCircle = new Circle(5);\nconsole.log(myCircle.getColor());\n```\nWhat will be printed to the console?",
           options: [
             "A) red",
             "B) ReferenceError",
@@ -9071,7 +8975,7 @@ const questions = {
         },
         {
           id: 26,
-          question: "What is the output of the following code?\n\n```javascript\nlet myObject = {\n    x: 10,\n    y: 20\n};\n\nlet protoObject = Object.getPrototypeOf(myObject);\n\nconsole.log(protoObject === Object.prototype);\n```",
+          question: "What is the output of the following code ?\n\n```javascript\nlet myObject = {\n    x: 10,\n    y: 20\n};\n\nlet protoObject = Object.getPrototypeOf(myObject);\n\nconsole.log(protoObject === Object.prototype);\n```",
           options: [
             "A) true",
             "B) false",
@@ -9093,7 +8997,7 @@ const questions = {
         },
         {
           id: 28,
-          question: "Consider the following code:\n```javascript\nfunction Animal() {\n    this.sound = 'undefined';\n}\n\nAnimal.prototype.makeSound = function() {\n    return `The animal makes a ${this.sound} sound.`;\n};\n\nfunction Dog() {\n    this.sound = 'bark';\n}\n\nDog.prototype = Object.create(Animal.prototype);\n\nlet myDog = new Dog();\nconsole.log(myDog.makeSound());\n```\nWhat will be printed to the console?",
+          question: "Consider the following code \n```javascript\nfunction Animal() {\n    this.sound = 'undefined';\n}\n\nAnimal.prototype.makeSound = function() {\n    return `The animal makes a ${this.sound} sound.`;\n};\n\nfunction Dog() {\n    this.sound = 'bark';\n}\n\nDog.prototype = Object.create(Animal.prototype);\n\nlet myDog = new Dog();\nconsole.log(myDog.makeSound());\n```\nWhat will be printed to the console?",
           options: [
             "A) The animal makes a undefined sound.",
             "B) The animal makes a bark sound.",
@@ -9115,7 +9019,7 @@ const questions = {
         },
         {
           id: 30,
-          question: "What is the output of the following code?\n\n```javascript\nlet obj1 = { a: 1, b: 2 };\nlet obj2 = Object.create(obj1);\n\nconsole.log(obj2.a);\n```",
+          question: "What is the output of the following code ?\n\n```javascript\nlet obj1 = { a: 1, b: 2 };\nlet obj2 = Object.create(obj1);\n\nconsole.log(obj2.a);\n```",
           options: [
             "A) 1",
             "B) 2",
@@ -10462,7 +10366,7 @@ const questions = {
         },
         {
           id: 4,
-          question: "Consider the following code:\n\n```javascript\nfunction greet(name, callback) {\n  console.log(`Hello, ${name}!`);\n  callback();\n}\nfunction sayGoodbye() {\n  console.log('Goodbye!');\n}\ngreet('John', sayGoodbye);\n``` \nWhat will be the output?",
+          question: "Consider the following code :\n\n```javascript\nfunction greet(name, callback) {\n  console.log(`Hello, ${name}!`);\n  callback();\n}\nfunction sayGoodbye() {\n  console.log('Goodbye!');\n}\ngreet('John', sayGoodbye);\n``` \nWhat will be the output?",
           options: [
             "A) Hello, John! Goodbye!",
             "B) Hello, John!",
@@ -10495,7 +10399,7 @@ const questions = {
         },
         {
           id: 7,
-          question: "Consider the following code:\n\n```javascript\nfunction performTask(callback) {\n  setTimeout(function() {\n    console.log('Task complete');\n    callback();\n  }, 2000);\n}\nperformTask(function() {\n  console.log('Callback executed');\n});\n``` \nWhat will be the output?",
+          question: "Consider the following code :\n\n```javascript\nfunction performTask(callback) {\n  setTimeout(function() {\n    console.log('Task complete');\n    callback();\n  }, 2000);\n}\nperformTask(function() {\n  console.log('Callback executed');\n});\n``` \nWhat will be the output?",
           options: [
             "A) Task complete",
             "B) Callback executed",
@@ -10537,7 +10441,7 @@ const questions = {
         },
         {
           id: 11,
-          question: "Consider the following code:\n\n```javascript\nfunction calculate(a, b, operation) {\n  return operation(a, b);\n}\nfunction add(x, y) {\n  return x + y;\n}\nlet result = calculate(3, 4, add);\n``` \nWhat will be the value of result?",
+          question: "Consider the following code :\n\n```javascript\nfunction calculate(a, b, operation) {\n  return operation(a, b);\n}\nfunction add(x, y) {\n  return x + y;\n}\nlet result = calculate(3, 4, add);\n``` \nWhat will be the value of result?",
           options: [
             "A) 7",
             "B) 12",
@@ -10559,7 +10463,7 @@ const questions = {
         },
         {
           id: 13,
-          question: "Consider the following code:\n\n```javascript\nfunction fetchData(url, callback) {\n  fetch(url)\n    .then(response => response.json())\n    .then(data => callback(null, data))\n    .catch(error => callback(error, null));\n}\n``` \nWhat is the purpose of the callback parameter in the fetchData function?",
+          question: "Consider the following code :\n\n```javascript\nfunction fetchData(url, callback) {\n  fetch(url)\n    .then(response => response.json())\n    .then(data => callback(null, data))\n    .catch(error => callback(error, null));\n}\n``` \nWhat is the purpose of the callback parameter in the fetchData function?",
           options: [
             "A) To return a value",
             "B) To handle asynchronous operations",
@@ -10581,7 +10485,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "Consider the following code:\n\n```javascript\nlet numbers = [1, 2, 3, 4, 5];\nlet doubled = numbers.map(function(num) {\n  return num * 2;\n});\n``` \nHow will the doubled array look after execution?",
+          question: "Consider the following code :\n\n```javascript\nlet numbers = [1, 2, 3, 4, 5];\nlet doubled = numbers.map(function(num) {\n  return num * 2;\n});\n``` \nHow will the doubled array look after execution?",
           options: [
             "A) [2, 4, 6, 8, 10]",
             "B) [1, 4, 9, 16, 25]",
@@ -10601,7 +10505,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "Consider the following code:\n\n```javascript\nfunction fetchUserData(callback) {\n  setTimeout(function() {\n    let user = { name: 'John Doe', age: 30 };\n    callback(user);\n  }, 1000);\n}\n``` \nHow would you call the fetchUserData function and log the user's name to the console?",
+          question: "Consider the following code :\n\n```javascript\nfunction fetchUserData(callback) {\n  setTimeout(function() {\n    let user = { name: 'John Doe', age: 30 };\n    callback(user);\n  }, 1000);\n}\n``` \nHow would you call the fetchUserData function and log the user's name to the console?",
           options: [
             "A) fetchUserData(function(user) {\n  console.log(user.name);\n});",
             "B) fetchUserData(function(data) {\n  console.log(data.name);\n});",
@@ -10623,7 +10527,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "Consider the following code:\n\n```javascript\nfunction processNumbers(numbers, callback) {\n  let processed = numbers.map(callback);\n  return processed;\n}\nlet numbers = [1, 2, 3, 4, 5];\nlet result = processNumbers(numbers, function(num) {\n  return num * num;\n});\n``` \nWhat will be the value of result?",
+          question: "Consider the following code :\n\n```javascript\nfunction processNumbers(numbers, callback) {\n  let processed = numbers.map(callback);\n  return processed;\n}\nlet numbers = [1, 2, 3, 4, 5];\nlet result = processNumbers(numbers, function(num) {\n  return num * num;\n});\n``` \nWhat will be the value of result?",
           options: [
             "A) [1, 4, 9, 16, 25]",
             "B) [2, 4, 6, 8, 10]",
@@ -10645,7 +10549,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "Consider the following code:\n\n```javascript\nfunction fetchData(url, successCallback, errorCallback) {\n  fetch(url)\n    .then(response => response.json())\n    .then(data => successCallback(data))\n    .catch(error => errorCallback(error));\n}\n``` \nHow would you handle the success and error cases when calling the fetchData function?",
+          question: "Consider the following code :\n\n```javascript\nfunction fetchData(url, successCallback, errorCallback) {\n  fetch(url)\n    .then(response => response.json())\n    .then(data => successCallback(data))\n    .catch(error => errorCallback(error));\n}\n``` \nHow would you handle the success and error cases when calling the fetchData function?",
           options: [
             "A) fetchData(\n  'https://api.example.com/data',\n  function(data) {\n    console.log('Success:', data);\n  },\n  function(error) {\n    console.error('Error:', error);\n  }\n);",
             "B) fetchData('https://api.example.com/data', successCallback, errorCallback);",
@@ -10667,7 +10571,7 @@ const questions = {
         },
         {
           id: 23,
-          question: "Consider the following code:\n\n```javascript\nfunction processArray(arr, callback) {\n  let result = [];\n  for (let i = 0; i < arr.length; i++) {\n    result.push(callback(arr[i]));\n  }\n  return result;\n}\nlet numbers = [1, 2, 3, 4, 5];\nlet squared = processArray(numbers, function(num) {\n  return num * num;\n});\n``` \nWhat will be the value of squared?",
+          question: "Consider the following code :\n\n```javascript\nfunction processArray(arr, callback) {\n  let result = [];\n  for (let i = 0; i < arr.length; i++) {\n    result.push(callback(arr[i]));\n  }\n  return result;\n}\nlet numbers = [1, 2, 3, 4, 5];\nlet squared = processArray(numbers, function(num) {\n  return num * num;\n});\n``` \nWhat will be the value of squared?",
           options: [
             "A) [1, 4, 9, 16, 25]",
             "B) [2, 4, 6, 8, 10]",
@@ -10689,7 +10593,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "Consider the following code:\n\n```javascript\nfunction fetchUserData(callback) {\n  setTimeout(function() {\n    let user = { name: 'Jane Doe', age: 25 };\n    callback(user);\n  }, 1000);\n}\n``` \nHow would you call the fetchUserData function and log the user's age to the console?",
+          question: "Consider the following code :\n\n```javascript\nfunction fetchUserData(callback) {\n  setTimeout(function() {\n    let user = { name: 'Jane Doe', age: 25 };\n    callback(user);\n  }, 1000);\n}\n``` \nHow would you call the fetchUserData function and log the user's age to the console?",
           options: [
             "A) fetchUserData(function(user) {\n  console.log(user.age);\n});",
             "B) fetchUserData(function(data) {\n  console.log(data.age);\n});",
@@ -10711,7 +10615,7 @@ const questions = {
         },
         {
           id: 27,
-          question: "Let numbers = [1, 2, 3, 4, 5];\nlet sum = numbers.reduce(function(accumulator, currentValue) {\n  return accumulator + currentValue;\n}, 0);\nWhat will be the value of sum?",
+          question: "code Let numbers = [1, 2, 3, 4, 5];\nlet sum = numbers.reduce(function(accumulator, currentValue) {\n  return accumulator + currentValue;\n}, 0);\nWhat will be the value of sum?",
           options: [
             "A) 15",
             "B) 10",
@@ -10731,7 +10635,7 @@ const questions = {
         },
         {
           id: 29,
-          question: "Consider the following code:\n\n```javascript\nfunction processString(str, callback) {\n  let result = callback(str);\n  return result;\n}\nlet inputString = 'Hello, World!';\nlet reversed = processString(inputString, function(str) {\n  return str.split('').reverse().join('');\n});\n``` \nWhat will be the value of reversed?",
+          question: "Consider the following code :\n\n```javascript\nfunction processString(str, callback) {\n  let result = callback(str);\n  return result;\n}\nlet inputString = 'Hello, World!';\nlet reversed = processString(inputString, function(str) {\n  return str.split('').reverse().join('');\n});\n``` \nWhat will be the value of reversed?",
           options: [
             "A) '!dlroW ,olleH'",
             "B) 'Hello, World!'",
@@ -11200,7 +11104,7 @@ const questions = {
         },
         {
           id: 11,
-          question: " Consider the following code:\n\n```javascript\nasync function getData() {\n    const response = await fetch('https://api.example.com/data');\n    return response.json();\n}\n``` What does this code do?",
+          question: " Consider the following code :\n\n```javascript\nasync function getData() {\n    const response = await fetch('https://api.example.com/data');\n    return response.json();\n}\n``` What does this code do?",
           options: [
             "A) It sends an HTTP GET request to 'https://api.example.com/data' and returns the JSON response",
             "B) It defines an async function that returns a promise which resolves to JSON data from the API",
@@ -11222,7 +11126,7 @@ const questions = {
         },
         {
           id: 13,
-          question: " Consider the following code:\n\n```javascript\nasync function fetchData() {\n    const data = await getData();\n    return data;\n}\n``` What is the role of the function getData() in this code?",
+          question: " Consider the following code :\n\n```javascript\nasync function fetchData() {\n    const data = await getData();\n    return data;\n}\n``` What is the role of the function getData() in this code?",
           options: [
             "A) It is an asynchronous function that fetches data from an API",
             "B) It is a synchronous function that processes data",
@@ -11244,7 +11148,7 @@ const questions = {
         },
         {
           id: 15,
-          question: " What does the following code snippet do?\n\n```javascript\nasync function example() {\n    throw new Error('Something went wrong');\n}\n```",
+          question: " What does the following code do?\n\n```javascript\nasync function example() {\n    throw new Error('Something went wrong');\n}\n```",
           options: [
             "A) It defines an async function that always throws an error",
             "B) It defines an async function that returns a rejected promise with an error",
@@ -11277,7 +11181,7 @@ const questions = {
         },
         {
           id: 18,
-          question: " Consider the following code:\n\n```javascript\nasync function fetchData() {\n    const data = await fetch('https://api.example.com/data');\n    return data.json();\n}\n``` What happens if the API request fails (e.g., due to network issues)?",
+          question: " Consider the following code :\n\n```javascript\nasync function fetchData() {\n    const data = await fetch('https://api.example.com/data');\n    return data.json();\n}\n``` What happens if the API request fails (e.g., due to network issues)?",
           options: [
             "A) The function returns a rejected promise",
             "B) The function throws an error",
@@ -11299,7 +11203,7 @@ const questions = {
         },
         {
           id: 20,
-          question: " Consider the following code:\n\n```javascript\nasync function fetchData() {\n    const response = await fetch('https://api.example.com/data');\n    const data = await response.json();\n    return data;\n}\n``` What is the drawback of this code in terms of performance?",
+          question: " Consider the following code :\n\n```javascript\nasync function fetchData() {\n    const response = await fetch('https://api.example.com/data');\n    const data = await response.json();\n    return data;\n}\n``` What is the drawback of this code in terms of performance?",
           options: [
             "A) It makes multiple network requests sequentially, which can be slow",
             "B) It has no performance drawbacks",
@@ -11320,7 +11224,7 @@ const questions = {
         },
         {
           id: 22,
-          question: " Consider the following code:\n\n```javascript\nasync function example() {\n    const result = await Promise.resolve(42);\n    return result;\n}\n``` What does this code return?",
+          question: " Consider the following code :\n\n```javascript\nasync function example() {\n    const result = await Promise.resolve(42);\n    return result;\n}\n``` What does this code return?",
           options: [
             "A) A resolved promise with value 42",
             "B) The number 42",
@@ -11342,7 +11246,7 @@ const questions = {
         },
         {
           id: 24,
-          question: " Consider the following code:\n\n```javascript\nasync function fetchData() {\n    const data = await getData();\n    return data;\n}\n``` What will happen if the getData() function is not defined?",
+          question: " Consider the following code :\n\n```javascript\nasync function fetchData() {\n    const data = await getData();\n    return data;\n}\n``` What will happen if the getData() function is not defined?",
           options: [
             "A) The code will throw an error",
             "B) The function will return undefined",
@@ -11364,7 +11268,7 @@ const questions = {
         },
         {
           id: 26,
-          question: " Consider the following code:\n\n```javascript\nasync function fetchData() {\n    try {\n        const response = await fetch('https://api.example.com/data');\n        return response.json();\n    } catch (error) {\n        return 'Error fetching data';\n    }\n}\n``` What will be the return value if the API request fails?",
+          question: " Consider the following code :\n\n```javascript\nasync function fetchData() {\n    try {\n        const response = await fetch('https://api.example.com/data');\n        return response.json();\n    } catch (error) {\n        return 'Error fetching data';\n    }\n}\n``` What will be the return value if the API request fails?",
           options: [
             "A) A rejected promise",
             "B) 'Error fetching data'",
@@ -11386,7 +11290,7 @@ const questions = {
         },
         {
           id: 28,
-          question: " Consider the following code:\n\n```javascript\nasync function example() {\n    const result = await Promise.reject('Error');\n    return result;\n}\n``` What does this code return?",
+          question: " Consider the following code :\n\n```javascript\nasync function example() {\n    const result = await Promise.reject('Error');\n    return result;\n}\n``` What does this code return?",
           options: [
             "A) A rejected promise with the message 'Error'",
             "B) The string 'Error'",
@@ -11477,7 +11381,7 @@ const questions = {
         },
         {
           id: 5,
-          question: "What will the following code snippet log to the console?\n\n```javascript\nlet count = 0;\nfunction increment() {\n  count++;\n  console.log(count);\n}\nincrement();\nincrement();",
+          question: "What will the following code log to the console?\n\n```javascript\nlet count = 0;\nfunction increment() {\n  count++;\n  console.log(count);\n}\nincrement();\nincrement();",
           options: [
             "A) 0, 1",
             "B) 1, 2",
@@ -11488,7 +11392,7 @@ const questions = {
         },
         {
           id: 6,
-          question: "What is the value of result after the execution of the following code?\n\n```javascript\nlet result = 0;\nfunction add(x) {\n  return function (y) {\n    result = x + y;\n  };\n}\nconst addFive = add(5);\naddFive(3);",
+          question: "What is the value of result after the execution of the following code ?\n\n```javascript\nlet result = 0;\nfunction add(x) {\n  return function (y) {\n    result = x + y;\n  };\n}\nconst addFive = add(5);\naddFive(3);",
           options: [
             "A) 3",
             "B) 5",
@@ -11521,7 +11425,7 @@ const questions = {
         },
         {
           id: 9,
-          question: "Which of the following code snippets correctly demonstrates a closure in JavaScript?\n\na)\n\n```javascript\nfunction outer() {\n  let x = 10;\n  return function () {\n    console.log(x);\n  };\n}",
+          question: "Which of the following code snippets correctly demonstrates a closure in JavaScript code ?\n\na)\n\n```javascript\nfunction outer() {\n  let x = 10;\n  return function () {\n    console.log(x);\n  };\n}",
           options: [
             "A) a)",
             "B) b)",
@@ -11554,14 +11458,14 @@ const questions = {
         },
         {
           id: 12,
-          question: "Which of the following code snippets demonstrates a closure that captures a value from its containing scope?",
+          question: "What is the difference between var and let when it comes to variable scope in JavaScript?",
           options: [
-            "A) a)",
-            "B) b)",
-            "C) c)",
-            "D) d)",
+            "A) var has block scope, while let has function scope.",
+            "B) var has function scope, while let has block scope.",
+            "C) Both var and let have block scope.",
+            "D) There is no difference; they have the same scope.",
           ],
-          correctAnswer: "A) a)",
+          correctAnswer: "B) var has function scope, while let has block scope.",
         },
         {
           id: 13,
@@ -11598,7 +11502,7 @@ const questions = {
         },
         {
           id: 16,
-          question: "What will be logged to the console after executing the following code?\n\n```javascript\nlet x = 10;\nfunction outer() {\n  console.log(x);\n}\nfunction inner() {\n  let x = 5;\n  outer();\n}\ninner();",
+          question: "What will be logged to the console after executing the following code ?\n\n```javascript\nlet x = 10;\nfunction outer() {\n  console.log(x);\n}\nfunction inner() {\n  let x = 5;\n  outer();\n}\ninner();",
           options: [
             "A) 5",
             "B) 10",
@@ -11620,7 +11524,7 @@ const questions = {
         },
         {
           id: 18,
-          question: "What is the output of the following code?\n\n```javascript\nlet x = 10;\nfunction foo() {\n  let x = 5;\n  return function () {\n    console.log(x);\n  };\n}\nconst bar = foo();\nbar();",
+          question: "What is the output of the following code ?\n\n```javascript\nlet x = 10;\nfunction foo() {\n  let x = 5;\n  return function () {\n    console.log(x);\n  };\n}\nconst bar = foo();\nbar();",
           options: [
             "A) 5",
             "B) 10",
@@ -11631,7 +11535,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "What is the purpose of the return statement in the following code?\n\n```javascript\nfunction createCounter() {\n  let count = 0;\n  return function () {\n    count++;\n    return count;\n  };\n}\nconst counter = createCounter();",
+          question: "What is the purpose of the return statement in the following code ?\n\n```javascript\nfunction createCounter() {\n  let count = 0;\n  return function () {\n    count++;\n    return count;\n  };\n}\nconst counter = createCounter();",
           options: [
             "A) It returns the value of count to the calling code.",
             "B) It assigns a new value to count.",
@@ -11652,7 +11556,7 @@ const questions = {
           correctAnswer: "B) b)",
         },
         {
-          id: 21,
+          id: 21, 
           question: "What is the value of x after the following code is executed?\n\n```javascript\nif (true) {\n  let x = 5;\n}\nconsole.log(x);",
           options: [
             "A) 5",
@@ -11675,7 +11579,7 @@ const questions = {
         },
         {
           id: 23,
-          question: "What will be logged to the console after executing the following code?\n\n```javascript\nlet x = 10;\nfunction foo() {\n  let x = 5;\n  return function () {\n    console.log(x);\n  };\n}\nconst bar = foo();\nbar();",
+          question: "What will be logged to the console after executing the following code ?\n\n```javascript\nlet x = 10;\nfunction foo() {\n  let x = 5;\n  return function () {\n    console.log(x);\n  };\n}\nconst bar = foo();\nbar();",
           options: [
             "A) 5",
             "B) 10",
@@ -11697,7 +11601,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What is the value of x after the following code is executed?\n\n```javascript\nlet x = 2;\nfunction modifyX() {\n  x = 4;\n}\nmodifyX();",
+          question: "What is the value of x after the following code is executed ?\n\n```javascript\nlet x = 2;\nfunction modifyX() {\n  x = 4;\n}\nmodifyX();",
           options: [
             "A) 2",
             "B) 4",
@@ -16709,7 +16613,7 @@ const questions = {
         },
         {
           id: 18,
-          question: "What is the output of compiling the following Sass code?",
+          question: "What is the output of compiling the following Sass code ?",
           code: "sass\nCopy code\n$color: blue;\n\n.button {\n  color: $color;\n}",
           options: [
             "A) .button { color: blue; }",
@@ -16809,7 +16713,7 @@ const questions = {
         },
         {
           id: 27,
-          question: "What is the output of compiling the following Less code?",
+          question: "What is the output of compiling the following Less code ?",
           code: "less\nCopy code\n@color: red;\n\n.button {\n  color: @color;\n}",
           options: [
             "A) .button { color: red; }",
@@ -18785,7 +18689,7 @@ const questions = {
         },
         {
           id: 5,
-          question: "What will be displayed in the web browser when the above HTML code is opened?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <h2>Hello, World!</h2>\n</body>\n</html>",
+          question: "What will be displayed in the web browser when the above HTML code is opened? code <!DOCTYPE html><html>  <head>    <title>HTML Quiz</title>  </head>  <body>    <h2>Hello, World!</h2>  </body>  </html>",
           options: [
             "A) 'HTML Quiz'",
             "B) 'Hello, World!'",
@@ -18817,7 +18721,7 @@ const questions = {
         },
         {
           id: 9,
-          question: "The <address> tag is used to define the footer of a web page. (True/False)",
+          question: "The <address> tag is used to define the footer of a web page.(True/False",
           correctAnswer: "False",
         },
         {
@@ -18827,11 +18731,11 @@ const questions = {
         },
         {
           id: 11,
-          question: "What will be displayed in the web browser when the above HTML code is opened?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <blockquote>This is a quoted text.</blockquote>\n</body>\n</html>",
+          question: "What will be displayed in the web browser when the above HTML code is opened?  <!DOCTYPE html>  <html>  <head>    <title>HTML Quiz</title>  </head>  <body>    <blockquote>This is a quoted text.</blockquote>  </body>  </html>",
           options: [
             "A) 'HTML Quiz'",
             "B) 'This is a quoted text.'",
-            "C) Nothing",
+            "C)  Nothing",
             "D) 'HTML5'",
           ],
           correctAnswer: "B) 'This is a quoted text.'",
@@ -18859,7 +18763,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "What will be displayed in the web browser when the above HTML code is opened?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <p>This is a paragraph.</p>\n</body>\n</html>",
+          question: "What will be displayed in the web browser when the above HTML code is opened?  <!DOCTYPE html>  <html>  <head>    <title>HTML Quiz</title>  </head>  <body>    <p>This is a paragraph.</p>  </body>  </html>",
           options: [
             "A) 'HTML Quiz'",
             "B) 'This is a paragraph.'",
@@ -18875,7 +18779,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "The <header> tag is used to define a _______ section in an HTML document.",
+          question: "The <header> tag is used to define a ______ section in an HTML document.",
           correctAnswer: "header",
         },
         {
@@ -18901,7 +18805,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What will be displayed in the web browser when the above HTML code is opened?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <hr>\n</body>\n</html>",
+          question: "What will be displayed in the web browser when the above HTML code is opened?  <!DOCTYPE html>  <html>  <head>  <title>HTML Quiz</title></head> <body>  <hr> </body> </html>",
           options: [
             "A) 'HTML Quiz'",
             "B) A horizontal line",
@@ -18933,7 +18837,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What will be displayed in the web browser when the above HTML code is opened?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <div>This is a division.</div>\n</body>\n</html>",
+          question: "What will be displayed in the web browser when the above HTML code is opened?  <!DOCTYPE html> <html> <head>  <title>HTML Quiz</title> </head> <body>  <div>This is a division.</div> </body> </html>",
           options: [
             "A) 'HTML Quiz'",
             "B) 'This is a division.'",
@@ -18965,7 +18869,7 @@ const questions = {
         },
         {
           id: 29,
-          question: "The <footer> tag is used to define the header of a web page. (True/False)",
+          question: "The <footer> tag is used to define the header of a web page. (True/False",
           correctAnswer: "False",
         },
         {
@@ -19467,7 +19371,7 @@ const questions = {
         },
         {
           id: 5,
-          question: "What happens when the 'Visit Example' link is clicked in the web browser?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='https://www.example.com'>Visit Example</a>\n</body>\n</html>",
+          question: "What happens when the 'Visit Example' link is clicked in the web browser of this code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='https://www.example.com'>Visit Example</a>\n</body>\n</html>", 
           options: [
             "A) It opens a new tab with 'https://www.example.com.'",
             "B) It downloads a file from 'https://www.example.com.'",
@@ -19509,7 +19413,7 @@ const questions = {
         },
         {
           id: 11,
-          question: "What happens when the 'Visit Example' link is clicked in the web browser?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='https://www.example.com' target='_blank'>Visit Example</a>\n</body>\n</html>",
+          question: "What happens when the 'Visit Example' link is clicked in the web browser of this code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='https://www.example.com' target='_blank'>Visit Example</a>\n</body>\n</html>",
           options: [
             "A) It opens 'https://www.example.com' in the same tab.",
             "B) It opens 'https://www.example.com' in a new tab.",
@@ -19541,7 +19445,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "What happens when the 'Go to Relative Page' link is clicked in the web browser?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='relative-page.html'>Go to Relative Page</a>\n</body>\n</html>",
+          question: "What happens when the 'Go to Relative Page' link is clicked in the web browser of this code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='relative-page.html'>Go to Relative Page</a>\n</body>\n</html>",
           options: [
             "A) It opens 'relative-page.html' in a new tab.",
             "B) It opens 'relative-page.html' in the same tab.",
@@ -19583,7 +19487,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What happens when the 'Download Example PDF' link is clicked in the web browser?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='https://www.example.com' download='example.pdf'>Download Example PDF</a>\n</body>\n</html>",
+          question: "What happens when the 'Download Example PDF' link is clicked in the web browser of this code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='https://www.example.com' download='example.pdf'>Download Example PDF</a>\n</body>\n</html>",
           options: [
             "A) It opens 'https://www.example.com' in a new tab.",
             "B) It opens 'https://www.example.com' in the same tab.",
@@ -19615,7 +19519,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What does the rel='nofollow' attribute do in the 'Visit Example' link?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='https://www.example.com' rel='nofollow'>Visit Example</a>\n</body>\n</html>",
+          question: "What does the rel='nofollow' attribute do in the 'Visit Example' link of this code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='https://www.example.com' rel='nofollow'>Visit Example</a>\n</body>\n</html>",
           options: [
             "A) It opens 'https://www.example.com' in a new tab.",
             "B) It prevents search engines from following the link.",
@@ -19693,7 +19597,7 @@ const questions = {
         },
         {
           id: 5,
-          question: "What happens when the 'Visit Example' link is clicked in the web browser?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='https://www.example.com'>Visit Example</a>\n</body>\n</html>",
+          question: "What happens when the 'Visit Example' link is clicked in the web browser of this code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='https://www.example.com'>Visit Example</a>\n</body>\n</html>",
           options: [
             "A) It opens a new tab with 'https://www.example.com.'",
             "B) It opens 'https://www.example.com' in the same tab.",
@@ -19735,7 +19639,7 @@ const questions = {
         },
         {
           id: 11,
-          question: "What happens when the 'Go to Section 1' link is clicked in the web browser?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='#section1'>Go to Section 1</a>\n  <h2 id='section1'>Section 1</h2>\n</body>\n</html>",
+          question: "What happens when the 'Go to Section 1' link is clicked in the web browser of this code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='#section1'>Go to Section 1</a>\n  <h2 id='section1'>Section 1</h2>\n</body>\n</html>",
           options: [
             "A) It opens a new tab with 'https://www.example.com.'",
             "B) It scrolls the page to Section 1.",
@@ -19767,7 +19671,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "What happens when the 'Go to Relative Page' link is clicked in the web browser?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='relative-page.html'>Go to Relative Page</a>\n</body>\n</html>",
+          question: "What happens when the 'Go to Relative Page' link is clicked in the web browser of this code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='relative-page.html'>Go to Relative Page</a>\n</body>\n</html>",
           options: [
             "A) It opens 'relative-page.html' in a new tab.",
             "B) It opens 'relative-page.html' in the same tab.",
@@ -19820,7 +19724,7 @@ const questions = {
         },
         {
           id: 22,
-          question: "What happens when the 'Download Example PDF' link is clicked in the web browser?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='https://www.example.com' download='example.pdf'>Download Example PDF</a>\n</body>\n</html>",
+          question: "What happens when the 'Download Example PDF' link is clicked in the web browser of this code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='https://www.example.com' download='example.pdf'>Download Example PDF</a>\n</body>\n</html>",
           options: [
             "A) It opens 'https://www.example.com' in a new tab.",
             "B) It opens 'https://www.example.com' in the same tab.",
@@ -19862,7 +19766,7 @@ const questions = {
         },
         {
           id: 28,
-          question: "What happens when the 'Go to Section 1' link is clicked in the web browser?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='#section1'>Go to Section 1</a>\n  <h2 id='section1'>Section 1</h2>\n</body>\n</html>",
+          question: "What happens when the 'Go to Section 1' link is clicked in the web browser of this code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='#section1'>Go to Section 1</a>\n  <h2 id='section1'>Section 1</h2>\n</body>\n</html>",
           options: [
             "A) It opens a new tab with 'https://www.example.com.'",
             "B) It scrolls the page to Section 1.",
@@ -19978,7 +19882,7 @@ const questions = {
         },
         {
           id: 11,
-          question: "What happens when the image in the above HTML code is clicked in the web browser?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='https://www.example.com'>\n    <img src='example.png' alt='Example Image'>\n  </a>\n</body>\n</html>",
+          question: "What happens when the image in the above HTML code is clicked in the web browser of this code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='https://www.example.com'>\n    <img src='example.png' alt='Example Image'>\n  </a>\n</body>\n</html>",
           options: [
             "A) It opens 'https://www.example.com' in a new tab.",
             "B) It displays 'https://www.example.com' as plain text.",
@@ -20016,7 +19920,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "What happens when the 'New York' area of the image map is clicked in the web browser?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <img src='usa-map.png' alt='USA Map' usemap='#usamap'>\n  <map name='usamap'>\n    <area shape='circle' coords='50,50,30' href='newyork.html' alt='New York'>\n    <area shape='circle' coords='150,150,30' href='losangeles.html' alt='Los Angeles'>\n  </map>\n</body>\n</html>",
+          question: "What happens when the 'New York' area of the image map is clicked in the web browser of this code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <img src='usa-map.png' alt='USA Map' usemap='#usamap'>\n  <map name='usamap'>\n    <area shape='circle' coords='50,50,30' href='newyork.html' alt='New York'>\n    <area shape='circle' coords='150,150,30' href='losangeles.html' alt='Los Angeles'>\n  </map>\n</body>\n</html>",
           options: [
             "A) It opens 'newyork.html' in a new tab.",
             "B) It displays 'newyork.html' as plain text.",
@@ -20070,7 +19974,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What happens when the 'Europe' area of the image map is clicked in the web browser?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <img src='world-map.png' alt='World Map' usemap='#worldmap'>\n  <map name='worldmap'>\n    <area shape='rect' coords='0,0,100,100' href='europe.html' alt='Europe'>\n    <area shape='rect' coords='100,100,200,200' href='asia.html' alt='Asia'>\n  </map>\n</body>\n</html>",
+          question: "What happens when the 'Europe' area of the image map is clicked in the web browser of this code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <img src='world-map.png' alt='World Map' usemap='#worldmap'>\n  <map name='worldmap'>\n    <area shape='rect' coords='0,0,100,100' href='europe.html' alt='Europe'>\n    <area shape='rect' coords='100,100,200,200' href='asia.html' alt='Asia'>\n  </map>\n</body>\n</html>",
           options: [
             "A) It opens 'europe.html' in a new tab.",
             "B) It displays 'europe.html' as plain text.",
@@ -20124,7 +20028,7 @@ const questions = {
         },
         {
           id: 27,
-          question: "What happens when the image in the above HTML code is clicked in the web browser?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='https://www.example.com'>\n    <img src='example.png' alt='Example Image' usemap='#examplemap'>\n  </a>\n  <map name='examplemap'>\n    <area shape='rect' coords='0,0,100,100' href='example.html' alt='Example Link'>\n  </map>\n</body>\n</html>",
+          question: "What happens when the image in the above HTML code is clicked in the web browser of this code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <a href='https://www.example.com'>\n    <img src='example.png' alt='Example Image' usemap='#examplemap'>\n  </a>\n  <map name='examplemap'>\n    <area shape='rect' coords='0,0,100,100' href='example.html' alt='Example Link'>\n  </map>\n</body>\n</html>",
           options: [
             "A) It opens 'https://www.example.com' in a new tab.",
             "B) It displays 'https://www.example.com' as plain text.",
@@ -20206,7 +20110,7 @@ const questions = {
         },
         {
           id: 5,
-          question: "What does the <caption> tag in the above HTML code display?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <table>\n    <caption>Sample Table</caption>\n    <tr>\n      <th>Header 1</th>\n      <th>Header 2</th>\n    </tr>\n    <tr>\n      <td>Data 1</td>\n      <td>Data 2</td>\n    </tr>\n  </table>\n</body>\n</html>",
+          question: "What does the <caption> tag in the above HTML code display of this code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <table>\n    <caption>Sample Table</caption>\n    <tr>\n      <th>Header 1</th>\n      <th>Header 2</th>\n    </tr>\n    <tr>\n      <td>Data 1</td>\n      <td>Data 2</td>\n    </tr>\n  </table>\n</body>\n</html>",
           options: [
             "A) 'Sample Table'",
             "B) 'Header 1'",
@@ -20248,7 +20152,7 @@ const questions = {
         },
         {
           id: 11,
-          question: "What is displayed as the first column header in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <table>\n    <tr>\n      <th>Header 1</th>\n      <th>Header 2</th>\n    </tr>\n    <tr>\n      <td>Data 1</td>\n      <td>Data 2</td>\n    </tr>\n  </table>\n</body>\n</html>",
+          question: "What is displayed as the first column header in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <table>\n    <tr>\n      <th>Header 1</th>\n      <th>Header 2</th>\n    </tr>\n    <tr>\n      <td>Data 1</td>\n      <td>Data 2</td>\n    </tr>\n  </table>\n</body>\n</html>",
           options: [
             "A) 'Header 1'",
             "B) 'Header 2'",
@@ -20322,7 +20226,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What is displayed as the first column header in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <table>\n    <tr>\n      <th>Header 1</th>\n      <th>Header 2</th>\n    </tr>\n    <tr>\n      <td>Data 1</td>\n      <td>Data 2</td>\n    </tr>\n  </table>\n</body>\n</html>",
+          question: "What is displayed as the first column header in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <table>\n    <tr>\n      <th>Header 1</th>\n      <th>Header 2</th>\n    </tr>\n    <tr>\n      <td>Data 1</td>\n      <td>Data 2</td>\n    </tr>\n  </table>\n</body>\n</html>",
           options: [
             "A) 'Header 1'",
             "B) 'Header 2'",
@@ -20432,7 +20336,7 @@ const questions = {
         },
         {
           id: 5,
-          question: "How many columns does the 'Merged Cell' span in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <table>\n    <tr>\n      <td>Cell 1</td>\n      <td>Cell 2</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Merged Cell</td>\n    </tr>\n  </table>\n</body>\n</html>",
+          question: "How many columns does the 'Merged Cell' span in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <table>\n    <tr>\n      <td>Cell 1</td>\n      <td>Cell 2</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Merged Cell</td>\n    </tr>\n  </table>\n</body>\n</html>",
           options: [
             "A) 1",
             "B) 2",
@@ -20464,7 +20368,7 @@ const questions = {
         },
         {
           id: 9,
-          question: "How many rows does the 'Merged Cell' span in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <table>\n    <tr>\n      <td>Cell 1</td>\n      <td rowspan=\"2\">Merged Cell</td>\n    </tr>\n    <tr>\n      <td>Cell 2</td>\n    </tr>\n  </table>\n</body>\n</html>",
+          question: "How many rows does the 'Merged Cell' span in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <table>\n    <tr>\n      <td>Cell 1</td>\n      <td rowspan=\"2\">Merged Cell</td>\n    </tr>\n    <tr>\n      <td>Cell 2</td>\n    </tr>\n  </table>\n</body>\n</html>",
           options: [
             "A) 1",
             "B) 2",
@@ -20496,7 +20400,7 @@ const questions = {
         },
         {
           id: 13,
-          question: "How many columns does the 'Merged Cell' span in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <table>\n    <tr>\n      <td colspan=\"2\" rowspan=\"2\">Merged Cell</td>\n      <td>Cell 1</td>\n    </tr>\n    <tr>\n      <td>Cell 2</td>\n    </tr>\n  </table>\n</body>\n</html>",
+          question: "How many columns does the 'Merged Cell' span in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <table>\n    <tr>\n      <td colspan=\"2\" rowspan=\"2\">Merged Cell</td>\n      <td>Cell 1</td>\n    </tr>\n    <tr>\n      <td>Cell 2</td>\n    </tr>\n  </table>\n</body>\n</html>",
           options: [
             "A) 1",
             "B) 2",
@@ -20528,7 +20432,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "How many rows does the 'Merged Cell' span in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <table>\n    <tr>\n      <td>Cell 1</td>\n      <td rowspan=\"2\">Merged Cell</td>\n    </tr>\n    <tr>\n      <td>Cell 2</td>\n    </tr>\n  </table>\n</body>\n</html>",
+          question: "How many rows does the 'Merged Cell' span in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <table>\n    <tr>\n      <td>Cell 1</td>\n      <td rowspan=\"2\">Merged Cell</td>\n    </tr>\n    <tr>\n      <td>Cell 2</td>\n    </tr>\n  </table>\n</body>\n</html>",
           options: [
             "A) 1",
             "B) 2",
@@ -20595,7 +20499,7 @@ const questions = {
         },
         {
           id: 5,
-          question: "Where will the form data be submitted when the 'Submit' button is clicked in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form action=\"submit.php\" method=\"POST\">\n    <!-- Form fields go here -->\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
+          question: "Where will the form data be submitted when the 'Submit' button is clicked in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form action=\"submit.php\" method=\"POST\">\n    <!-- Form fields go here -->\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
           options: [
             "A) submit.html",
             "B) submit.php",
@@ -20627,7 +20531,7 @@ const questions = {
         },
         {
           id: 9,
-          question: "Where will the form data be submitted when the 'Submit' button is clicked in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form action=\"submit.php\" method=\"POST\">\n    <!-- Form fields go here -->\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
+          question: "Where will the form data be submitted when the 'Submit' button is clicked in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form action=\"submit.php\" method=\"POST\">\n    <!-- Form fields go here -->\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
           options: [
             "A) submit.html",
             "B) submit.php",
@@ -20701,7 +20605,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "Where will the form data be submitted when the 'Submit' button is clicked in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form action=\"submit.php\" method=\"POST\">\n    <!-- Form fields go here -->\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
+          question: "Where will the form data be submitted when the 'Submit' button is clicked in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form action=\"submit.php\" method=\"POST\">\n    <!-- Form fields go here -->\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
           options: [
             "A) submit.html",
             "B) submit.php",
@@ -20775,7 +20679,7 @@ const questions = {
         },
         {
           id: 29,
-          question: "Where will the form data be submitted when the 'Submit' button is clicked in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form action=\"submit.php\" method=\"POST\">\n    <!-- Form fields go here -->\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
+          question: "Where will the form data be submitted when the 'Submit' button is clicked in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form action=\"submit.php\" method=\"POST\">\n    <!-- Form fields go here -->\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
           options: [
             "A) submit.html",
             "B) submit.php",
@@ -20826,7 +20730,7 @@ const questions = {
         },
         {
           id: 5,
-          question: "What is the default value displayed in the text input field in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form>\n    <input type=\"text\" value=\"Hello, World!\">\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
+          question: "What is the default value displayed in the text input field in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form>\n    <input type=\"text\" value=\"Hello, World!\">\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
           options: [
             "A) \"Hello, World!\"",
             "B) An empty field",
@@ -20858,7 +20762,7 @@ const questions = {
         },
         {
           id: 9,
-          question: "What is the default value displayed in the text input field in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form>\n    <input type=\"text\" value=\"Hello, World!\">\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
+          question: "What is the default value displayed in the text input field in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form>\n    <input type=\"text\" value=\"Hello, World!\">\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
           options: [
             "A) \"Hello, World!\"",
             "B) An empty field",
@@ -20890,7 +20794,7 @@ const questions = {
         },
         {
           id: 13,
-          question: "What is the default value displayed in the text input field in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form>\n    <input type=\"text\" value=\"Hello, World!\">\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
+          question: "What is the default value displayed in the text input field in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form>\n    <input type=\"text\" value=\"Hello, World!\">\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
           options: [
             "A) \"Hello, World!\"",
             "B) An empty field",
@@ -20922,7 +20826,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "What is the default value displayed in the text input field in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form>\n    <input type=\"text\" value=\"Hello, World!\">\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
+          question: "What is the default value displayed in the text input field in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form>\n    <input type=\"text\" value=\"Hello, World!\">\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
           options: [
             "A) \"Hello, World!\"",
             "B) An empty field",
@@ -20954,7 +20858,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What is the default value displayed in the text input field in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form>\n    <input type=\"text\" value=\"Hello, World!\">\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
+          question: "What is the default value displayed in the text input field in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form>\n    <input type=\"text\" value=\"Hello, World!\">\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
           options: [
             "A) \"Hello, World!\"",
             "B) An empty field",
@@ -20986,7 +20890,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What is the default value displayed in the text input field in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form>\n    <input type=\"text\" value=\"Hello, World!\">\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
+          question: "What is the default value displayed in the text input field in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form>\n    <input type=\"text\" value=\"Hello, World!\">\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
           options: [
             "A) \"Hello, World!\"",
             "B) An empty field",
@@ -21018,7 +20922,7 @@ const questions = {
         },
         {
           id: 29,
-          question: "What is the default value displayed in the text input field in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form>\n    <input type=\"text\" value=\"Hello, World!\">\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
+          question: "What is the default value displayed in the text input field in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <form>\n    <input type=\"text\" value=\"Hello, World!\">\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</body>\n</html>",
           options: [
             "A) \"Hello, World!\"",
             "B) An empty field",
@@ -21285,7 +21189,7 @@ const questions = {
         },
         {
           id: 5,
-          question: "What will be displayed inside the <iframe> in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <iframe src=\"https://www.example.com\"></iframe>\n</body>\n</html>",
+          question: "What will be displayed inside the <iframe> in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <iframe src=\"https://www.example.com\"></iframe>\n</body>\n</html>",
           options: [
             "A) The content of the current webpage.",
             "B) The content of \"https://www.example.com.\"",
@@ -21314,7 +21218,7 @@ const questions = {
         },
         {
           id: 9,
-          question: "What will be displayed inside the <iframe> in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <iframe src=\"https://www.example.com\"></iframe>\n</body>\n</html>",
+          question: "What will be displayed inside the <iframe> in the above HTML code ? \n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <iframe src=\"https://www.example.com\"></iframe>\n</body>\n</html>",
           options: [
             "A) The content of the current webpage.",
             "B) The content of \"https://www.example.com.\"",
@@ -21343,7 +21247,7 @@ const questions = {
         },
         {
           id: 13,
-          question: "What will be displayed inside the <iframe> in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <iframe src=\"https://www.example.com\"></iframe>\n</body>\n</html>",
+          question: "What will be displayed inside the <iframe> in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <iframe src=\"https://www.example.com\"></iframe>\n</body>\n</html>",
           options: [
             "A) The content of the current webpage.",
             "B) The content of \"https://www.example.com.\"",
@@ -21372,7 +21276,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "What will be displayed inside the <iframe> in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <iframe src=\"https://www.example.com\"></iframe>\n</body>\n</html>",
+          question: "What will be displayed inside the <iframe> in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <iframe src=\"https://www.example.com\"></iframe>\n</body>\n</html>",
           options: [
             "A) The content of the current webpage.",
             "B) The content of \"https://www.example.com.\"",
@@ -21401,7 +21305,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What will be displayed inside the <iframe> in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <iframe src=\"https://www.example.com\"></iframe>\n</body>\n</html>",
+          question: "What will be displayed inside the <iframe> in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <iframe src=\"https://www.example.com\"></iframe>\n</body>\n</html>",
           options: [
             "A) The content of the current webpage.",
             "B) The content of \"https://www.example.com.\"",
@@ -21430,7 +21334,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What will be displayed inside the <iframe> in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <iframe src=\"https://www.example.com\"></iframe>\n</body>\n</html>",
+          question: "What will be displayed inside the <iframe> in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <iframe src=\"https://www.example.com\"></iframe>\n</body>\n</html>",
           options: [
             "A) The content of the current webpage.",
             "B) The content of \"https://www.example.com.\"",
@@ -21459,7 +21363,7 @@ const questions = {
         },
         {
           id: 29,
-          question: "What will be displayed inside the <iframe> in the above HTML code?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <iframe src=\"https://www.example.com\"></iframe>\n</body>\n</html>",
+          question: "What will be displayed inside the <iframe> in the above HTML code ?\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>HTML Quiz</title>\n</head>\n<body>\n  <iframe src=\"https://www.example.com\"></iframe>\n</body>\n</html>",
           options: [
             "A) The content of the current webpage.",
             "B) The content of \"https://www.example.com.\"",
@@ -21574,7 +21478,7 @@ const questions = {
         },
         {
           id: 9,
-          question: `What will be displayed in the web page in the above HTML code?
+          question: `What will be displayed in the web page in the above HTML code ?
       
             <!DOCTYPE html>
             <html>
@@ -21623,7 +21527,7 @@ const questions = {
         },
         {
           id: 13,
-          question: `What will be displayed in the web page in the above HTML code?
+          question: `What will be displayed in the web page in the above HTML code ?
       
             <!DOCTYPE html>
             <html>
@@ -21672,7 +21576,7 @@ const questions = {
         },
         {
           id: 17,
-          question: `What will be displayed in the web page in the above HTML code?
+          question: `What will be displayed in the web page in the above HTML code ?
       
             <!DOCTYPE html>
             <html>
@@ -21721,7 +21625,7 @@ const questions = {
         },
         {
           id: 21,
-          question: `What will be displayed in the web page in the above HTML code?
+          question: `What will be displayed in the web page in the above HTML code ?
       
             <!DOCTYPE html>
             <html>
@@ -21770,7 +21674,7 @@ const questions = {
         },
         {
           id: 25,
-          question: `What will be displayed in the web page in the above HTML code?
+          question: `What will be displayed in the web page in the above HTML code ?
       
             <!DOCTYPE html>
             <html>
@@ -23047,7 +22951,7 @@ const questions = {
         },
         {
           id: 6,
-          question: "What does the following line of code do in C++```cpcout << \"Hello, World!\";",
+          question: "What does the following line of code do in C++ cout << \"Hello, World!\";",
           options: ["A) Prints \"Hello, World!\"", "B) Takes input \"Hello, World!\"", "C) Compiles with an error", "D) None of the above"],
           correctAnswer: "A) Prints \"Hello, World!\"",
         },
@@ -23077,7 +22981,7 @@ const questions = {
         },
         {
           id: 11,
-          question: "What will be the output of the following C++ code snippet```cpconst int PI = 3.14;",
+          question: "What will be the output of the following C++ code const int PI = 3.14;",
           options: ["A) Compilation error", "B) Runtime error", "C) PI will be assigned the value 3.14", "D) PI will be assigned the value 3"],
           correctAnswer: "A) Compilation error",
         },
@@ -23089,7 +22993,7 @@ const questions = {
         },
         {
           id: 13,
-          question: "What will be the output of the following C++ code snippet```cpint x = 5std::cout << x;",
+          question: "What will be the output of the following C++ code int x = 5; std::cout << x;",
           options: ["A) 5", "B) x", "C) Compilation error", "D) Runtime error"],
           correctAnswer: "A) 5",
         },
@@ -23101,7 +23005,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "What will be the output of the following C++ code snippet```cpint x = 10, y = 20std::cout << x << \" \" << y;",
+          question: "What will be the output of the following C++ code int x = 10, y = 20; std::cout << x << \" \" << y;",
           options: ["A) 10 20", "B) x y", "C) Compilation error", "D) Runtime error"],
           correctAnswer: "A) 10 20",
         },
@@ -23113,7 +23017,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "What will be the output of the following C++ code snippet```cpint x = 5std::cout << x++ << \" \" << x;",
+          question: "What will be the output of the following C++ code int x = 5; std::cout << x++ << \" \" << x;",
           options: ["A) 5 5", "B) 5 6", "C) 6 6", "D) 6 5"],
           correctAnswer: "B) 5 6",
         },
@@ -23125,7 +23029,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "What will be the output of the following C++ code snippet```cpint x = 5std::cout << ++x << \" \" << x;",
+          question: "What will be the output of the following C++ code int x = 5; std::cout << ++x << \" \" << x;",
           options: ["A) 5 6", "B) 6 5", "C) 6 6", "D) 5 5"],
           correctAnswer: "C) 6 6",
         },
@@ -23137,7 +23041,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What will be the output of the following C++ code snippet```cpint x = 10std::cout << (x > 5 ? \"Greater\" : \"Smaller\");",
+          question: "What will be the output of the following C++ code int x = 10; std::cout << (x > 5 ? \"Greater\" : \"Smaller\");",
           options: ["A) Greater", "B) Smaller", "C) Compilation error", "D) Runtime error"],
           correctAnswer: "A) Greater",
         },
@@ -23149,7 +23053,7 @@ const questions = {
         },
         {
           id: 23,
-          question: "What will be the output of the following C++ code snippet```cpint x = 5std::cout << sizeof(x);",
+          question: "What will be the output of the following C++ code int x = 5; std::cout << sizeof(x);",
           options: ["A) 2", "B) 4", "C) 8", "D) Depends on the system"],
           correctAnswer: "B) 4",
         },
@@ -23173,7 +23077,7 @@ const questions = {
         },
         {
           id: 27,
-          question: "What will be the output of the following C++ code snippet```cpint x = 5, y = 3std::cout << x % y;",
+          question: "What will be the output of the following C++ code int x = 5, y = 3; std::cout << x % y;",
           options: ["A) 2", "B) 1", "C) 1.67", "D) Compilation error"],
           correctAnswer: "B) 1",
         },
@@ -23185,7 +23089,7 @@ const questions = {
         },
         {
           id: 29,
-          question: "What will be the output of the following C++ code snippet```cpint x = 5, y = 3std::cout << x + y * 2;",
+          question: "What will be the output of the following C++ code int x = 5, y = 3; std::cout << x + y * 2;",
           options: ["A) 11", "B) 16", "C) 21", "D) 26"],
           correctAnswer: "B) 16",
         },
@@ -23237,7 +23141,7 @@ const questions = {
         },
         {
           id: 7,
-          question: "What will be the output of the following C++ code snippetint x = 5 / 2std::cout << x;",
+          question: "What will be the output of the following C++ code int x = 5 / 2; std::cout << x;",
           options: ["A) 2.5", "B) 2", "C) 2.0", "D) 2.25"],
           correctAnswer: "B) 2",
         },
@@ -23255,7 +23159,7 @@ const questions = {
         },
         {
           id: 10,
-          question: "What will be the output of the following C++ code snippetdouble x = 5 / 2std::cout << x;",
+          question: "What will be the output of the following C++ code snippetdouble x = 5 / 2; std::cout << x;",
           options: ["A) 2.5", "B) 2", "C) 2.0", "D) 2.25"],
           correctAnswer: "C) 2.0",
         },
@@ -23279,7 +23183,7 @@ const questions = {
         },
         {
           id: 14,
-          question: "What will be the output of the following C++ code snippetchar ch = 'A'std::cout << (int)ch;",
+          question: "What will be the output of the following C++ code snippetchar ch = 'A'; std::cout << (int)ch;",
           options: ["A) A", "B) 65", "C) Compilation error", "D) Runtime error"],
           correctAnswer: "B) 65",
         },
@@ -23291,7 +23195,7 @@ const questions = {
         },
         {
           id: 16,
-          question: "What will be the output of the following C++ code snippetwchar_t ch = L'A'std::wcout << ch;",
+          question: "What will be the output of the following C++ code wchar_t ch = L'A'; std::wcout << ch;",
           options: ["A) A", "B) 65", "C) Compilation error", "D) Runtime error"],
           correctAnswer: "A) A",
         },
@@ -23303,7 +23207,7 @@ const questions = {
         },
         {
           id: 18,
-          question: "What will be the output of the following C++ code snippetstd::string name = \"John Doe\"std::cout << name.length();",
+          question: "What will be the output of the following C++ code std::string name = \"John Doe\"; std::cout << name.length();",
           options: ["A) 8", "B) 9", "C) Compilation error", "D) Runtime error"],
           correctAnswer: "A) 8",
         },
@@ -23315,7 +23219,7 @@ const questions = {
         },
         {
           id: 20,
-          question: "What will be the output of the following C++ code snippetlong long num = 1234567890123456789std::cout << num;",
+          question: "What will be the output of the following C++ code  long num = 1234567890123456789; std::cout << num;",
           options: ["A) 1234567890123456789", "B) 12345678901234567890", "C) Compilation error", "D) Runtime error"],
           correctAnswer: "A) 1234567890123456789",
         },
@@ -23339,7 +23243,7 @@ const questions = {
         },
         {
           id: 24,
-          question: "What will be the output of the following C++ code snippetint* ptrstd::cout << ptr;",
+          question: "What will be the output of the following C++ code int* ptr; std::cout << ptr;",
           options: ["A) Garbage value", "B) 0", "C) Compilation error", "D) Runtime error"],
           correctAnswer: "A) Garbage value",
         },
@@ -23351,7 +23255,7 @@ const questions = {
         },
         {
           id: 26,
-          question: "What will be the output of the following C++ code snippetstd::complex<double> z(3.0, 4.0)std::cout << std::abs(z);",
+          question: "What will be the output of the following C++ code std::complex<double> z(3.0, 4.0); std::cout << std::abs(z);",
           options: ["A) 5", "B) 7", "C) 25", "D) 16"],
           correctAnswer: "A) 5",
         },
@@ -23363,7 +23267,7 @@ const questions = {
         },
         {
           id: 28,
-          question: "What will be the output of the following C++ code snippetauto now = std::chrono::system_clock::now()std::time_t t = std::chrono::system_clock::to_time_t(now)std::cout << std::ctime(&t)(Assuming current time is 12:34:56 on 1st January 2023)",
+          question: "What will be the output of the following C++ code auto now = std::chrono::system_clock::now()std::time_t t = std::chrono::system_clock::to_time_t(now)std::cout << std::ctime(&t)(Assuming current time is 12:34:56 on 1st January 2023)",
           options: ["A) Sun Jan 1 12:34:56 2023", "B) 12:34:56", "C) Compilation error", "D) Runtime error"],
           correctAnswer: "A) Sun Jan 1 12:34:56 2023",
         },
@@ -23385,15 +23289,20 @@ const questions = {
       "2.3": [
         {
           id: 1,
-          question: "Question 1 for subchapter 1.1",
-          options: ["Option 1", "Option 2", "Option 3", "Option 4"],
-          correctAnswer: "Option 1",
+          question: "Which operator is used to perform dynamic initialization of variables in C++?",
+          options: ["A) =", "B) ()", "C) {}", "D) >"],
+          correctAnswer: "C) {}",
         },
         {
           id: 2,
-          question: "Question 2 for subchapter 1.1",
-          options: ["Option 1", "Option 2", "Option 3", "Option 4"],
-          correctAnswer: "Option 3",
+          question: "What is the purpose of using symbolic constants in C++?",
+          options: [
+            "A) To declare variables",
+            "B) To improve code readability and maintainability",
+            "C) To perform arithmetic operations",
+            "D) To declare functions",
+          ],
+          correctAnswer: "B) To improve code readability and maintainability",
         },
         {
           id: 3,
@@ -23504,7 +23413,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "What will be the output of the following C++ code snippetconst int a = 10int &b = astd::cout << b;",
+          question: "What will be the output of the following C++ code snippetconst int a = 10; int &b = a; std::cout << b;",
           options: ["A) 10", "B) Compilation error", "C) Runtime error", "D) Undefined behavior"],
           correctAnswer: "B) Compilation error",
         },
@@ -23516,7 +23425,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "What will be the output of the following C++ code snippetint x = 5int &y = xx = 10std::cout << y;",
+          question: "What will be the output of the following C++ code int x = 5; int &y = x; x = 10; std::cout << y;",
           options: ["A) 5", "B) 10", "C) Compilation error", "D) Runtime error"],
           correctAnswer: "B) 10",
         },
@@ -23556,7 +23465,7 @@ const questions = {
         },
         {
           id: 22,
-          question: "What will be the output of the following C++ code snippetconst int x = 5int &y = const_cast<int&>(x)y = 10std::cout << x;",
+          question: "What will be the output of the following C++ code const int x = 5; int &y = const_cast<int&>(x); y = 10std::cout << x;",
           options: ["A) 5", "B) 10", "C) Compilation error", "D) Runtime error"],
           correctAnswer: "A) 5",
         },
@@ -23590,7 +23499,7 @@ const questions = {
         },
         {
           id: 26,
-          question: "What will be the output of the following C++ code snippetint x = 5const int *ptr = &xx = 10std::cout << *ptr;",
+          question: "What will be the output of the following C++ code int x = 5; const int *ptr = &x; x = 10; std::cout << *ptr;",
           options: ["A) 5", "B) 10", "C) Compilation error", "D) Runtime error"],
           correctAnswer: "B) 10",
         },
@@ -23658,7 +23567,7 @@ const questions = {
         },
         {
           id: 5,
-          question: "What will be the output of the following C++ code snippet```cpbool a = true, b = falsestd::cout << (a && b);```",
+          question: "What will be the output of the following C++ code bool a = true, b = false; std::cout << (a && b);```",
           options: ["A) true", "B) false", "C) 1", "D) 0"],
           correctAnswer: "B) false",
         },
@@ -23670,7 +23579,7 @@ const questions = {
         },
         {
           id: 7,
-          question: "What will be the value of x after the following code is executed in C++```cpint x = 10x++;```",
+          question: "What will be the value of x after the following code is executed in C++ int x = 10; x++;",
           options: ["A) 9", "B) 10", "C) 11", "D) 12"],
           correctAnswer: "C) 11",
         },
@@ -23682,7 +23591,7 @@ const questions = {
         },
         {
           id: 9,
-          question: "What will be the output of the following C++ code snippet```cpint x = 10, y = 3std::cout << (x % y);```",
+          question: "What will be the output of the following C++ code int x = 10, y = 3; std::cout << (x % y);",
           options: ["A) 1", "B) 3", "C) 0", "D) 2"],
           correctAnswer: "A) 1",
         },
@@ -23694,7 +23603,7 @@ const questions = {
         },
         {
           id: 11,
-          question: "What will be the value of y after the following code is executed in C++```cpint x = 5, yy = x++;```",
+          question: "What will be the value of y after the following code is executed in C++cpint x = 5, y; y = x++;",
           options: ["A) 4", "B) 5", "C) 6", "D) 7"],
           correctAnswer: "B) 5",
         },
@@ -23706,7 +23615,7 @@ const questions = {
         },
         {
           id: 13,
-          question: "What will be the output of the following C++ code snippet```cpint x = 5, y = 3std::cout << (x | y);```",
+          question: "What will be the output of the following C++ code int x = 5, y = 3; std::cout << (x | y);",
           options: ["A) 7", "B) 6", "C) 3", "D) 5"],
           correctAnswer: "A) 7",
         },
@@ -23718,7 +23627,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "What will be the value of x after the following code is executed in C++```cpint x = 10x *= 2;```",
+          question: "What will be the value of x after the following code is executed in C++int x = 10; x *= 2;",
           options: ["A) 10", "B) 20", "C) 5", "D) 40"],
           correctAnswer: "B) 20",
         },
@@ -23730,7 +23639,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "What will be the output of the following C++ code snippet```cpint x = 5, y = 3std::cout << (x ^ y);```",
+          question: "What will be the output of the following C++ code int x = 5, y = 3; std::cout << (x ^ y);",
           options: ["A) 6", "B) 5", "C) 3", "D) 2"],
           correctAnswer: "A) 6",
         },
@@ -23742,7 +23651,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "What will be the output of the following C++ code snippet```cpint x = 5, y = 3std::cout << (x && y);```",
+          question: "What will be the output of the following C++ code int x = 5, y = 3; std::cout << (x && y);",
           options: ["A) 1", "B) 0", "C) true", "D) false"],
           correctAnswer: "A) 1",
         },
@@ -23754,7 +23663,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What will be the output of the following C++ code snippet```cpint x = 5, y = 3std::cout << (x || y);```",
+          question: "What will be the output of the following C++ code int x = 5, y = 3;std::cout << (x || y);",
           options: ["A) 1", "B) 0", "C) true", "D) false"],
           correctAnswer: "A) 1",
         },
@@ -23766,7 +23675,7 @@ const questions = {
         },
         {
           id: 23,
-          question: "What will be the output of the following C++ code snippet```cpint x = 5std::cout << (~x);```",
+          question: "What will be the output of the following C++ code int x = 5; std::cout << (~x);",
           options: ["A) -6", "B) -5", "C) 4", "D) 5"],
           correctAnswer: "A) -6",
         },
@@ -23778,7 +23687,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What will be the value of ptr after the following code is executed in C++```cpint* ptr = new int;```",
+          question: "What will be the value of ptr after the following code is executed in C++ int* ptr = new int;",
           options: ["A) Address of the allocated memory", "B) Value of the allocated memory", "C) 0", "D) Garbage value"],
           correctAnswer: "A) Address of the allocated memory",
         },
@@ -23790,7 +23699,7 @@ const questions = {
         },
         {
           id: 27,
-          question: "What will be the value of x after the following code is executed in C++```cpint* ptr = new int*ptr = 10int x = *ptrdelete ptr;```",
+          question: "What will be the value of x after the following code is executed in C++ int* ptr = new int; *ptr = 10; int x = *ptr; delete ptr;",
           options: ["A) 10", "B) Garbage value", "C) Compilation error", "D) Runtime error"],
           correctAnswer: "A) 10",
         },
@@ -24061,7 +23970,7 @@ const questions = {
         },
         {
           id: 23,
-          question: "What will be the output of the following C++ code snippet```cpint x = 5if (x > 3    std::cout << \"x is greater than 3\"els    std::cout << \"x is not greater than 3\";",
+          question: "What will be the output of the following C++ code int x = 5; if (x > 3)  {  std::cout << \"x is greater than 3\"} else    std::cout << \"x is not greater than 3\";",
           options: [
             "A) x is greater than 3",
             "B) x is not greater than 3",
@@ -24083,7 +23992,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What will be the output of the following C++ code snippet```cpint i = 0while (i < 5)     std::cout << i << \" \"    i++}",
+          question: "What will be the output of the following C++ code int i = 0; while (i < 5)     std::cout << i << \" \"    i++;}",
           options: [
             "A) 0 1 2 3 4",
             "B) 1 2 3 4 5",
@@ -24105,7 +24014,7 @@ const questions = {
         },
         {
           id: 27,
-          question: "What will be the output of the following C++ code snippet```cpfor (int i = 0; i < 3; i++)     for (int j = 0; j < 2; j++)         std::cout << i << \"-\" << j << \" \"    }",
+          question: "What will be the output of the following C++ code for (int i = 0; i < 3; i++)    { for (int j = 0; j < 2; j++)   {      std::cout << i << \"-\" << j << \" \"   } }",
           options: [
             "A) 0-0 0-1 1-0 1-1 2-0 2-1",
             "B) 0-0 1-0 2-0 0-1 1-1 2-1",
@@ -24127,7 +24036,7 @@ const questions = {
         },
         {
           id: 29,
-          question: "What will be the output of the following C++ code snippet```cpint x = 1switch (x)     case 1        std::cout << \"One \"    case 2        std::cout << \"Two \"    case 3        std::cout << \"Three \"    default        std::cout << \"Default \"}",
+          question: "What will be the output of the following C++ code int x = 1; switch (x)  {   case 1:        std::cout << \"One \";    case 2:        std::cout << \"Two \" ;   case 3:        std::cout << \"Three \";    default:        std::cout << \"Default \";}",
           options: [
             "A) One Two Three Default",
             "B) One Two",
@@ -24264,7 +24173,7 @@ const questions = {
         },
         {
           id: 11,
-          question: "What is the output of the following C++ code?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\ninline int multiply(int a, int b) {\n    return a * b;\n}\n\nint main() {\n    int result = multiply(3, 4);\n    cout << \"Result: \" << result << endl;\n    return 0;\n}\n```\nA) Result: 12\nB) Compiler Error\nC) Result: 7\nD) Result: 1",
+          question: "What is the output of the following C++ code ?\n\n \n#include <iostream>\nusing namespace std;\n\ninline int multiply(int a, int b) {\n    return a * b;\n}\n\nint main() {\n    int result = multiply(3, 4);\n    cout << \"Result: \" << result << endl;\n    return 0;\n}",
           options: [
             "A) Result: 12",
             "B) Compiler Error",
@@ -24361,7 +24270,7 @@ const questions = {
         },
         {
           id: 20,
-          question: "What is the output of the following C++ code?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\ninline int square(int x) {\n    return x * x;\n}\n\nint main() {\n    int result = square(5);\n    cout << \"Result: \" << result << endl;\n    return 0;\n}\n```\nA) Result: 25\nB) Result: 10\nC) Compiler Error\nD) Result: 5",
+          question: "What is the output of the following C++ code ?\n\n```\n#include <iostream>\nusing namespace std;\n\ninline int square(int x) {\n    return x * x;\n}\n\nint main() {\n    int result = square(5);\n    cout << \"Result: \" << result << endl;\n    return 0;\n}",
           options: [
             "A) Result: 25",
             "B) Result: 10",
@@ -24403,7 +24312,7 @@ const questions = {
         },
         {
           id: 24,
-          question: "What is the output of the following C++ code?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\ninline int increment(int& x) {\n    return x++;\n}\n\nint main() {\n    int num = 5;\n    int result = increment(num);\n    cout << \"Result: \" << result << endl;\n    return 0;\n}\n```\nA) Result: 5\nB) Result: 6\nC) Result: 7\nD) Compiler Error",
+          question: "What is the output of the following C++ code ? \n#include <iostream>\nusing namespace std;\n\ninline int increment(int& x) {\n    return x++;\n}\n\nint main() {\n    int num = 5;\n    int result = increment(num);\n    cout << \"Result: \" << result << endl;\n    return 0;\n}",
           options: [
             "A) Result: 5",
             "B) Result: 6",
@@ -24414,7 +24323,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What is the output of the following C++ code?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\ninline int sum(int a, int b) {\n    return a + b;\n}\n\nint main() {\n    int x = 5;\n    int y = 3;\n    int result = sum(x, y);\n    cout << \"Result: \" << result << endl;\n    return 0;\n}\n```\nA) Result: 8\nB) Result: 15\nC) Compiler Error\nD) Result: 53",
+          question: "What is the output of the following C++ code ?#include <iostream>\nusing namespace std;\n\ninline int sum(int a, int b) {\n    return a + b;\n}\n\nint main() {\n    int x = 5;\n    int y = 3;\n    int result = sum(x, y);\n    cout << \"Result: \" << result << endl;\n    return 0;\n}",
           options: [
             "A) Result: 8",
             "B) Result: 15",
@@ -24469,7 +24378,7 @@ const questions = {
         },
         {
           id: 30,
-          question: "What is the output of the following C++ code?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\ninline int max(int a, int b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    int x = 8, y = 12;\n    int result = max(x, y);\n    cout << \"Result: \" << result << endl;\n    return 0;\n}\n```\nA) Result: 12\nB) Result: 8\nC) Result: 20\nD) Compiler Error",
+          question: "What is the output of the following C++ code ?#include <iostream>\nusing namespace std;\n\ninline int max(int a, int b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    int x = 8, y = 12;\n    int result = max(x, y);\n    cout << \"Result: \" << result << endl;\n    return 0;\n}",
           options: [
             "A) Result: 12",
             "B) Result: 8",
@@ -24517,7 +24426,7 @@ const questions = {
         },
         {
           id: 4,
-          question: "Consider the following function prototype:\nint& increment(int& x);\nWhat does this function return?",
+          question: "Consider the following function prototype here is the code :\nint& increment(int& x);\nWhat does this function return?",
           options: [
             "A) The incremented value of x",
             "B) The memory address of x",
@@ -24572,7 +24481,7 @@ const questions = {
         },
         {
           id: 9,
-          question: "Consider the following function prototypes:\nint add(int a, int b);\ndouble add(double a, double b);\nWhat is this an example of?",
+          question: "Consider the following function prototypes code :\nint add(int a, int b);\ndouble add(double a, double b);\nWhat is this an example of?",
           options: [
             "A) Function overloading",
             "B) Function overriding",
@@ -24605,7 +24514,7 @@ const questions = {
         },
         {
           id: 12,
-          question: "What will be the output of the following code snippet?\nint increment(int& x) {\n  return x++;\n}\n\nint main() {\n  int num = 5;\n  int result = increment(num);\n  cout << \"Result: \" << result << \", Num: \" << num << endl;\n  return 0;\n}",
+          question: "What will be the output of the following code ?\nint increment(int& x) {\n  return x++;\n}\n\nint main() {\n  int num = 5;\n  int result = increment(num);\n  cout << \"Result: \" << result << \", Num: \" << num << endl;\n  return 0;\n}",
           options: [
             "A) Result: 5, Num: 6",
             "B) Result: 6, Num: 5",
@@ -24638,7 +24547,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "Consider the following function prototype:\nint sum(int a, int b = 0, int c = 0);\nHow many arguments can be passed to this function?",
+          question: "Consider the following function prototype code :\nint sum(int a, int b = 0, int c = 0);\nHow many arguments can be passed to this function?",
           options: [
             "A) 1",
             "B) 2",
@@ -24660,7 +24569,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "What is the output of the following code snippet?\nint add(int a, int b) {\n  return a + b;\n}\ndouble add(double a, double b) {\n  return a + b;\n}\n\nint main() {\n  cout << add(2, 3) << endl;\n  cout << add(2.5, 3.5) << endl;\n  return 0;\n}",
+          question: "What is the output of the following code ?\nint add(int a, int b) {\n  return a + b;\n}\ndouble add(double a, double b) {\n  return a + b;\n}\n\nint main() {\n  cout << add(2, 3) << endl;\n  cout << add(2.5, 3.5) << endl;\n  return 0;\n}",
           options: [
             "A) 5 \\n 6.0",
             "B) 5.0 \\n 6",
@@ -24682,7 +24591,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "Consider the following function prototypes:\nvoid printValue(int x);\nvoid printValue(double x);\nIs this an example of function overloading?",
+          question: "Consider the following function prototypes code :\nvoid printValue(int x);\nvoid printValue(double x);\nIs this an example of function overloading?",
           options: [
             "A) Yes",
             "B) No",
@@ -24693,7 +24602,7 @@ const questions = {
         },
         {
           id: 20,
-          question: "What is the output of the following code snippet?\nint square(int& x) {\n  return x * x;\n}\n\nint square(const int& x) {\n  return x * x;\n}\n\nint main() {\n  int num1 = 5;\n  const int num2 = 3;\n  cout << square(num1) << endl;\n  cout << square(num2) << endl;\n  return 0;\n}",
+          question: "What is the output of the following code ?\nint square(int& x) {\n  return x * x;\n}\n\nint square(const int& x) {\n  return x * x;\n}\n\nint main() {\n  int num1 = 5;\n  const int num2 = 3;\n  cout << square(num1) << endl;\n  cout << square(num2) << endl;\n  return 0;\n}",
           options: [
             "A) 25 \\n 9",
             "B) 25 \\n Compilation error",
@@ -24715,7 +24624,7 @@ const questions = {
         },
         {
           id: 22,
-          question: "Consider the following function prototype:\nint& increment(int& x);\nWhat does this function return?",
+          question: "Consider the following function prototype code :\nint& increment(int& x);\nWhat does this function return?",
           options: [
             "A) The incremented value of x",
             "B) The memory address of x",
@@ -24759,7 +24668,7 @@ const questions = {
         },
         {
           id: 26,
-          question: "Consider the following function prototype:\nint& increment(int& x);\nWhat does this function return?",
+          question: "Consider the following function prototype code :\nint& increment(int& x);\nWhat does this function return?",
           options: [
             "A) The incremented value of x",
             "B) The memory address of x",
@@ -24937,7 +24846,7 @@ const questions = {
         },
         {
           id: 11,
-          question: "What is the output of the following code snippet?\n\n```cpp\nstruct Point {\n    int x;\n    int y;\n};\n\nPoint p = {1, 2};\ncout << p.x << \", \" << p.y;",
+          question: "What is the output of the following code ? struct Point {\n    int x;\n    int y;\n};\n\nPoint p = {1, 2};\ncout << p.x << \", \" << p.y;",
           options: [
             "A) 1, 2",
             "B) 2, 1",
@@ -24959,7 +24868,7 @@ const questions = {
         },
         {
           id: 13,
-          question: "What is the output of the following code snippet?\n\n```cpp\nclass Rectangle {\npublic:\n    int length;\n    int width;\n};\n\nRectangle r;\nr.length = 5;\nr.width = 3;\n\ncout << \"Area: \" << r.length * r.width;",
+          question: "What is the output of the following code ? class Rectangle {\npublic:\n    int length;\n    int width;\n};\n\nRectangle r;\nr.length = 5;\nr.width = 3;\n\ncout << \"Area: \" << r.length * r.width;",
           options: [
             "A) Area: 8",
             "B) Area: 15",
@@ -24992,7 +24901,7 @@ const questions = {
         },
         {
           id: 16,
-          question: "What is the output of the following code snippet?\n\n```cpp\nclass Base {\npublic:\n    int x;\n    Base(int val) : x(val) {}\n};\n\nclass Derived : public Base {\npublic:\n    int y;\n    Derived(int val) : Base(val), y(val) {}\n};\n\nDerived d(10);\ncout << d.x << \", \" << d.y;",
+          question: "What is the output of the following code ? class Base {\npublic:\n    int x;\n    Base(int val) : x(val) {}\n};\n\nclass Derived : public Base {\npublic:\n    int y;\n    Derived(int val) : Base(val), y(val) {}\n};\n\nDerived d(10);\ncout << d.x << \", \" << d.y;",
           options: [
             "A) 10, 10",
             "B) 0, 0",
@@ -25047,7 +24956,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What is the output of the following code snippet?\n\n```cpp\nclass MyClass {\nprivate:\n    int x;\npublic:\n    void setX(int val) {\n        x = val;\n    }\n    int getX() {\n        return x;\n    }\n};\n\nint main() {\n    MyClass obj;\n    obj.setX(5);\n    cout << obj.getX();\n    return 0;\n}",
+          question: "What is the output of the following code ? class MyClass {\nprivate:\n    int x;\npublic:\n    void setX(int val) {\n        x = val;\n    }\n    int getX() {\n        return x;\n    }\n};\n\nint main() {\n    MyClass obj;\n    obj.setX(5);\n    cout << obj.getX();\n    return 0;\n}",
           options: [
             "A) 5",
             "B) Compilation Error",
@@ -25089,7 +24998,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What is the output of the following code snippet?\n\n```cpp\nclass A {\npublic:\n    A() { cout << \"A\"; }\n};\n\nclass B : public A {\npublic:\n    B() { cout << \"B\"; }\n};\n\nint main() {\n    B obj;\n    return 0;\n}",
+          question: "What is the output of the following code ? class A {\npublic:\n    A() { cout << \"A\"; }\n};\n\nclass B : public A {\npublic:\n    B() { cout << \"B\"; }\n};\n\nint main() {\n    B obj;\n    return 0;\n}",
           options: [
             "A) AB",
             "B) BA",
@@ -25111,7 +25020,7 @@ const questions = {
         },
         {
           id: 27,
-          question: "What is the output of the following code snippet?\n\n```cpp\nclass Parent {\npublic:\n    Parent() { cout << \"P\"; }\n};\n\nclass Child : public Parent {\npublic:\n    Child() { cout << \"C\"; }\n};\n\nint main() {\n    Parent p;\n    Child c;\n    return 0;\n}",
+          question: "What is the output of the following code ? class Parent {\npublic:\n    Parent() { cout << \"P\"; }\n};\n\nclass Child : public Parent {\npublic:\n    Child() { cout << \"C\"; }\n};\n\nint main() {\n    Parent p;\n    Child c;\n    return 0;\n}",
           options: [
             "A) PCC",
             "B) PC",
@@ -25133,7 +25042,7 @@ const questions = {
         },
         {
           id: 29,
-          question: "What is the output of the following code snippet?\n\n```cpp\nclass Test {\npublic:\n    static int x;\n    Test() { x++; }\n};\n\nint Test::x = 0;\n\nint main() {\n    Test t1, t2, t3;\n    cout << Test::x;\n    return 0;\n}",
+          question: "What is the output of the following code ? class Test {\npublic:\n    static int x;\n    Test() { x++; }\n};\n\nint Test::x = 0;\n\nint main() {\n    Test t1, t2, t3;\n    cout << Test::x;\n    return 0;\n}",
           options: [
             "A) 3",
             "B) 0",
@@ -25248,7 +25157,7 @@ const questions = {
         },
         {
           id: 9,
-          question: "Consider the following class definition:\nclass MyClass {\npublic:\n    void myFunction() {\n        // Function code here\n    }\n};\nIs myFunction defined inside or outside the class definition?",
+          question: "Consider the following class definition code :\nclass MyClass {\npublic:\n    void myFunction() {\n        // Function code here\n    }\n};\nIs myFunction defined inside or outside the class definition?",
           options: [
             "A) Inside",
             "B) Outside",
@@ -25259,12 +25168,12 @@ const questions = {
           id: 10,
           question: "Which of the following is a valid way to define an inline function outside the class definition?",
           options: [
-            "A) inline void MyClass::myFunction() { /* Function code here */ }",
-            "B) void inline MyClass::myFunction() { /* Function code here */ }",
-            "C) void MyClass::inline myFunction() { /* Function code here */ }",
-            "D) void MyClass::myFunction() inline { /* Function code here */ }",
+            "A) inline void MyClass::myFunction() { /* Function Code here */ }",
+            "B) void inline MyClass::myFunction() { /* Function Code here */ }",
+            "C) void MyClass::inline myFunction() { /* Function Code here */ }",
+            "D) void MyClass::myFunction() inline { /* Function Code here */ }",
           ],
-          correctAnswer: "A) inline void MyClass::myFunction() { /* Function code here */ }",
+          correctAnswer: "A) inline void MyClass::myFunction() { /* Function Code here */ }",
         },
         {
           id: 11,
@@ -25301,7 +25210,7 @@ const questions = {
         },
         {
           id: 14,
-          question: "Consider the following code:\nclass MyClass {\npublic:\n    void myFunction();\n};\ninline void MyClass::myFunction() {\n    // Function code here\n}\nIs myFunction defined inside or outside the class definition?",
+          question: "Consider the following code :\nclass MyClass {\npublic:\n    void myFunction();\n};\ninline void MyClass::myFunction() {\n    // Function code here\n}\nIs myFunction defined inside or outside the class definition?",
           options: [
             "A) Inside",
             "B) Outside",
@@ -25321,7 +25230,7 @@ const questions = {
         },
         {
           id: 16,
-          question: "Consider the following code:\nclass MyClass {\npublic:\n    void myFunction();\n};\ninline void MyClass::myFunction() {\n    // Function code here\n}\nWhat is the purpose of the separate function declaration?",
+          question: "Consider the following code :\nclass MyClass {\npublic:\n    void myFunction();\n};\ninline void MyClass::myFunction() {\n    // Function code here\n}\nWhat is the purpose of the separate function declaration?",
           options: [
             "A) To allow for function overloading",
             "B) To provide a prototype for the function",
@@ -25354,7 +25263,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "Consider the following class definition:\nclass MyClass {\npublic:\n    void myFunction() {\n        // Function code here\n    }\n};\nCan myFunction be called from an external source?",
+          question: "Consider the following class definition :\nclass MyClass {\npublic:\n    void myFunction() {\n        // Function code here\n    }\n};\nCan myFunction be called from an external source?",
           options: [
             "A) Yes",
             "B) No",
@@ -25385,7 +25294,7 @@ const questions = {
         },
         {
           id: 22,
-          question: "Consider the following code:\nclass MyClass {\npublic:\n    void myFunction() {\n        // Function code here\n    }\n};\nIs myFunction defined inside or outside the class definition?",
+          question: "Consider the following code :\nclass MyClass {\npublic:\n    void myFunction() {\n        // Function code here\n    }\n};\nIs myFunction defined inside or outside the class definition?",
           options: [
             "A) Inside",
             "B) Outside",
@@ -25438,7 +25347,7 @@ const questions = {
         },
         {
           id: 27,
-          question: "Consider the following class definition:\nclass MyClass {\npublic:\n    void myFunction();\n};\ninline void MyClass::myFunction() {\n    // Function code here\n}\nIs myFunction defined inside or outside the class definition?",
+          question: "Consider the following class definition code :\nclass MyClass {\npublic:\n    void myFunction();\n};\ninline void MyClass::myFunction() {\n    // Function code here\n}\nIs myFunction defined inside or outside the class definition?",
           options: [
             "A) Inside",
             "B) Outside",
@@ -25531,7 +25440,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 5,
-          question: "Consider the following C++ code:\n\n```cpp\nclass MyClass {\nprivate:\n    int x;\npublic:\n    static int y;\n    void func() {\n        x = 10;\n        y = 20;\n    }\n};\nint MyClass::y = 0;\n```\nWhat will happen if we try to access x directly in the main function?",
+          question: "Consider the following C++ code ? class MyClass {\nprivate:\n    int x;\npublic:\n    static int y;\n    void func() {\n        x = 10;\n        y = 20;\n    }\n};\nint MyClass::y = 0;\n```\nWhat will happen if we try to access x directly in the main function?",
           options: [
             "A) It will result in a compilation error",
             "B) It will change the value of x",
@@ -25553,9 +25462,7 @@ const questions = {
         },
         {
           id: 7,
-          question: "What is the output of the following C++ code?",
-          code: true,
-          codeSnippet: "class Example {\nprivate:\n    int x;\npublic:\n    static int y;\n    void func1() {\n        x = 10;\n        y = 20;\n    }\n    void func2() {\n        x = 30;\n        y = 40;\n    }\n};\nint Example::y = 0;\n\nint main() {\n    Example obj;\n    obj.func1();\n    obj.func2();\n    cout << Example::y;\n    return 0;\n}",
+          question: "What is the output of the following C++ code ? class Example {\nprivate:\n    int x;\npublic:\n    static int y;\n    void func1() {\n        x = 10;\n        y = 20;\n    }\n    void func2() {\n        x = 30;\n        y = 40;\n    }\n};\nint Example::y = 0;\n\nint main() {\n    Example obj;\n    obj.func1();\n    obj.func2();\n    cout << Example::y;\n    return 0;\n}",
           options: [
             "A) 0",
             "B) 20",
@@ -25586,7 +25493,7 @@ const questions = {
         },
         {
           id: 10,
-          question: "Consider the following C++ code:\n\n```cpp\nclass Example {\nprivate:\n    static int x;\npublic:\n    static int y;\n    void func() {\n        x = 10;\n        y = 20;\n    }\n};\nint Example::x = 0;\nint Example::y = 0;\n```\nWhat is the output of the following code?\n\n```cpp\nint main() {\n    Example::x = 30;\n    Example obj;\n    obj.func();\n    cout << Example::x << \" \" << Example::y;\n    return 0;\n}",
+          question: "Consider the following C++ code : class Example {\nprivate:\n    static int x;\npublic:\n    static int y;\n    void func() {\n        x = 10;\n        y = 20;\n    }\n};\nint Example::x = 0;\nint Example::y = 0;\n```\nWhat is the output of the following code?\n\n```cpp\nint main() {\n    Example::x = 30;\n    Example obj;\n    obj.func();\n    cout << Example::x << \" \" << Example::y;\n    return 0;\n}",
           options: [
             "A) 10 20",
             "B) 30 20",
@@ -25619,7 +25526,7 @@ const questions = {
         },
         {
           id: 13,
-          question: "Consider the following C++ code:\n\n```cpp\nclass Example {\nprivate:\n    static int x;\npublic:\n    static int y;\n    void func() {\n        x = 10;\n        y = 20;\n    }\n};\nint Example::x = 0;\nint Example::y = 0;\n```\nWhat is the output of the following code?\n\n```cpp\nint main() {\n    Example obj1, obj2;\n    obj1.func();\n    obj2.func();\n    cout << Example::x << \" \" << Example::y;\n    return 0;\n}",
+          question: "Consider the following C++ code class Example {\nprivate:\n    static int x;\npublic:\n    static int y;\n    void func() {\n        x = 10;\n        y = 20;\n    }\n};\nint Example::x = 0;\nint Example::y = 0;\n```\nWhat is the output of the following code?\n\n```cpp\nint main() {\n    Example obj1, obj2;\n    obj1.func();\n    obj2.func();\n    cout << Example::x << \" \" << Example::y;\n    return 0;\n}",
           options: [
             "A) 10 20",
             "B) 0 20",
@@ -25661,7 +25568,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "Consider the following C++ code:\n\n```cpp\nclass Example {\nprivate:\n    static int x;\npublic:\n    static int y;\n    void func() {\n        x = 10;\n        y = 20;\n    }\n};\nint Example::x = 0;\nint Example::y = 0;\n```\nWhat is the output of the following code?\n\n```cpp\nint main() {\n    Example obj1, obj2;\n    obj1.func();\n    obj2.func();\n    cout << Example::x << \" \" << Example::y;\n    return 0;\n}",
+          question: "Consider the following C++ code class Example {\nprivate:\n    static int x;\npublic:\n    static int y;\n    void func() {\n        x = 10;\n        y = 20;\n    }\n};\nint Example::x = 0;\nint Example::y = 0;\n```\nWhat is the output of the following code?\n\n```cpp\nint main() {\n    Example obj1, obj2;\n    obj1.func();\n    obj2.func();\n    cout << Example::x << \" \" << Example::y;\n    return 0;\n}",
           options: [
             "A) 10 20",
             "B) 0 20",
@@ -25683,7 +25590,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "Consider the following C++ code:\n\n```cpp\nclass Example {\nprivate:\n    static int x;\npublic:\n    static int y;\n    void func() {\n        x = 10;\n        y = 20;\n    }\n};\nint Example::x = 0;\nint Example::y = 0;\n```\nWhat is the output of the following code?\n\n```cpp\nint main() {\n    Example obj;\n    obj.func();\n    cout << Example::x << \" \" << Example::y;\n    return 0;\n}",
+          question: "Consider the following C++ code ? class Example {\nprivate:\n    static int x;\npublic:\n    static int y;\n    void func() {\n        x = 10;\n        y = 20;\n    }\n};\nint Example::x = 0;\nint Example::y = 0;\n```\nWhat is the output of the following code?\n\n```cpp\nint main() {\n    Example obj;\n    obj.func();\n    cout << Example::x << \" \" << Example::y;\n    return 0;\n}",
           options: [
             "A) 10 20",
             "B) 0 20",
@@ -25734,7 +25641,7 @@ const questions = {
         },
         {
           id: 24,
-          question: "What is the output of the following C++ code?\n\n```cpp\nclass Example {\nprivate:\n    static int x;\npublic:\n    static int y;\n    void func() {\n        y = 20;\n    }\n};\nint Example::y = 0;\n```\n\n```cpp\nint main() {\n    Example obj;\n    obj.func();\n    cout << Example::y;\n    return 0;\n}\n```",
+          question: "What is the output of the following C++ code ? class Example {\nprivate:\n    static int x;\npublic:\n    static int y;\n    void func() {\n        y = 20;\n    }\n};\nint Example::y = 0;\n```\n\n```cpp\nint main() {\n    Example obj;\n    obj.func();\n    cout << Example::y;\n    return 0;\n}\n```",
           options: [
             "A) 0",
             "B) 20",
@@ -25745,7 +25652,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "Consider the following C++ code:\n\n```cpp\nclass Example {\nprivate:\n    int x;\n    static int y;\npublic:\n    static void func() {\n        y = 20;\n    }\n};\nint Example::y = 0;\n```\nWhat is the output of the following code?\n\n```cpp\nint main() {\n    Example obj;\n    obj.func();\n    cout << Example::y;\n    return 0;\n}\n```",
+          question: "Consider the following C++ code : class Example {\nprivate:\n    int x;\n    static int y;\npublic:\n    static void func() {\n        y = 20;\n    }\n};\nint Example::y = 0;\n```\nWhat is the output of the following code?\n\n```cpp\nint main() {\n    Example obj;\n    obj.func();\n    cout << Example::y;\n    return 0;\n}\n```",
           options: [
             "A) 0",
             "B) 20",
@@ -25765,7 +25672,7 @@ const questions = {
         },
         {
           id: 27,
-          question: "Consider the following C++ code:\n\n```cpp\nclass Example {\nprivate:\n    int x;\n    static int y;\npublic:\n    static void func() {\n        y = 20;\n    }\n};\nint Example::y = 0;\n```\nWhat is the output of the following code?\n\n```cpp\nint main() {\n    Example obj;\n    obj.func();\n    cout << Example::y;\n    return 0;\n}\n```",
+          question: "Consider the following C++ code : class Example {\nprivate:\n    int x;\n    static int y;\npublic:\n    static void func() {\n        y = 20;\n    }\n};\nint Example::y = 0;\n```\nWhat is the output of the following code?\n\n```cpp\nint main() {\n    Example obj;\n    obj.func();\n    cout << Example::y;\n    return 0;\n}\n```",
           options: [
             "A) 0",
             "B) 20",
@@ -25776,7 +25683,7 @@ const questions = {
         },
         {
           id: 28,
-          question: "What is the output of the following C++ code?\n\n```cpp\nclass Example {\nprivate:\n    int x;\n    static int y;\npublic:\n    static void func() {\n        y = 20;\n    }\n};\nint Example::y = 0;\n\nint main() {\n    Example obj1, obj2;\n    obj1.func();\n    obj2.func();\n    cout << Example::x << \" \" << Example::y;\n    return 0;\n}",
+          question: "What is the output of the following C++ code ? class Example {\nprivate:\n    int x;\n    static int y;\npublic:\n    static void func() {\n        y = 20;\n    }\n};\nint Example::y = 0;\n\nint main() {\n    Example obj1, obj2;\n    obj1.func();\n    obj2.func();\n    cout << Example::x << \" \" << Example::y;\n    return 0;\n}",
           options: [
             "A) Compilation error",
             "B) 10 20",
@@ -25798,7 +25705,7 @@ const questions = {
         },
         {
           id: 30,
-          question: "What is the output of the following C++ code?\n\n```cpp\nclass Example {\nprivate:\n    static int x;\npublic:\n    static int y;\n    void func() {\n        x = 10;\n        y = 20;\n    }\n};\nint Example::x = 0;\nint Example::y = 0;\n\nint main() {\n    Example obj1, obj2;\n    obj1.func();\n    obj2.func();\n    cout << Example::x << \" \" << Example::y;\n    return 0;\n}",
+          question: "What is the output of the following C++ code ? class Example {\nprivate:\n    static int x;\npublic:\n    static int y;\n    void func() {\n        x = 10;\n        y = 20;\n    }\n};\nint Example::x = 0;\nint Example::y = 0;\n\nint main() {\n    Example obj1, obj2;\n    obj1.func();\n    obj2.func();\n    cout << Example::x << \" \" << Example::y;\n    return 0;\n}",
           options: [
             "A) 10 20",
             "B) 0 20",
@@ -26472,6 +26379,7 @@ const questions = {
       ],
     },
     // CHAPTER 4 ENDED
+
 
     5: {
       // Chapter 5
@@ -27963,7 +27871,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 16,
-          question: "What is the output of the following code snippet?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Complex {\nprivate:\n    int real, imag;\npublic:\n    Complex(int r, int i) : real(r), imag(i) {}\n    Complex operator+(Complex const &obj) {\n        return Complex(real + obj.real, imag + obj.imag);\n    }\n    void display() {\n        cout << real << \" + \" << imag << \"i\";\n    }\n};\n\nint main() {\n    Complex num1(3, 4), num2(1, 2);\n    Complex sum = num1 + num2;\n    sum.display();\n    return 0;\n}\n```\na) 4 + 6i\nb) 4 + 2i\nc) 3 + 4i\nd) 3 + 2i",
+          question: "What is the output of the following code ?#include <iostream>\nusing namespace std;\n\nclass Complex {\nprivate:\n    int real, imag;\npublic:\n    Complex(int r, int i) : real(r), imag(i) {}\n    Complex operator+(Complex const &obj) {\n        return Complex(real + obj.real, imag + obj.imag);\n    }\n    void display() {\n        cout << real << \" + \" << imag << \"i\";\n    }\n};\n\nint main() {\n    Complex num1(3, 4), num2(1, 2);\n    Complex sum = num1 + num2;\n    sum.display();\n    return 0;\n}",
           options: [
             "A) 4 + 6i",
             "B) 4 + 2i",
@@ -27999,7 +27907,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 19,
-          question: "What is the output of the following code snippet?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Point {\nprivate:\n    int x, y;\npublic:\n    Point(int a, int b) : x(a), y(b) {}\n    Point operator+(Point const &obj) {\n        return Point(x + obj.x, y + obj.y);\n    }\n    void display() {\n        cout << \"x = \" << x << \", y = \" << y;\n    }\n};\n\nint main() {\n    Point p1(2, 3), p2(1, 2);\n    Point p3 = p1 + p2;\n    p3.display();\n    return 0;\n}\n```\na) x = 3, y = 5\nb) x = 2, y = 3\nc) x = 1, y = 2\nd) x = 2, y = 5",
+          question: "What is the output of the following code ? #include <iostream>\nusing namespace std;\n\nclass Point {\nprivate:\n    int x, y;\npublic:\n    Point(int a, int b) : x(a), y(b) {}\n    Point operator+(Point const &obj) {\n        return Point(x + obj.x, y + obj.y);\n    }\n    void display() {\n        cout << \"x = \" << x << \", y = \" << y;\n    }\n};\n\nint main() {\n    Point p1(2, 3), p2(1, 2);\n    Point p3 = p1 + p2;\n    p3.display();\n    return 0;\n}",
           options: [
             "A) x = 3, y = 5",
             "B) x = 2, y = 3",
@@ -28105,7 +28013,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 28,
-          question: "What is the output of the following code snippet?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Complex {\nprivate:\n    int real, imag;\npublic:\n    Complex(int r, int i) : real(r), imag(i) {}\n    Complex operator+(Complex const &obj) {\n        return Complex(real + obj.real, imag + obj.imag);\n    }\n    void display() {\n        cout << real << \" + \" << imag << \"i\";\n    }\n};\n\nint main() {\n    Complex num1(3, 4), num2(1, 2);\n    Complex sum = num1 + num2;\n    sum.display();\n    return 0;\n}\n```\na) 4 + 6i\nb) 4 + 2i\nc) 3 + 4i\nd) 3 + 2i",
+          question: "What is the output of the following code ? #include <iostream>\nusing namespace std;\n\nclass Complex {\nprivate:\n    int real, imag;\npublic:\n    Complex(int r, int i) : real(r), imag(i) {}\n    Complex operator+(Complex const &obj) {\n        return Complex(real + obj.real, imag + obj.imag);\n    }\n    void display() {\n        cout << real << \" + \" << imag << \"i\";\n    }\n};\n\nint main() {\n    Complex num1(3, 4), num2(1, 2);\n    Complex sum = num1 + num2;\n    sum.display();\n    return 0;\n}",
           options: [
             "A) 4 + 6i",
             "B) 4 + 2i",
@@ -28484,16 +28392,7 @@ const questions = {
         },
         {
           id: 11,
-          question: "Consider the following code:",
-          code: `
-            class Base {
-              public:
-                int value;
-            }
-
-            class Derived : private Base {
-            }
-          `,
+          question: "Consider the following code :   class Base {  public: int value; } class Derived : private Base { }",
           options: [
             "A) It will compile and run successfully",
             "B) It will result in a compile-time error",
@@ -28515,20 +28414,7 @@ const questions = {
         },
         {
           id: 13,
-          question: "Consider the following code:",
-          code: `
-            class Base {
-              protected:
-                int value;
-            }
-
-            class Derived : public Base {
-              public:
-                void setValue(int val) {
-                  value = val;
-                }
-            }
-          `,
+          question: "Consider the following code : class Base {  protected: int value; }    class Derived : public Base { public: void setValue(int val) { value = val;}  }",
           options: [
             "A) Yes",
             "B) No",
@@ -28550,22 +28436,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "Consider the following code:",
-          code: `
-            class Base {
-              public:
-                void display() {
-                  cout << "Base Class" << endl;
-                }
-            }
-
-            class Derived : public Base {
-              private:
-                void display() {
-                  cout << "Derived Class" << endl;
-                }
-            }
-          `,
+          question: "Consider the following code :   class Base {  public: void display() { cout << \"Base Class\" << endl;  }} class Derived : public Base { private:  void display() { cout << \"Derived Class\" << endl; }  }",
           options: [
             "A) 'Base Class' will be printed",
             "B) 'Derived Class' will be printed",
@@ -28598,22 +28469,7 @@ const questions = {
         },
         {
           id: 18,
-          question: "Consider the following code:",
-          code: `
-            class Base {
-              public:
-                virtual void show() {
-                  cout << "Base Class" << endl;
-                }
-            }
-
-            class Derived : public Base {
-              public:
-                void show() override {
-                  cout << "Derived Class" << endl;
-                }
-            }
-          `,
+          question: "Consider the following code :\nclass Base {\n  public:\n    virtual void show() {\n      cout << \"Base Class\" << endl;\n    }\n}\nclass Derived : public Base {\n  public:\n    void show() override {\n      cout << \"Derived Class\" << endl;\n    }\n}",
           options: [
             "A) Yes",
             "B) No",
@@ -28635,22 +28491,22 @@ const questions = {
         },
         {
           id: 20,
-          question: "Consider the following code:",
-          code: `
-            class Base {
-              public:
-                virtual void show() const {
-                  cout << "Base Class" << endl;
-                }
-            }
-
-            class Derived : public Base {
-              public:
-                void show() override {
-                  cout << "Derived Class" << endl;
-                }
-            }
-          `,
+          question: "Consider the following C++ code :\n\n```cpp\n\
+  class Base {\n\
+    public:\n\
+      virtual void show() const {\n\
+        cout << \"Base Class\" << endl;\n\
+      }\n\
+  }\n\
+  \n\
+  class Derived : public Base {\n\
+    public:\n\
+      void show() override {\n\
+        cout << \"Derived Class\" << endl;\n\
+      }\n\
+  }\n\
+  ```\n\
+  What is the concept illustrated in this code?",
           options: [
             "A) 'Base Class' will be printed",
             "B) 'Derived Class' will be printed",
@@ -28672,22 +28528,20 @@ const questions = {
         },
         {
           id: 22,
-          question: "Consider the following code:",
-          code: `
-            class Base {
-              public:
-                virtual void show() {
-                  cout << "Base Class" << endl;
-                }
-            }
-
-            class Derived : public Base {
-              public:
-                void show() {
-                  cout << "Derived Class" << endl;
-                }
-            }
-          `,
+          question: "Consider the following code :\n\n```cpp\n\
+      class Base {\n\
+        public:\n\
+          virtual void show() {\n\
+            cout << \"Base Class\" << endl;\n\
+          }\n\
+      }\n\
+      \n\
+      class Derived : public Base {\n\
+        public:\n\
+          void show() {\n\
+            cout << \"Derived Class\" << endl;\n\
+          }\n\
+      }",
           options: [
             "A) 'Base Class' will be printed",
             "B) 'Derived Class' will be printed",
@@ -28698,20 +28552,7 @@ const questions = {
         },
         {
           id: 23,
-          question: "Consider the following code:",
-          code: `
-            class Base {
-              public:
-                virtual void show() = 0;
-            }
-
-            class Derived : public Base {
-              public:
-                void show() override {
-                  cout << "Derived Class" << endl;
-                }
-            }
-          `,
+          question: "Consider the following code :\nclass Base {\n  public:\n    virtual void show() = 0;\n}\nclass Derived : public Base {\n  public:\n    void show() override {\n      cout << 'Derived Class' << endl;\n    }\n}",
           options: [
             "A) Public",
             "B) Private",
@@ -28733,22 +28574,8 @@ const questions = {
         },
         {
           id: 25,
-          question: "Consider the following code:",
-          code: `
-            class Base {
-              public:
-                virtual void show() const {
-                  cout << "Base Class" << endl;
-                }
-            }
-
-            class Derived : public Base {
-              public:
-                void show() const override {
-                  cout << "Derived Class" << endl;
-                }
-            }
-          `,
+          question: "Consider the following code :\n\n```cpp\nclass Base {\n  public:\n    virtual void show() const {\n      cout << \"Base Class\" << endl;\n    }\n}\n\nclass Derived : public Base {\n  public:\n    void show() const override {\n      cout << \"Derived Class\" << endl;\n    }\n}\n ",
+      
           options: [
             "A) Yes",
             "B) No",
@@ -28770,22 +28597,7 @@ const questions = {
         },
         {
           id: 27,
-          question: "Consider the following code:",
-          code: `
-            class Base {
-              public:
-                void display() {
-                  cout << "Base Class" << endl;
-                }
-            }
-
-            class Derived : public Base {
-              public:
-                void display() const {
-                  cout << "Derived Class" << endl;
-                }
-            }
-          `,
+          question: "Consider the following code :\n\n```cpp\nclass Base {\n  public:\n    void display() {\n      cout << \"Base Class\" << endl;\n    }\n}\n\nclass Derived : public Base {\n  public:\n    void display() const {\n      cout << \"Derived Class\" << endl;\n    }\n}\n```",
           options: [
             "A) 'Base Class' will be printed",
             "B) 'Derived Class' will be printed",
@@ -28807,20 +28619,17 @@ const questions = {
         },
         {
           id: 29,
-          question: "Consider the following code:",
-          code: `
-            class Base {
-              public:
-                void show() {
-                  cout << "Base Class" << endl;
-                }
-            }
-
-            class Derived : private Base {
-              public:
-                using Base::show;
-            }
-          `,
+          question: "Consider the following code :\n\n\
+            class Base {\n\
+              public:\n\
+                void show() {\n\
+                  cout << \"Base Class\" << endl;\n\
+                }\n\
+            }\n\
+            class Derived : private Base {\n\
+              public:\n\
+                using Base::show;\n\
+            }",
           options: [
             "A) It makes the show function public in the Derived class",
             "B) It hides the show function in the Base class",
@@ -28995,7 +28804,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "What is the output of the following C++ code?\n\n```cpp\n#include<iostream>\nusing namespace std;\n\nclass A {\n  public:\n    void display() {\n        cout << 'Class A' << endl;\n    }\n};\n\nclass B : public A {\n  public:\n    void display() {\n        cout << 'Class B' << endl;\n    }\n};\n\nint main() {\n    B b;\n    b.display();\n    return 0;\n}\n```",
+          question: "What is the output of the following C++ code ?#include<iostream>\nusing namespace std;\n\nclass A {\n  public:\n    void display() {\n        cout << 'Class A' << endl;\n    }\n};\n\nclass B : public A {\n  public:\n    void display() {\n        cout << 'Class B' << endl;\n    }\n};\n\nint main() {\n    B b;\n    b.display();\n    return 0;\n}",
           options: [
             "A) Class A",
             "B) Class B",
@@ -29039,7 +28848,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "What is the output of the following C++ code?\n\n```cpp\n#include<iostream>\nusing namespace std;\n\nclass A {\n  public:\n    void display() {\n        cout << 'Class A' << endl;\n    }\n};\n\nclass B : public A {};\n\nint main() {\n    B b;\n    b.display();\n    return 0;\n}\n```",
+          question: "What is the output of the following C++ code ?#include<iostream>\nusing namespace std;\n\nclass A {\n  public:\n    void display() {\n        cout << 'Class A' << endl;\n    }\n};\n\nclass B : public A {};\n\nint main() {\n    B b;\n    b.display();\n    return 0;\n}\n",
           options: [
             "A) Class A",
             "B) Compilation Error",
@@ -29083,7 +28892,7 @@ const questions = {
         },
         {
           id: 23,
-          question: "What is the output of the following C++ code?\n\n```cpp\n#include<iostream>\nusing namespace std;\n\nclass A {\n  public:\n    void display() {\n        cout << 'Class A' << endl;\n    }\n};\n\nclass B : virtual public A {};\n\nint main() {\n    B b;\n    b.display();\n    return 0;\n}\n```",
+          question: "What is the output of the following C++ code ?#include<iostream>\nusing namespace std;\n\nclass A {\n  public:\n    void display() {\n        cout << 'Class A' << endl;\n    }\n};\n\nclass B : virtual public A {};\n\nint main() {\n    B b;\n    b.display();\n    return 0;\n}",
           options: [
             "A) Class A",
             "B) Compilation Error",
@@ -29147,7 +28956,7 @@ const questions = {
         },
         {
           id: 29,
-          question: "What is the output of the following C++ code?\n\n```cpp\n#include<iostream>\nusing namespace std;\n\nclass A {\n  public:\n    void display() {\n        cout << 'Class A' << endl;\n    }\n};\n\nclass B : public A {\n  public:\n    void show() {\n        cout << 'Class B' << endl;\n    }\n};\n\nint main() {\n    B b;\n    b.display();\n    b.show();\n    return 0;\n}\n```",
+          question: "What is the output of the following C++ code ?#include<iostream>\nusing namespace std;\n\nclass A {\n  public:\n    void display() {\n        cout << 'Class A' << endl;\n    }\n};\n\nclass B : public A {\n  public:\n    void show() {\n        cout << 'Class B' << endl;\n    }\n};\n\nint main() {\n    B b;\n    b.display();\n    b.show();\n    return 0;\n}",
           options: [
             "A) Class A Class B",
             "B) Class B Class A",
@@ -29408,7 +29217,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 21,
-          question: "What is the output of the following code snippet?\nclass A {\npublic:\n    int value;\n    A() : value(10) {}\n};\n\nclass B : public A {\npublic:\n    B() : value(20) {}\n};\n\nint main() {\n    B b;\n    cout << b.value << endl;\n    return 0;\n}\na) 10\nb) 20\nc) Compilation error\nd) Runtime error",
+          question: "What is the output of the following code ?\nclass A {\npublic:\n    int value;\n    A() : value(10) {}\n};\n\nclass B : public A {\npublic:\n    B() : value(20) {}\n};\n\nint main() {\n    B b;\n    cout << b.value << endl;\n    return 0;\n}",
           options: [
             "A) 10",
             "B) 20",
@@ -29442,7 +29251,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 24,
-          question: "What is the output of the following code snippet?\nclass A {\npublic:\n    A(int x) {}\n};\n\nclass B : public A {\npublic:\n    B(int y) {}\n};\n\nint main() {\n    B b(10);\n    return 0;\n}\na) Compilation error\nb) Runtime error\nc) No output\nd) The code runs successfully",
+          question: "What is the output of the following code ?\nclass A {\npublic:\n    A(int x) {}\n};\n\nclass B : public A {\npublic:\n    B(int y) {}\n};\n\nint main() {\n    B b(10);\n    return 0;\n}",
           options: [
             "A) Compilation error",
             "B) Runtime error",
@@ -29476,7 +29285,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 27,
-          question: "What is the output of the following code snippet?\nclass A {\nprotected:\n    int x;\npublic:\n    A(int y) : x(y) {}\n};\n\nclass B : public A {\npublic:\n    int get_x() { return x; }\n};\n\nint main() {\n    B b(5);\n    cout << b.get_x() << endl;\n    return 0;\n}\na) 5\nb) Compilation error\nc) Runtime error\nd) 0",
+          question: "What is the output of the following code ?\nclass A {\nprotected:\n    int x;\npublic:\n    A(int y) : x(y) {}\n};\n\nclass B : public A {\npublic:\n    int get_x() { return x; }\n};\n\nint main() {\n    B b(5);\n    cout << b.get_x() << endl;\n    return 0;\n}",
           options: [
             "A) 5",
             "B) Compilation error",
@@ -29510,7 +29319,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 30,
-          question: "What is the output of the following code snippet?\nclass A {\npublic:\n    virtual void display() { cout << 'A'; }\n};\n\nclass B : public A {\npublic:\n    void display() { cout << 'B'; }\n};\n\nint main() {\n    A* ptr = new B;\n    ptr->display();\n    delete ptr;\n    return 0;\n}\na) A\nb) B\nc) Compilation error\nd) Runtime error",
+          question: "What is the output of the following code ?\nclass A {\npublic:\n    virtual void display() { cout << 'A'; }\n};\n\nclass B : public A {\npublic:\n    void display() { cout << 'B'; }\n};\n\nint main() {\n    A* ptr = new B;\n    ptr->display();\n    delete ptr;\n    return 0;\n}",
           options: [
             "A) A",
             "B) B",
@@ -29555,7 +29364,7 @@ const questions = {
         },
         {
           id: 3,
-          question: "What is the result of the following code?\nint num = 10;\nint *ptr = &num;\ncout << *ptr;",
+          question: "What is the result of the following code ?\nint num = 10;\nint *ptr = &num;\ncout << *ptr;",
           options: [
             "A) 10",
             "B) The address of 'num'",
@@ -29566,7 +29375,7 @@ const questions = {
         },
         {
           id: 4,
-          question: "What is the output of the following code?\nint arr[5] = {1, 2, 3, 4, 5};\nint *ptr = arr;\ncout << *ptr;",
+          question: "What is the output of the following code ?\nint arr[5] = {1, 2, 3, 4, 5};\nint *ptr = arr;\ncout << *ptr;",
           options: [
             "A) 1",
             "B) The address of 'arr'",
@@ -29599,7 +29408,7 @@ const questions = {
         },
         {
           id: 7,
-          question: "What is the output of the following code?\nint num = 5;\nint *ptr = &num;\n*ptr = 7;\ncout << num;",
+          question: "What is the output of the following code ?\nint num = 5;\nint *ptr = &num;\n*ptr = 7;\ncout << num;",
           options: [
             "A) 5",
             "B) 7",
@@ -29632,7 +29441,7 @@ const questions = {
         },
         {
           id: 10,
-          question: "What does the following code do?\nint *ptr = new int;",
+          question: "What does the following code do code ?\nint *ptr = new int;",
           options: [
             "A) Declares a pointer without initialization",
             "B) Allocates memory for an integer on the heap and assigns its address to 'ptr'",
@@ -29643,7 +29452,7 @@ const questions = {
         },
         {
           id: 11,
-          question: "What is the output of the following code?\nint num = 10;\nint *ptr = &num;\nint **ptr2 = &ptr;\ncout << **ptr2;",
+          question: "What is the output of the following code ?\nint num = 10;\nint *ptr = &num;\nint **ptr2 = &ptr;\ncout << **ptr2;",
           options: [
             "A) 10",
             "B) The address of 'num'",
@@ -29665,7 +29474,7 @@ const questions = {
         },
         {
           id: 13,
-          question: "What is the output of the following code?\nint num = 5;\nint *ptr = &num;\n*ptr = 7;\ncout << **ptr2;",
+          question: "What is the output of the following code ?\nint num = 5;\nint *ptr = &num;\n*ptr = 7;\ncout << **ptr2;",
           options: [
             "A) 5",
             "B) 7",
@@ -29687,7 +29496,7 @@ const questions = {
         },
         {
           id: 15,
-          question: "What is the output of the following code?\nint num = 10;\nint *ptr = &num;\nint &ref = *ptr;\nref = 15;\ncout << num;",
+          question: "What is the output of the following code ?\nint num = 10;\nint *ptr = &num;\nint &ref = *ptr;\nref = 15;\ncout << num;",
           options: [
             "A) 10",
             "B) 15",
@@ -29731,7 +29540,7 @@ const questions = {
         },
         {
           id: 19,
-          question: "What is the output of the following code?\nint *ptr = nullptr;\nif (ptr) {\n    cout << 'Pointer is valid';\n} else {\n    cout << 'Pointer is null';\n}",
+          question: "What is the output of the following code ?\nint *ptr = nullptr;\nif (ptr) {\n    cout << 'Pointer is valid';\n} else {\n    cout << 'Pointer is null';\n}",
           options: [
             "A) Pointer is valid",
             "B) Pointer is null",
@@ -29753,7 +29562,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What is the output of the following code?\nint arr[5] = {1, 2, 3, 4, 5};\nint *ptr = arr;\ncout << *(ptr + 2);",
+          question: "What is the output of the following code ?\nint arr[5] = {1, 2, 3, 4, 5};\nint *ptr = arr;\ncout << *(ptr + 2);",
           options: [
             "A) 1",
             "B) 2",
@@ -29764,7 +29573,7 @@ const questions = {
         },
         {
           id: 22,
-          question: "What is the output of the following code?\nint num = 10;\nint *ptr = &num;\nint *ptr2 = ptr;\n*ptr2 = 15;\ncout << num;",
+          question: "What is the output of the following code ?\nint num = 10;\nint *ptr = &num;\nint *ptr2 = ptr;\n*ptr2 = 15;\ncout << num;",
           options: [
             "A) 10",
             "B) 15",
@@ -29786,7 +29595,7 @@ const questions = {
         },
         {
           id: 24,
-          question: "What is the output of the following code?\nint *ptr = nullptr;\nint num = 5;\nptr = &num;\ncout << *ptr;",
+          question: "What is the output of the following code ?\nint *ptr = nullptr;\nint num = 5;\nptr = &num;\ncout << *ptr;",
           options: [
             "A) 0",
             "B) 5",
@@ -29808,7 +29617,7 @@ const questions = {
         },
         {
           id: 26,
-          question: "What is the output of the following code?\nint num = 10;\nint *ptr = &num;\nint &ref = *ptr;\nref = 15;\ncout << *ptr;",
+          question: "What is the output of the following code ?\nint num = 10;\nint *ptr = &num;\nint &ref = *ptr;\nref = 15;\ncout << *ptr;",
           options: [
             "A) 10",
             "B) 15",
@@ -29830,7 +29639,7 @@ const questions = {
         },
         {
           id: 28,
-          question: "What is the output of the following code?\nint arr[5] = {1, 2, 3, 4, 5};\nint *ptr = arr;\ncout << ptr[2];",
+          question: "What is the output of the following code ?\nint arr[5] = {1, 2, 3, 4, 5};\nint *ptr = arr;\ncout << ptr[2];",
           options: [
             "A) 1",
             "B) 2",
@@ -29852,7 +29661,7 @@ const questions = {
         },
         {
           id: 30,
-          question: "What is the output of the following code?\nint *ptr = nullptr;\nint num = 5;\nptr = &num;\n*ptr = 7;\ncout << *ptr;",
+          question: "What is the output of the following code ?\nint *ptr = nullptr;\nint num = 5;\nptr = &num;\n*ptr = 7;\ncout << *ptr;",
           options: [
             "A) 0",
             "B) 5",
@@ -29912,7 +29721,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 5,
-          question: "What is the result of the following code snippet?\nclass Base {\npublic:\n    void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Derived d;\n    d.display();\n    return 0;\n}\nA) Base Class\nB) Derived Class\nC) Compilation Error\nD) Runtime Error",
+          question: "What is the result of the following code ?\nclass Base {\npublic:\n    void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Derived d;\n    d.display();\n    return 0;\n}",
           options: [
             "A) Base Class",
             "B) Derived Class",
@@ -29960,7 +29769,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 9,
-          question: "What is the output of the following code snippet?\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base* ptr = new Derived;\n    Base* dptr = dynamic_cast<Derived*>(ptr);\n    if (dptr == nullptr) {\n        cout << 'Conversion failed';\n    } else {\n        cout << 'Conversion successful';\n    }\n    return 0;\n}\nA) Conversion failed\nB) Conversion successful\nC) Compilation Error\nD) Runtime Error",
+          question: "What is the output of the following code ?\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base* ptr = new Derived;\n    Base* dptr = dynamic_cast<Derived*>(ptr);\n    if (dptr == nullptr) {\n        cout << 'Conversion failed';\n    } else {\n        cout << 'Conversion successful';\n    }\n    return 0;\n}",
           options: [
             "A) Conversion failed",
             "B) Conversion successful",
@@ -29984,7 +29793,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 11,
-          question: "What is the output of the following code snippet?\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base* ptr = new Derived;\n    ptr->display();\n    return 0;\n}\nA) Base Class\nB) Derived Class\nC) Compilation Error\nD) Runtime Error",
+          question: "What is the output of the following code ?\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base* ptr = new Derived;\n    ptr->display();\n    return 0;\n}",
           options: [
             "A) Base Class",
             "B) Derived Class",
@@ -30008,7 +29817,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 13,
-          question: "What is the output of the following code snippet?\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Derived d;\n    Base* ptr = &d;\n    ptr->display();\n    return 0;\n}\nA) Base Class\nB) Derived Class\nC) Compilation Error\nD) Runtime Error",
+          question: "What is the output of the following code ?\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Derived d;\n    Base* ptr = &d;\n    ptr->display();\n    return 0;\n}",
           options: [
             "A) Base Class",
             "B) Derived Class",
@@ -30032,7 +29841,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 15,
-          question: "What is the output of the following code snippet?\nclass Base {\npublic:\n    void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void show() {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base* ptr = new Derived;\n    ptr->show();\n    return 0;\n}\nA) Base Class\nB) Derived Class\nC) Compilation Error\nD) Runtime Error",
+          question: "What is the output of the following code ?\nclass Base {\npublic:\n    void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void show() {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base* ptr = new Derived;\n    ptr->show();\n    return 0;\n}",
           options: [
             "A) Base Class",
             "B) Derived Class",
@@ -30056,7 +29865,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 17,
-          question: "What is the output of the following code snippet?\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base b;\n    Derived* dptr = dynamic_cast<Derived*>(&b);\n    if (dptr == nullptr) {\n        cout << 'Conversion failed';\n    } else {\n        cout << 'Conversion successful';\n    }\n    return 0;\n}\nA) Conversion failed\nB) Conversion successful\nC) Compilation Error\nD) Runtime Error",
+          question: "What is the output of the following code ?\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base b;\n    Derived* dptr = dynamic_cast<Derived*>(&b);\n    if (dptr == nullptr) {\n        cout << 'Conversion failed';\n    } else {\n        cout << 'Conversion successful';\n    }\n    return 0;\n}",
           options: [
             "A) Conversion failed",
             "B) Conversion successful",
@@ -30080,7 +29889,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 19,
-          question: "What is the output of the following code snippet?\nclass Base {\npublic:\n    virtual void display() = 0;\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Derived d;\n    d.display();\n    return 0;\n}\nA) Derived Class\nB) Compilation Error\nC) Runtime Error\nD) No output, program crashes",
+          question: "What is the output of the following code ?\nclass Base {\npublic:\n    virtual void display() = 0;\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Derived d;\n    d.display();\n    return 0;\n}",
           options: [
             "A) Derived Class",
             "B) Compilation Error",
@@ -30104,7 +29913,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 21,
-          question: "What is the output of the following code snippet?\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base* ptr = new Derived;\n    delete ptr;\n    return 0;\n}\nA) Base Class\nB) Derived Class\nC) Compilation Error\nD) Runtime Error",
+          question: "What is the output of the following code ?\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base* ptr = new Derived;\n    delete ptr;\n    return 0;\n}",
           options: [
             "A) Base Class",
             "B) Derived Class",
@@ -30116,7 +29925,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 22,
-          question: "In C++, what is the result of the following code snippet?\nclass Base {\npublic:\n    virtual void display() = 0;\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base b;\n    b.display();\n    return 0;\n}\nA) Derived Class\nB) Compilation Error\nC) Runtime Error\nD) No output, program crashes",
+          question: "In C++, what is the result of the following code ?\nclass Base {\npublic:\n    virtual void display() = 0;\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base b;\n    b.display();\n    return 0;\n}",
           options: [
             "A) Derived Class",
             "B) Compilation Error",
@@ -30140,7 +29949,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 24,
-          question: "What is the output of the following code snippet?\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base b;\n    Derived* dptr = dynamic_cast<Derived*>(&b);\n    if (dptr == nullptr) {\n        cout << 'Conversion failed';\n    } else {\n        cout << 'Conversion successful';\n    }\n    return 0;\n}\nA) Conversion failed\nB) Conversion successful\nC) Compilation Error\nD) Runtime Error",
+          question: "What is the output of the following code ?\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base b;\n    Derived* dptr = dynamic_cast<Derived*>(&b);\n    if (dptr == nullptr) {\n        cout << 'Conversion failed';\n    } else {\n        cout << 'Conversion successful';\n    }\n    return 0;\n}",
           options: [
             "A) Conversion failed",
             "B) Conversion successful",
@@ -30164,7 +29973,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 26,
-          question: "What is the output of the following code snippet?\nclass Base {\npublic:\n    void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Derived d;\n    Base* ptr = &d;\n    ptr->display();\n    return 0;\n}\nA) Base Class\nB) Derived Class\nC) Compilation Error\nD) Runtime Error",
+          question: "What is the output of the following code ?\nclass Base {\npublic:\n    void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Derived d;\n    Base* ptr = &d;\n    ptr->display();\n    return 0;\n}",
           options: [
             "A) Base Class",
             "B) Derived Class",
@@ -30188,7 +29997,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 28,
-          question: "What is the output of the following code snippet?\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base* ptr = new Derived;\n    Base* dptr = dynamic_cast<Derived*>(ptr);\n    if (dptr == nullptr) {\n        cout << 'Conversion failed';\n    } else {\n        cout << 'Conversion successful';\n    }\n    return 0;\n}\nA) Conversion failed\nB) Conversion successful\nC) Compilation Error\nD) Runtime Error",
+          question: "What is the output of the following code ?\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base* ptr = new Derived;\n    Base* dptr = dynamic_cast<Derived*>(ptr);\n    if (dptr == nullptr) {\n        cout << 'Conversion failed';\n    } else {\n        cout << 'Conversion successful';\n    }\n    return 0;\n}",
           options: [
             "A) Conversion failed",
             "B) Conversion successful",
@@ -30212,7 +30021,7 @@ const questions = {
         // Add more questions for subchapter 1.1 as needed
         {
           id: 30,
-          question: "What is the output of the following code snippet?\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base b;\n    Derived* dptr = dynamic_cast<Derived*>(&b);\n    if (dptr == nullptr) {\n        cout << 'Conversion failed';\n    } else {\n        cout << 'Conversion successful';\n    }\n    return 0;\n}\nA) Conversion failed\nB) Conversion successful\nC) Compilation Error\nD) Runtime Error",
+          question: "What is the output of the following code ?\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class';\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << 'Derived Class';\n    }\n};\n\nint main() {\n    Base b;\n    Derived* dptr = dynamic_cast<Derived*>(&b);\n    if (dptr == nullptr) {\n        cout << 'Conversion failed';\n    } else {\n        cout << 'Conversion successful';\n    }\n    return 0;\n}",
           options: [
             "A) Conversion failed",
             "B) Conversion successful",
@@ -30315,30 +30124,7 @@ const questions = {
         },
         {
           id: 9,
-          question: "What is the output of the following code?",
-          code: `
-  #include <iostream>
-  using namespace std;
-  
-  class Base {
-  public:
-      virtual void display() {
-          cout << "Base Class" << endl;
-      }
-  };
-  
-  class Derived : public Base {
-  public:
-      void display() override {
-          cout << "Derived Class" << endl;
-      }
-  };
-  
-  int main() {
-      Base* ptr = new Derived;
-      ptr->display();
-      return 0;
-  }`,
+          question: "What is the output of the following code ?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void display() {\n        cout << \"Base Class\" << endl;\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << \"Derived Class\" << endl;\n    }\n};\n\nint main() {\n    Base* ptr = new Derived;\n    ptr->display();\n    return 0;\n}\n```",
           options: [
             "A) Base Class",
             "B) Derived Class",
@@ -30426,32 +30212,7 @@ const questions = {
         },
         {
           id: 17,
-          question: "What is the output of the following code?",
-          code: `
-  #include <iostream>
-  using namespace std;
-  
-  class Base {
-  public:
-      virtual void display() {
-          cout << "Base Class" << endl;
-      }
-  };
-  
-  class Derived : public Base {
-  public:
-      void display() {
-          cout << "Derived Class" << endl;
-      }
-  };
-  
-  int main() {
-      Base obj;
-      obj.display();
-      Derived obj2;
-      obj2.display();
-      return 0;
-  }`,
+          question: "What is the output of the following code ?\n\n#include <iostream>\nusing namespace std;\nclass Base {\npublic:\n    virtual void display() {\n        cout << 'Base Class' << endl;\n    }\n};\nclass Derived : public Base {\npublic:\n    void display() {\n        cout << 'Derived Class' << endl;\n    }\n};\nint main() {\n    Base obj;\n    obj.display();\n    Derived obj2;\n    obj2.display();\n    return 0;\n}",
           options: [
             "A) Base Class\n   Derived Class",
             "B) Derived Class\n   Derived Class",
@@ -30495,31 +30256,7 @@ const questions = {
         },
         {
           id: 21,
-          question: "What is the output of the following code?",
-          code: `
-  #include <iostream>
-  using namespace std;
-  
-  class Base {
-  public:
-      virtual void display() {
-          cout << "Base Class" << endl;
-      }
-  };
-  
-  class Derived : public Base {
-  public:
-      void display() override {
-          cout << "Derived Class" << endl;
-      }
-  };
-  
-  int main() {
-      Derived obj;
-      Base* ptr = &obj;
-      ptr->display();
-      return 0;
-  }`,
+          question: "What is the output of the following code ?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void display() {\n        cout << \"Base Class\" << endl;\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << \"Derived Class\" << endl;\n    }\n};\n\nint main() {\n    Derived obj;\n    Base* ptr = &obj;\n    ptr->display();\n    return 0;\n}\n```",
           options: [
             "A) Base Class",
             "B) Derived Class",
@@ -30563,34 +30300,7 @@ const questions = {
         },
         {
           id: 25,
-          question: "What is the output of the following code?",
-          code: `
-  #include <iostream>
-  using namespace std;
-  
-  class Base {
-  public:
-      virtual void display() {
-          cout << "Base Class" << endl;
-      }
-  };
-  
-  class Derived : public Base {
-  public:
-      void display() override {
-          cout << "Derived Class" << endl;
-      }
-  };
-  
-  int main() {
-      Base* ptr = new Base;
-      ptr->display();
-      delete ptr;
-      ptr = new Derived;
-      ptr->display();
-      delete ptr;
-      return 0;
-  }`,
+          question: "What is the output of the following code ?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void display() {\n        cout << \"Base Class\" << endl;\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << \"Derived Class\" << endl;\n    }\n};\n\nint main() {\n    Base* ptr = new Base;\n    ptr->display();\n    delete ptr;\n    ptr = new Derived;\n    ptr->display();\n    delete ptr;\n    return 0;\n}\n```",
           options: [
             "A) Base Class\n   Derived Class",
             "B) Derived Class\n   Derived Class",
@@ -30612,32 +30322,7 @@ const questions = {
         },
         {
           id: 27,
-          question: "What is the output of the following code?",
-          code: `
-  #include <iostream>
-  using namespace std;
-  
-  class Base {
-  public:
-      virtual void display() {
-          cout << "Base Class" << endl;
-      }
-  };
-  
-  class Derived : public Base {
-  public:
-      void display() override {
-          cout << "Derived Class" << endl;
-      }
-  };
-  
-  int main() {
-      Derived* ptr = new Derived;
-      Base* ptr2 = ptr;
-      ptr2->display();
-      delete ptr;
-      return 0;
-  }`,
+          question: "What is the output of the following code ?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void display() {\n        cout << \"Base Class\" << endl;\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override {\n        cout << \"Derived Class\" << endl;\n    }\n};\n\nint main() {\n    Derived* ptr = new Derived;\n    Base* ptr2 = ptr;\n    ptr2->display();\n    delete ptr;\n    return 0;\n}```",
           options: [
             "A) Base Class",
             "B) Derived Class",
@@ -30659,31 +30344,7 @@ const questions = {
         },
         {
           id: 29,
-          question: "What is the output of the following code?",
-          code: `
-  #include <iostream>
-  using namespace std;
-  
-  class Base {
-  public:
-      virtual void display() {
-          cout << "Base Class" << endl;
-      }
-  };
-  
-  class Derived : public Base {
-  public:
-      void display() {
-          cout << "Derived Class" << endl;
-      }
-  };
-  
-  int main() {
-      Base* ptr = new Derived;
-      ptr->display();
-      delete ptr;
-      return 0;
-  }`,
+          question: "What is the output of the following code ?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void display() {\n        cout << \"Base Class\" << endl;\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void display() {\n        cout << \"Derived Class\" << endl;\n    }\n};\n\nint main() {\n    Base* ptr = new Derived;\n    ptr->display();\n    delete ptr;\n    return 0;\n}\n```",
           options: [
             "A) Base Class",
             "B) Derived Class",
@@ -30852,20 +30513,7 @@ const questions = {
         },
         {
           id: 16,
-          question: "What is the output of the following code?",
-          code: `#include <iostream>
-using namespace std;
-
-int main() {
-    try {
-        throw 20;
-    }
-    catch (int e) {
-        cout << "Exception Caught: " << e << endl;
-    }
-
-    return 0;
-}`,
+          question: "What is the output of the following code ? \n\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    try {\n        throw 20;\n    }\n    catch (int e) {\n        cout << \"Exception Caught: \" << e << endl;\n    }\n\n    return 0;\n}```",
           options: [
             "A) Exception Caught: 20",
             "B) 20",
@@ -30920,20 +30568,7 @@ int main() {
         },
         {
           id: 21,
-          question: "What is the output of the following code?",
-          code: `#include <iostream>
-using namespace std;
-
-int main() {
-    try {
-        throw runtime_error("Custom Error");
-    }
-    catch (const runtime_error& e) {
-        cout << e.what() << endl;
-    }
-
-    return 0;
-}`,
+          question: "What is the output of the following code ?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    try {\n        throw runtime_error(\"Custom Error\");\n    }\n    catch (const runtime_error& e) {\n        cout << e.what() << endl;\n    }\n\n    return 0;\n}\n```",
           options: [
             "A) Custom Error",
             "B) Runtime Error",
@@ -30978,23 +30613,7 @@ int main() {
         },
         {
           id: 26,
-          question: "What is the output of the following code?",
-          code: `#include <iostream>
-using namespace std;
-
-int main() {
-    try {
-        throw "Error";
-    }
-    catch (int e) {
-        cout << "Exception Caught: " << e << endl;
-    }
-    catch (...) {
-        cout << "Unknown Exception Caught" << endl;
-    }
-
-    return 0;
-}`,
+          question: "What is the output of the following code ?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    try {\n        throw \"Error\";\n    }\n    catch (int e) {\n        cout << \"Exception Caught: \" << e << endl;\n    }\n    catch (...) {\n        cout << \"Unknown Exception Caught\" << endl;\n    }\n\n    return 0;\n}```",
           options: [
             "A) Exception Caught: Error",
             "B) Unknown Exception Caught",
@@ -31011,26 +30630,7 @@ int main() {
         },
         {
           id: 28,
-          question: "What is the output of the following code?",
-          code: `#include <iostream>
-using namespace std;
-
-int main() {
-    try {
-        throw 10;
-    }
-    catch (char e) {
-        cout << "Exception Caught: " << e << endl;
-    }
-    catch (int e) {
-        cout << "Exception Caught: " << e << endl;
-    }
-    catch (...) {
-        cout << "Unknown Exception Caught" << endl;
-    }
-
-    return 0;
-}`,
+          question: "What is the output of the following code ?\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    try {\n        throw 10;\n    }\n    catch (char e) {\n        cout << \"Exception Caught: \" << e << endl;\n    }\n    catch (int e) {\n        cout << \"Exception Caught: \" << e << endl;\n    }\n    catch (...) {\n        cout << \"Unknown Exception Caught\" << endl;\n    }\n\n    return 0;\n}```",
           options: [
             "A) Exception Caught: 10",
             "B) Exception Caught: Unknown",
@@ -31047,26 +30647,7 @@ int main() {
         },
         {
           id: 30,
-          question: "What is the output of the following code?",
-          code: `#include <iostream>
-using namespace std;
-
-int main() {
-    try {
-        try {
-            throw 1;
-        }
-        catch (int e) {
-            cout << "Inner Catch: " << e << endl;
-            throw;
-        }
-    }
-    catch (int e) {
-        cout << "Outer Catch: " << e << endl;
-    }
-
-    return 0;
-}`,
+          question: "What is the output of the following code ?\n\n```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    try {\n        try {\n            throw 1;\n        }\n        catch (int e) {\n            cout << \"Inner Catch: \" << e << endl;\n            throw;\n        }\n    }\n    catch (int e) {\n        cout << \"Outer Catch: \" << e << endl;\n    }\n\n    return 0;\n}\n```",
           options: [
             "A) Inner Catch: 1\nOuter Catch: 1",
             "B) Inner Catch: 1",
@@ -31078,7 +30659,7 @@ int main() {
       ],
      
     },
-
+s
     //chapter 9 ended
 
 

@@ -274,6 +274,8 @@ router.post("/", verifyToken, async (req, res) => {
       if (existingProgress) {
         // Update the existing progress data
         existingProgress.correctPercentage = correctPercentage;
+        console.log('Updated Progress');
+        
       } else {
         // Create a new progress object
         user.progress.push({
