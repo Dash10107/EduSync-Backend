@@ -30659,7 +30659,7 @@ const questions = {
       ],
      
     },
-s
+
     //chapter 9 ended
 
 

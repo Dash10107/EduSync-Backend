@@ -10,6 +10,12 @@ const path = require('path');
 
 const questions = require("../utils/Questions");
 const questions2 = require("../utils/Questions2")
+
+// Example route to check if the user is an admin
+router.get("/checkAdmin", verifyToken, adminCheck, (req, res) => {
+  res.json({ message: "You are an admin.",isAdmin:true });
+});
+
 // Example route for adding modules (only accessible by admins)
 router.post("/addModule", verifyToken, adminCheck, async (req, res) => {
     try {
@@ -101,6 +107,52 @@ router.post("/addChapter/:moduleId", verifyToken, adminCheck, async (req, res) =
     }
   });
   
+
+// Add a single subtopic to an existing chapter
+router.post("/addSubtopic/:moduleId/:chapterId", verifyToken, adminCheck, (req, res) => {
+  try {
+    const moduleId = parseInt(req.params.moduleId);
+    const chapterId = parseInt(req.params.chapterId);
+
+    // Get the new subtopic data from the request body
+    const { name } = req.body;
+
+    // Check if the module exists
+    if (chaptersByModule[moduleId]) {
+      // Find the chapter in the module's array
+      const chapter = chaptersByModule[moduleId].find((ch) => ch.id === chapterId);
+
+      if (chapter) {
+        // Generate a unique subtopic ID based on the chapter ID
+        const subtopicId = `${chapterId}.${chapter.subtopics.length + 1}`;
+
+        // Create the subtopic object
+        const subtopic = {
+          id: subtopicId,
+          name: name,
+        };
+
+        // Add the new subtopic to the chapter's subtopics array
+        chapter.subtopics.push(subtopic);
+
+        // Save the updated chapters data back to the file
+        const chaptersDataPath = path.resolve(__dirname, '../utils/Chapters.js');
+        const chaptersDataContent = `module.exports = ${JSON.stringify(chaptersByModule, null, 2)};\n`;
+        fs.writeFileSync(chaptersDataPath, chaptersDataContent);
+
+        return res.json({ success: true, subtopic: subtopic });
+      }
+    }
+
+    return res.status(404).json({ error: 'Module or chapter not found' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Failed to add subtopic' });
+  }
+});
+
+
+
 
  
   

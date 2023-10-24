@@ -13155,49 +13155,864 @@ module.exports = {
       "1.1": [
         {
           "id": 1,
-          "question": "Sample Question 1 for subchapter 1.1 in Module 11",
+          "question": "What is the determinant of a 2x2 identity matrix?",
           "options": [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4"
+            "A) 0",
+            "B) 1",
+            "C) -1",
+            "D) 2"
           ],
-          "correctAnswer": "Option 1"
+          "correctAnswer": "B) 1"
         },
         {
           "id": 2,
-          "question": "Sample Question 2 for subchapter 1.1 in Module 11",
+          "question": "The expansion of a 3x3 determinant |A| is given by:",
           "options": [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4"
+            "A) |A| = a(ei - fh) - b(di - fg) + c(dh - eg)",
+            "B) |A| = abc + def",
+            "C) |A| = (ae - bd) + (fh - cg)",
+            "D) |A| = (ad + be + cf)"
           ],
-          "correctAnswer": "Option 3"
+          "correctAnswer": "A) |A| = a(ei - fh) - b(di - fg) + c(dh - eg)"
+        },
+        {
+          "id": 3,
+          "question": "In a 2x2 matrix, if the determinant is zero, what can you conclude about the matrix?",
+          "options": [
+            "A) It is singular.",
+            "B) It is invertible.",
+            "C) It has no solutions.",
+            "D) It has complex solutions."
+          ],
+          "correctAnswer": "A) It is singular."
+        },
+        {
+          "id": 4,
+          "question": "The determinant of a matrix with all zero entries is:",
+          "options": [
+            "A) 0",
+            "B) 1",
+            "C) -1",
+            "D) Undefined"
+          ],
+          "correctAnswer": "A) 0"
+        },
+        {
+          "id": 5,
+          "question": "Which operation does not change the determinant of a matrix?",
+          "options": [
+            "A) Adding a multiple of one row to another row.",
+            "B) Swapping two rows.",
+            "C) Multiplying a row by a scalar.",
+            "D) None of the above."
+          ],
+          "correctAnswer": "A) Adding a multiple of one row to another row."
+        },
+        {
+          "id": 6,
+          "question": "| 1 2 3 |\\n| 4 5 6 |\\n| 7 8 9 |",
+          "options": [
+            "A) 45",
+            "B) 0",
+            "C) -45",
+            "D) 1"
+          ],
+          "correctAnswer": "B) 0"
+        },
+        {
+          "id": 7,
+          "question": "What is the relationship between the determinant of a matrix and its eigenvalues?",
+          "options": [
+            "A) The determinant is equal to the sum of eigenvalues.",
+            "B) The determinant is equal to the product of eigenvalues.",
+            "C) The determinant is unrelated to eigenvalues.",
+            "D) The determinant is equal to the difference of eigenvalues."
+          ],
+          "correctAnswer": "B) The determinant is equal to the product of eigenvalues."
+        },
+        {
+          "id": 8,
+          "question": "Given a 3x3 matrix A and its determinant |A| = 0, what can you conclude about matrix A?",
+          "options": [
+            "A) It is singular.",
+            "B) It is invertible.",
+            "C) It has complex solutions.",
+            "D) It is not a square matrix."
+          ],
+          "correctAnswer": "A) It is singular."
+        },
+        {
+          "id": 9,
+          "question": "In a 3x3 matrix, what is the determinant if all its rows are proportional (i.e., multiples of each other)?",
+          "options": [
+            "A) Zero",
+            "B) One",
+            "C) It cannot be determined without the matrix values.",
+            "D) Infinity"
+          ],
+          "correctAnswer": "C) It cannot be determined without the matrix values."
+        },
+        {
+          "id": 10,
+          "question": "| 3 -1 |\\n| 5 2 |",
+          "options": [
+            "A) 5",
+            "B) 11",
+            "C) -5",
+            "D) -11"
+          ],
+          "correctAnswer": "D) -11"
+        },
+        {
+          "id": 11,
+          "question": "True or False: The determinant of a 2x2 matrix can be negative.",
+          "correctAnswer": "True"
+        },
+        {
+          "id": 12,
+          "question": "True or False: Swapping two rows of a matrix changes the sign of its determinant.",
+          "correctAnswer": "True"
+        },
+        {
+          "id": 13,
+          "question": "True or False: Adding a multiple of one row to another row does not change the determinant.",
+          "correctAnswer": "True"
+        },
+        {
+          "id": 14,
+          "question": "True or False: The determinant of a singular matrix is always zero.",
+          "correctAnswer": "True"
+        },
+        {
+          "id": 15,
+          "question": "True or False: The determinant of a 2x2 matrix is the product of its diagonal elements.",
+          "correctAnswer": "True"
+        },
+        {
+          "id": 16,
+          "question": "True or False: The determinant of a 3x3 matrix can be computed by summing the products of the diagonals.",
+          "correctAnswer": "False"
+        },
+        {
+          "id": 17,
+          "question": "The expansion of a 2x2 determinant |D| is given by:",
+          "correctAnswer": "|D| = ad - bc"
+        },
+        {
+          "id": 18,
+          "question": "In a 3x3 matrix, the determinant is most efficiently expanded using the ______ row (or column).",
+          "correctAnswer": "first"
+        },
+        {
+          "id": 19,
+          "question": "The determinant of a 3x3 identity matrix is _____.",
+          "correctAnswer": "1"
+        },
+        {
+          "id": 20,
+          "question": "The determinant of a matrix with all zero entries is always _____.",
+          "correctAnswer": "0"
+        },
+        {
+          "id": 21,
+          "question": "If the determinant of a 2x2 matrix is 42, what can you conclude about the matrix?",
+          "options": [
+            "A) It is invertible.",
+            "B) It is singular.",
+            "C) It has complex solutions.",
+            "D) It is undefined."
+          ],
+          "correctAnswer": "A) It is invertible."
+        },
+        {
+          "id": 22,
+          "question": "| 1 0 |\\n| 0 5 |",
+          "options": [
+            "A) 1",
+            "B) 0",
+            "C) 5",
+            "D) -5"
+          ],
+          "correctAnswer": "C) 5"
+        },
+        {
+          "id": 23,
+          "question": "In a 3x3 matrix, if the determinant is -3, what can you conclude about the matrix?",
+          "options": [
+            "A) It is invertible.",
+            "B) It is singular.",
+            "C) It has complex solutions.",
+            "D) It is undefined."
+          ],
+          "correctAnswer": "B) It is singular."
+        },
+        {
+          "id": 24,
+          "question": "The determinant of a 3x3 matrix can be expressed as the sum of _____.",
+          "options": [
+            "A) Its diagonal elements.",
+            "B) The cubes of its elements.",
+            "C) The products of its elements along diagonals.",
+            "D) Its rows."
+          ],
+          "correctAnswer": "C) The products of its elements along diagonals."
+        },
+        {
+          "id": 25,
+          "question": "In a 2x2 matrix, if the determinant is positive, what can you conclude about the matrix?",
+          "options": [
+            "A) It is singular.",
+            "B) It is invertible.",
+            "C) It has complex solutions.",
+            "D) It is undefined."
+          ],
+          "correctAnswer": "B) It is invertible."
         }
       ],
       "1.2": [
         {
           "id": 1,
-          "question": "Sample Question 1 for subchapter 1.2 in Module 11",
+          "question": "True or False: The determinant of a matrix is always a real number.",
           "options": [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4"
+            "A) True",
+            "B) False"
           ],
-          "correctAnswer": "Option 1"
+          "correctAnswer": "A) True"
         },
         {
           "id": 2,
-          "question": "Sample Question 2 for subchapter 1.2 in Module 11",
+          "question": "Which property of determinants states that swapping two rows of a matrix changes the sign of its determinant?",
           "options": [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4"
+            "A) Multiplicative Property",
+            "B) Sign Property",
+            "C) Row Swap Property",
+            "D) Nonexistent Property"
           ],
-          "correctAnswer": "Option 3"
+          "correctAnswer": "C) Row Swap Property"
+        },
+        {
+          "id": 3,
+          "question": "If the determinant of a square matrix A is zero, what can you conclude about its invertibility?",
+          "options": [
+            "A) A is invertible.",
+            "B) A is not invertible.",
+            "C) A may or may not be invertible.",
+            "D) The determinant provides no information about invertibility."
+          ],
+          "correctAnswer": "B) A is not invertible."
+        },
+        {
+          "id": 4,
+          "question": "True or False: The determinant of a product of two matrices is equal to the product of their determinants.",
+          "options": [
+            "A) True",
+            "B) False"
+          ],
+          "correctAnswer": "A) True"
+        },
+        {
+          "id": 5,
+          "question": "What is the determinant of a 3x3 identity matrix?",
+          "options": [
+            "A) 0",
+            "B) 1",
+            "C) 3",
+            "D) -1"
+          ],
+          "correctAnswer": "B) 1"
+        },
+        {
+          "id": 6,
+          "question": "If you multiply all elements of a matrix by a constant k, how does it affect the determinant?",
+          "options": [
+            "A) The determinant becomes zero.",
+            "B) The determinant is divided by k.",
+            "C) The determinant is multiplied by k.",
+            "D) The determinant remains the same."
+          ],
+          "correctAnswer": "C) The determinant is multiplied by k."
+        },
+        {
+          "id": 7,
+          "question": "Which property of determinants states that the determinant of a diagonal matrix is the product of its diagonal entries?",
+          "options": [
+            "A) Diagonal Property",
+            "B) Multiplicative Property",
+            "C) Scalar Property",
+            "D) Identity Property"
+          ],
+          "correctAnswer": "A) Diagonal Property"
+        },
+        {
+          "id": 8,
+          "question": "True or False: If the determinant of a matrix A is negative, it implies that A is not invertible.",
+          "options": [
+            "A) True",
+            "B) False"
+          ],
+          "correctAnswer": "B) False"
+        },
+        {
+          "id": 9,
+          "question": "Given a 2x2 matrix A with a determinant of 5, and a 2x2 matrix B with a determinant of 3, what is the determinant of the product AB?",
+          "options": [
+            "A) 15",
+            "B) 8",
+            "C) 15/8",
+            "D) 8/15"
+          ],
+          "correctAnswer": "A) 15"
+        },
+        {
+          "id": 10,
+          "question": "Which property of determinants states that the determinant of a matrix multiplied by a scalar k is equal to k times the determinant of the original matrix?",
+          "options": [
+            "A) Multiplicative Property",
+            "B) Scalar Property",
+            "C) Identity Property",
+            "D) Sign Property"
+          ],
+          "correctAnswer": "B) Scalar Property"
+        },
+        {
+          "id": 11,
+          "question": "True or False: The determinant of a square matrix A is always a positive number.",
+          "options": [
+            "A) True",
+            "B) False"
+          ],
+          "correctAnswer": "B) False"
+        },
+        {
+          "id": 12,
+          "question": "What is the determinant of the following 2x2 matrix:\n| 3 2 |\n| 1 4 |",
+          "options": [
+            "A) 10",
+            "B) 11",
+            "C) 12",
+            "D) 13"
+          ],
+          "correctAnswer": "A) 10"
+        },
+        {
+          "id": 13,
+          "question": "If you swap two rows of a 3x3 matrix, what happens to the determinant?",
+          "options": [
+            "A) It remains the same.",
+            "B) It becomes zero.",
+            "C) It becomes the negative of the original determinant.",
+            "D) It becomes the positive of the original determinant."
+          ],
+          "correctAnswer": "C) It becomes the negative of the original determinant."
+        },
+        {
+          "id": 14,
+          "question": "Which property of determinants states that the determinant of a matrix is zero if it has two identical rows?",
+          "options": [
+            "A) Zero Property",
+            "B) Multiplicative Property",
+            "C) Row Swap Property",
+            "D) Nonexistent Property"
+          ],
+          "correctAnswer": "A) Zero Property"
+        },
+        {
+          "id": 15,
+          "question": "True or False: If the determinant of a matrix A is zero, it implies that A has no solutions.",
+          "options": [
+            "A) True",
+            "B) False"
+          ],
+          "correctAnswer": "B) False"
+        },
+        {
+          "id": 16,
+          "question": "What is the determinant of a 3x3 matrix with all diagonal elements equal to 2 and all other elements equal to 1?",
+          "options": [
+            "A) 2",
+            "B) 4",
+            "C) 6",
+            "D) 8"
+          ],
+          "correctAnswer": "A) 2"
+        },
+        {
+          "id": 17,
+          "question": "If you swap two columns of a matrix, how does it affect the determinant?",
+          "options": [
+            "A) It remains the same.",
+            "B) It becomes zero.",
+            "C) It becomes the negative of the original determinant.",
+            "D) It becomes the positive of the original determinant."
+          ],
+          "correctAnswer": "A) It remains the same."
+        },
+        {
+          "id": 18,
+          "question": "Which property of determinants states that adding a multiple of one row to another row does not change the determinant?",
+          "options": [
+            "A) Nonexistent Property",
+            "B) Zero Property",
+            "C) Additive Property",
+            "D) Multiplicative Property"
+          ],
+          "correctAnswer": "C) Additive Property"
+        },
+        {
+          "id": 19,
+          "question": "True or False: The determinant of a square matrix A is the product of its eigenvalues.",
+          "options": [
+            "A) True",
+            "B) False"
+          ],
+          "correctAnswer": "A) True"
+        },
+        {
+          "id": 20,
+          "question": "If you transpose a matrix (swap rows and columns), how does it affect the determinant?",
+          "options": [
+            "A) It becomes zero.",
+            "B) It becomes the negative of the original determinant.",
+            "C) It becomes the positive of the original determinant.",
+            "D) It remains the same."
+          ],
+          "correctAnswer": "D) It remains the same."
+        },
+        {
+          "id": 21,
+          "question": "Which property of determinants states that the determinant of the sum of two matrices is equal to the sum of their determinants?",
+          "options": [
+            "A) Additive Property",
+            "B) Scalar Property",
+            "C) Multiplicative Property",
+            "D) Sign Property"
+          ],
+          "correctAnswer": "A) Additive Property"
+        },
+        {
+          "id": 22,
+          "question": "True or False: The determinant of a matrix A is zero if and only if A is a singular matrix.",
+          "options": [
+            "A) True",
+            "B) False"
+          ],
+          "correctAnswer": "A) True"
+        },
+        {
+          "id": 23,
+          "question": "What is the determinant of a 2x2 matrix with all elements equal to 1?",
+          "options": [
+            "A) 0",
+            "B) 1",
+            "C) 2",
+            "D) 4"
+          ],
+          "correctAnswer": "A) 0"
+        },
+        {
+          "id": 24,
+          "question": "If you multiply one row of a matrix by a scalar k, how does it affect the determinant?",
+          "options": [
+            "A) It becomes zero.",
+            "B) It is divided by k.",
+            "C) It is multiplied by k.",
+            "D) It remains the same."
+          ],
+          "correctAnswer": "C) It is multiplied by k."
+        },
+        {
+          "id": 25,
+          "question": "Which property of determinants states that the determinant of the product of two matrices is the product of their determinants?",
+          "options": [
+            "A) Multiplicative Property",
+            "B) Scalar Property",
+            "C) Identity Property",
+            "D) Sign Property"
+          ],
+          "correctAnswer": "A) Multiplicative Property"
+        },
+        {
+          "id": 26,
+          "question": "True or False: The determinant of a 3x3 identity matrix is zero.",
+          "options": [
+            "A) True",
+            "B) False"
+          ],
+          "correctAnswer": "B) False"
+        },
+        {
+          "id": 27,
+          "question": "What is the determinant of a 4x4 matrix with all diagonal elements equal to 3 and all other elements equal to 2?",
+          "options": [
+            "A) 27",
+            "B) 81",
+            "C) 162",
+            "D) 324"
+          ],
+          "correctAnswer": "B) 81"
+        },
+        {
+          "id": 28,
+          "question": "If you add a multiple of one column to another column, how does it affect the determinant?",
+          "options": [
+            "A) It remains the same.",
+            "B) It becomes zero.",
+            "C) It becomes the negative of the original determinant.",
+            "D) It becomes the positive of the original determinant."
+          ],
+          "correctAnswer": "A) It remains the same."
+        },
+        {
+          "id": 29,
+          "question": "Which property of determinants states that the determinant of the product of a matrix by its inverse is always 1?",
+          "options": [
+            "A) Inverse Property",
+            "B) Identity Property",
+            "C) Multiplicative Property",
+            "D) Sign Property"
+          ],
+          "correctAnswer": "B) Identity Property"
+        },
+        {
+          "id": 30,
+          "question": "True or False: The determinant of a 2x2 matrix A is equal to the determinant of its transpose A^T.",
+          "options": [
+            "A) True",
+            "B) False"
+          ],
+          "correctAnswer": "A) True"
+        }
+      ],
+      "1.3": [
+        {
+          "id": 1,
+          "question": "Solve the system of equations using Cramer's Rule:\n2x + 3y = 8\n4x - 2y = 6\nWhat is the value of x?",
+          "options": [
+            "A) 2",
+            "B) 3",
+            "C) 1",
+            "D) 4"
+          ],
+          "correctAnswer": "C) 1"
+        },
+        {
+          "id": 2,
+          "question": "Determine the consistency of the system of equations:\n3x + 2y = 7\n6x + 4y = 14",
+          "options": [
+            "A) Consistent and independent",
+            "B) Consistent and dependent",
+            "C) Inconsistent",
+            "D) Not enough information"
+          ],
+          "correctAnswer": "B) Consistent and dependent"
+        },
+        {
+          "id": 3,
+          "question": "Use Cramer's Rule to find the solution to the system of equations:\nx - y = 3\n2x + 3y = 6\nWhat is the value of y?",
+          "options": [
+            "A) 2",
+            "B) -1",
+            "C) 3",
+            "D) 0"
+          ],
+          "correctAnswer": "B) -1"
+        },
+        {
+          "id": 4,
+          "question": "Determine the consistency of the system of equations:\n2x + y = 5\n4x + 2y = 10",
+          "options": [
+            "A) Consistent and independent",
+            "B) Consistent and dependent",
+            "C) Inconsistent",
+            "D) Not enough information"
+          ],
+          "correctAnswer": "A) Consistent and independent"
+        },
+        {
+          "id": 5,
+          "question": "Solve the system of equations using Cramer's Rule:\n3x - 2y = 8\n6x + 4y = 14\nWhat is the value of x?",
+          "options": [
+            "A) 2",
+            "B) 3",
+            "C) 4",
+            "D) 5"
+          ],
+          "correctAnswer": "B) 3"
+        },
+        {
+          "id": 6,
+          "question": "Determine the consistency of the system of equations:\nx - 2y = 5\n2x - 4y = 10",
+          "options": [
+            "A) Consistent and independent",
+            "B) Consistent and dependent",
+            "C) Inconsistent",
+            "D) Not enough information"
+          ],
+          "correctAnswer": "C) Inconsistent"
+        },
+        {
+          "id": 7,
+          "question": "Use Cramer's Rule to find the solution to the system of equations:\n4x + 2y = 10\n2x + y = 5\nWhat is the value of x?",
+          "options": [
+            "A) 1",
+            "B) 2",
+            "C) 3",
+            "D) 4"
+          ],
+          "correctAnswer": "A) 1"
+        },
+        {
+          "id": 8,
+          "question": "Determine the consistency of the system of equations:\n2x - y = 4\n4x - 2y = 8",
+          "options": [
+            "A) Consistent and independent",
+            "B) Consistent and dependent",
+            "C) Inconsistent",
+            "D) Not enough information"
+          ],
+          "correctAnswer": "B) Consistent and dependent"
+        },
+        {
+          "id": 9,
+          "question": "Solve the system of equations using Cramer's Rule:\n3x + 2y = 11\n6x + 4y = 22\nWhat is the value of y?",
+          "options": [
+            "A) 2",
+            "B) 3",
+            "C) 4",
+            "D) 5"
+          ],
+          "correctAnswer": "A) 2"
+        },
+        {
+          "id": 10,
+          "question": "Determine the consistency of the system of equations:\n5x - 3y = 12\n10x - 6y = 24",
+          "options": [
+            "A) Consistent and independent",
+            "B) Consistent and dependent",
+            "C) Inconsistent",
+            "D) Not enough information"
+          ],
+          "correctAnswer": "A) Consistent and independent"
+        },
+        {
+          "id": 11,
+          "question": "Use Cramer's Rule to find the solution to the system of equations:\n2x - 3y = 7\n4x - 6y = 14\nWhat is the value of x?",
+          "options": [
+            "A) 2",
+            "B) 3",
+            "C) 4",
+            "D) 5"
+          ],
+          "correctAnswer": "B) 3"
+        },
+        {
+          "id": 12,
+          "question": "Determine the consistency of the system of equations:\nx - 2y = 7\n2x - 4y = 14",
+          "options": [
+            "A) Consistent and independent",
+            "B) Consistent and dependent",
+            "C) Inconsistent",
+            "D) Not enough information"
+          ],
+          "correctAnswer": "C) Inconsistent"
+        },
+        {
+          "id": 13,
+          "question": "Solve the system of equations using Cramer's Rule:\nx + 3y = 10\n2x - y = 5\nWhat is the value of x?",
+          "options": [
+            "A) 1",
+            "B) 2",
+            "C) 3",
+            "D) 4"
+          ],
+          "correctAnswer": "A) 1"
+        },
+        {
+          "id": 14,
+          "question": "Determine the consistency of the system of equations:\n3x - y = 5\n9x - 3y = 15",
+          "options": [
+            "A) Consistent and independent",
+            "B) Consistent and dependent",
+            "C) Inconsistent",
+            "D) Not enough information"
+          ],
+          "correctAnswer": "A) Consistent and independent"
+        },
+        {
+          "id": 15,
+          "question": "Use Cramer's Rule to find the solution to the system of equations:\n5x - 2y = 12\n10x - 4y = 24\nWhat is the value of y?",
+          "options": [
+            "A) 2",
+            "B) 3",
+            "C) 4",
+            "D) 5"
+          ],
+          "correctAnswer": "A) 2"
+        },
+        {
+          "id": 16,
+          "question": "Determine the consistency of the system of equations:\nx + 2y = 6\n2x + 4y = 12",
+          "options": [
+            "A) Consistent and independent",
+            "B) Consistent and dependent",
+            "C) Inconsistent",
+            "D) Not enough information"
+          ],
+          "correctAnswer": "B) Consistent and dependent"
+        },
+        {
+          "id": 17,
+          "question": "Solve the system of equations using Cramer's Rule:\n2x - y = 3\n4x - 2y = 6\nWhat is the value of x?",
+          "options": [
+            "A) 1",
+            "B) 2",
+            "C) 3",
+            "D) 4"
+          ],
+          "correctAnswer": "A) 1"
+        },
+        {
+          "id": 18,
+          "question": "Determine the consistency of the system of equations:\n3x - 2y = 6\n6x - 4y = 12",
+          "options": [
+            "A) Consistent and independent",
+            "B) Consistent and dependent",
+            "C) Inconsistent",
+            "D) Not enough information"
+          ],
+          "correctAnswer": "B) Consistent and dependent"
+        },
+        {
+          "id": 19,
+          "question": "Solve the system of equations using Cramer's Rule:\n3x - 2y = 4\n6x - 4y = 8\nWhat is the value of y?",
+          "options": [
+            "A) 1",
+            "B) 2",
+            "C) 3",
+            "D) 4"
+          ],
+          "correctAnswer": "A) 1"
+        },
+        {
+          "id": 20,
+          "question": "Determine the consistency of the system of equations:\nx - y = 4\n2x - 2y = 8",
+          "options": [
+            "A) Consistent and independent",
+            "B) Consistent and dependent",
+            "C) Inconsistent",
+            "D) Not enough information"
+          ],
+          "correctAnswer": "A) Consistent and independent"
+        },
+        {
+          "id": 21,
+          "question": "Solve the system of equations using Cramer's Rule:\n4x - 3y = 10\n8x - 6y = 20\nWhat is the value of x?",
+          "options": [
+            "A) 2",
+            "B) 3",
+            "C) 4",
+            "D) 5"
+          ],
+          "correctAnswer": "B) 3"
+        },
+        {
+          "id": 22,
+          "question": "Determine the consistency of the system of equations:\n2x - y = 3\n4x - 2y = 6",
+          "options": [
+            "A) Consistent and independent",
+            "B) Consistent and dependent",
+            "C) Inconsistent",
+            "D) Not enough information"
+          ],
+          "correctAnswer": "A) Consistent and independent"
+        },
+        {
+          "id": 23,
+          "question": "Solve the system of equations using Cramer's Rule:\nx + y = 5\n2x + 3y = 10\nWhat is the value of y?",
+          "options": [
+            "A) 1",
+            "B) 2",
+            "C) 3",
+            "D) 4"
+          ],
+          "correctAnswer": "A) 1"
+        },
+        {
+          "id": 24,
+          "question": "Determine the consistency of the system of equations:\n3x - 2y = 8\n6x - 4y = 16",
+          "options": [
+            "A) Consistent and independent",
+            "B) Consistent and dependent",
+            "C) Inconsistent",
+            "D) Not enough information"
+          ],
+          "correctAnswer": "C) Inconsistent"
+        },
+        {
+          "id": 25,
+          "question": "Solve the system of equations using Cramer's Rule:\n3x - 2y = 9\n6x - 4y = 18\nWhat is the value of x?",
+          "options": [
+            "A) 2",
+            "B) 3",
+            "C) 4",
+            "D) 5"
+          ],
+          "correctAnswer": "A) 2"
+        },
+        {
+          "id": 26,
+          "question": "Determine the consistency of the system of equations:\n2x - y = 5\n4x - 2y = 10",
+          "options": [
+            "A) Consistent and independent",
+            "B) Consistent and dependent",
+            "C) Inconsistent",
+            "D) Not enough information"
+          ],
+          "correctAnswer": "B) Consistent and dependent"
+        },
+        {
+          "id": 27,
+          "question": "Solve the system of equations using Cramer's Rule:\nx - 3y = 7\n2x - 6y = 14\nWhat is the value of x?",
+          "options": [
+            "A) 2",
+            "B) 3",
+            "C) 4",
+            "D) 5"
+          ],
+          "correctAnswer": "C) 4"
+        },
+        {
+          "id": 28,
+          "question": "Determine the consistency of the system of equations:\n3x - 2y = 5\n9x - 6y = 15",
+          "options": [
+            "A) Consistent and independent",
+            "B) Consistent and dependent",
+            "C) Inconsistent",
+            "D) Not enough information"
+          ],
+          "correctAnswer": "A) Consistent and independent"
+        },
+        {
+          "id": 29,
+          "question": "Solve the system of equations using Cramer's Rule:\n2x - 3y = 11\n4x - 6y = 22\nWhat is the value of y?",
+          "options": [
+            "A) 2",
+            "B) 3",
+            "C) 4",
+            "D) 5"
+          ],
+          "correctAnswer": "A) 2"
+        },
+        {
+          "id": 30,
+          "question": "Determine the consistency of the system of equations:\n4x - 2y = 10\n8x - 4y = 20",
+          "options": [
+            "A) Consistent and independent",
+            "B) Consistent and dependent",
+            "C) Inconsistent",
+            "D) Not enough information"
+          ],
+          "correctAnswer": "C) Inconsistent"
         }
       ]
     },
@@ -13205,49 +14020,1995 @@ module.exports = {
       "2.1": [
         {
           "id": 1,
-          "question": "Sample Question 1 for subchapter 2.1 in Module 11",
+          "question": "What is a matrix?",
           "options": [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4"
+            "A) A mathematical operation",
+            "B) A set of variables",
+            "C) A rectangular array of numbers",
+            "D) A line on a graph"
           ],
-          "correctAnswer": "Option 1"
+          "correctAnswer": "C) A rectangular array of numbers"
         },
         {
           "id": 2,
-          "question": "Sample Question 2 for subchapter 2.1 in Module 11",
+          "question": "In matrix notation, a matrix with m rows and n columns is denoted as:",
           "options": [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4"
+            "A) (m,n)",
+            "B) [m,n]",
+            "C) {m,n}",
+            "D) [m x n]"
           ],
-          "correctAnswer": "Option 3"
+          "correctAnswer": "D) [m x n]"
+        },
+        {
+          "id": 3,
+          "question": "What is the result of matrix addition for matrices A and B, where A = [1 2] and B = [3 4]?",
+          "options": [
+            "A) [1 2]\n[3 4]",
+            "B) [4 6]\n[1 2]",
+            "C) [4 6]\n[3 4]",
+            "D) [2 4]\n[3 6]"
+          ],
+          "correctAnswer": "C) [4 6]\n[3 4]"
+        },
+        {
+          "id": 4,
+          "question": "What is the result of matrix subtraction for matrices C and D, where C = [5 7] and D = [2 3]?",
+          "options": [
+            "A) [3 4]\n[5 7]",
+            "B) [5 7]\n[2 3]",
+            "C) [3 4]\n[2 3]",
+            "D) [7 10]\n[3 4]"
+          ],
+          "correctAnswer": "B) [5 7]\n[2 3]"
+        },
+        {
+          "id": 5,
+          "question": "What is the product of matrices E and F, where E = [1 2] and F = [3 4]?",
+          "options": [
+            "A) [3 8]",
+            "B) [1 2]\n[3 4]",
+            "C) [7 10]",
+            "D) [1 3]\n[2 4]"
+          ],
+          "correctAnswer": "A) [3 8]"
+        },
+        {
+          "id": 6,
+          "question": "Which of the following is the identity matrix of size 3x3?",
+          "options": [
+            "A) [1 1 1]\n[1 1 1]\n[1 1 1]",
+            "B) [1 0 0]\n[0 1 0]\n[0 0 1]",
+            "C) [0 0 0]\n[0 0 0]\n[0 0 0]",
+            "D) [3 3 3]\n[3 3 3]\n[3 3 3]"
+          ],
+          "correctAnswer": "B) [1 0 0]\n[0 1 0]\n[0 0 1]"
+        },
+        {
+          "id": 7,
+          "question": "What is the result of scalar multiplication for the matrix G = [2 4] when multiplied by 3?",
+          "options": [
+            "A) [6 12]",
+            "B) [2 4]",
+            "C) [5 7]",
+            "D) [6 8]"
+          ],
+          "correctAnswer": "A) [6 12]"
+        },
+        {
+          "id": 8,
+          "question": "Find the product of matrices H = [1 2] and I = [3 4].",
+          "options": [
+            "A) [7 10]",
+            "B) [11 16]",
+            "C) [6 8]",
+            "D) [4 6]"
+          ],
+          "correctAnswer": "A) [7 10]"
+        },
+        {
+          "id": 9,
+          "question": "What is the result of matrix addition for matrices J and K, where J = [2 3] and K = [4 5]?",
+          "options": [
+            "A) [2 3]\n[4 5]",
+            "B) [6 8]\n[2 3]",
+            "C) [6 8]\n[4 5]",
+            "D) [4 5]\n[6 8]"
+          ],
+          "correctAnswer": "C) [6 8]\n[4 5]"
+        },
+        {
+          "id": 10,
+          "question": "Find the product of matrices L = [1 2 3] and M = [4 5 6].",
+          "options": [
+            "A) [32]\n[41]",
+            "B) [1 2 3]\n[4 5 6]",
+            "C) [4 5 6]",
+            "D) [32 41]"
+          ],
+          "correctAnswer": "A) [32]\n[41]"
+        },
+        {
+          "id": 11,
+          "question": "Which of the following is the result of matrix multiplication for N = [1 2] and O = [3 4]?",
+          "options": [
+            "A) [5 10]\n[7 14]",
+            "B) [1 2]\n[3 4]",
+            "C) [7 10]\n[10 15]",
+            "D) [13 16]"
+          ],
+          "correctAnswer": "A) [5 10]\n[7 14]"
+        },
+        {
+          "id": 12,
+          "question": "Find the result of matrix subtraction for matrices P and Q, where P = [5 7] and Q = [2 3].",
+          "options": [
+            "A) [2 3]\n[5 7]",
+            "B) [5 7]\n[2 3]",
+            "C) [3 4]\n[5 7]",
+            "D) [7 10]\n[3 4]"
+          ],
+          "correctAnswer": "A) [2 3]\n[5 7]"
+        },
+        {
+          "id": 13,
+          "question": "Calculate the product of matrices R = [1 2] and S = [3 4].",
+          "options": [
+            "A) [5 8]",
+            "B) [1 2]\n[3 4]",
+            "C) [4 6]",
+            "D) [7 8]"
+          ],
+          "correctAnswer": "A) [5 8]"
+        },
+        {
+          "id": 14,
+          "question": "Find the result of matrix addition for matrices T and U, where T = [2 3] and U = [4 5].",
+          "options": [
+            "A) [2 3]\n[4 5]",
+            "B) [6 8]\n[2 3]",
+            "C) [6 8]\n[4 5]",
+            "D) [4 5]\n[6 8]"
+          ],
+          "correctAnswer": "C) [6 8]\n[4 5]"
+        },
+        {
+          "id": 15,
+          "question": "Determine the product of matrices V = [1 2 3] and W = [4 5 6].",
+          "options": [
+            "A) [14 19]",
+            "B) [1 2 3]\n[4 5 6]",
+            "C) [21 27]",
+            "D) [15 15 15]"
+          ],
+          "correctAnswer": "A) [14 19]"
+        },
+        {
+          "id": 16,
+          "question": "What is the result of scalar multiplication for the matrix X = [3 6] when multiplied by 2?",
+          "options": [
+            "A) [6 12]",
+            "B) [3 6]",
+            "C) [5 7]",
+            "D) [7 8]"
+          ],
+          "correctAnswer": "A) [6 12]"
+        },
+        {
+          "id": 17,
+          "question": "Calculate the product of matrices Y = [1 2] and Z = [3 4].",
+          "options": [
+            "A) [7 10]",
+            "B) [1 2]\n[3 4]",
+            "C) [4 6]",
+            "D) [11 16]"
+          ],
+          "correctAnswer": "A) [7 10]"
+        },
+        {
+          "id": 18,
+          "question": "Find the result of matrix addition for matrices A1 and B1, where A1 = [2 3] and B1 = [4 5].",
+          "options": [
+            "A) [2 3]\n[4 5]",
+            "B) [6 8]\n[2 3]",
+            "C) [6 8]\n[4 5]",
+            "D) [4 5]\n[6 8]"
+          ],
+          "correctAnswer": "C) [6 8]\n[4 5]"
+        },
+        {
+          "id": 19,
+          "question": "Determine the product of matrices C1 = [1 2 3] and D1 = [4 5 6].",
+          "options": [
+            "A) [14 19]",
+            "B) [1 2 3]\n[4 5 6]",
+            "C) [21 27]",
+            "D) [15 15 15]"
+          ],
+          "correctAnswer": "A) [14 19]"
+        },
+        {
+          "id": 20,
+          "question": "What is the result of scalar multiplication for the matrix E1 = [3 6] when multiplied by 4?",
+          "options": [
+            "A) [6 12]",
+            "B) [3 6]",
+            "C) [5 7]",
+            "D) [7 8]"
+          ],
+          "correctAnswer": "A) [6 12]"
+        },
+        {
+          "id": 21,
+          "question": "Calculate the product of matrices F1 = [1 2] and G1 = [3 4].",
+          "options": [
+            "A) [7 10]",
+            "B) [1 2]\n[3 4]",
+            "C) [4 6]",
+            "D) [11 16]"
+          ],
+          "correctAnswer": "A) [7 10]"
+        },
+        {
+          "id": 22,
+          "question": "Find the result of matrix addition for matrices H1 and I1, where H1 = [2 3] and I1 = [4 5].",
+          "options": [
+            "A) [2 3]\n[4 5]",
+            "B) [6 8]\n[2 3]",
+            "C) [6 8]\n[4 5]",
+            "D) [4 5]\n[6 8]"
+          ],
+          "correctAnswer": "C) [6 8]\n[4 5]"
+        },
+        {
+          "id": 23,
+          "question": "Determine the product of matrices J1 = [1 2 3] and K1 = [4 5 6].",
+          "options": [
+            "A) [14 19]",
+            "B) [1 2 3]\n[4 5 6]",
+            "C) [21 27]",
+            "D) [15 15 15]"
+          ],
+          "correctAnswer": "A) [14 19]"
+        },
+        {
+          "id": 24,
+          "question": "What is the result of scalar multiplication for the matrix L1 = [3 6] when multiplied by 5?",
+          "options": [
+            "A) [6 12]",
+            "B) [3 6]",
+            "C) [5 7]",
+            "D) [7 8]"
+          ],
+          "correctAnswer": "A) [6 12]"
+        },
+        {
+          "id": 25,
+          "question": "Calculate the product of matrices M1 = [1 2] and N1 = [3 4].",
+          "options": [
+            "A) [7 10]",
+            "B) [1 2]\n[3 4]",
+            "C) [4 6]",
+            "D) [11 16]"
+          ],
+          "correctAnswer": "A) [7 10]"
+        },
+        {
+          "id": 26,
+          "question": "Find the result of matrix addition for matrices O1 and P1, where O1 = [2 3] and P1 = [4 5].",
+          "options": [
+            "A) [2 3]\n[4 5]",
+            "B) [6 8]\n[2 3]",
+            "C) [6 8]\n[4 5]",
+            "D) [4 5]\n[6 8]"
+          ],
+          "correctAnswer": "C) [6 8]\n[4 5]"
+        },
+        {
+          "id": 27,
+          "question": "Determine the product of matrices Q1 = [1 2 3] and R1 = [4 5 6].",
+          "options": [
+            "A) [14 19]",
+            "B) [1 2 3]\n[4 5 6]",
+            "C) [21 27]",
+            "D) [15 15 15]"
+          ],
+          "correctAnswer": "A) [14 19]"
+        },
+        {
+          "id": 28,
+          "question": "What is the result of scalar multiplication for the matrix S1 = [3 6] when multiplied by 6?",
+          "options": [
+            "A) [6 12]",
+            "B) [3 6]",
+            "C) [5 7]",
+            "D) [7 8]"
+          ],
+          "correctAnswer": "A) [6 12]"
+        },
+        {
+          "id": 29,
+          "question": "Calculate the product of matrices T1 = [1 2] and U1 = [3 4].",
+          "options": [
+            "A) [7 10]",
+            "B) [1 2]\n[3 4]",
+            "C) [4 6]",
+            "D) [11 16]"
+          ],
+          "correctAnswer": "A) [7 10]"
+        },
+        {
+          "id": 30,
+          "question": "Find the result of matrix addition for matrices V1 and W1, where V1 = [2 3] and W1 = [4 5].",
+          "options": [
+            "A) [2 3]\n[4 5]",
+            "B) [6 8]\n[2 3]",
+            "C) [6 8]\n[4 5]",
+            "D) [4 5]\n[6 8]"
+          ],
+          "correctAnswer": "C) [6 8]\n[4 5]"
         }
       ],
       "2.2": [
         {
           "id": 1,
-          "question": "Sample Question 1 for subchapter 2.2 in Module 11",
+          "question": "Which elementary row operation involves multiplying a row by a non-zero scalar?",
           "options": [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4"
+            "A) Row Interchange",
+            "B) Row Scaling",
+            "C) Row Addition",
+            "D) Row Substitution"
           ],
-          "correctAnswer": "Option 1"
+          "correctAnswer": "B) Row Scaling"
         },
         {
           "id": 2,
-          "question": "Sample Question 2 for subchapter 2.2 in Module 11",
+          "question": "What is the result of swapping two rows using elementary row operations on a matrix?",
           "options": [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4"
+            "A) The determinant remains the same.",
+            "B) The determinant becomes negative.",
+            "C) The matrix becomes the identity matrix.",
+            "D) The matrix becomes symmetric."
           ],
-          "correctAnswer": "Option 3"
+          "correctAnswer": "A) The determinant remains the same."
+        },
+        {
+          "id": 3,
+          "question": "What elementary row operation is used to replace a row with the sum of itself and a multiple of another row?",
+          "options": [
+            "A) Row Interchange",
+            "B) Row Scaling",
+            "C) Row Addition",
+            "D) Row Substitution"
+          ],
+          "correctAnswer": "C) Row Addition"
+        },
+        {
+          "id": 4,
+          "question": "If a matrix can be transformed into the identity matrix using elementary row operations, it is:",
+          "options": [
+            "A) Invertible",
+            "B) Singular",
+            "C) A square matrix",
+            "D) A symmetric matrix"
+          ],
+          "correctAnswer": "A) Invertible"
+        },
+        {
+          "id": 5,
+          "question": "Transpose of a Matrix:",
+          "options": [
+            "A) A",
+            "B) A^T",
+            "C) 2x3",
+            "D) 3x2"
+          ],
+          "correctAnswer": "D) 3x2"
+        },
+        {
+          "id": 6,
+          "question": "What is the result of transposing a symmetric matrix?",
+          "options": [
+            "A) It remains the same.",
+            "B) It becomes a zero matrix.",
+            "C) It becomes a skew-symmetric matrix.",
+            "D) It becomes a diagonal matrix."
+          ],
+          "correctAnswer": "A) It remains the same."
+        },
+        {
+          "id": 7,
+          "question": "If matrix A is of size m x n, what is the size of its transpose A^T?",
+          "options": [
+            "A) m x n",
+            "B) n x m",
+            "C) m^2 x n^2",
+            "D) n^2 x m^2"
+          ],
+          "correctAnswer": "B) n x m"
+        },
+        {
+          "id": 8,
+          "question": "What is the minor of an element in a matrix?",
+          "options": [
+            "A) The determinant of the matrix after removing its row and column.",
+            "B) The element itself.",
+            "C) The square root of the element.",
+            "D) The inverse of the element."
+          ],
+          "correctAnswer": "A) The determinant of the matrix after removing its row and column."
+        },
+        {
+          "id": 9,
+          "question": "The cofactor of an element is obtained by:",
+          "options": [
+            "A) Negating its minor.",
+            "B) Taking its absolute value.",
+            "C) Taking its square root.",
+            "D) Adding it to the minor."
+          ],
+          "correctAnswer": "A) Negating its minor."
+        },
+        {
+          "id": 10,
+          "question": "If the minor of an element is 3, what is the cofactor?",
+          "options": [
+            "A) -3",
+            "B) 3",
+            "C) 6",
+            "D) 9"
+          ],
+          "correctAnswer": "A) -3"
+        },
+        {
+          "id": 11,
+          "question": "The matrix of cofactors is also known as:",
+          "options": [
+            "A) Adjoint",
+            "B) Transpose",
+            "C) Inverse",
+            "D) Identity"
+          ],
+          "correctAnswer": "A) Adjoint"
+        },
+        {
+          "id": 12,
+          "question": "What is the relationship between the elements of a matrix and the elements of its adjoint?",
+          "options": [
+            "A) They are equal.",
+            "B) They are the square root of each other.",
+            "C) They are negations of each other.",
+            "D) They are unrelated."
+          ],
+          "correctAnswer": "C) They are negations of each other."
+        },
+        {
+          "id": 13,
+          "question": "The determinant of a matrix and the determinant of its adjoint are related by:",
+          "options": [
+            "A) They are equal.",
+            "B) The determinant of the adjoint is the square of the determinant of the matrix.",
+            "C) The determinant of the adjoint is the inverse of the determinant of the matrix.",
+            "D) They are unrelated."
+          ],
+          "correctAnswer": "B) The determinant of the adjoint is the square of the determinant of the matrix."
+        },
+        {
+          "id": 14,
+          "question": "The adjoint of a matrix is used to find its:",
+          "options": [
+            "A) Determinant",
+            "B) Transpose",
+            "C) Inverse",
+            "D) Minor"
+          ],
+          "correctAnswer": "C) Inverse"
+        },
+        {
+          "id": 15,
+          "question": "If the determinant of a square matrix is 0, what can be said about its inverse?",
+          "options": [
+            "A) It does not exist.",
+            "B) It is the identity matrix.",
+            "C) It is a diagonal matrix.",
+            "D) It is a symmetric matrix."
+          ],
+          "correctAnswer": "A) It does not exist."
+        },
+        {
+          "id": 16,
+          "question": "The inverse of a matrix A is denoted as:",
+          "options": [
+            "A) A^T",
+            "B) A^(-1)",
+            "C) 1/A",
+            "D) -A"
+          ],
+          "correctAnswer": "B) A^(-1)"
+        },
+        {
+          "id": 17,
+          "question": "What is the result of multiplying a matrix by its inverse?",
+          "options": [
+            "A) The identity matrix",
+            "B) A matrix of zeros",
+            "C) The original matrix",
+            "D) A random matrix"
+          ],
+          "correctAnswer": "A) The identity matrix"
+        },
+        {
+          "id": 18,
+          "question": "If matrix B is a 2x2 matrix and its determinant is 3, what is the determinant of its inverse, B^(-1)?",
+          "options": [
+            "A) -3",
+            "B) 3",
+            "C) 9",
+            "D) 1/3"
+          ],
+          "correctAnswer": "D) 1/3"
+        },
+        {
+          "id": 19,
+          "question": "If matrix C is invertible, what is the determinant of its adjoint, adj(C)?",
+          "options": [
+            "A) The determinant of C",
+            "B) The determinant of C divided by its order",
+            "C) The inverse of the determinant of C",
+            "D) The square of the determinant of C"
+          ],
+          "correctAnswer": "A) The determinant of C"
+        },
+        {
+          "id": 20,
+          "question": "What is the adjoint of the identity matrix?",
+          "options": [
+            "A) The identity matrix",
+            "B) The zero matrix",
+            "C) The inverse of the identity matrix",
+            "D) A random matrix"
+          ],
+          "correctAnswer": "A) The identity matrix"
+        },
+        {
+          "id": 21,
+          "question": "If matrix D is a 3x3 matrix and its determinant is 4, what is the determinant of its adjoint, adj(D)?",
+          "options": [
+            "A) 12",
+            "B) 4",
+            "C) 16",
+            "D) 1/4"
+          ],
+          "correctAnswer": "C) 16"
+        },
+        {
+          "id": 22,
+          "question": "If matrix E is a square matrix and its determinant is 5, what can be said about its adjoint, adj(E)?",
+          "options": [
+            "A) It is invertible.",
+            "B) It is the identity matrix.",
+            "C) It is the zero matrix.",
+            "D) It is not defined."
+          ],
+          "correctAnswer": "A) It is invertible."
+        },
+        {
+          "id": 23,
+          "question": "If matrix F is not invertible, what can be said about its adjoint, adj(F)?",
+          "options": [
+            "A) It is the identity matrix.",
+            "B) It is the zero matrix.",
+            "C) It is not defined.",
+            "D) It is the matrix of ones."
+          ],
+          "correctAnswer": "C) It is not defined."
+        },
+        {
+          "id": 24,
+          "question": "If a matrix is symmetric, what can be said about its transpose?",
+          "options": [
+            "A) It remains the same.",
+            "B) It becomes a zero matrix.",
+            "C) It becomes a skew-symmetric matrix.",
+            "D) It becomes an identity matrix."
+          ],
+          "correctAnswer": "A) It remains the same."
+        },
+        {
+          "id": 25,
+          "question": "What is the result of multiplying a matrix by the zero matrix?",
+          "options": [
+            "A) The original matrix",
+            "B) The zero matrix",
+            "C) The identity matrix",
+            "D) It is not defined."
+          ],
+          "correctAnswer": "B) The zero matrix"
+        },
+        {
+          "id": 26,
+          "question": "If matrix A is a 3x3 matrix and its determinant is 2, what is the determinant of its inverse, A^(-1)?",
+          "options": [
+            "A) 2",
+            "B) 1/2",
+            "C) -2",
+            "D) It does not exist."
+          ],
+          "correctAnswer": "B) 1/2"
+        },
+        {
+          "id": 27,
+          "question": "If matrix B is a square matrix and its determinant is 1, what can be said about its adjoint, adj(B)?",
+          "options": [
+            "A) It is invertible.",
+            "B) It is the identity matrix.",
+            "C) It is the zero matrix.",
+            "D) It is not defined."
+          ],
+          "correctAnswer": "A) It is invertible."
+        },
+        {
+          "id": 28,
+          "question": "What is the adjoint of a 2x2 identity matrix?",
+          "options": [
+            "A) The identity matrix",
+            "B) The zero matrix",
+            "C) The inverse of the identity matrix",
+            "D) A random matrix"
+          ],
+          "correctAnswer": "A) The identity matrix"
+        },
+        {
+          "id": 29,
+          "question": "If matrix C is singular, what can be said about its inverse, C^(-1)?",
+          "options": [
+            "A) It is the identity matrix.",
+            "B) It is the zero matrix.",
+            "C) It does not exist.",
+            "D) It is a diagonal matrix."
+          ],
+          "correctAnswer": "C) It does not exist."
+        },
+        {
+          "id": 30,
+          "question": "What is the result of multiplying a matrix by the identity matrix?",
+          "options": [
+            "A) The original matrix",
+            "B) The identity matrix",
+            "C) A matrix of zeros",
+            "D) It is not defined."
+          ],
+          "correctAnswer": "A) The original matrix"
+        }
+      ]
+    },
+    "3": {
+      "3.1": [
+        {
+          "id": 1,
+          "question": "What is the value of sin(2?) if sin(?) = 0.6 and cos(?) = 0.8?",
+          "options": [
+            "A) 0.48",
+            "B) 0.64",
+            "C) 0.96",
+            "D) 1.2"
+          ],
+          "correctAnswer": "A) 0.48"
+        },
+        {
+          "id": 2,
+          "question": "Find the value of cos(3?) if cos(?) = 0.4 and sin(?) = 0.6.",
+          "options": [
+            "A) 0.1344",
+            "B) 0.144",
+            "C) 0.168",
+            "D) 0.192"
+          ],
+          "correctAnswer": "B) 0.144"
+        },
+        {
+          "id": 3,
+          "question": "If sin(p/6) = 0.5 and cos(p/6) = v3/2, what is the value of sin(2p/3)?",
+          "options": [
+            "A) 1/2",
+            "B) v3/2",
+            "C) 1/v2",
+            "D) v3/4"
+          ],
+          "correctAnswer": "B) v3/2"
+        },
+        {
+          "id": 4,
+          "question": "Calculate the value of tan(2a) if tan(a) = 3/4.",
+          "options": [
+            "A) 3/5",
+            "B) 12/25",
+            "C) 4/3",
+            "D) 9/16"
+          ],
+          "correctAnswer": "B) 12/25"
+        },
+        {
+          "id": 5,
+          "question": "Find the value of sin(2�) if sin(�) = 0.7.",
+          "options": [
+            "A) 0.35",
+            "B) 0.49",
+            "C) 0.7",
+            "D) 0.98"
+          ],
+          "correctAnswer": "B) 0.49"
+        },
+        {
+          "id": 6,
+          "question": "If cos(p/3) = 1/2 and sin(p/3) = v3/2, what is the value of cos(2p/3)?",
+          "options": [
+            "A) 1/2",
+            "B) v3/2",
+            "C) 1/v2",
+            "D) v3/4"
+          ],
+          "correctAnswer": "C) 1/v2"
+        },
+        {
+          "id": 7,
+          "question": "Calculate the value of tan(3?) if tan(?) = 5/12.",
+          "options": [
+            "A) 4/15",
+            "B) 15/4",
+            "C) 5/9",
+            "D) 9/5"
+          ],
+          "correctAnswer": "A) 4/15"
+        },
+        {
+          "id": 8,
+          "question": "Find the value of sin(3a) if sin(a) = 0.8.",
+          "options": [
+            "A) 0.384",
+            "B) 0.6",
+            "C) 0.64",
+            "D) 0.992"
+          ],
+          "correctAnswer": "C) 0.64"
+        },
+        {
+          "id": 9,
+          "question": "If sin(p/4) = cos(p/4) = 1/v2, what is the value of sin(p/6)?",
+          "options": [
+            "A) 1/2",
+            "B) v2/2",
+            "C) v3/2",
+            "D) 1/v3"
+          ],
+          "correctAnswer": "B) v2/2"
+        },
+        {
+          "id": 10,
+          "question": "Calculate the value of tan(p/4) + tan(p/4) if tan(p/4) = 1.",
+          "options": [
+            "A) 1",
+            "B) 2",
+            "C) 0.5",
+            "D) 0"
+          ],
+          "correctAnswer": "A) 1"
+        },
+        {
+          "id": 11,
+          "question": "What is the value of cos(p/2) + sin(p/2)?",
+          "options": [
+            "A) 0",
+            "B) 1",
+            "C) 2",
+            "D) -1"
+          ],
+          "correctAnswer": "B) 1"
+        },
+        {
+          "id": 12,
+          "question": "Find the value of sin(p/3) + cos(p/6).",
+          "options": [
+            "A) 1",
+            "B) v3/2",
+            "C) 1/v2",
+            "D) 2/v3"
+          ],
+          "correctAnswer": "C) 1/v2"
+        },
+        {
+          "id": 13,
+          "question": "If sin(a) = 3/5 and cos(a) = 4/5, what is the value of sin(2a)?",
+          "options": [
+            "A) 12/25",
+            "B) 24/25",
+            "C) 4/5",
+            "D) 9/25"
+          ],
+          "correctAnswer": "A) 12/25"
+        },
+        {
+          "id": 14,
+          "question": "Calculate the value of cos(3�) if cos(�) = 7/25.",
+          "options": [
+            "A) 21/125",
+            "B) 49/625",
+            "C) 343/625",
+            "D) 3/5"
+          ],
+          "correctAnswer": "B) 49/625"
+        },
+        {
+          "id": 15,
+          "question": "What is the value of tan(p/6) - tan(p/3) if tan(p/6) = 1/v3 and tan(p/3) = v3?",
+          "options": [
+            "A) -2/v3",
+            "B) v3 - 1",
+            "C) -1/v3",
+            "D) 2v3 - 1"
+          ],
+          "correctAnswer": "C) -1/v3"
+        },
+        {
+          "id": 16,
+          "question": "Find the value of cos(2?) + sin(2?) if cos(?) = 4/5 and sin(?) = 3/5.",
+          "options": [
+            "A) 1",
+            "B) 5/4",
+            "C) 8/5",
+            "D) 7/5"
+          ],
+          "correctAnswer": "A) 1"
+        },
+        {
+          "id": 17,
+          "question": "Calculate the value of tan(2a) + tan(3a) if tan(a) = 2/3.",
+          "options": [
+            "A) 14/9",
+            "B) 19/6",
+            "C) 8/9",
+            "D) 5/6"
+          ],
+          "correctAnswer": "C) 8/9"
+        },
+        {
+          "id": 18,
+          "question": "What is the value of sin(3?) - cos(3?) if sin(?) = 0.7 and cos(?) = 0.7?",
+          "options": [
+            "A) 0",
+            "B) 0.49",
+            "C) 0.98",
+            "D) 1.96"
+          ],
+          "correctAnswer": "A) 0"
+        },
+        {
+          "id": 19,
+          "question": "Find the value of cos(4a) if cos(a) = 5/13.",
+          "options": [
+            "A) 16/169",
+            "B) 25/169",
+            "C) 1/13",
+            "D) 144/169"
+          ],
+          "correctAnswer": "A) 16/169"
+        },
+        {
+          "id": 20,
+          "question": "Calculate the value of sin(2�) - cos(2�) if sin(�) = 2/3.",
+          "options": [
+            "A) 1/9",
+            "B) 5/9",
+            "C) 4/9",
+            "D) 7/9"
+          ],
+          "correctAnswer": "C) 4/9"
+        },
+        {
+          "id": 21,
+          "question": "What is the value of sin(2?) + cos(2?) if sin(?) = 0.8 and cos(?) = 0.6?",
+          "options": [
+            "A) 0.88",
+            "B) 1.16",
+            "C) 1.44",
+            "D) 1.76"
+          ],
+          "correctAnswer": "B) 1.16"
+        },
+        {
+          "id": 22,
+          "question": "Find the value of cos(5a) if cos(a) = 7/25.",
+          "options": [
+            "A) 35/625",
+            "B) 49/625",
+            "C) 343/625",
+            "D) 5/25"
+          ],
+          "correctAnswer": "B) 49/625"
+        },
+        {
+          "id": 23,
+          "question": "Calculate the value of tan(3?) - sin(3?) if tan(?) = 1.",
+          "options": [
+            "A) 0",
+            "B) 1",
+            "C) 2",
+            "D) 3"
+          ],
+          "correctAnswer": "A) 0"
+        },
+        {
+          "id": 24,
+          "question": "What is the value of cos(2�) + sin(2�) if cos(�) = 3/5 and sin(�) = 4/5?",
+          "options": [
+            "A) 5/4",
+            "B) 8/5",
+            "C) 7/5",
+            "D) 9/5"
+          ],
+          "correctAnswer": "A) 5/4"
+        },
+        {
+          "id": 25,
+          "question": "Find the value of sin(4a) if sin(a) = 0.6.",
+          "options": [
+            "A) 0.1296",
+            "B) 0.144",
+            "C) 0.168",
+            "D) 0.192"
+          ],
+          "correctAnswer": "A) 0.1296"
+        },
+        {
+          "id": 26,
+          "question": "Calculate the value of cos(2?) - sin(2?) if cos(?) = 3/5 and sin(?) = 4/5.",
+          "options": [
+            "A) 0",
+            "B) 1/25",
+            "C) 24/25",
+            "D) 49/25"
+          ],
+          "correctAnswer": "A) 0"
+        },
+        {
+          "id": 27,
+          "question": "What is the value of tan(2a) - sin(2a) if tan(a) = 5/12?",
+          "options": [
+            "A) 19/25",
+            "B) 7/25",
+            "C) 6/25",
+            "D) 1/25"
+          ],
+          "correctAnswer": "A) 19/25"
+        },
+        {
+          "id": 28,
+          "question": "Find the value of cos(3�) + sin(3�) if cos(�) = 2/3 and sin(�) = 3/5.",
+          "options": [
+            "A) 0.28",
+            "B) 0.44",
+            "C) 0.68",
+            "D) 0.88"
+          ],
+          "correctAnswer": "A) 0.28"
+        },
+        {
+          "id": 29,
+          "question": "Calculate the value of sin(5?) + cos(5?) if sin(?) = 0.7 and cos(?) = 0.7.",
+          "options": [
+            "A) 1.96",
+            "B) 1.4",
+            "C) 0.98",
+            "D) 0.68"
+          ],
+          "correctAnswer": "A) 1.96"
+        },
+        {
+          "id": 30,
+          "question": "What is the value of cos(4a) - sin(4a) if cos(a) = 3/5 and sin(a) = 4/5?",
+          "options": [
+            "A) 1/25",
+            "B) 24/25",
+            "C) 7/25",
+            "D) 49/25"
+          ],
+          "correctAnswer": "B) 24/25"
+        }
+      ],
+      "3.2": [
+        {
+          "id": 1,
+          "question": "Simplify the expression: sin^2(x) - cos^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) tan(x)",
+            "D) cot(x)"
+          ],
+          "correctAnswer": "B) cos(x)"
+        },
+        {
+          "id": 2,
+          "question": "Factorize the expression: cos^2(x) - 1.",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) tan(x)",
+            "D) cot(x)"
+          ],
+          "correctAnswer": "C) tan(x)"
+        },
+        {
+          "id": 3,
+          "question": "Simplify the expression: 1 - sec^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) tan(x)",
+            "D) cot(x)"
+          ],
+          "correctAnswer": "B) cos(x)"
+        },
+        {
+          "id": 4,
+          "question": "Factorize the expression: 1 - tan^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) sec(x)",
+            "D) csc(x)"
+          ],
+          "correctAnswer": "B) cos(x)"
+        },
+        {
+          "id": 5,
+          "question": "Simplify the expression: sin^2(x) + sin^2(x)cos^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) tan(x)",
+            "D) cot(x)"
+          ],
+          "correctAnswer": "A) sin(x)"
+        },
+        {
+          "id": 6,
+          "question": "Factorize the expression: 1 - sin^2(x)cos^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) sec(x)",
+            "D) csc(x)"
+          ],
+          "correctAnswer": "C) sec(x)"
+        },
+        {
+          "id": 7,
+          "question": "Simplify the expression: sin^2(x) - 2sin^2(x)cos^2(x) + cos^4(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) tan(x)",
+            "D) cot(x)"
+          ],
+          "correctAnswer": "B) cos(x)"
+        },
+        {
+          "id": 8,
+          "question": "Factorize the expression: sin^4(x) - cos^4(x).",
+          "options": [
+            "A) sin^2(x) - cos^2(x)",
+            "B) sin^2(x) + cos^2(x)",
+            "C) 1 - sin^2(x)cos^2(x)",
+            "D) 1 - tan^2(x)"
+          ],
+          "correctAnswer": "A) sin^2(x) - cos^2(x)"
+        },
+        {
+          "id": 9,
+          "question": "Simplify the expression: 1 - 2sin^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) sec(x)",
+            "D) csc(x)"
+          ],
+          "correctAnswer": "B) cos(x)"
+        },
+        {
+          "id": 10,
+          "question": "Factorize the expression: 1 - 2cos^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) sec(x)",
+            "D) csc(x)"
+          ],
+          "correctAnswer": "A) sin(x)"
+        },
+        {
+          "id": 11,
+          "question": "Simplify the expression: sin^2(x) - 2sin^2(x)cos^2(x) + cos^4(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) tan(x)",
+            "D) cot(x)"
+          ],
+          "correctAnswer": "B) cos(x)"
+        },
+        {
+          "id": 12,
+          "question": "Factorize the expression: sin^4(x) + cos^4(x).",
+          "options": [
+            "A) sin^2(x) - cos^2(x)",
+            "B) sin^2(x) + cos^2(x)",
+            "C) 1 - sin^2(x)cos^2(x)",
+            "D) 1 - tan^2(x)"
+          ],
+          "correctAnswer": "B) sin^2(x) + cos^2(x)"
+        },
+        {
+          "id": 13,
+          "question": "Simplify the expression: 1 - 2sin^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) sec(x)",
+            "D) csc(x)"
+          ],
+          "correctAnswer": "B) cos(x)"
+        },
+        {
+          "id": 14,
+          "question": "Factorize the expression: 1 - 2cos^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) sec(x)",
+            "D) csc(x)"
+          ],
+          "correctAnswer": "A) sin(x)"
+        },
+        {
+          "id": 15,
+          "question": "Simplify the expression: sin^2(x) - sin^2(x)cos^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) tan(x)",
+            "D) cot(x)"
+          ],
+          "correctAnswer": "B) cos(x)"
+        },
+        {
+          "id": 16,
+          "question": "Factorize the expression: 1 - sin^2(x) - cos^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) sec(x)",
+            "D) csc(x)"
+          ],
+          "correctAnswer": "C) sec(x)"
+        },
+        {
+          "id": 17,
+          "question": "Simplify the expression: sin^2(x) + 2sin^2(x)cos^2(x) + cos^4(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) tan(x)",
+            "D) cot(x)"
+          ],
+          "correctAnswer": "B) cos(x)"
+        },
+        {
+          "id": 18,
+          "question": "Factorize the expression: sin^4(x) + cos^4(x).",
+          "options": [
+            "A) sin^2(x) - cos^2(x)",
+            "B) sin^2(x) + cos^2(x)",
+            "C) 1 - sin^2(x)cos^2(x)",
+            "D) 1 - tan^2(x)"
+          ],
+          "correctAnswer": "B) sin^2(x) + cos^2(x)"
+        },
+        {
+          "id": 19,
+          "question": "Simplify the expression: 1 - 2sin^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) sec(x)",
+            "D) csc(x)"
+          ],
+          "correctAnswer": "B) cos(x)"
+        },
+        {
+          "id": 20,
+          "question": "Factorize the expression: 1 - 2cos^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) sec(x)",
+            "D) csec(x)"
+          ],
+          "correctAnswer": "A) sin(x)"
+        },
+        {
+          "id": 21,
+          "question": "Simplify the expression: sin^2(x) - sin^2(x)cos^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) tan(x)",
+            "D) cot(x)"
+          ],
+          "correctAnswer": "B) cos(x)"
+        },
+        {
+          "id": 22,
+          "question": "Factorize the expression: 1 - sin^2(x) - cos^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) sec(x)",
+            "D) csc(x)"
+          ],
+          "correctAnswer": "C) sec(x)"
+        },
+        {
+          "id": 23,
+          "question": "Simplify the expression: sin^2(x) + 2sin^2(x)cos^2(x) + cos^4(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) tan(x)",
+            "D) cot(x)"
+          ],
+          "correctAnswer": "B) cos(x)"
+        },
+        {
+          "id": 24,
+          "question": "Factorize the expression: sin^4(x) + cos^4(x).",
+          "options": [
+            "A) sin^2(x) - cos^2(x)",
+            "B) sin^2(x) + cos^2(x)",
+            "C) 1 - sin^2(x)cos^2(x)",
+            "D) 1 - tan^2(x)"
+          ],
+          "correctAnswer": "B) sin^2(x) + cos^2(x)"
+        },
+        {
+          "id": 25,
+          "question": "Simplify the expression: 1 - 2sin^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) sec(x)",
+            "D) csc(x)"
+          ],
+          "correctAnswer": "B) cos(x)"
+        },
+        {
+          "id": 26,
+          "question": "Factorize the expression: 1 - 2cos^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) sec(x)",
+            "D) csc(x)"
+          ],
+          "correctAnswer": "A) sin(x)"
+        },
+        {
+          "id": 27,
+          "question": "Simplify the expression: sin^2(x) - sin^2(x)cos^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) tan(x)",
+            "D) cot(x)"
+          ],
+          "correctAnswer": "B) cos(x)"
+        },
+        {
+          "id": 28,
+          "question": "Factorize the expression: 1 - sin^2(x) - cos^2(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) sec(x)",
+            "D) csc(x)"
+          ],
+          "correctAnswer": "C) sec(x)"
+        },
+        {
+          "id": 29,
+          "question": "Simplify the expression: sin^2(x) + 2sin^2(x)cos^2(x) + cos^4(x).",
+          "options": [
+            "A) sin(x)",
+            "B) cos(x)",
+            "C) tan(x)",
+            "D) cot(x)"
+          ],
+          "correctAnswer": "B) cos(x)"
+        },
+        {
+          "id": 30,
+          "question": "Factorize the expression: sin^4(x) - cos^4(x).",
+          "options": [
+            "A) sin^2(x) - cos^2(x)",
+            "B) sin^2(x) + cos^2(x)",
+            "C) 1 - sin^2(x)cos^2(x)",
+            "D) 1 - tan^2(x)"
+          ],
+          "correctAnswer": "A) sin^2(x) - cos^2(x)"
+        }
+      ],
+      "3.3": [
+        {
+          "id": 1,
+          "question": "What is the principal value of sin^(-1)(0)?",
+          "options": [
+            "A) 0",
+            "B) p/2",
+            "C) p",
+            "D) -p/2"
+          ],
+          "correctAnswer": "A) 0"
+        },
+        {
+          "id": 2,
+          "question": "Calculate sin^(-1)(1).",
+          "options": [
+            "A) p/4",
+            "B) p/2",
+            "C) p",
+            "D) -p/2"
+          ],
+          "correctAnswer": "B) p/2"
+        },
+        {
+          "id": 3,
+          "question": "If sin^(-1)(x) = p/6, what is the value of x?",
+          "options": [
+            "A) 1/2",
+            "B) v3/2",
+            "C) 1/v2",
+            "D) 1/v3"
+          ],
+          "correctAnswer": "B) v3/2"
+        },
+        {
+          "id": 4,
+          "question": "Find sin^(-1)(-1).",
+          "options": [
+            "A) -p/2",
+            "B) p/2",
+            "C) p",
+            "D) -p"
+          ],
+          "correctAnswer": "A) -p/2"
+        },
+        {
+          "id": 5,
+          "question": "What is the principal value of cos^(-1)(1)?",
+          "options": [
+            "A) 0",
+            "B) p/2",
+            "C) p",
+            "D) -p/2"
+          ],
+          "correctAnswer": "A) 0"
+        },
+        {
+          "id": 6,
+          "question": "Calculate cos^(-1)(0).",
+          "options": [
+            "A) p/4",
+            "B) p/2",
+            "C) p",
+            "D) -p/2"
+          ],
+          "correctAnswer": "B) p/2"
+        },
+        {
+          "id": 7,
+          "question": "If cos^(-1)(x) = p/4, what is the value of x?",
+          "options": [
+            "A) 1/v2",
+            "B) 1/2",
+            "C) 1/v3",
+            "D) v3/2"
+          ],
+          "correctAnswer": "A) 1/v2"
+        },
+        {
+          "id": 8,
+          "question": "Find cos^(-1)(-1).",
+          "options": [
+            "A) p",
+            "B) p/2",
+            "C) p/4",
+            "D) -p"
+          ],
+          "correctAnswer": "C) p"
+        },
+        {
+          "id": 9,
+          "question": "What is the principal value of tan^(-1)(0)?",
+          "options": [
+            "A) 0",
+            "B) p/2",
+            "C) p",
+            "D) -p/2"
+          ],
+          "correctAnswer": "A) 0"
+        },
+        {
+          "id": 10,
+          "question": "Calculate tan^(-1)(1).",
+          "options": [
+            "A) p/4",
+            "B) p/2",
+            "C) p",
+            "D) -p/2"
+          ],
+          "correctAnswer": "A) p/4"
+        },
+        {
+          "id": 11,
+          "question": "If tan^(-1)(x) = p/6, what is the value of x?",
+          "options": [
+            "A) 1/v3",
+            "B) v3/3",
+            "C) 1",
+            "D) v3"
+          ],
+          "correctAnswer": "B) v3/3"
+        },
+        {
+          "id": 12,
+          "question": "Find tan^(-1)(-1).",
+          "options": [
+            "A) -p/4",
+            "B) -p/2",
+            "C) p/4",
+            "D) -p/6"
+          ],
+          "correctAnswer": "A) -p/4"
+        },
+        {
+          "id": 13,
+          "question": "What is the principal value of csc^(-1)(1)?",
+          "options": [
+            "A) 0",
+            "B) p/2",
+            "C) p",
+            "D) -p/2"
+          ],
+          "correctAnswer": "B) p/2"
+        },
+        {
+          "id": 14,
+          "question": "Calculate csc^(-1)(v2).",
+          "options": [
+            "A) p/2",
+            "B) p/4",
+            "C) p/3",
+            "D) -p/2"
+          ],
+          "correctAnswer": "C) p/3"
+        },
+        {
+          "id": 15,
+          "question": "If csc^(-1)(x) = p/4, what is the value of x?",
+          "options": [
+            "A) v2",
+            "B) 1/v2",
+            "C) 2",
+            "D) 1/2"
+          ],
+          "correctAnswer": "A) v2"
+        },
+        {
+          "id": 16,
+          "question": "Find csc^(-1)(-1).",
+          "options": [
+            "A) -p/2",
+            "B) p/2",
+            "C) -p/4",
+            "D) -p"
+          ],
+          "correctAnswer": "A) -p/2"
+        },
+        {
+          "id": 17,
+          "question": "What is the principal value of sec^(-1)(1)?",
+          "options": [
+            "A) 0",
+            "B) p/2",
+            "C) p",
+            "D) -p/2"
+          ],
+          "correctAnswer": "B) p/2"
+        },
+        {
+          "id": 18,
+          "question": "Calculate sec^(-1)(2).",
+          "options": [
+            "A) p/6",
+            "B) p/4",
+            "C) p/3",
+            "D) -p/6"
+          ],
+          "correctAnswer": "C) p/3"
+        },
+        {
+          "id": 19,
+          "question": "If sec^(-1)(x) = p/3, what is the value of x?",
+          "options": [
+            "A) 2",
+            "B) 1/2",
+            "C) v3",
+            "D) 1/v3"
+          ],
+          "correctAnswer": "A) 2"
+        },
+        {
+          "id": 20,
+          "question": "Find sec^(-1)(-1).",
+          "options": [
+            "A) -p/2",
+            "B) p/2",
+            "C) -p/4",
+            "D) -p"
+          ],
+          "correctAnswer": "D) -p"
+        },
+        {
+          "id": 21,
+          "question": "What is the principal value of cot^(-1)(1)?",
+          "options": [
+            "A) 0",
+            "B) p/2",
+            "C) p",
+            "D) -p/2"
+          ],
+          "correctAnswer": "A) 0"
+        },
+        {
+          "id": 22,
+          "question": "Calculate cot^(-1)(v3).",
+          "options": [
+            "A) p/6",
+            "B) p/4",
+            "C) p/3",
+            "D) -p/6"
+          ],
+          "correctAnswer": "C) p/3"
+        },
+        {
+          "id": 23,
+          "question": "If cot^(-1)(x) = p/3, what is the value of x?",
+          "options": [
+            "A) v3",
+            "B) 1/v3",
+            "C) 3",
+            "D) 1/3"
+          ],
+          "correctAnswer": "A) v3"
+        },
+        {
+          "id": 24,
+          "question": "Find cot^(-1)(-1).",
+          "options": [
+            "A) -p/4",
+            "B) -p/2",
+            "C) p/4",
+            "D) -p/3"
+          ],
+          "correctAnswer": "D) -p/3"
+        },
+        {
+          "id": 25,
+          "question": "Calculate sin^(-1)(v2).",
+          "options": [
+            "A) p/2",
+            "B) p/4",
+            "C) p/3",
+            "D) -p/2"
+          ],
+          "correctAnswer": "A) p/2"
+        },
+        {
+          "id": 26,
+          "question": "If sin^(-1)(x) = -p/4, what is the value of x?",
+          "options": [
+            "A) -1/v2",
+            "B) -v2/2",
+            "C) -1/v3",
+            "D) -1"
+          ],
+          "correctAnswer": "A) -1/v2"
+        },
+        {
+          "id": 27,
+          "question": "Find sin^(-1)(-v3/2).",
+          "options": [
+            "A) -p/6",
+            "B) -p/3",
+            "C) -p/4",
+            "D) -p/2"
+          ],
+          "correctAnswer": "B) -p/3"
+        },
+        {
+          "id": 28,
+          "question": "Calculate cos^(-1)(-1/2).",
+          "options": [
+            "A) 2p/3",
+            "B) p/6",
+            "C) p/3",
+            "D) -2p/3"
+          ],
+          "correctAnswer": "B) p/3"
+        },
+        {
+          "id": 29,
+          "question": "If cos^(-1)(x) = -p/6, what is the value of x?",
+          "options": [
+            "A) v3/2",
+            "B) 1/2",
+            "C) 1/v3",
+            "D) v2/2"
+          ],
+          "correctAnswer": "A) v3/2"
+        },
+        {
+          "id": 30,
+          "question": "Find cos^(-1)(-v2/2).",
+          "options": [
+            "A) -p/4",
+            "B) -p/2",
+            "C) -p/6",
+            "D) -p"
+          ],
+          "correctAnswer": "C) -p/6"
+        }
+      ],
+      "3.4": [
+        {
+          "id": 1,
+          "question": "Calculate sin^(-1)(1/2).",
+          "options": [
+            "A) p/6",
+            "B) p/4",
+            "C) p/3",
+            "D) p/2"
+          ],
+          "correctAnswer": "C) p/3"
+        },
+        {
+          "id": 2,
+          "question": "Find the principal value of cos^(-1)(v3/2).",
+          "options": [
+            "A) p/6",
+            "B) p/4",
+            "C) p/3",
+            "D) p/2"
+          ],
+          "correctAnswer": "C) p/3"
+        },
+        {
+          "id": 3,
+          "question": "What is the principal value of tan^(-1)(1)?",
+          "options": [
+            "A) p/4",
+            "B) p/2",
+            "C) p",
+            "D) -p/2"
+          ],
+          "correctAnswer": "A) p/4"
+        },
+        {
+          "id": 4,
+          "question": "Calculate sec^(-1)(-2).",
+          "options": [
+            "A) -p/3",
+            "B) -p/4",
+            "C) -p/6",
+            "D) -p/2"
+          ],
+          "correctAnswer": "B) -p/4"
+        },
+        {
+          "id": 5,
+          "question": "Find csc^(-1)(-1).",
+          "options": [
+            "A) -p/2",
+            "B) p/2",
+            "C) -p/4",
+            "D) -p"
+          ],
+          "correctAnswer": "A) -p/2"
+        },
+        {
+          "id": 6,
+          "question": "If cot^(-1)(1) = x, what is the value of x?",
+          "options": [
+            "A) 0",
+            "B) p/4",
+            "C) p/2",
+            "D) p"
+          ],
+          "correctAnswer": "A) 0"
+        },
+        {
+          "id": 7,
+          "question": "Which identity is equivalent to sin^(-1)(x) + cos^(-1)(x) = p/2?",
+          "options": [
+            "A) sin(x) + cos(x) = 1",
+            "B) tan(x) * csc(x) = 1",
+            "C) sin(x) * tan(x) = cos(x)",
+            "D) sin^2(x) + cos^2(x) = 1"
+          ],
+          "correctAnswer": "D) sin^2(x) + cos^2(x) = 1"
+        },
+        {
+          "id": 8,
+          "question": "If cos^(-1)(p) = p/4 and sin^(-1)(q) = p/6, what is the value of p * q?",
+          "options": [
+            "A) 1",
+            "B) v3/3",
+            "C) 1/v2",
+            "D) v6/12"
+          ],
+          "correctAnswer": "C) 1/v2"
+        },
+        {
+          "id": 9,
+          "question": "What is the relationship between csc^(-1)(a) and tan^(-1)(a)?",
+          "options": [
+            "A) csc^(-1)(a) = p/2 - tan^(-1)(a)",
+            "B) csc^(-1)(a) = p/2 + tan^(-1)(a)",
+            "C) csc^(-1)(a) = tan^(-1)(a) - p/2",
+            "D) csc^(-1)(a) = tan^(-1)(a) + p/2"
+          ],
+          "correctAnswer": "A) csc^(-1)(a) = p/2 - tan^(-1)(a)"
+        },
+        {
+          "id": 10,
+          "question": "What is the relationship between sec^(-1)(p) and cos^(-1)(q)?",
+          "options": [
+            "A) sec^(-1)(p) = cos^(-1)(q) + p/2",
+            "B) sec^(-1)(p) = p/2 - cos^(-1)(q)",
+            "C) sec^(-1)(p) = p/2 + cos^(-1)(q)",
+            "D) sec^(-1)(p) = cos^(-1)(q) - p/2"
+          ],
+          "correctAnswer": "B) sec^(-1)(p) = p/2 - cos^(-1)(q)"
+        },
+        {
+          "id": 11,
+          "question": "If cos^(-1)(x) = p/6, what is the value of cot^(-1)(x)?",
+          "options": [
+            "A) p/4",
+            "B) p/3",
+            "C) p/6",
+            "D) p/2"
+          ],
+          "correctAnswer": "B) p/3"
+        },
+        {
+          "id": 12,
+          "question": "What is the relationship between csc^(-1)(p) and sin^(-1)(q)?",
+          "options": [
+            "A) csc^(-1)(p) = sin^(-1)(q) + p/2",
+            "B) csc^(-1)(p) = p/2 - sin^(-1)(q)",
+            "C) csc^(-1)(p) = p/2 + sin^(-1)(q)",
+            "D) csc^(-1)(p) = sin^(-1)(q) - p/2"
+          ],
+          "correctAnswer": "A) csc^(-1)(p) = sin^(-1)(q) + p/2"
+        },
+        {
+          "id": 13,
+          "question": "Calculate cos^(-1)(-1/2).",
+          "options": [
+            "A) p/6",
+            "B) p/4",
+            "C) p/3",
+            "D) p/2"
+          ],
+          "correctAnswer": "C) p/3"
+        },
+        {
+          "id": 14,
+          "question": "Find the principal value of sin^(-1)(-v2/2).",
+          "options": [
+            "A) -p/4",
+            "B) -p/6",
+            "C) -p/3",
+            "D) -p/2"
+          ],
+          "correctAnswer": "A) -p/4"
+        },
+        {
+          "id": 15,
+          "question": "What is the principal value of tan^(-1)(-1)?",
+          "options": [
+            "A) -p/4",
+            "B) -p/2",
+            "C) -p",
+            "D) p/4"
+          ],
+          "correctAnswer": "A) -p/4"
+        },
+        {
+          "id": 16,
+          "question": "Calculate sec^(-1)(-v2).",
+          "options": [
+            "A) -p/4",
+            "B) -p/3",
+            "C) -p/2",
+            "D) -p"
+          ],
+          "correctAnswer": "B) -p/3"
+        },
+        {
+          "id": 17,
+          "question": "Find csc^(-1)(-v2).",
+          "options": [
+            "A) -p/4",
+            "B) -p/3",
+            "C) -p/2",
+            "D) -p"
+          ],
+          "correctAnswer": "B) -p/3"
+        },
+        {
+          "id": 18,
+          "question": "If cot^(-1)(-v3) = x, what is the value of x?",
+          "options": [
+            "A) -p/4",
+            "B) -p/3",
+            "C) -p/2",
+            "D) -p"
+          ],
+          "correctAnswer": "C) -p/2"
+        },
+        {
+          "id": 19,
+          "question": "Which identity is equivalent to sin^(-1)(x) - cos^(-1)(x) = -p/2?",
+          "options": [
+            "A) sin(x) + cos(x) = 1",
+            "B) tan(x) * csc(x) = 1",
+            "C) sin(x) * tan(x) = cos(x)",
+            "D) sin^2(x) - cos^2(x) = 1"
+          ],
+          "correctAnswer": "D) sin^2(x) - cos^2(x) = 1"
+        },
+        {
+          "id": 20,
+          "question": "If cos^(-1)(p) = -p/4 and sin^(-1)(q) = -p/6, what is the value of p * q?",
+          "options": [
+            "A) 1/v2",
+            "B) -1/v2",
+            "C) 1/v3",
+            "D) -1/v3"
+          ],
+          "correctAnswer": "B) -1/v2"
+        },
+        {
+          "id": 21,
+          "question": "What is the relationship between sec^(-1)(a) and tan^(-1)(a)?",
+          "options": [
+            "A) sec^(-1)(a) = tan^(-1)(a) + p/2",
+            "B) sec^(-1)(a) = tan^(-1)(a) - p/2",
+            "C) sec^(-1)(a) = p/2 + tan^(-1)(a)",
+            "D) sec^(-1)(a) = p/2 - tan^(-1)(a)"
+          ],
+          "correctAnswer": "A) sec^(-1)(a) = tan^(-1)(a) + p/2"
+        },
+        {
+          "id": 22,
+          "question": "What is the relationship between csc^(-1)(p) and cos^(-1)(q)?",
+          "options": [
+            "A) csc^(-1)(p) = cos^(-1)(q) - p/2",
+            "B) csc^(-1)(p) = p/2 - cos^(-1)(q)",
+            "C) csec^(-1)(p) = p/2 + cos^(-1)(q)",
+            "D) csec^(-1)(p) = cos^(-1)(q) + p/2"
+          ],
+          "correctAnswer": "B) csc^(-1)(p) = p/2 - cos^(-1)(q)"
+        },
+        {
+          "id": 23,
+          "question": "If cos^(-1)(x) = -p/6, what is the value of cot^(-1)(x)?",
+          "options": [
+            "A) -p/4",
+            "B) -p/3",
+            "C) -p/6",
+            "D) -p/2"
+          ],
+          "correctAnswer": "A) -p/4"
+        },
+        {
+          "id": 24,
+          "question": "What is the relationship between sec^(-1)(a) and sin^(-1)(b)?",
+          "options": [
+            "A) sec^(-1)(a) = sin^(-1)(b) - p/2",
+            "B) sec^(-1)(a) = p/2 - sin^(-1)(b)",
+            "C) sec^(-1)(a) = p/2 + sin^(-1)(b)",
+            "D) sec^(-1)(a) = sin^(-1)(b) + p/2"
+          ],
+          "correctAnswer": "B) sec^(-1)(a) = p/2 - sin^(-1)(b)"
+        },
+        {
+          "id": 25,
+          "question": "Calculate sin^(-1)(-1).",
+          "options": [
+            "A) -p/4",
+            "B) -p/2",
+            "C) -p",
+            "D) -p/6"
+          ],
+          "correctAnswer": "B) -p/2"
+        },
+        {
+          "id": 26,
+          "question": "Find the principal value of cos^(-1)(-1/v2).",
+          "options": [
+            "A) -p/4",
+            "B) -p/3",
+            "C) -p/6",
+            "D) -p/2"
+          ],
+          "correctAnswer": "A) -p/4"
+        },
+        {
+          "id": 27,
+          "question": "What is the principal value of tan^(-1)(0)?",
+          "options": [
+            "A) 0",
+            "B) p/4",
+            "C) p/2",
+            "D) -p/2"
+          ],
+          "correctAnswer": "A) 0"
+        },
+        {
+          "id": 28,
+          "question": "Calculate sec^(-1)(-1).",
+          "options": [
+            "A) -p/4",
+            "B) -p/3",
+            "C) -p/2",
+            "D) -p"
+          ],
+          "correctAnswer": "C) -p/2"
+        },
+        {
+          "id": 29,
+          "question": "Find csc^(-1)(-v3).",
+          "options": [
+            "A) -p/4",
+            "B) -p/3",
+            "C) -p/2",
+            "D) -p"
+          ],
+          "correctAnswer": "B) -p/3"
+        },
+        {
+          "id": 30,
+          "question": "If cot^(-1)(0) = x, what is the value of x?",
+          "options": [
+            "A) 0",
+            "B) p/4",
+            "C) p/2",
+            "D) p"
+          ],
+          "correctAnswer": "A) 0"
         }
       ]
     }
@@ -20238,4 +22999,44 @@ module.exports = {
       ]
     }
   },
+  "11": {
+    "1": {
+      "1.1": [
+        {
+          "id": 1698157818372,
+          "question": "What does PHP stand for?",
+          "options": [
+            "a) Personal Home Page",
+            "b) PHP: Hypertext Preprocessor",
+            "c) Private Hyperlink Processor",
+            "d) Public Home Page"
+          ],
+          "correctAnswer": "b) PHP: Hypertext Preprocessor"
+        },
+        {
+          "id": 1698157865453,
+          "question": "\"Which of the following is true about PHP?",
+          "options": [
+            "a) It is a server-side scripting language",
+            "b) It can be embedded into HTML",
+            "c) It's open-source",
+            "d) All of the above"
+          ],
+          "correctAnswer": "d) All of the above"
+        },
+        {
+          "id": 1698157973045,
+          "question": "What is the file extension for PHP files?",
+          "options": [
+            "a) .html",
+            "b) .php",
+            "c) .script",
+            "d) .web",
+            ""
+          ],
+          "correctAnswer": "b) .php"
+        }
+      ]
+    }
+  }
 }

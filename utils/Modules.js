@@ -48,5 +48,10 @@ module.exports = [
     "id": 10,
     "name": "ICT",
     "description": "Computer and Information & Communication Technology (ICT) are the backbone of our digital world. Computers are like smart machines that can follow instructions and process information lightning-fast. They help us with tasks ranging from writing documents and playing games to complex calculations and data analysis. ICT, on the other hand, includes all the tools and systems that allow us to communicate and share information, like smartphones, the internet, and social media. Together, computers and ICT have revolutionized how we work, learn, connect, and entertain ourselves in the modern age, making the world a smaller and more interconnected place."
+  },
+  {
+    "id": 11,
+    "name": "PHP",
+    "description": "PHP"
   }
 ];
