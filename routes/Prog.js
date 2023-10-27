@@ -252,7 +252,7 @@ router.post("/", verifyToken, async (req, res) => {
       const userId = req.user.id;
       //debugging
       console.log(req.user);
-        console.log(req.body)
+        
       // Retrieve data from the request body
       const { moduleId, chapterId, subchapterId, correctAnswers, totalQuestions } = req.body;
 
@@ -275,6 +275,8 @@ router.post("/", verifyToken, async (req, res) => {
         // Update the existing progress data
         existingProgress.correctPercentage = correctPercentage;
         console.log('Updated Progress');
+        await user.save();
+        res.json({ success: true, message: "Progress Updated successfully" });
         
       } else {
         // Create a new progress object
@@ -284,12 +286,13 @@ router.post("/", verifyToken, async (req, res) => {
           subchapterId,
           correctPercentage,
         });
-      }
-  
-      // Save the updated user document
+              // Save the updated user document
       await user.save();
   
       res.json({ success: true, message: "Progress saved successfully" });
+      }
+  
+
 
     } catch (error) {
       console.error(error);
