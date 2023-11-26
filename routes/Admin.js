@@ -292,14 +292,49 @@ router.delete("/deleteModule/:moduleId", verifyToken, adminCheck, (req, res) => 
   }
 
   // Remove the module from the modules array
-  modules.splice(moduleIndex, 1);
+  const deletedModule = modules.splice(moduleIndex, 1)[0];
+   // Remove all chapters and subchapters in the Chapters file for the specified module
+   if (chaptersByModule[moduleId]) {
+    delete chaptersByModule[moduleId];
+  }
+
+ // Remove all questions in the Questions or Questions2 file for the specified module
+if (moduleId <= 5) {
+  // For Questions
+  if (questions.hasOwnProperty(moduleId)) {
+  
+    delete questions[moduleId];
+    
+  }
+} else {
+  // For Questions2
+  if (questions2.hasOwnProperty(moduleId)) {
+  
+    delete questions2[moduleId];
+    
+  }
+}
+
 
   // Write the updated modules data back to the file
   const modulesDataPath = path.resolve(__dirname, '../utils/Modules.js');
   const modulesDataContent = `module.exports = ${JSON.stringify(modules, null, 2)};\n`;
   fs.writeFileSync(modulesDataPath, modulesDataContent);
 
-  return res.json({ message: 'Module deleted successfully' });
+  const chaptersDataPath = path.resolve(__dirname, '../utils/Chapters.js');
+  const chaptersDataContent = `module.exports = ${JSON.stringify(chaptersByModule, null, 2)};\n`;
+  fs.writeFileSync(chaptersDataPath, chaptersDataContent);
+
+  const questionsDataPath = moduleId <= 5 ? './utils/Questions.js' : './utils/Questions2.js';
+  const questionsData = moduleId <= 5 ? questions : questions2;
+
+  fs.writeFile(questionsDataPath, `module.exports = ${JSON.stringify(questionsData, null, 2)}`, (err) => {
+    if (err) {
+      return res.status(500).json({ error: 'Failed to write data to file' });
+    }
+
+    return res.json({ message: 'Module, chapters, and questions deleted successfully', deletedModule });
+  });
 });
 
 
@@ -323,14 +358,37 @@ router.delete("/deleteChapter/:moduleId/:chapterId", verifyToken, adminCheck, (r
   }
 
   // Remove the chapter from the chapters array
-  chaptersByModule[moduleId].splice(chapterIndex, 1);
+  
+  const deletedChapter = chaptersByModule[moduleId].splice(chapterIndex, 1)[0];
 
-  // Write the updated chapters data back to the file
+  // Delete all questions for the deleted chapter
+  const questionsData = moduleId <= 5 ? questions : questions2;
+  const deleteAllQuestionsForChapter = (subjectId, chapterId) => {
+    if (questionsData[subjectId] && questionsData[subjectId][chapterId]) {
+      Object.keys(questionsData[subjectId][chapterId]).forEach((subChapterId) => {
+        questionsData[subjectId][chapterId][subChapterId] = [];
+      });
+    }
+  };
+
+  // Delete questions for the deleted chapter across all subjects
+  Object.keys(questionsData).forEach((subjectId) => {
+    deleteAllQuestionsForChapter(subjectId, chapterId);
+  });
+
+  // Write the updated data back to the files
   const chaptersDataPath = path.resolve(__dirname, '../utils/Chapters.js');
   const chaptersDataContent = `module.exports = ${JSON.stringify(chaptersByModule, null, 2)};\n`;
   fs.writeFileSync(chaptersDataPath, chaptersDataContent);
 
-  return res.json({ message: 'Chapter deleted successfully' });
+  const questionsDataPath = moduleId <= 5 ? './utils/Questions.js' : './utils/Questions2.js';
+  fs.writeFile(questionsDataPath, `module.exports = ${JSON.stringify(questionsData, null, 2)}`, (err) => {
+    if (err) {
+      return res.status(500).json({ error: 'Failed to write data to file' });
+    }
+
+    return res.json({ message: 'Chapter and associated questions deleted successfully', deletedChapter });
+  });
 });
 
 // Route to delete questions by IDs (accessible by admins)

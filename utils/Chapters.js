@@ -1153,26 +1153,5 @@ module.exports = {
         }
       ]
     }
-  ],
-  "11": [
-    {
-      "id": 1,
-      "title": "Intro to PHP",
-      "content": "Intro to PHP",
-      "subtopics": [
-        {
-          "id": "1.1",
-          "name": "New Subtopic Title 1"
-        },
-        {
-          "id": "1.2",
-          "name": "SubChapter 2"
-        },
-        {
-          "id": "1.3",
-          "name": "SubChapter 3"
-        }
-      ]
-    }
   ]
 };
