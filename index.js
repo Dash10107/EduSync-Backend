@@ -5,6 +5,8 @@ const app = express();
 const connection = require("./db");
 const cors = require("cors");
 const path = require("path");
+const bodyParser = require("body-parser");
+const passport = require("passport");
 
 app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
@@ -12,15 +14,37 @@ app.use(function(req, res, next) {
     next();
   });
 
-  app.use(cors());
+// Middleware setup
+app.use(cors());
 app.use(express.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(passport.initialize());
+require("./config/passport")(passport); 
+  //Routes 
+  const users = require("./routes/User");
+  app.use("/users",users);
+
+  const modules = require("./routes/Module")
+  app.use("/module",modules);
+
+  const progress = require("./routes/Prog")
+  app.use("/progress",progress);
+
+  const videos = require("./routes/Video")
+  app.use("/videos",videos)
+
+  const admin = require("./routes/Admin");
+  app.use("/admin",admin);
 
 app.get('/', async (req, res) => {
+    
     res.status(200).json({
       message: 'Hello from EduSYnC ',
     });
   });
 
+  
 
   let port = process.env.PORT;
   if (port == null || port == "") {
