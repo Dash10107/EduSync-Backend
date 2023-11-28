@@ -10,6 +10,12 @@ const path = require('path');
 
 const questions = require("../utils/Questions");
 const questions2 = require("../utils/Questions2")
+
+// Example route to check if the user is an admin
+router.get("/checkAdmin", verifyToken, adminCheck, (req, res) => {
+  res.json({ message: "You are an admin.",isAdmin:true });
+});
+
 // Example route for adding modules (only accessible by admins)
 router.post("/addModule", verifyToken, adminCheck, async (req, res) => {
     try {
@@ -101,6 +107,52 @@ router.post("/addChapter/:moduleId", verifyToken, adminCheck, async (req, res) =
     }
   });
   
+
+// Add a single subtopic to an existing chapter
+router.post("/addSubtopic/:moduleId/:chapterId", verifyToken, adminCheck, (req, res) => {
+  try {
+    const moduleId = parseInt(req.params.moduleId);
+    const chapterId = parseInt(req.params.chapterId);
+
+    // Get the new subtopic data from the request body
+    const { name } = req.body;
+
+    // Check if the module exists
+    if (chaptersByModule[moduleId]) {
+      // Find the chapter in the module's array
+      const chapter = chaptersByModule[moduleId].find((ch) => ch.id === chapterId);
+
+      if (chapter) {
+        // Generate a unique subtopic ID based on the chapter ID
+        const subtopicId = `${chapterId}.${chapter.subtopics.length + 1}`;
+
+        // Create the subtopic object
+        const subtopic = {
+          id: subtopicId,
+          name: name,
+        };
+
+        // Add the new subtopic to the chapter's subtopics array
+        chapter.subtopics.push(subtopic);
+
+        // Save the updated chapters data back to the file
+        const chaptersDataPath = path.resolve(__dirname, '../utils/Chapters.js');
+        const chaptersDataContent = `module.exports = ${JSON.stringify(chaptersByModule, null, 2)};\n`;
+        fs.writeFileSync(chaptersDataPath, chaptersDataContent);
+
+        return res.json({ success: true, subtopic: subtopic });
+      }
+    }
+
+    return res.status(404).json({ error: 'Module or chapter not found' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Failed to add subtopic' });
+  }
+});
+
+
+
 
  
   
@@ -240,14 +292,49 @@ router.delete("/deleteModule/:moduleId", verifyToken, adminCheck, (req, res) => 
   }
 
   // Remove the module from the modules array
-  modules.splice(moduleIndex, 1);
+  const deletedModule = modules.splice(moduleIndex, 1)[0];
+   // Remove all chapters and subchapters in the Chapters file for the specified module
+   if (chaptersByModule[moduleId]) {
+    delete chaptersByModule[moduleId];
+  }
+
+ // Remove all questions in the Questions or Questions2 file for the specified module
+if (moduleId <= 5) {
+  // For Questions
+  if (questions.hasOwnProperty(moduleId)) {
+  
+    delete questions[moduleId];
+    
+  }
+} else {
+  // For Questions2
+  if (questions2.hasOwnProperty(moduleId)) {
+  
+    delete questions2[moduleId];
+    
+  }
+}
+
 
   // Write the updated modules data back to the file
   const modulesDataPath = path.resolve(__dirname, '../utils/Modules.js');
   const modulesDataContent = `module.exports = ${JSON.stringify(modules, null, 2)};\n`;
   fs.writeFileSync(modulesDataPath, modulesDataContent);
 
-  return res.json({ message: 'Module deleted successfully' });
+  const chaptersDataPath = path.resolve(__dirname, '../utils/Chapters.js');
+  const chaptersDataContent = `module.exports = ${JSON.stringify(chaptersByModule, null, 2)};\n`;
+  fs.writeFileSync(chaptersDataPath, chaptersDataContent);
+
+  const questionsDataPath = moduleId <= 5 ? './utils/Questions.js' : './utils/Questions2.js';
+  const questionsData = moduleId <= 5 ? questions : questions2;
+
+  fs.writeFile(questionsDataPath, `module.exports = ${JSON.stringify(questionsData, null, 2)}`, (err) => {
+    if (err) {
+      return res.status(500).json({ error: 'Failed to write data to file' });
+    }
+
+    return res.json({ message: 'Module, chapters, and questions deleted successfully', deletedModule });
+  });
 });
 
 
@@ -271,14 +358,37 @@ router.delete("/deleteChapter/:moduleId/:chapterId", verifyToken, adminCheck, (r
   }
 
   // Remove the chapter from the chapters array
-  chaptersByModule[moduleId].splice(chapterIndex, 1);
+  
+  const deletedChapter = chaptersByModule[moduleId].splice(chapterIndex, 1)[0];
 
-  // Write the updated chapters data back to the file
+  // Delete all questions for the deleted chapter
+  const questionsData = moduleId <= 5 ? questions : questions2;
+  const deleteAllQuestionsForChapter = (subjectId, chapterId) => {
+    if (questionsData[subjectId] && questionsData[subjectId][chapterId]) {
+      Object.keys(questionsData[subjectId][chapterId]).forEach((subChapterId) => {
+        questionsData[subjectId][chapterId][subChapterId] = [];
+      });
+    }
+  };
+
+  // Delete questions for the deleted chapter across all subjects
+  Object.keys(questionsData).forEach((subjectId) => {
+    deleteAllQuestionsForChapter(subjectId, chapterId);
+  });
+
+  // Write the updated data back to the files
   const chaptersDataPath = path.resolve(__dirname, '../utils/Chapters.js');
   const chaptersDataContent = `module.exports = ${JSON.stringify(chaptersByModule, null, 2)};\n`;
   fs.writeFileSync(chaptersDataPath, chaptersDataContent);
 
-  return res.json({ message: 'Chapter deleted successfully' });
+  const questionsDataPath = moduleId <= 5 ? './utils/Questions.js' : './utils/Questions2.js';
+  fs.writeFile(questionsDataPath, `module.exports = ${JSON.stringify(questionsData, null, 2)}`, (err) => {
+    if (err) {
+      return res.status(500).json({ error: 'Failed to write data to file' });
+    }
+
+    return res.json({ message: 'Chapter and associated questions deleted successfully', deletedChapter });
+  });
 });
 
 // Route to delete questions by IDs (accessible by admins)
