@@ -34,6 +34,9 @@ require("./config/passport")(passport);
   const videos = require("./routes/Video")
   app.use("/videos",videos)
 
+  const admin = require("./routes/Admin");
+  app.use("/admin",admin);
+
 app.get('/', async (req, res) => {
     
     res.status(200).json({
@@ -49,7 +52,7 @@ app.get('/', async (req, res) => {
   }
     const startServer = async () => {
       try {
-     connection();
+        connection();
         app.listen(port, () => console.log(`Server started on port ${port}`));
       } catch (error) {
         console.log(error);
@@ -57,3 +60,4 @@ app.get('/', async (req, res) => {
     };
     
     startServer();
+
