@@ -37,6 +37,9 @@ require("./config/passport")(passport);
   const admin = require("./routes/Admin");
   app.use("/admin",admin);
 
+  const subadmin = require("./routes/SubAdmin")
+  app.use("/subadmin",subadmin)
+
 app.get('/', async (req, res) => {
     
     res.status(200).json({
