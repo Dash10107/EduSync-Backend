@@ -503,16 +503,3 @@ router.put('/classrooms/:code/update-test-results', verifyToken, subAdminCheck, 
 
 
 module.exports = router;
-
-
-
-
-
-
-
-
-
-
-
-
-module.exports = router;

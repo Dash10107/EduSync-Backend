@@ -40,6 +40,10 @@ require("./config/passport")(passport);
   const subadmin = require("./routes/SubAdmin")
   app.use("/subadmin",subadmin)
 
+  const feedAndNotice = require("./routes/Feed&Notice")
+  app.use("/feedandnotice",feedAndNotice)
+
+  
 app.get('/', async (req, res) => {
     
     res.status(200).json({
