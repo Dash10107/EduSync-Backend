@@ -168,22 +168,21 @@ router.post('/chatbot',verifyToken, async (req, res) => {
     // const chatbotResponse = response.data.choices[0].text.trim();
 
     // res.status(200).json({"Response":"Your response is : " ,response: chatbotResponse });
-    const options = {
-        method: 'GET',
-        url: 'https://aeona3.p.rapidapi.com/',
-        params: {
-          text: prompt,
-          userId: process.env.aeonaUserId
-        },
-        headers: {
-          'X-RapidAPI-Key': process.env.RapidAPIKey,
-          'X-RapidAPI-Host': 'aeona3.p.rapidapi.com',
-        }
-      };
+    const apiUrl = process.env.ChatbotApi;  // Replace with your Flask API URL
 
-        const response = await axios.request(options);
-        console.log(response.data);
-      res.status(200).json({"Response":"Your response is : " ,response: response.data });
+
+    
+    // Make a POST request to the Flask API
+    axios.post(apiUrl, { prompt })
+      .then(response => {
+        console.log('Generated Response:', response.data.response);
+      
+        res.status(200).json({"Response":"Your response is : " ,response: response.data.response });
+      })
+      .catch(error => {
+        console.error('Error:', error.response ? error.response.data : error.message);
+      });
+ 
 
 } catch (error) {
     console.error(error);
