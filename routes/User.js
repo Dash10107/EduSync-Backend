@@ -177,5 +177,23 @@ router.get('/user-details', verifyToken, async (req, res) => {
       res.status(500).json({ error: 'Internal server error' });
     }
   });
+
+  // GET route to fetch subadmin users' names and IDs
+router.get('/subadminUsers',verifyToken, async (req, res) => {
+  try {
+    // Find all users with isSubAdmin set to true
+    const subadminUsers = await User.find({ isSubAdmin: true }, '_id name');
+
+    if (subadminUsers.length === 0) {
+      return res.status(404).json({ message: 'No subadmin users found.' });
+    }
+
+    // Return the list of subadmin users' names and IDs
+    res.status(200).json(subadminUsers);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
   
 module.exports=router;
