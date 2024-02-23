@@ -104,6 +104,21 @@ router.delete('/classrooms/:code',verifyToken,subAdminCheck, async (req, res) =>
 
 //------------------------------------------------------------students in classroom ---------------------------------------------------------------------------------------------------
 
+// Route to get all classrooms for a student
+router.get('/classrooms/student', verifyToken, async (req, res) => {
+  try {
+    const studentId = req.user.id;
+
+    // Find all classrooms where the student ID matches
+    const classrooms = await Classroom.find({ students: { $in: [studentId] } });
+
+    res.status(200).json({ classrooms });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
   // Add a student to a classroom
   router.post('/classrooms/:code/addstudents', verifyToken, async (req, res) => {
     try {
@@ -167,7 +182,7 @@ module.exports = router;
 //------------------------------------Posting in Classroom-------------------------------------------------------------------------------------------------------------
 
 // GET route for fetching all posts in a classroom
-router.get('/classrooms/:code/posts',verifyToken,subAdminCheck, async (req, res) => {
+router.get('/classrooms/:code/posts',verifyToken, async (req, res) => {
   try {
     const { code } = req.params;
 
@@ -321,7 +336,7 @@ router.post('/classrooms/:code/addforms',verifyToken, subAdminCheck, async (req,
 });
 
 // GET route for fetching all forms in a classroom
-router.get('/classrooms/:code/forms',verifyToken,subAdminCheck, async (req, res) => {
+router.get('/classrooms/:code/forms',verifyToken, async (req, res) => {
   try {
     const { code } = req.params;
 
@@ -342,7 +357,7 @@ router.get('/classrooms/:code/forms',verifyToken,subAdminCheck, async (req, res)
   }
 });
 
-router.put('/classrooms/:code/update-form-results',verifyToken, async (req, res) => {
+router.put('/classrooms/:code/update-form-results',verifyToken,subAdminCheck, async (req, res) => {
   try {
     const { studentId, formId, marks } = req.body;
     const { code } = req.params;
