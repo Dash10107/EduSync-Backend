@@ -52,7 +52,7 @@ User.findOne({email:req.body.email})
 		res
 			.status(201)
 			.send({ message: "An Email sent to your account please verify",
-        user:user });
+      id:user._id,tempToken:token.token  });
     }
 });
 
