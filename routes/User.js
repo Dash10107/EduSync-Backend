@@ -46,7 +46,7 @@ User.findOne({email:req.body.email})
 			userId: newUser._id,
 			token: generateUniqueCode(),
 		}).save();
-		const url = `${process.env.BASE_URL}users/${newUser._id}/verify/${token.token}`;
+		const url = `http://localhost:5000/verifyemail`;
 		await SendEmail(newUser.email, "Verify Email", url);
 
 		res
