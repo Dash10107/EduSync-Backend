@@ -77,14 +77,15 @@ router.post("/login",(req,res)=>{
 					userId: user._id,
 					token: generateUniqueCode(),
 				}).save();
-				const url = `${process.env.BASE_URL}users/${user._id}/verify/${token.token}`;
+				const url = `http://localhost:5000/verifyemail`;
 				const info = await SendEmail(user.email, "Verify Email", url);
+        console.log('Info',info);
                 
             }
 
 			return res
 				.status(400)
-				.send({ message: "An Email sent to your account please verify" });
+				.send({ message: "An Email sent to your account please verify",id:user._id,tempToken:token.token });
 		}
     
         bcrypt.compare(password,user.password)
@@ -154,9 +155,9 @@ router.get("/protected", verifyToken, async (req, res) => {
             token: req.params.token,
           })
 
-		res.status(200).send({ message: "Email verified successfully" });
+		res.status(200).send({success:true, message: "Email verified successfully" });
 	} catch (error) {
-		res.status(500).send({ message: "Internal Server Error",error:error });
+		res.status(500).send({success:false, message: "Internal Server Error",error:error });
 	}
 });
 
