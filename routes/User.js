@@ -46,13 +46,12 @@ User.findOne({email:req.body.email})
 			userId: newUser._id,
 			token: generateUniqueCode(),
 		}).save();
-		const url = `http://localhost:5000/verifyemail`;
+		const url = `http://localhost:3000/verifyemail/${newUser._id}/${token.token}`;
 		await SendEmail(newUser.email, "Verify Email", url);
 
 		res
 			.status(201)
-			.send({ message: "An Email sent to your account please verify",
-      id:user._id,tempToken:token.token  });
+			.send({ message: "An Email sent to your account please verify", });
     }
 });
 
@@ -66,18 +65,19 @@ router.post("/login",(req,res)=>{
     const email = req.body.email;
     const password = req.body.password;
 
-
+    let userId = "";
     User.findOne({email})
     .then(async(user)=>{
         if(!user) return res.status(404).json({emailnotfound:"Email Not Found"});
         if (!user.verified) {
+          userId = user._id;
 			let token = await Token.findOne({ userId: user._id });
 			if (!token) {
 				token = await new Token({
 					userId: user._id,
 					token: generateUniqueCode(),
 				}).save();
-				const url = `http://localhost:5000/verifyemail`;
+				const url = `http://localhost:3000/verifyemail/${userId}/${token.token}`;
 				const info = await SendEmail(user.email, "Verify Email", url);
         console.log('Info',info);
                 
@@ -85,7 +85,7 @@ router.post("/login",(req,res)=>{
 
 			return res
 				.status(400)
-				.send({ message: "An Email sent to your account please verify",id:user._id,tempToken:token.token });
+				.send({ message: "An Email sent to your account please verify"});
 		}
     
         bcrypt.compare(password,user.password)
