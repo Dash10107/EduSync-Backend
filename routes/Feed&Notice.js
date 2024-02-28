@@ -13,6 +13,7 @@ const Notice = require("../models/Noticeboard")
 // const openai = new OpenAI({ apiKey: openaiApiKey });
 
 const axios = require('axios');
+//const { processUserMessage } = require("../middlewares/chatbot");
 
 
 
@@ -151,13 +152,42 @@ router.delete('/delete-notice/:noticeId', verifyToken,(subAdminCheck || adminChe
 //--------------------------------------------------------------------------------------Chatbot Prompt ------------------------------------------------------------------------------------------------------------------------------------
 
 
-
-
-
 // Route to handle chatbot requests
 router.post('/chatbot',verifyToken, async (req, res) => {
   try {
     const { prompt } = req.body;
+    const { spawn } = require('child_process');
+    
+    const pythonProcess = spawn('python3', ['routes/chatbot.py', prompt]);
+    
+    let pythonOutput = '';
+    let pythonError = '';
+    
+    pythonProcess.stdout.on('data', (data) => {
+      pythonOutput += data.toString();
+    });
+    
+    pythonProcess.stderr.on('data', (data) => {
+      pythonError += data.toString();
+    });
+    
+    pythonProcess.on('close', (code) => {
+      console.log(`Python script exited with code ${code}`);
+      
+      if (code === 0) {
+        console.log(`Python script output: ${pythonOutput}`);
+        res.json({ success: true, response: pythonOutput });
+      } else {
+        console.error(`Error from Python script: ${pythonError}`);
+        res.json({ success: false, error: pythonError });
+      }
+    });
+    
+    pythonProcess.on('error', (err) => {
+      console.error(`Error starting Python process: ${err}`);
+      res.json({ success: false, error: 'Error starting Python process' });
+    });
+    
 
     // Call the OpenAI API to generate a response based on the prompt
     // const response = await openai.completions.create({model:"gpt-3.5-turbo-instruct",prompt:prompt});
@@ -168,21 +198,7 @@ router.post('/chatbot',verifyToken, async (req, res) => {
     // const chatbotResponse = response.data.choices[0].text.trim();
 
     // res.status(200).json({"Response":"Your response is : " ,response: chatbotResponse });
-    const apiUrl = process.env.ChatbotApi;  // Replace with your Flask API URL
 
-
-    
-    // Make a POST request to the Flask API
-    axios.post(apiUrl, { prompt })
-      .then(response => {
-        console.log('Generated Response:', response.data.response);
-      
-        res.status(200).json({"Response":"Your response is : " ,response: response.data.response });
-      })
-      .catch(error => {
-        console.error('Error:', error.response ? error.response.data : error.message);
-      });
- 
 
 } catch (error) {
     console.error(error);
