@@ -80,6 +80,22 @@ router.get('/classrooms', verifyToken,subAdminCheck, async (req, res) => {
   }
 });
 
+  // Route to get all classrooms for a faculty
+  router.get('/classroom/:code', verifyToken, async (req, res) => {
+    try {
+     
+      const { code } = req.params;
+  
+      // Find all classrooms where the faculty ID matches
+      const classroom = await Classroom.findOne({ code });
+  
+      res.status(200).json({ classroom });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  });
+
 // Route to delete a classroom based on its code
 router.delete('/classrooms/:code',verifyToken,subAdminCheck, async (req, res) => {
   try {
@@ -206,8 +222,15 @@ router.get('/classrooms/:code/posts',verifyToken, async (req, res) => {
 router.post("/classrooms/:code/addposts",  upload.single('file'), verifyToken, subAdminCheck, async (req, res) => {
   try {
    
-    const { content } = req.body;
+    const { title,  content } = req.body;
 
+    // if(title || title===""){
+    //   console.log(req.body)
+    //   return res.status(404).json({ message: 'Please Enter the Title' });
+    // }
+    // if(content || content===""){
+    //   return res.status(404).json({ message: 'Please Enter the Content' });
+    // }
     const { code } = req.params;
   
     // Find the classroom by code
@@ -234,6 +257,7 @@ router.post("/classrooms/:code/addposts",  upload.single('file'), verifyToken, s
 
       // Append a new post to the 'posts' array with file content
       classroom.posts.push({
+        title,
         content,
         fileUrl: uploadedFile.path,
       });
@@ -245,6 +269,7 @@ router.post("/classrooms/:code/addposts",  upload.single('file'), verifyToken, s
       // No file uploaded, only text content
       // Append a new post to the 'posts' array without file content
       classroom.posts.push({
+        title,
         content,
       });
 

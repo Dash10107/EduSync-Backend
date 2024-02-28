@@ -5,6 +5,9 @@ const postSchema = new Schema({
   content: {
     type: String, // For text content
   },
+  title:{
+    type: String, // For text content
+  },
   fileUrl: {
     type: String, // For image URL
   },

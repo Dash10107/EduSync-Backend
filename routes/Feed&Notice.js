@@ -153,58 +153,28 @@ router.delete('/delete-notice/:noticeId', verifyToken,(subAdminCheck || adminChe
 
 
 // Route to handle chatbot requests
-router.post('/chatbot',verifyToken, async (req, res) => {
-  try {
-    const { prompt } = req.body;
-    const { spawn } = require('child_process');
+// router.post('/chatbot',verifyToken, async (req, res) => {
+//   try {
+//     const { prompt } = req.body;
     
-    const pythonProcess = spawn('python3', ['routes/chatbot.py', prompt]);
-    
-    let pythonOutput = '';
-    let pythonError = '';
-    
-    pythonProcess.stdout.on('data', (data) => {
-      pythonOutput += data.toString();
-    });
-    
-    pythonProcess.stderr.on('data', (data) => {
-      pythonError += data.toString();
-    });
-    
-    pythonProcess.on('close', (code) => {
-      console.log(`Python script exited with code ${code}`);
-      
-      if (code === 0) {
-        console.log(`Python script output: ${pythonOutput}`);
-        res.json({ success: true, response: pythonOutput });
-      } else {
-        console.error(`Error from Python script: ${pythonError}`);
-        res.json({ success: false, error: pythonError });
-      }
-    });
-    
-    pythonProcess.on('error', (err) => {
-      console.error(`Error starting Python process: ${err}`);
-      res.json({ success: false, error: 'Error starting Python process' });
-    });
     
 
-    // Call the OpenAI API to generate a response based on the prompt
-    // const response = await openai.completions.create({model:"gpt-3.5-turbo-instruct",prompt:prompt});
+//     // Call the OpenAI API to generate a response based on the prompt
+//     // const response = await openai.completions.create({model:"gpt-3.5-turbo-instruct",prompt:prompt});
 
-    // console.log('Response from GPT',response);
+//     // console.log('Response from GPT',response);
     
-    // Extract the generated response from the API result
-    // const chatbotResponse = response.data.choices[0].text.trim();
+//     // Extract the generated response from the API result
+//     // const chatbotResponse = response.data.choices[0].text.trim();
 
-    // res.status(200).json({"Response":"Your response is : " ,response: chatbotResponse });
+//     // res.status(200).json({"Response":"Your response is : " ,response: chatbotResponse });
 
 
-} catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'Internal server error' });
-  }
-});
+// } catch (error) {
+//     console.error(error);
+//     res.status(500).json({ error: 'Internal server error' });
+//   }
+// });
 
 
 module.exports = router;
