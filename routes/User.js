@@ -200,6 +200,29 @@ router.get('/user-details/:id', verifyToken, async (req, res) => {
   }
 });
 
+// Route to get user details based on IDs
+router.post('/user-details', verifyToken, async (req, res) => {
+  try {
+    const { ids } = req.body;
+
+    // Retrieve user details based on the array of IDs
+    const users = await User.find({ _id: { $in: ids } });
+
+    if (!users || users.length === 0) {
+      return res.status(404).json({ message: 'Users not found' });
+    }
+      // Extract usernames from the result
+    const userNames = users.map(user => user.name);
+
+    // Send the user names in the response
+    res.status(200).json({ users: userNames });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+
   // GET route to fetch subadmin users' names and IDs
 router.get('/subadminUsers',verifyToken, async (req, res) => {
   try {
