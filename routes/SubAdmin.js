@@ -218,6 +218,26 @@ router.get('/classrooms/:code/posts',verifyToken, async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+// GET route for fetching all posts in a classroom
+router.get('/classrooms/:code/posts/:postId',verifyToken, async (req, res) => {
+  try {
+    const { code,postId } = req.params;
+
+     // Find the classroom by code
+     const classroom = await Classroom.findOne({ code });
+
+    if (!classroom) {
+      return res.status(404).json({ message: 'Classroom not found' });
+    }
+    const post = classroom.posts.id(postId);
+
+
+    res.status(200).json({success:true,post:post});
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
 // Example route for adding a post with text, image, or PDF
 router.post("/classrooms/:code/addposts",  upload.single('file'), verifyToken, subAdminCheck, async (req, res) => {
   try {
@@ -382,10 +402,34 @@ router.get('/classrooms/:code/forms',verifyToken, async (req, res) => {
   }
 });
 
-router.put('/classrooms/:code/update-form-results',verifyToken,subAdminCheck, async (req, res) => {
+// GET route for fetching all forms in a classroom
+router.get('/classrooms/:code/forms/:formId',verifyToken, async (req, res) => {
   try {
-    const { studentId, formId, marks } = req.body;
+    const { code,formId } = req.params;
+
+    // Find the classroom by ID
+    const classroom = await Classroom.findOne({ code });
+
+    if (!classroom) {
+      return res.status(404).json({ message: 'Classroom not found' });
+    }
+
+// Find the form within the classroom's forms array
+    const form = classroom.forms.id(formId);
+
+    res.status(200).json({success:true,form:form});
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+router.put('/classrooms/:code/update-form-results',verifyToken, async (req, res) => {
+  try {
+    const {  formId, marks } = req.body;
+   
     const { code } = req.params;
+    const studentId = req.user.id;
 
     // Find the classroom by ID
     const classroom = await Classroom.findOne({ code });
