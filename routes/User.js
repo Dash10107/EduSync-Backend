@@ -211,11 +211,9 @@ router.post('/user-details', verifyToken, async (req, res) => {
     if (!users || users.length === 0) {
       return res.status(404).json({ message: 'Users not found' });
     }
-      // Extract usernames from the result
-    const userNames = users.map(user => user.name);
-
+    const userObjects = users.map(user => ({ id: user.id, name: user.name }));
     // Send the user names in the response
-    res.status(200).json({ users: userNames });
+    res.status(200).json({ users: userObjects });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
