@@ -370,7 +370,7 @@ router.post('/classrooms/:code/addforms',verifyToken, subAdminCheck, async (req,
         });
 
         classroom.save().then(() => {
-          res.status(201).json({ message: 'Form uploaded successfully',title:title });
+          res.status(200).json({ message: 'Form uploaded successfully',title:title });
         });
 
 
@@ -579,6 +579,101 @@ router.put('/classrooms/:code/update-test-results', verifyToken, subAdminCheck, 
     }
 
     res.status(200).json({ message: 'Test results updated successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+// Route to update existing test scores in both classroom 
+router.put('/classrooms/:code/update-existing-test/:testId', verifyToken, subAdminCheck, async (req, res) => {
+  try {
+    const { code, testId } = req.params;
+    const { results } = req.body;
+
+    // Find the classroom by code
+    const classroom = await Classroom.findOne({ code });
+
+    if (!classroom) {
+      return res.status(404).json({ message: 'Classroom not found' });
+    }
+
+    // Find the test within the classroom
+    const existingTest = classroom.test.find(test => test._id.toString() === testId);
+
+    if (!existingTest) {
+      return res.status(404).json({ message: 'Test not found' });
+    }
+
+    // Update test scores for the existing test
+    existingTest.testScores = results;
+
+    // Save the updated classroom
+    await classroom.save();
+
+    // Update test scores for individual users
+    for (const { studentId, marks } of results) {
+      const user = await User.findOne({ _id: studentId });
+
+      if (!user) {
+        return res.status(404).json({ message: 'User not found' });
+      }
+
+      // Check if a result entry for the student already exists
+      const existingUserResult = user.testResults.find(result => result.testId.toString() === testId);
+
+      if (existingUserResult) {
+        // Update existing result
+        existingUserResult.marks = marks;
+      } else {
+        // Push a new result entry
+        user.testResults.push({ testId, marks });
+      }
+
+      // Save the updated user
+      await user.save();
+    }
+
+    res.status(200).json({ message: 'Existing test results updated successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+
+// Route to delete a single form based on its formId
+router.delete('/classrooms/:code/results/:resultId', verifyToken,subAdminCheck, async (req, res) => {
+  try {
+    const { code,resultId } = req.params;
+
+    // Find the classroom by code
+    const classroom = await Classroom.findOne({ code });
+
+    if (!classroom) {
+      return res.status(404).json({ message: 'Classroom not found' });
+    }
+
+    // Find the form by formId
+    const test = classroom.test.id(resultId);
+
+    if (!test) {
+      return res.status(404).json({ message: 'Test not found' });
+    }
+
+          // Find the post index by postId
+          const formIndex = classroom.test.findIndex(test => test._id == resultId);
+
+          if (formIndex === -1) {
+            return res.status(404).json({ message: 'Result not found' });
+          }
+      
+          // Remove the post from the classroom
+          classroom.test.splice(formIndex, 1);
+          await classroom.save();
+    await classroom.save();
+
+    res.json({ message: 'Test deleted successfully' });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal server error' });
