@@ -13,6 +13,7 @@ const Notice = require("../models/Noticeboard")
 // const openai = new OpenAI({ apiKey: openaiApiKey });
 
 const axios = require('axios');
+const AdminSubCheck = require("../middlewares/AdminSubCheck");
 //const { processUserMessage } = require("../middlewares/chatbot");
 
 
@@ -91,7 +92,7 @@ router.delete('/delete-feedback/:feedbackId', verifyToken,subAdminCheck, async (
 
 
 // Route to post a notice
-router.post('/add-notices', verifyToken,(subAdminCheck || adminCheck), async (req, res) => {
+router.post('/add-notices', verifyToken,AdminSubCheck, async (req, res) => {
   try {
     const { title, content } = req.body;
 
@@ -130,7 +131,7 @@ router.get('/get-notices', async (req, res) => {
 
 
 // Route to delete notice based on its ID
-router.delete('/delete-notice/:noticeId', verifyToken,(subAdminCheck || adminCheck), async (req, res) => {
+router.delete('/delete-notice/:noticeId', verifyToken,AdminSubCheck, async (req, res) => {
     try {
         const noticeId = req.params.noticeId;
 
