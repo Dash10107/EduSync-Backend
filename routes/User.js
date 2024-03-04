@@ -47,11 +47,11 @@ User.findOne({email:req.body.email})
 			token: generateUniqueCode(),
 		}).save();
 		const url = `http://localhost:3000/verifyemail/${newUser._id}/${token.token}`;
-		await SendEmail(newUser.email, "Verify Email", url);
+		await SendEmail(newUser.email, "Verify Email For Edusync", url);
 
 		res
 			.status(201)
-			.send({ message: "An Email sent to your account please verify", });
+			.send({ message: "An Email sent to your account please verify" });
     }
 });
 

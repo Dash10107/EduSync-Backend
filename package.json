@@ -23,6 +23,7 @@
     "googleapis": "^127.0.0",
     "gpt-free": "^1.7.1",
     "gpt-tfjs": "^0.0.5",
+    "helmet": "^7.1.0",
     "is-empty": "^1.2.0",
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",

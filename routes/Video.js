@@ -146,7 +146,7 @@ router.post("/:moduleName/:chapterName", async (req, res) => {
 
                     if (files.length) {
                       // Construct an array of video URLs using the file ids.
-                      const videoUrls = files.map((file) => `https://drive.google.com/uc?id=${file.id}`);
+                      const videoUrls = files.map((file) => `https://drive.google.com/file/d/${file.id}/view`);
 
                       console.log(`Found videos in the ${chapterName} folder:`);
                       // files.forEach((file) => {
