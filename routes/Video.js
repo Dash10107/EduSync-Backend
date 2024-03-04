@@ -75,6 +75,7 @@ router.post('/readDrive', (req, res) => {
 });
 
   
+
 // Route to fetch videos based on module and chapter names
 router.post("/:moduleName/:chapterName", async (req, res) => {
   try {
@@ -146,9 +147,10 @@ router.post("/:moduleName/:chapterName", async (req, res) => {
 
                     if (files.length) {
                       // Construct an array of video URLs using the file ids.
-                      const videoUrls = files.map((file) => `https://drive.google.com/file/d/${file.id}/view`);
-
-                      console.log(`Found videos in the ${chapterName} folder:`);
+                      // const videoUrls = files.map((file) => `https://drive.google.com/file/d/${file.id}/view?usp=sharing`);
+                     
+                      const videoUrls = files.map((file) => `https://drive.google.com/file/d/${file.id}/preview`);
+                      console.log(`Found videos in the ${chapterName} folder: `);
                       // files.forEach((file) => {
                       //   console.log(file.name);
                       // });
