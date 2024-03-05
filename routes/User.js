@@ -46,8 +46,23 @@ User.findOne({email:req.body.email})
 			userId: newUser._id,
 			token: generateUniqueCode(),
 		}).save();
-		const url = `http://localhost:3000/verifyemail/${newUser._id}/${token.token}`;
-		await SendEmail(newUser.email, "Verify Email For Edusync", url);
+		const url = `https://edusync.netlify.app/verifyemail/${newUser._id}/${token.token}`;
+    const emailText = `Dear User,
+
+    Thank you for registering with EDUSYNC! To ensure the security of your account, we need to verify your email address.
+    
+    Please follow the link below to complete the email verification process:
+    
+    Link : ${url}
+    
+    If you have trouble clicking the link, you can copy and paste it into your browser. If you did not sign up for EDUSYNC, please ignore this email.
+    
+    Thank you for choosing EDUSYNC. We look forward to having you as a valued member.
+    
+    Best regards,
+    EDUSYNC Team`;
+    
+		await SendEmail(newUser.email, "Verify Email For Edusync", emailText);
 
 		res
 			.status(201)
