@@ -7,12 +7,22 @@ const cors = require("cors");
 const path = require("path");
 const bodyParser = require("body-parser");
 const passport = require("passport");
-
+const helmet = require('helmet');
 app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     next();
   });
+
+  app.use(
+    helmet.contentSecurityPolicy({
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: ["'self'", 'https://drive.google.com'],
+        styleSrc: ["'self'", 'https://drive.google.com'],
+      },
+    })
+  );
 
 // Middleware setup
 app.use(cors());
@@ -37,6 +47,13 @@ require("./config/passport")(passport);
   const admin = require("./routes/Admin");
   app.use("/admin",admin);
 
+  const subadmin = require("./routes/SubAdmin")
+  app.use("/subadmin",subadmin)
+
+  const feedAndNotice = require("./routes/Feed&Notice")
+  app.use("/feedandnotice",feedAndNotice)
+
+  
 app.get('/', async (req, res) => {
     
     res.status(200).json({
