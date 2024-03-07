@@ -455,7 +455,7 @@ if (existingResult) {
   existingResult.marks = marks;
 } else {
   // Push a new result entry
-  form.results.push({ studentId, marks });
+  form.results.push({studentId: studentId,formName:form.title,classroomName:classroom.name,marks: marks });
 }
 
 await classroom.save();
@@ -571,7 +571,7 @@ router.put('/classrooms/:code/update-test-results', verifyToken, subAdminCheck, 
         existingUserResult.marks = marks;
       } else {
         // Push a new result entry
-        user.testResults.push({ testId, marks });
+        user.testResults.push({ testId:testId,testName:testName,classroomName:classroom.name,marks: marks });
       }
 
       // Save the updated user

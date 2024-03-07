@@ -39,6 +39,14 @@ const UserSchema = new Schema({
           type: Schema.Types.ObjectId,
           ref: 'Form', // Assuming you have a Test model
         },
+        formName:{
+          type:String,
+          required:true
+      },
+      classroomName:{
+        type:String,
+        required:true
+    },
         marks: {
             type: Number,
             required: true,
@@ -57,6 +65,14 @@ const UserSchema = new Schema({
             max: 100, 
             min:0
           },
+          testName:{
+            type:String,
+            required:true
+        },
+        classroomName:{
+          type:String,
+            required:true
+        }
       }],
     
 });
