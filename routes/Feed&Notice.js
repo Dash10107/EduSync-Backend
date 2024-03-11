@@ -7,7 +7,7 @@ const Feedback = require('../models/Feedback');
 const Notice = require("../models/Noticeboard")
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const genAI = new GoogleGenerativeAI(process.env.geminiKey);
-
+const fetch = require('node-fetch');
 
 // const openaiApiKey  = process.env.OPENAI_KEY // Replace with your OpenAI API key
 // const { OpenAI } = require('openai');
@@ -160,7 +160,7 @@ router.post('/chatbot',verifyToken, async (req, res) => {
   try {
     const { prompt } = req.body;
     
-    const model = genAI.getGenerativeModel({ model: "gemini-pro"});
+    const model = genAI.getGenerativeModel({ model: "gemini-pro",fetch});
     const result = await model.generateContent(prompt);
     const response = await result.response;
     const text = response.text();
