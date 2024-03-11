@@ -5,6 +5,8 @@ const adminCheck = require("../middlewares/Admin");
 const verifyToken = require("../middlewares/Token");
 const Feedback = require('../models/Feedback');
 const Notice = require("../models/Noticeboard")
+const { GoogleGenerativeAI } = require("@google/generative-ai");
+const genAI = new GoogleGenerativeAI(process.env.geminiKey);
 
 
 // const openaiApiKey  = process.env.OPENAI_KEY // Replace with your OpenAI API key
@@ -154,28 +156,33 @@ router.delete('/delete-notice/:noticeId', verifyToken,AdminSubCheck, async (req,
 
 
 // Route to handle chatbot requests
-// router.post('/chatbot',verifyToken, async (req, res) => {
-//   try {
-//     const { prompt } = req.body;
+router.post('/chatbot',verifyToken, async (req, res) => {
+  try {
+    const { prompt } = req.body;
     
+    const model = genAI.getGenerativeModel({ model: "gemini-pro"});
+    const result = await model.generateContent(prompt);
+    const response = await result.response;
+    const text = response.text();
+    console.log(text);
+     res.status(200).json({"Response":"Your response is : " ,response: text })
+
+    // Call the OpenAI API to generate a response based on the prompt
+    // const response = await openai.completions.create({model:"gpt-3.5-turbo-instruct",prompt:prompt});
+
+    // console.log('Response from GPT',response);
     
+    // Extract the generated response from the API result
+    // const chatbotResponse = response.data.choices[0].text.trim();
 
-//     // Call the OpenAI API to generate a response based on the prompt
-//     // const response = await openai.completions.create({model:"gpt-3.5-turbo-instruct",prompt:prompt});
-
-//     // console.log('Response from GPT',response);
-    
-//     // Extract the generated response from the API result
-//     // const chatbotResponse = response.data.choices[0].text.trim();
-
-//     // res.status(200).json({"Response":"Your response is : " ,response: chatbotResponse });
+    // res.status(200).json({"Response":"Your response is : " ,response: chatbotResponse });
 
 
-// } catch (error) {
-//     console.error(error);
-//     res.status(500).json({ error: 'Internal server error' });
-//   }
-// });
+} catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
 
 
 module.exports = router;
