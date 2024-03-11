@@ -4,6 +4,8 @@ const User = require("./User");
 const postSchema = require("./Post");
 const formSchema = require("./Form");
 const testSchema = require("./Test");
+const discussionSchema = require("./Discussion");
+
 const classroomSchema = new Schema({
     name: {
       type: String,
@@ -25,7 +27,8 @@ const classroomSchema = new Schema({
 
     posts: [postSchema],
     forms: [formSchema],
-     test: [testSchema]
+     test: [testSchema],
+     discussions: [discussionSchema], // Add discussions array
   });
 
   const Classroom = mongoose.model('Classroom', classroomSchema);

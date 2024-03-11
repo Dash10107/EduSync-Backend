@@ -681,4 +681,56 @@ router.delete('/classrooms/:code/results/:resultId', verifyToken,subAdminCheck, 
 });
 
 
+
+
+// -----------------------------------------------------------------------------------Discussion Forum ---------------------------------------------------------------------------------
+
+// Route to add a new discussion message
+router.post("/classrooms/:code/discussions",verifyToken, async (req, res) => {
+  const {  content } = req.body;
+  const code = req.params.code;
+  const userId = req.user.id;
+  const studentName  = req.user.name;
+  try {
+       // Find the classroom by code
+       const classroom = await Classroom.findOne({ code });
+    if (!classroom) {
+      return res.status(404).json({ message: "Classroom not found" });
+    }
+
+    const newDiscussion = {
+      user: userId,
+      studentName,
+      content,
+    };
+
+    classroom.discussions.push(newDiscussion);
+    await classroom.save();
+
+    res.status(201).json(newDiscussion);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+});
+
+// Route to get all discussion messages for a classroom
+router.get("/classrooms/:code/discussions",verifyToken, async (req, res) => {
+  const code = req.params.code;
+
+  try {
+   // Find the classroom by code
+   const classroom = await Classroom.findOne({ code });
+    if (!classroom) {
+      return res.status(404).json({ message: "Classroom not found" });
+    }
+
+    res.status(200).json(classroom.discussions);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+});
+
+
 module.exports = router;
