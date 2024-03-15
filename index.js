@@ -65,7 +65,7 @@ app.get('/', async (req, res) => {
 
   let port = process.env.PORT;
   if (port == null || port == "") {
-    port = 5000;
+    port = 3000;
   }
     const startServer = async () => {
       try {
